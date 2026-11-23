@@ -15,9 +15,9 @@
 - 北京2023年私家车日均出行强度：28.4车公里/日。按365天年化，得到全体私人汽车活动量锚点10,366 km/辆·年。
 - 北京2023年10月私人纯电乘用车：月均充电9.2次，次均充电行驶169.6 km。派生月VKT为1,560.32 km，年化为18,723.84 km/辆·年。
 - PHEV缺少北京2023年度均值，暂采用上海2018年私人PHEV GPS样本年观测窗口均值14,774.95 km作为跨城代理；该数值来自此前表格提取，本轮在线文本提取确认了700辆原始样本、668辆保留样本和2018年全年观测期，但未重新显示该均值，故在最终冻结前仍需复核Table 2原表；Q1、median、Q3暂按此前提取值7,333、12,648、19,373 km做敏感性。
-- BEV/PHEV保有量结构采用全国2023年NEV存量中BEV占76.04%的比例作为中心代理，PHEV占23.96%；另设PHEV占NEV的10%和30%两档敏感性。
+- 旧版比较情景曾采用全国2023年NEV存量中BEV占76.04%的比例（PHEV占23.96%）。经后续核对北京小客车指标政策，该比例不能作为北京中心代理，仅保留为全国结构对照；北京本地BEV/PHEV统计拆分仍未知。
 
-中心情景（23.96% PHEV share）：
+全国结构对照情景（23.96% PHEV share；非北京中心估计）：
 
 | 动力类别 | 北京车辆数估计 | 年均VKT（km/辆） | 年总VKT（亿km） |
 |---|---:|---:|---:|
@@ -102,7 +102,7 @@ See 02_Cleaned_Data/P0_VKT_intensity_sensitivity.csv for machine-readable values
 - 北京公交集团2023年中期票据募集说明书：2023-09发布，含2023H1公共电汽车VKT 5.52亿公里，可纳入赛题时点证据，但不是全年数据。
 - 北京2021交通发展年报中的2019/2020私人小汽车VKT，以及上海2018 PHEV GPS研究，均在赛题截止日前公开，可用于严格时点代理。
 
-因此，本轮的中心情景适用于**2023年回顾性重建版**。若论文必须严格遵守2023-12-31资料可得性，不能直接采用2024/2025发布的北京2023年数据，应另建严格时点版：以2019/2020私人车VKT和2023H1公交里程作代理，并将2023年末车辆结构留为未知或情景值。
+因此，本轮的总VKT活动量锚点适用于**2023年回顾性重建版**；动力结构表中的23.96%仅为全国结构对照情景，不能作为北京中心估计。若论文必须严格遵守2023-12-31资料可得性，不能直接采用2024/2025发布的北京2023年数据，应另建严格时点版：以2019/2020私人车VKT和2023H1公交里程作代理，并将2023年末车辆结构留为未知或情景值。
 
 
 ### 官方公交数据申请入口
@@ -111,3 +111,6 @@ See 02_Cleaned_Data/P0_VKT_intensity_sensitivity.csv for machine-readable values
 
 
 > **Access-route correction (2026-11-23):** The old `43.254.24.235:9999/user/login` URL is a departmental reporting backend, not a public download portal. Do not ask the researcher to use it. The replacement official channels and the additional round-3 data are documented in [P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md](P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md).
+
+
+> **动力结构修订：** 2026-11-23进一步核验发现，北京新能源小客车指标政策定义为纯电驱动，且PHEV可通过普通指标登记。原全国76.04% BEV比例已降级为对照情景。请以 `03_Data_Audit/P0_EVIDENCE_AUDIT.md` H节及 `08_Reports/P0_DATA_COLLECTION_ROUND_04_PRIVATE_NEV_POLICY_AUDIT.md` 为准。
