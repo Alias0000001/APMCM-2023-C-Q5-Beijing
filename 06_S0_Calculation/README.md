@@ -57,3 +57,19 @@ The script generates:
 Private-car calculations use a 10%, 23.96%, and 30% PHEV share within the 528,000 private NEVs. The central 23.96% is a national stock proxy, not Beijing observed composition. The ICE/non-NEV mileage is a residual calibrated to the all-private-car activity anchor. Private BEV annual mileage is derived from the 2023-10 charging count and distance per charge; PHEV annual mileage is a Shanghai 2018 proxy.
 
 Bus calculations separate reported new-energy buses, a dated hydrogen-bus count, an inferred non-hydrogen new-energy fleet, an aggregate clean-energy fleet, and an unclassified residual. BEV/electric-drive VKT is estimated from the 2023-10 electric-bus monthly mean and annualized. The residual non-BEV VKT is deliberately not split by fuel type.
+
+
+## Round 3 alternative-source calculations
+
+Run:
+
+```bash
+python 06_S0_Calculation/p0_round03_alternative_sources.py
+```
+
+This script writes:
+- `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`
+- `02_Cleaned_Data/P0_bus_operating_cost_crosscheck_2022_2023H1.csv`
+- `02_Cleaned_Data/P0_BJ_PHEV_daily_VKT_sensitivity.csv`
+
+The bus cost ratios are financial cross-checks, not physical energy quantities. The Beijing PHEV annualized VKT values are active-day scenarios, not direct observations.
