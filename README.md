@@ -49,7 +49,7 @@ The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` a
 5. Added a 15,137 new-energy bus count from a 2023-11-06 exchange disclosure, but its exact snapshot date is unspecified; cross-check only.
 6. Audited the open-data portal's bus-stop dataset (route/stop sequence, no listed coordinates) and its AI-generated 1,000-row synthetic bus-trajectory dataset (not real observations; do not use for VKT).
 
-New derived files: `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`, `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`, and `P0_BJ_PHEV_daily_VKT_sensitivity.csv`.
+New derived files: `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`, `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`, `P0_BJ_PHEV_daily_VKT_sensitivity.csv`, and `P0_bus_fleet_count_evidence.csv`.
 
 ## Known Beijing-related evidence currently in the working record
 
