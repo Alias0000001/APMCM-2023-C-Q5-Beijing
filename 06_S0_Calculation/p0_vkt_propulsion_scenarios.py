@@ -186,6 +186,11 @@ def bus_estimates() -> list[dict]:
             "calculation_or_note": "2,361.3 × 12",
         },
         {
+            "metric": "BEV_bus_estimated_annual_total_electricity",
+            "value": bev_est * bev_kwh_year, "unit": "kWh/year", "evidence_status": "derived_estimate",
+            "calculation_or_note": "estimated BEV/electric-drive count × annualized monthly electricity per vehicle",
+        },
+        {
             "metric": "BEV_bus_electricity_intensity",
             "value": 62.6, "unit": "kWh/100km", "evidence_status": "literature_big_data_2023",
             "calculation_or_note": "2023 Beijing electric-bus actual electricity consumption intensity",
