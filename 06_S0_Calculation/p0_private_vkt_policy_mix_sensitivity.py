@@ -51,7 +51,7 @@ def main():
         for active_days in PHEV_ACTIVE_DAYS:
             n_phev = N_PRIVATE_NEV * p_share
             n_bev = N_PRIVATE_NEV - n_phev
-            d_phev = D_PHEV_EFFECTIVE_DAY * active_days
+            d_phev = D_PHEV_EFFECTIVE_DAY * active_days if n_phev > 0 else 0.0
             d_ice = (total_private_vkt - n_bev * D_BEV - n_phev * d_phev) / N_ICE_OR_NONNEV
             vkt_ice = N_ICE_OR_NONNEV * d_ice
             vkt_bev = n_bev * D_BEV
