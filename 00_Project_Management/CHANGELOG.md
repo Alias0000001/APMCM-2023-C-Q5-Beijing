@@ -22,3 +22,15 @@
 - Added source, raw-data manifest, parameter, audit, and round-report updates. Original PDF binaries are still external-only and explicitly marked as not archived.
 
 - Added an estimated 470.8 GWh/year of BEV/electric-drive bus electricity use from the 2023-10 monthly sample annualized to 12 months; meter boundary remains to be checked.
+
+
+## 2026-11-23 — P0 data collection round 3
+
+- Corrected the inaccessible 43.254.24.235 URL classification: it is a departmental reporting backend, not a public download portal.
+- Added the Beijing Municipal Transport Commission government information-disclosure route and the Beijing Public Data Open Platform's missing-data request route.
+- Added 2020–2025 Beijing Bus Group activity time series and 2023H1 pre-cutoff bus VKT/passenger-trip data from the MTN prospectus.
+- Added 2022/2023H1 fuel and electric-traction accounting cost cross-checks, explicitly not treated as physical energy consumption.
+- Added a local Beijing PHEV sample (45 vehicles, 10,372 effective vehicle-days, 47.1 km/effective day) and active-day annualization sensitivities.
+- Added the pre-cutoff 15,137 new-energy bus count with unknown snapshot date as cross-check only.
+- Audited bus-stop open data and an AI-generated synthetic trajectory dataset; the latter is excluded from observed VKT/energy analysis.
+- Added reproducible round-3 script, three cleaned datasets, parameter/source/raw manifests, audit and Chinese round report.
