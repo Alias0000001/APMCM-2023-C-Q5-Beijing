@@ -34,7 +34,7 @@ D_ALL_PRIVATE = 28.4 * 365.0
 D_BEV_2023 = 9.2 * 169.6 * 12.0
 # 2022 comparator: 8 charging sessions/month × 129 km/session × 12.
 D_BEV_2022 = 8.0 * 129.0 * 12.0
-# Shanghai 2018 private-PHEV GPS sample mean annual-window distance.
+# Shanghai 2018 private-PHEV GPS sample mean annual-window distance (provisional prior table extraction; exact mean pending recheck).
 D_PHEV_MEAN = 14_774.95
 D_PHEV_Q1 = 7_333.0
 D_PHEV_MEDIAN = 12_648.0
