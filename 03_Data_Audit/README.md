@@ -5,3 +5,5 @@
 - [Zenodo audit script](audit_zenodo_13852045.py): re-run checks after the original CSVs are placed in `01_Raw_Data/Zenodo_13852045/`.
 
 The original Zenodo CSV files are not yet committed here. The script will report MISSING until the original bytes are added. Do not reconstruct raw data from audit statistics.
+
+- [P0 evidence audit](P0_EVIDENCE_AUDIT.md): private passenger VKT and bus propulsion evidence, calculations, and remaining gaps.
