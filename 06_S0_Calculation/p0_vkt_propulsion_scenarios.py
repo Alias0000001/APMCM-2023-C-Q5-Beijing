@@ -122,7 +122,7 @@ def bus_estimates() -> list[dict]:
         },
         {
             "metric": "hydrogen_fuel_cell_buses",
-            "value": hydrogen_bus, "unit": "vehicles", "evidence_status": "official_snapshot_2023_12_07",
+            "value": hydrogen_bus, "unit": "vehicles", "evidence_status": "official_snapshot_2023_06_19",
             "calculation_or_note": "2023 municipal reply; 5 legacy + 212 Winter Olympics buses; snapshot date is 7 Dec",
         },
         {
