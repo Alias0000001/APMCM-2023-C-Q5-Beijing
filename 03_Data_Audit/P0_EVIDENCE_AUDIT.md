@@ -42,9 +42,9 @@ Decision: PHEV VKT remains a cross-city proxy, not a Beijing 2023 observation. T
 
 ### A5. BEV/PHEV stock split
 
-The national 2023 NEV stock contained 15.52 million BEVs out of 20.41 million NEVs, i.e. 76.04% BEV and 23.96% non-BEV NEV (mainly PHEV, with fuel-cell vehicles a small component). This national stock share is used only as the central proxy for Beijing's private NEV mix. Low/high PHEV shares of 10% and 30% are tested because Beijing's purchase-quota rules and local vehicle mix may differ from the national stock.
+The national 2023 NEV stock contained 15.52 million BEVs out of 20.41 million NEVs, i.e. 76.04% BEV and 23.96% non-BEV NEV (including PHEV and fuel-cell vehicles). This is retained only as a national comparator, not a central proxy for Beijing. Beijing's 2020-revised quota rules (in force during 2023) define the new-energy small-passenger-car indicator as pure-electric; the 2023 quota allocated 70,000 new-energy indicators and 30,000 ordinary indicators. PHEVs may be registered under ordinary indicators. This policy distinction makes the national stock mix a weak local proxy. The exact statistical classification of Beijing's 528,000 private new-energy passenger cars is still unverified.
 
-The central model therefore uses:
+The legacy national-mix comparator scenario therefore uses:
 - private non-NEV/ICE group: 4,545,000;
 - private BEV proxy: 401,491;
 - private PHEV proxy: 126,509.
@@ -57,7 +57,7 @@ To keep the three classes consistent with the all-private-car activity anchor, I
 
 `D_ICE = (N_private × D_all - N_BEV × D_BEV - N_PHEV × D_PHEV) / N_ICE`
 
-For the central 23.96% PHEV-share case, the implied ICE/non-NEV annual mileage is approximately 9,505 km/vehicle-year. This is a derived balancing estimate, not a directly observed ICE subgroup mean.
+For the legacy 23.96% national-mix comparator case, the implied ICE/non-NEV annual mileage is approximately 9,505 km/vehicle-year. This is a derived balancing estimate, not a directly observed ICE subgroup mean.
 
 ## B. Public buses
 
@@ -230,3 +230,48 @@ Phrase the request as access to existing records. If the commission does not hol
 - Use bus operating-cost ratios only as financial reasonableness checks.
 - Use Beijing PHEV 47.1 km/effective-day as a historical local sensitivity anchor, never as 2023 annual VKT without an explicit active-day assumption.
 - Use open bus-stop data for route topology after obtaining the registered download; do not use synthetic trajectory records as observations.
+
+
+## H. Private BEV/PHEV mix policy audit — correction to the former central proxy
+
+### H1. Official Beijing policy distinction
+
+The 2020-revised Beijing small-passenger-car indicator rules, published 2020-12-07 and effective 2021-01-01, define `新能源小客车` in the quota system as pure-electric-drive small passenger cars. In 2023, Beijing allocated 70,000 new-energy indicators and 30,000 ordinary indicators. Plug-in hybrids can be purchased under ordinary indicators; the quota categories therefore affect the local composition but do not directly disclose the registered stock split.
+
+The 2023 replacement-subsidy scheme separately defined subsidy-scope new-energy small passenger cars as pure-electric, including range-extenders. National statistical methodology, by contrast, defines NEVs to include BEV, PHEV (including range-extender) and fuel-cell vehicles. These are different administrative/statistical contexts and must not be conflated.
+
+### H2. Correction
+
+The previous calculation treated the national 2023 BEV share of 76.04% as Beijing's central private-NEV composition, producing 401,491 BEVs and 126,509 PHEVs. This is no longer admitted as a Beijing central estimate. It is retained only as a national-mix comparator because:
+- Beijing's quota-policy new-energy indicator is pure-electric;
+- PHEVs can be registered under ordinary indicators;
+- the 2023 statistical bulletin does not publish a BEV/PHEV cross-tab for the 528,000 private new-energy passenger cars;
+- the national non-BEV remainder includes fuel-cell vehicles and is not exactly equivalent to PHEV.
+
+The 528,000 stock count remains usable as the aggregate private NEV count, but its local propulsion split remains unknown.
+
+### H3. Policy-aware sensitivity grid
+
+A new 12-scenario grid combines:
+- assumed PHEV share within the 528,000 private NEVs: 0%, 5%, 10%, 23.96%;
+- Beijing PHEV historical daily mean: 47.1 km per effective vehicle-day;
+- assumed active days: 250, 300, 365;
+- BEV annualized October 2023 VKT: 18,723.84 km/vehicle-year;
+- all-private-car activity anchor: 10,366 km/vehicle-year.
+
+The 0% case is a boundary case, not an assertion that all reported NEVs are BEV. The 5% and 10% cases are low local-mix sensitivities, not observed fleet shares. The 23.96% case is only the national-mix comparator. In every scenario, ICE/non-NEV mileage is a residual calibrated to the all-private-car activity anchor.
+
+For the 300-active-day sensitivity:
+- PHEV share 5%: 26,400 PHEVs, 14,130 km/PHEV-year, implied ICE/non-NEV 9,422 km/year;
+- PHEV share 10%: 52,800 PHEVs, 14,130 km/PHEV-year, implied ICE/non-NEV 9,448 km/year;
+- PHEV share 23.96% comparator: 126,509 PHEVs, 14,130 km/PHEV-year, implied ICE/non-NEV 9,523 km/year.
+
+All these values are sensitivity outputs, not local registration observations. See `02_Cleaned_Data/P0_private_VKT_policy_mix_sensitivity.csv`.
+
+### H4. Model-use decision
+
+- Do not cite 23.96% as Beijing's central BEV/PHEV share.
+- Keep 528,000 as aggregate private new-energy passenger-car stock, subject to its statistical classification.
+- Use the new 12-scenario grid for robustness testing.
+- Request the 2023 private passenger-car stock cross-tab by BEV, PHEV/range-extender and fuel-cell from the Beijing traffic-management/statistics authority through the government information-disclosure route.
+- Until that cross-tab is obtained, do not report a single local BEV/PHEV fleet split as measured fact.
