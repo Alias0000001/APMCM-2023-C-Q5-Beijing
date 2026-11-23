@@ -61,3 +61,5 @@ Sensitivity inputs are tabulated in `P0_VKT_intensity_sensitivity.csv`, includin
 - `P0_BJ_PHEV_daily_VKT_sensitivity.csv`: Beijing PHEV historical sample (45 vehicles, 10,372 effective days, 47.1 km/effective day) plus 250/300/365 active-day scenarios. The study period is not specified; these are not 2023 annual observations.
 
 Reproduce the tables with `python 06_S0_Calculation/p0_round03_alternative_sources.py`.
+
+- `P0_bus_fleet_count_evidence.csv`: dated cross-check of 2020-2023 total bus fleet counts, the 15,137 pre-cutoff new-energy count with unspecified snapshot date, the 217 mid-year hydrogen count, and the retrospective 16,832 year-end NEV count. Do not combine mismatched observation dates into a precise share.
