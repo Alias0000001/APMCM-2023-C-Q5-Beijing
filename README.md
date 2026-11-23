@@ -34,11 +34,11 @@ Never relabel a proxy or derived estimate as a Beijing observation. Preserve raw
 
 1. Private passenger fleet: 5.073 million vehicles, including 528,000 NEVs; non-NEV remainder 4.545 million.
 2. Private-car daily activity anchor: 28.4 vehicle-km/day, annualized to 10,366 km/vehicle-year. Private BEV October 2023 charging statistics imply 9.2 sessions/month × 169.6 km/session = 1,560.32 km/month, annualized to 18,723.84 km/year. PHEV uses Shanghai 2018 GPS mean 14,774.95 km/year as an external proxy.
-3. Central private NEV split scenario uses national 2023 BEV stock share 76.04% (not a Beijing measurement), giving about 401,491 BEVs and 126,509 PHEVs. Low/high PHEV shares are 10% and 30%.
+3. Beijing's 2020-revised quota rules define quota-policy new-energy small passenger cars as pure-electric; PHEVs may use ordinary indicators. The 52.8w statistical private-NEV count still lacks a local propulsion cross-tab. The national 76.04% BEV share is now only a comparator, not a Beijing central estimate. Use `02_Cleaned_Data/P0_private_VKT_policy_mix_sensitivity.csv` for the 0/5/10/23.96% PHEV-share and 250/300/365 active-day grid.
 4. Bus structure: 16,832 new-energy buses; 217 hydrogen buses in a 2023-06-19 official snapshot; non-hydrogen new-energy bus proxy 16,615, assuming no H2 additions after the snapshot. Clean-energy plus new-energy share is 94.7%. The inferred clean-energy and other fleet counts are approximate; CNG/LNG and diesel/hybrid/trolley splits remain unknown.
 5. Electric-bus October 2023 monthly VKT 3,770.8 km and electricity 2,361.3 kWh; annualized per-vehicle VKT 45,249.6 km. Estimated BEV/electric-drive VKT is 751.8 million km/year, about 65.3% of the 1.151 billion km mixed public-bus total; the remaining 399.2 million km is left unallocated.
 
-The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` and `08_Reports/P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md`, with the consolidated audit in `03_Data_Audit/P0_EVIDENCE_AUDIT.md`. Reproducible scripts: `06_S0_Calculation/p0_vkt_propulsion_scenarios.py` and `06_S0_Calculation/p0_round03_alternative_sources.py`.
+The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` and `08_Reports/P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md`, with the consolidated audit in `03_Data_Audit/P0_EVIDENCE_AUDIT.md`. Reproducible scripts: `06_S0_Calculation/p0_vkt_propulsion_scenarios.py` (legacy national-mix comparator only), `06_S0_Calculation/p0_round03_alternative_sources.py`, and `06_S0_Calculation/p0_private_vkt_policy_mix_sensitivity.py` (policy-aware sensitivity grid).
 
 ## Round 3 additions — 2026-11-23
 
@@ -49,7 +49,7 @@ The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` a
 5. Added a 15,137 new-energy bus count from a 2023-11-06 exchange disclosure, but its exact snapshot date is unspecified; cross-check only.
 6. Audited the open-data portal's bus-stop dataset (route/stop sequence, no listed coordinates) and its AI-generated 1,000-row synthetic bus-trajectory dataset (not real observations; do not use for VKT).
 
-New derived files: `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`, `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`, `P0_BJ_PHEV_daily_VKT_sensitivity.csv`, and `P0_bus_fleet_count_evidence.csv`.
+New derived files: `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`, `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`, `P0_BJ_PHEV_daily_VKT_sensitivity.csv`, `P0_bus_fleet_count_evidence.csv`, and `P0_private_VKT_policy_mix_sensitivity.csv`.
 
 ## Known Beijing-related evidence currently in the working record
 
