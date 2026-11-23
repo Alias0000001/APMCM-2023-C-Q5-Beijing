@@ -40,3 +40,20 @@ From the repository root:
 ```bash
 python 06_S0_Calculation/scale_official_inputs.py
 ```
+
+
+## P0 propulsion-specific activity scenarios
+
+Run:
+
+```bash
+python 06_S0_Calculation/p0_vkt_propulsion_scenarios.py
+```
+
+The script generates:
+- `02_Cleaned_Data/P0_private_VKT_propulsion_scenarios.csv`
+- `02_Cleaned_Data/P0_bus_propulsion_VKT_estimates.csv`
+
+Private-car calculations use a 10%, 23.96%, and 30% PHEV share within the 528,000 private NEVs. The central 23.96% is a national stock proxy, not Beijing observed composition. The ICE/non-NEV mileage is a residual calibrated to the all-private-car activity anchor. Private BEV annual mileage is derived from the 2023-10 charging count and distance per charge; PHEV annual mileage is a Shanghai 2018 proxy.
+
+Bus calculations separate reported new-energy buses, a dated hydrogen-bus count, an inferred non-hydrogen new-energy fleet, an aggregate clean-energy fleet, and an unclassified residual. BEV/electric-drive VKT is estimated from the 2023-10 electric-bus monthly mean and annualized. The residual non-BEV VKT is deliberately not split by fuel type.
