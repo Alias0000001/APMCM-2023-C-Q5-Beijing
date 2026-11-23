@@ -8,7 +8,7 @@ Run from repository root:
 python 06_S0_Calculation/p0_vkt_propulsion_scenarios.py
 ```
 
-- `P0_private_VKT_propulsion_scenarios.csv`: low/central/high assumed PHEV share scenarios, with counts, per-vehicle annual VKT, total VKT, VKT shares, and 1-million-person scaling.
+- `P0_private_VKT_propulsion_scenarios.csv`: legacy broad national-mix comparator scenarios; the 23.96% national mix is not Beijing's central split.
 - `P0_bus_propulsion_VKT_estimates.csv`: bus fleet composition estimates, electric-bus per-vehicle VKT annualization, BEV VKT estimate, and unallocated non-BEV VKT residual.
 
 ## Private passenger-car baseline
@@ -27,7 +27,7 @@ The ICE/non-NEV annual VKT is calculated as a residual so the three propulsion c
 
 `D_ICE = (N_private × D_all - N_BEV × D_BEV - N_PHEV × D_PHEV) / N_ICE`
 
-The BEV/PHEV split of Beijing's 528,000 private NEVs is not officially published in the available source. Scenarios use PHEV shares of 10%, 23.96%, and 30%. The 23.96% central proxy is the complement of the national 2023 BEV stock share (76.04%) and is not a Beijing-specific measured split.
+The BEV/PHEV split of Beijing's 528,000 private NEVs is not officially published. Beijing's quota-policy new-energy small-passenger-car category is pure-electric, while PHEVs may be registered using ordinary indicators. The national 76.04% BEV share is therefore a comparator only, not a Beijing central split. Use `P0_private_VKT_policy_mix_sensitivity.csv` for policy-aware scenario testing.
 
 ## Bus baseline
 
@@ -63,3 +63,5 @@ Sensitivity inputs are tabulated in `P0_VKT_intensity_sensitivity.csv`, includin
 Reproduce the tables with `python 06_S0_Calculation/p0_round03_alternative_sources.py`.
 
 - `P0_bus_fleet_count_evidence.csv`: dated cross-check of 2020-2023 total bus fleet counts, the 15,137 pre-cutoff new-energy count with unspecified snapshot date, the 217 mid-year hydrogen count, and the retrospective 16,832 year-end NEV count. Do not combine mismatched observation dates into a precise share.
+
+- `P0_private_VKT_policy_mix_sensitivity.csv`: 12 scenarios crossing PHEV shares 0/5/10/23.96% with 250/300/365 active days. The 23.96% case is national comparator only; none is a measured Beijing BEV/PHEV split.
