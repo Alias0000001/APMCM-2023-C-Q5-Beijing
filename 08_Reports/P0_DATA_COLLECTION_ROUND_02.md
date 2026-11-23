@@ -108,3 +108,6 @@ See 02_Cleaned_Data/P0_VKT_intensity_sensitivity.csv for machine-readable values
 ### 官方公交数据申请入口
 
 2023年BMZ04-073-108表的报送范围是北京市辖区内全部城市公共交通运营企业和出租汽车企业，报送单位为北京市交通委，要求于2024年3月15日前通过北京市部门数据共享采集平台填报。平台地址为：http://43.254.24.235:9999/user/login。表内代码3–9分别是柴油、CNG、LNG、混合动力、无轨电车、纯电动、氢能源车辆数；代码20–25是汽油、柴油、CNG、LNG、氢能源、电力消耗量。公开PDF仅为空表，没有填报值。即使拿到填报表，也仍需另行申请分动力VKT，因为该表没有分动力里程字段。
+
+
+> **Access-route correction (2026-11-23):** The old `43.254.24.235:9999/user/login` URL is a departmental reporting backend, not a public download portal. Do not ask the researcher to use it. The replacement official channels and the additional round-3 data are documented in [P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md](P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md).
