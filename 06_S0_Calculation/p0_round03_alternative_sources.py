@@ -29,12 +29,12 @@ rows = [[
 ]]
 for y,n,l,length,v10,t10 in bus_raw:
     v, t = v10 * 10000, t10 * 10000
-    eligibility = ("precutoff_confirmed_in_2023_MTN_for_VKT_and_trips" if y <= 2022
+    eligibility = ("VKT_trips_pre_cutoff_confirmed_vehicle_count_publication_unverified" if y <= 2022
                    else "retrospective_full_year" if y == 2023
                    else "post_cutoff_trend_only")
     rows.append([y,n,l,length,v10,v,t10,t,round(v/n,3),round(t/v,6),
                  "公共电汽车",eligibility,
-                 "Operator series; category is not BEV-only; per-vehicle VKT uses year-end count"])
+                 "2020-2022 VKT and trips are approximately cross-checked to 2023 MTN; vehicle-count and route fields have publication date unverified; category is not BEV-only"])
 write_csv("P0_bus_activity_timeseries_2020_2025.csv", rows)
 
 cost_rows = [
