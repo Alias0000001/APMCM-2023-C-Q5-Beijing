@@ -88,3 +88,18 @@
 - The official BMZ04-073-108 form contains fuel-specific vehicle counts and energy consumption, but not fuel-specific VKT. A completed form alone will not finish the bus VKT split; a dispatch/odometer extract by propulsion type is still required.
 
 See 02_Cleaned_Data/P0_VKT_intensity_sensitivity.csv for machine-readable values and use restrictions.
+
+
+## 5. 赛题时点合规说明（重要）
+
+本轮得到的多数“2023年观测值”是在2024年或2025年才公开，因此属于**赛后回顾性重建数据**，不能冒充2023-12-31之前已经公开可得的资料。
+
+- 2023北京统计公报（私人载客汽车507.3万辆、新能源载客汽车52.8万辆）：2024-03-21发布，回顾性数据。
+- 北京2023年10月充电行为和电动公交运行数据：2024年报告发布，回顾性数据。
+- 北京公交集团2023社会责任报告摘要（16,832辆新能源公交、清洁能源+新能源占比94.7%）：2024-07发布，回顾性数据。
+- 全国2023年NEV存量结构（BEV占76.04%）：2024年1月及之后发布，回顾性代理。
+- 北京217辆氢燃料电池公交答复：2023-06-19发布，可纳入赛题时点证据，但它是年中快照。
+- 北京公交集团2023年中期票据募集说明书：2023-09发布，含2023H1公共电汽车VKT 5.52亿公里，可纳入赛题时点证据，但不是全年数据。
+- 北京2021交通发展年报中的2019/2020私人小汽车VKT，以及上海2018 PHEV GPS研究，均在赛题截止日前公开，可用于严格时点代理。
+
+因此，本轮的中心情景适用于**2023年回顾性重建版**。若论文必须严格遵守2023-12-31资料可得性，不能直接采用2024/2025发布的北京2023年数据，应另建严格时点版：以2019/2020私人车VKT和2023H1公交里程作代理，并将2023年末车辆结构留为未知或情景值。
