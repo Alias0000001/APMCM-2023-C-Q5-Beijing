@@ -3,8 +3,8 @@ metric,value,unit,evidence_status,calculation_or_note,scaled_value_1m_city
 "new_energy_buses",16832,"vehicles","official_operator_report","2023 social responsibility report; not BEV-only",770.061305
 "hydrogen_fuel_cell_buses",217,"vehicles","official_snapshot_2023_06_19","Official municipal reply dated 2023-06-19; 217 hydrogen buses",9.927715
 "non_hydrogen_new_energy_bus_estimate",16615,"vehicles","derived_proxy","16,832 minus 217 hydrogen; BEV/electric-drive proxy pending exact cross-tab",760.133590
-"clean_energy_bus_estimate",5314,"vehicles","derived_rounded_aggregate","round(23,385 × 94.7%) minus 16,832; CNG/LNG split unavailable",243.114649
-"other_bus_estimate",1239,"vehicles","derived_rounded_residual","Residual may include diesel/hybrid/trolley/other; not diesel-only",56.684052
+"clean_energy_bus_estimate",5314,"vehicles","derived_rounded_aggregate","Conditional on 94.7% denominator matching 23,385; round(23,385 × 94.7%) minus 16,832; CNG/LNG split unavailable",243.114649
+"other_bus_estimate",1239,"vehicles","derived_rounded_residual","Conditional on same fleet denominator; may include diesel/hybrid/trolley/other; not diesel-only",56.684052
 "clean_energy_plus_new_energy_share",0.947,"share","official_operator_report","Reported combined share; not pure-electric share",
 "total_public_bus_category_annual_VKT",1151000000,"vehicle-km/year","official_operator_statistics","Mixed-fleet total; not propulsion-specific",52658065.696770
 "BEV_bus_average_monthly_VKT",3770.8,"vehicle-km/month","literature_big_data_month_2023_10","2023-10 electric public-bus sample mean",
