@@ -2,7 +2,7 @@
 
 **Repository purpose:** a traceable data, audit, and calculation workspace for the Beijing-based analysis of Problem 5.
 
-**Status:** initial structure; not a completed or fully validated S0 result.
+**Status:** initial auditable data baseline with P0 VKT and bus-propulsion scenario estimates; exact Beijing private BEV/PHEV cross-tab and propulsion-specific non-BEV bus VKT remain unavailable.
 **Reference year:** 2023 wherever a source provides 2023 observations.
 **Population target in the problem:** 1,000,000 residents.
 **City anchor:** Beijing; each source's exact geographic boundary must still be checked before use.
@@ -30,6 +30,16 @@ Never relabel a proxy or derived estimate as a Beijing observation. Preserve raw
 - `08_Reports/` — round reports and decisions
 - `99_Archive/` — superseded versions
 
+## P0 findings added on 2026-11-23
+
+1. Private passenger fleet: 5.073 million vehicles, including 528,000 NEVs; non-NEV remainder 4.545 million.
+2. Private-car daily activity anchor: 28.4 vehicle-km/day, annualized to 10,366 km/vehicle-year. Private BEV October 2023 charging statistics imply 9.2 sessions/month × 169.6 km/session = 1,560.32 km/month, annualized to 18,723.84 km/year. PHEV uses Shanghai 2018 GPS mean 14,774.95 km/year as an external proxy.
+3. Central private NEV split scenario uses national 2023 BEV stock share 76.04% (not a Beijing measurement), giving about 401,491 BEVs and 126,509 PHEVs. Low/high PHEV shares are 10% and 30%.
+4. Bus structure: 16,832 new-energy buses; 217 hydrogen buses in a 2023-12-07 official snapshot; non-hydrogen new-energy bus proxy 16,615. Clean-energy plus new-energy share is 94.7%. The inferred clean-energy and other fleet counts are approximate; CNG/LNG and diesel/hybrid/trolley splits remain unknown.
+5. Electric-bus October 2023 monthly VKT 3,770.8 km and electricity 2,361.3 kWh; annualized per-vehicle VKT 45,249.6 km. Estimated BEV/electric-drive VKT is 751.8 million km/year, about 65.3% of the 1.151 billion km mixed public-bus total; the remaining 399.2 million km is left unallocated.
+
+The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md`, `03_Data_Audit/P0_EVIDENCE_AUDIT.md`, and the reproducible script `06_S0_Calculation/p0_vkt_propulsion_scenarios.py`.
+
 ## Known Beijing-related evidence currently in the working record
 
 1. Beijing 2023 Statistical Communiqué: year-end resident population 21.858 million; private automobiles 5.431 million; private passenger vehicles 5.073 million; new-energy private passenger vehicles 528,000. These are different statistical categories and must not be conflated.
@@ -38,7 +48,7 @@ Never relabel a proxy or derived estimate as a Beijing observation. Preserve raw
 4. Zenodo record 13852045 includes processed daily-distance figure data for seven Chinese cities, including Beijing. It is not raw GPS/trip data. The FigSI5 unit is unspecified in the metadata and must not be annualized until resolved.
 5. Beijing PHEV utility-factor evidence distinguishes PHEV50 (actual UF 0.66) and PHEV80 (actual UF 0.79); a fleet-wide value requires the fleet's electric-range mix.
 6. Shanghai private-PHEV GPS mean annual-window distance 14,774.95 km is an external historical proxy, not a Beijing observation.
-7. The 10,300 km ICE and 6,210 km BEV annual-mileage values appearing in earlier working notes are not admitted as Beijing-specific parameters; their exact source scope and transferability must be recorded.
+7. The 10,300 km national ICE and 6,210 km multi-market BEV annual-mileage values from earlier notes remain quarantined; the new Beijing P0 estimates supersede them for the first-pass scenarios, with explicit limitations.
 
 The source register and audit notes are authoritative for use restrictions.
 
@@ -63,4 +73,4 @@ The source register and audit notes are authoritative for use restrictions.
 
 ## Reproducibility
 
-The calculation script in `06_S0_Calculation/` only scales documented official observations. It intentionally does not invent private-car VKT, private BEV/PHEV counts, bus PKM, or a private-car BEV/PHEV split when the source does not provide them.
+Run `python 06_S0_Calculation/scale_official_inputs.py` for official population-scaled inputs and `python 06_S0_Calculation/p0_vkt_propulsion_scenarios.py` for the new private-car and bus P0 scenarios. The latter makes proxy assumptions explicit and does not fabricate a CNG/LNG or non-BEV bus VKT split.
