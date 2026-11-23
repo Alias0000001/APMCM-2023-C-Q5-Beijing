@@ -20,3 +20,5 @@
 - Added central/low/high private BEV-PHEV stock scenarios and a reproducible VKT allocation script.
 - Added a provisional bus structure and BEV VKT estimate; the mixed-fleet non-BEV VKT residual remains unallocated.
 - Added source, raw-data manifest, parameter, audit, and round-report updates. Original PDF binaries are still external-only and explicitly marked as not archived.
+
+- Added an estimated 470.8 GWh/year of BEV/electric-drive bus electricity use from the 2023-10 monthly sample annualized to 12 months; meter boundary remains to be checked.
