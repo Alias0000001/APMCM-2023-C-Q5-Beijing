@@ -11,7 +11,7 @@
 2. 北京市公共数据开放平台：获取公交站点与线路拓扑；若缺少目标数据，可在线提交新增数据需求。
 3. 北京公交集团公开统计与发行披露：直接使用已公开的运营里程、客运量、半年度运营成本和历史车队数据。
 
-本轮新增三份机器可读数据表和一份可复跑脚本。没有将合成轨迹数据误作真实运营记录，也没有把财务成本误作能源消耗量。
+本轮新增四份机器可读数据表和一份可复跑脚本。没有将合成轨迹数据误作真实运营记录，也没有把财务成本误作能源消耗量。
 
 ## 二、官方替代申请路径
 
@@ -191,6 +191,7 @@ https://www.mdpi.com/2032-6653/12/4/169
 - `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`
 - `02_Cleaned_Data/P0_bus_operating_cost_crosscheck_2022_2023H1.csv`
 - `02_Cleaned_Data/P0_BJ_PHEV_daily_VKT_sensitivity.csv`
+- `02_Cleaned_Data/P0_bus_fleet_count_evidence.csv`
 - `06_S0_Calculation/p0_round03_alternative_sources.py`
 
 本轮结论：北京公交总活动量已有更强的赛题时点依据；本地PHEV日均行驶特征得到补充；分动力公交能耗和VKT仍需官方现成填报记录或企业运营记录。北京城市本身暂时没有必要因此更换。
