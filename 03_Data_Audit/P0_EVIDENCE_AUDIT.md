@@ -275,3 +275,17 @@ All these values are sensitivity outputs, not local registration observations. S
 - Use the new 12-scenario grid for robustness testing.
 - Request the 2023 private passenger-car stock cross-tab by BEV, PHEV/range-extender and fuel-cell from the Beijing traffic-management/statistics authority through the government information-disclosure route.
 - Until that cross-tab is obtained, do not report a single local BEV/PHEV fleet split as measured fact.
+
+
+### H5. Private vehicle registration-data request route
+
+The likely record-holding authority is the Beijing Public Security Traffic Management Bureau, which is responsible for motor-vehicle registration. Its parent agency, the Beijing Public Security Bureau, provides a separate government-information-disclosure route:
+- guide: https://gaj.beijing.gov.cn/zfxxgk/zfxxgkzn/index.html
+- online application: Beijing Public Security Bureau homepage → 警务公开 → 依申请公开网页申请;
+- application form page: https://gaj.beijing.gov.cn/wsgs/bsbg/qita/202112/t20211231_2580778.html
+- telephone 010-82097828; fax 010-82097838;
+- mail: 北京市东城区前门东大街9号, postcode 100740.
+
+The application should request aggregated private small-passenger-car stock by fuel/power type as of 2023-12-31, not owner-level data. Ask the PSB to route the request to its Traffic Management Bureau / Vehicle Management Office if the records are held there.
+
+A 2025 official clarification states that ordinary small-passenger-car indicators can be used to purchase plug-in hybrid (including range-extender) and fuel-cell passenger cars, and says this practice has existed since 2021. This is a post-cutoff clarification of the policy path, not a 2023 registration count. Source: https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202509/t20250909_4194533.html.
