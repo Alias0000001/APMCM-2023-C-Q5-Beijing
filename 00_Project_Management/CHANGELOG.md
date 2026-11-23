@@ -34,3 +34,12 @@
 - Added the pre-cutoff 15,137 new-energy bus count with unknown snapshot date as cross-check only.
 - Audited bus-stop open data and an AI-generated synthetic trajectory dataset; the latter is excluded from observed VKT/energy analysis.
 - Added reproducible round-3 script, four cleaned datasets, parameter/source/raw manifests, audit and Chinese round report.
+
+
+## 2026-11-23 — Private BEV/PHEV mix policy audit
+
+- Verified Beijing's 2020-revised small-passenger-car quota rules define the new-energy indicator as pure-electric; 2023 quota was 70,000 NEV indicators and 30,000 ordinary indicators.
+- Added 2023 replacement-subsidy scope and national statistical NEV-definition sources to distinguish policy and statistical categories.
+- Downgraded the national 76.04% BEV stock share from a supposed Beijing central proxy to a national comparator only.
+- Added a policy-aware 12-scenario private VKT grid crossing PHEV share (0/5/10/23.96%) and active days (250/300/365), with local Beijing PHEV daily-use evidence.
+- Updated parameter register, source register, raw manifest, audit, README and scripts.
