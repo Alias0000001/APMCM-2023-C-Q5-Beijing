@@ -33,4 +33,4 @@
 - Added a local Beijing PHEV sample (45 vehicles, 10,372 effective vehicle-days, 47.1 km/effective day) and active-day annualization sensitivities.
 - Added the pre-cutoff 15,137 new-energy bus count with unknown snapshot date as cross-check only.
 - Audited bus-stop open data and an AI-generated synthetic trajectory dataset; the latter is excluded from observed VKT/energy analysis.
-- Added reproducible round-3 script, three cleaned datasets, parameter/source/raw manifests, audit and Chinese round report.
+- Added reproducible round-3 script, four cleaned datasets, parameter/source/raw manifests, audit and Chinese round report.
