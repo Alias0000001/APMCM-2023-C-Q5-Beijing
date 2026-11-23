@@ -38,7 +38,18 @@ Never relabel a proxy or derived estimate as a Beijing observation. Preserve raw
 4. Bus structure: 16,832 new-energy buses; 217 hydrogen buses in a 2023-06-19 official snapshot; non-hydrogen new-energy bus proxy 16,615, assuming no H2 additions after the snapshot. Clean-energy plus new-energy share is 94.7%. The inferred clean-energy and other fleet counts are approximate; CNG/LNG and diesel/hybrid/trolley splits remain unknown.
 5. Electric-bus October 2023 monthly VKT 3,770.8 km and electricity 2,361.3 kWh; annualized per-vehicle VKT 45,249.6 km. Estimated BEV/electric-drive VKT is 751.8 million km/year, about 65.3% of the 1.151 billion km mixed public-bus total; the remaining 399.2 million km is left unallocated.
 
-The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md`, `03_Data_Audit/P0_EVIDENCE_AUDIT.md`, and the reproducible script `06_S0_Calculation/p0_vkt_propulsion_scenarios.py`.
+The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` and `08_Reports/P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md`, with the consolidated audit in `03_Data_Audit/P0_EVIDENCE_AUDIT.md`. Reproducible scripts: `06_S0_Calculation/p0_vkt_propulsion_scenarios.py` and `06_S0_Calculation/p0_round03_alternative_sources.py`.
+
+## Round 3 additions — 2026-11-23
+
+1. Replaced the inaccessible departmental reporting IP with the Beijing Municipal Transport Commission information-disclosure route and the Beijing Public Data Open Platform's data-request function. The old `43.254.24.235:9999` URL is a departmental reporting backend, not a public download portal.
+2. Added a 2020–2025 Beijing Bus Group activity series. The source category `公共电汽车` is not a BEV-only category. 2023: 23,385 operating vehicles, 1.151 billion vehicle-km, 2.08687 billion passenger trips.
+3. Added pre-cutoff 2023H1 bus activity from the September 2023 MTN prospectus: 552 million vehicle-km and 977 million passenger trips. Added fuel/electric-traction accounting cost cross-checks; these are not physical energy quantities.
+4. Added a 2021 Beijing PHEV subsample: 45 vehicles, 10,372 effective vehicle-days, 488,521 km, 47.1 km/effective vehicle-day. Annual active-day conversions are sensitivity scenarios only.
+5. Added a 15,137 new-energy bus count from a 2023-11-06 exchange disclosure, but its exact snapshot date is unspecified; cross-check only.
+6. Audited the open-data portal's bus-stop dataset (route/stop sequence, no listed coordinates) and its AI-generated 1,000-row synthetic bus-trajectory dataset (not real observations; do not use for VKT).
+
+New derived files: `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`, `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`, and `P0_BJ_PHEV_daily_VKT_sensitivity.csv`.
 
 ## Known Beijing-related evidence currently in the working record
 
@@ -66,6 +77,10 @@ The source register and audit notes are authoritative for use restrictions.
 
 - Beijing 2023 Statistical Communiqué: https://tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202403/t20240321_3595860.html
 - Beijing Public Transport Group historical statistics: https://www.bjbus.com/home/fun_statistics.php
+- Beijing Transport Commission information disclosure guide: https://jtw.beijing.gov.cn/xxgk/zfxxgk/
+- Beijing public data open platform: https://data.beijing.gov.cn/
+- Beijing local PHEV actual travel study: https://www.mdpi.com/2032-6653/12/4/169
+- Beijing Bus Group 2023 MTN prospectus: https://qxb-pdf-osscache.qixin.com/AnBaseinfo/466e28c65cb1a52063e0a528c963497c.pdf
 - 2023 provincial electricity CO2 factor announcement: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202512/t20251231_1139517.html
 - Zenodo record 13852045: https://zenodo.org/records/13852045
 - PHEV utility-factor study: https://www.mdpi.com/2032-6653/12/4/169
@@ -73,4 +88,4 @@ The source register and audit notes are authoritative for use restrictions.
 
 ## Reproducibility
 
-Run `python 06_S0_Calculation/scale_official_inputs.py` for official population-scaled inputs and `python 06_S0_Calculation/p0_vkt_propulsion_scenarios.py` for the new private-car and bus P0 scenarios. The latter makes proxy assumptions explicit and does not fabricate a CNG/LNG or non-BEV bus VKT split.
+Run `python 06_S0_Calculation/scale_official_inputs.py` for official population-scaled inputs, `python 06_S0_Calculation/p0_vkt_propulsion_scenarios.py` for the first private-car and bus P0 scenarios, and `python 06_S0_Calculation/p0_round03_alternative_sources.py` for the round-3 bus activity/cost and local PHEV sensitivity tables. The latter makes proxy assumptions explicit and does not fabricate a CNG/LNG or non-BEV bus VKT split.
