@@ -76,11 +76,11 @@ The Beijing Bus Group 2023 social-responsibility report states:
 - new-energy buses at year end: 16,832;
 - clean-energy plus new-energy buses: 94.7% of the bus fleet.
 
-A Beijing municipal economic-information bureau reply dated 2023-12-07 reports 217 hydrogen fuel-cell buses in the Beijing bus industry, operated by Beijing Bus Group (5 earlier demonstration vehicles plus 212 Winter Olympics buses).
+A Beijing municipal economic-information bureau reply dated 2023-06-19 reports 217 hydrogen fuel-cell buses in the Beijing bus industry, operated by Beijing Bus Group (5 earlier demonstration vehicles plus 212 Winter Olympics buses).
 
 A provisional structure estimate is therefore:
 - new-energy buses: 16,832 (reported);
-- hydrogen buses: 217 (official snapshot; date 2023-12-07);
+- hydrogen buses: 217 (official snapshot; date 2023-06-19);
 - non-hydrogen new-energy buses: 16,615 (derived; treated as BEV/electric-drive proxy, pending exact year-end cross-tab);
 - clean-energy aggregate: approximately 5,314, derived from round(23,385 × 94.7%) - 16,832;
 - other buses: approximately 1,239, residual.
