@@ -37,7 +37,7 @@ The BEV/PHEV split of Beijing's 528,000 private NEVs is not officially published
 - Official Beijing municipal reply in December 2023: 217 hydrogen fuel-cell buses.
 - Non-hydrogen new-energy buses are estimated as 16,832 - 217 = 16,615; treated as BEV/electric-drive proxy pending exact year-end fuel-type table.
 - Clean-energy aggregate is estimated from the reported 94.7% combined share; CNG/LNG split is unavailable.
-- Other bus count is a residual and is not assigned to diesel alone.
+- Other bus count is a conditional residual under the same denominator assumption and is not assigned to diesel alone.
 - 2023-10 electric-bus monthly VKT 3,770.8 km/vehicle; annualized ×12 = 45,249.6 km/vehicle-year.
 - Estimated BEV/electric-drive VKT = 16,615 × 45,249.6 = 751.8 million km/year.
 - Residual non-BEV VKT = 1.151 billion - 751.8 million = 399.2 million km/year. This residual is not split among hydrogen, CNG, LNG, diesel, hybrid, or trolleybus.
