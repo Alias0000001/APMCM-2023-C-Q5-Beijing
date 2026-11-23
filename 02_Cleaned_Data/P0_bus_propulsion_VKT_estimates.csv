@@ -15,3 +15,4 @@ metric,value,unit,evidence_status,calculation_or_note,scaled_value_1m_city
 "BEV_bus_average_monthly_electricity",2361.3,"kWh/vehicle/month","literature_big_data_month_2023_10","2023-10 electric-bus sample mean",
 "BEV_bus_annualized_electricity_per_vehicle",28335.600000000002,"kWh/vehicle/year","derived_annualization","2,361.3 × 12",
 "BEV_bus_electricity_intensity",62.6,"kWh/100km","literature_big_data_2023","2023 Beijing electric-bus actual electricity intensity",
+"BEV_bus_estimated_annual_total_electricity",470795994,"kWh/year","derived_estimate","16,615 estimated BEV/electric-drive buses × 2,361.3 kWh/month × 12",21538841.340000
