@@ -112,6 +112,8 @@ https://www.stats.gov.cn/hd/lyzx/zxgk/202405/t20240524_1954063.html
 官方指南：  
 https://gaj.beijing.gov.cn/zfxxgk/zfxxgkzn/index.html
 
+网上申请路径：打开 [北京市公安局官网](https://gaj.beijing.gov.cn/)，进入“警务公开” → “依申请公开网页申请”。官方申请表页面：[市公安局政府信息公开申请表](https://gaj.beijing.gov.cn/wsgs/bsbg/qita/202112/t20211231_2580778.html)。
+
 - 电话：010-82097828
 - 传真：010-82097838
 - 邮寄地址：北京市东城区前门东大街9号
@@ -132,6 +134,8 @@ https://gaj.beijing.gov.cn/zfxxgk/zfxxgkzn/index.html
 - 燃料电池；
 - 汽油/柴油；
 - 普通混合动力。
+
+2025年北京市机动车调控管理办公室又明确说明，普通小客车指标可以购买插电式混合动力（含增程式）小客车，并称该政策自2021年起已实施多年。这是赛后政策澄清，可用于解释2023年普通指标购置PHEV的制度路径，但不能替代2023年实际登记数量。来源：https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202509/t20250909_4194533.html。
 
 同时要求注明：
 - 车辆所有/使用性质是否为私人；
