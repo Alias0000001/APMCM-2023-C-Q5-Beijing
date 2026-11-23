@@ -81,7 +81,7 @@ A Beijing municipal economic-information bureau reply dated 2023-06-19 reports 2
 A provisional structure estimate is therefore:
 - new-energy buses: 16,832 (reported);
 - hydrogen buses: 217 (official snapshot; date 2023-06-19);
-- non-hydrogen new-energy buses: 16,615 (derived; treated as BEV/electric-drive proxy, pending exact year-end cross-tab);
+- non-hydrogen new-energy buses: 16,615 (derived; treated as BEV/electric-drive proxy, pending exact year-end cross-tab; assumes no H2 additions after 2023-06-19);
 - clean-energy aggregate: approximately 5,314, derived from round(23,385 × 94.7%) - 16,832;
 - other buses: approximately 1,239, residual.
 
