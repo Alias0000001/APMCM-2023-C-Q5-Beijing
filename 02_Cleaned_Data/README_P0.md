@@ -50,3 +50,5 @@ These are competition-ready scenario inputs, not a substitute for an unavailable
 ## Electric-bus electricity estimate
 
 The 2023-10 electric-bus sample reports 2,361.3 kWh/vehicle/month. Annualized to 28,335.6 kWh/vehicle-year and multiplied by the provisional 16,615 non-hydrogen new-energy bus count, the fleet electricity estimate is 470.8 GWh/year. For a 1-million-person city under linear population scaling, this is approximately 21.54 GWh/year. This is a one-month annualization and the meter boundary (vehicle-side versus purchased/grid-side) must be confirmed before emissions calculations.
+
+Sensitivity inputs are tabulated in `P0_VKT_intensity_sensitivity.csv`, including historical private-car means, 2022/2023 private-BEV annualizations, Shanghai PHEV quartiles, and the Beijing PHEV daily-VKT cross-check.
