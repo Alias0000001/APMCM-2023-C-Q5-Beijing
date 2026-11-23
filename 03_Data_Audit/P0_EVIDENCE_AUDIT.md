@@ -98,7 +98,7 @@ The 2023 Beijing Department Data Sharing System form BMZ04-073-108 explicitly de
 - pure electric;
 - hydrogen.
 
-It also contains annual energy-consumption fields for gasoline, diesel, CNG, LNG, hydrogen, and electricity. The publicly available PDF is a blank reporting template; the populated values are not shown. The reporting scope is all urban public-transport operating enterprises in Beijing. It contains fuel-type vehicle counts and fuel/electricity consumption, but only total public-bus mileage rather than VKT by fuel type. Obtaining the completed form can close the fleet-count and energy-use gaps, but a separate operator odometer/dispatch extract is still needed for propulsion-specific VKT.
+It also contains annual energy-consumption fields for gasoline, diesel, CNG, LNG, hydrogen, and electricity. The publicly available PDF is a blank reporting template; the populated values are not shown. The reporting scope is all urban public-transport operating enterprises in Beijing. The reporting directory specifies submission by 2024-03-15 through the Beijing Department Data Sharing Collection Platform: http://43.254.24.235:9999/user/login. Codes 3–9 are diesel, CNG, LNG, hybrid, trolleybus, pure electric, and hydrogen vehicle counts; codes 20–25 are gasoline, diesel, CNG, LNG, hydrogen, and electricity consumption. It contains only total public-bus mileage rather than VKT by fuel type. Obtaining the completed form can close the fleet-count and energy-use gaps, but a separate operator odometer/dispatch extract is still needed for propulsion-specific VKT.
 
 ### B4. BEV bus VKT estimate
 
