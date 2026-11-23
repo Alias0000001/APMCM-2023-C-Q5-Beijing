@@ -117,6 +117,8 @@ Compared with the official mixed-fleet total of 1.151 billion km, this is approx
 
 This is an estimate combining a reported fleet count and an October sample mean annualized to 12 months; it is not a measured annual BEV odometer total.
 
+Using the same October electric-bus sample, monthly electricity is 2,361.3 kWh/vehicle and the reported intensity is 62.6 kWh/100 km. Annualized fleet electricity is estimated as 16,615 × 2,361.3 × 12 = 470.8 GWh/year. This is also a one-month annualization and must be checked against vehicle-side/grid-side meter boundaries before emissions accounting.
+
 ## C. What remains unavailable
 
 1. Official Beijing 2023 private passenger BEV/PHEV registration cross-tab.
