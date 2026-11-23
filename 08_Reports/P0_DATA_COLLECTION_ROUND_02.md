@@ -77,3 +77,14 @@
 - 公交非BEV分动力VKT：仍未识别，保留残差，不做虚假拆分。
 
 本轮新增数据及计算脚本均已归档。原始报告PDF因当前归档接口无法取得二进制文件，来源URL、页码/表号及访问状态已登记；没有伪造本地原件。
+
+
+## 4. Sensitivity and cross-checks
+
+- Private BEV: 2022 monthly charging count × per-charge distance implies 12,384 km/year when annualized; 2023-10 implies 18,723.84 km/year. This is a useful year-on-year sensitivity, but both are annualizations of monthly charging indicators.
+- Private PHEV: Shanghai GPS sample Q1/median/mean/Q3 are 7,333/12,648/14,774.95/19,373 km over the annual observation window. Beijing's 2021 seven-city PHEV sample reports 47.1 km/day for Beijing, but its day denominator needs clarification; it is retained as a cross-check, not multiplied by 365.
+- Private all-car historical cross-check: Beijing central-city survey means were 12,168 km in 2019 and 10,382 km in 2020.
+- Bus: the 2023 MTN prospectus independently reports 2023H1 public-electric-bus VKT of 552 million km; this supports the operator scope of the annual historical series but does not provide propulsion-specific full-year 2023 VKT.
+- The official BMZ04-073-108 form contains fuel-specific vehicle counts and energy consumption, but not fuel-specific VKT. A completed form alone will not finish the bus VKT split; a dispatch/odometer extract by propulsion type is still required.
+
+See 02_Cleaned_Data/P0_VKT_intensity_sensitivity.csv for machine-readable values and use restrictions.
