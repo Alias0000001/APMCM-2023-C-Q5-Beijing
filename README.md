@@ -33,12 +33,12 @@ Never relabel a proxy or derived estimate as a Beijing observation. Preserve raw
 ## Known Beijing-related evidence currently in the working record
 
 1. Beijing 2023 Statistical Communiqué: year-end resident population 21.858 million; private automobiles 5.431 million; private passenger vehicles 5.073 million; new-energy private passenger vehicles 528,000. These are different statistical categories and must not be conflated.
-2. Beijing Public Transport Group historical statistics for 2023: public electric-bus operating vehicles 23,385; annual operating mileage 1.151 billion vehicle-km; passenger trips 2.08687 billion. Group-wide total operating mileage is reported separately as 1.47566 billion vehicle-km and must not be substituted for public electric-bus mileage.
-3. Beijing 2023 electricity CO2 factor: 0.5554 kg CO2/kWh, published 2025-12-31. This is a retrospective factor for the 2023 reference year, not a value published during 2023.
+2. Beijing Public Transport Group's 2023 historical-statistics table reports the category `公共电汽车`: 23,385 operating vehicles, 1.151 billion vehicle-km, and 2.08687 billion passenger trips. The source also reports group-wide totals of 33,133 vehicles, 1.47566 billion vehicle-km, and 2.14368 billion trips. **Do not interpret the category label as proof that all vehicles are battery-electric BEVs.** The operating-mix and propulsion split require separate evidence.
+3. Beijing's 2023 provincial electricity average CO2 factor is 0.5554 kg CO2/kWh, published on 2025-12-31. This is a retrospective factor for the 2023 reference year, not a value published during 2023. It is a CO2 factor, not automatically a full life-cycle CO2e factor.
 4. Zenodo record 13852045 includes processed daily-distance figure data for seven Chinese cities, including Beijing. It is not raw GPS/trip data. The FigSI5 unit is unspecified in the metadata and must not be annualized until resolved.
-5. Beijing PHEV utility-factor evidence distinguishes PHEV50 (0.66) and PHEV80 (0.79); a fleet-wide value requires the fleet's electric-range mix.
+5. Beijing PHEV utility-factor evidence distinguishes PHEV50 (actual UF 0.66) and PHEV80 (actual UF 0.79); a fleet-wide value requires the fleet's electric-range mix.
 6. Shanghai private-PHEV GPS mean annual-window distance 14,774.95 km is an external historical proxy, not a Beijing observation.
-7. The 10,300 km ICE and 6,210 km BEV annual-mileage values appearing in earlier working notes are not yet admitted as Beijing-specific parameters; their exact source scope and transferability must be recorded.
+7. The 10,300 km ICE and 6,210 km BEV annual-mileage values appearing in earlier working notes are not admitted as Beijing-specific parameters; their exact source scope and transferability must be recorded.
 
 The source register and audit notes are authoritative for use restrictions.
 
@@ -50,11 +50,12 @@ The source register and audit notes are authoritative for use restrictions.
 - Keep local road emissions separate from full life-cycle burdens to avoid double counting.
 - Distinguish CO2 from CO2e, and grid-average from life-cycle electricity factors.
 - Population scaling to one million is a baseline approximation and must be accompanied by a limitation statement and sensitivity test.
+- Do not treat public-transport operating fleet labels as BEV/PHEV classifications without a propulsion cross-tab.
 
 ## Key references
 
 - Beijing 2023 Statistical Communiqué: https://tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202403/t20240321_3595860.html
-- Beijing Public Transport Group statistics: https://www.bjbus.com/home/fun_statistics.php
+- Beijing Public Transport Group historical statistics: https://www.bjbus.com/home/fun_statistics.php
 - 2023 provincial electricity CO2 factor announcement: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202512/t20251231_1139517.html
 - Zenodo record 13852045: https://zenodo.org/records/13852045
 - PHEV utility-factor study: https://www.mdpi.com/2032-6653/12/4/169
