@@ -36,7 +36,7 @@ This is a one-month (October 2023) annualization based on a BEV charging sample,
 
 ### A4. Private PHEV VKT
 
-The local Beijing 2021 PHEV study reports city-level average daily VKT for a seven-city PHEV sample, including Beijing (47.1 km/day). The project retains the Shanghai 2018 GPS private-PHEV annual-window mean of 14,774.95 km as the central annual proxy, with Q1 7,333 km, median 12,648 km, and Q3 19,373 km for sensitivity.
+The local Beijing 2021 PHEV study reports city-level average daily VKT for a seven-city PHEV sample, including Beijing (47.1 km/day). The project retains the Shanghai 2018 GPS private-PHEV annual-window mean of 14,774.95 km from a prior table extraction as a provisional central proxy, with Q1 7,333 km, median 12,648 km, and Q3 19,373 km for sensitivity. The current live text extraction verifies the 2018 GPS sample (700 vehicles obtained; 668 retained) but does not expose the exact 14,774.95 mean; re-open Table 2/image before final model freeze.
 
 Decision: PHEV VKT remains a cross-city proxy, not a Beijing 2023 observation. The Beijing daily-distance study is a reasonableness cross-check only; do not multiply a daily mean by 365 without confirming its day denominator.
 
