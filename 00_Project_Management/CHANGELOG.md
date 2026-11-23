@@ -43,3 +43,7 @@
 - Downgraded the national 76.04% BEV stock share from a supposed Beijing central proxy to a national comparator only.
 - Added a policy-aware 12-scenario private VKT grid crossing PHEV share (0/5/10/23.96%) and active days (250/300/365), with local Beijing PHEV daily-use evidence.
 - Updated parameter register, source register, raw manifest, audit, README and scripts.
+
+- Added the Beijing Public Security Bureau information-disclosure guide, online application navigation, and official request-form page; identified the Traffic Management Bureau as the vehicle-registration record holder.
+- Added the 2025 retrospective clarification that ordinary indicators can purchase PHEV/range-extender vehicles and that the policy has existed since 2021.
+- Final validation: all eight key CSV/register files have zero malformed rows; policy-aware private VKT grid contains 12 scenarios.
