@@ -76,4 +76,16 @@ for days in (250,300,365):
         "km/vehicle-effective-day",45,10372,488521,56.2,days,round(47.1*days,1),
         "scenario_not_observation",f"Assumes {days} active driving days/year; sensitivity only"])
 write_csv("P0_BJ_PHEV_daily_VKT_sensitivity.csv", phev_rows)
-print("Round 3 substitute datasets written: bus activity, bus operating cost, Beijing PHEV daily VKT.")
+bus_count_rows = [
+ ["count_type","value","unit","observation_date","publication_date","scope","source_id","evidence_status","use_restriction"],
+ ["total_bus_fleet",23948,"vehicles","2020 year-end","2023-11-06","Beijing Public Transport Group","BJ-BUS-NEV-PRE-2023","reported_historical","Historical total fleet count; not a fuel split"],
+ ["total_bus_fleet",23079,"vehicles","2021 year-end","2023-11-06","Beijing Public Transport Group","BJ-BUS-NEV-PRE-2023","reported_historical","Historical total fleet count; not a fuel split"],
+ ["total_bus_fleet",23465,"vehicles","2022 year-end","2023-11-06","Beijing Public Transport Group","BJ-BUS-NEV-PRE-2023","reported_historical","Historical total fleet count; not a fuel split"],
+ ["new_energy_bus_fleet",15137,"vehicles","not stated; disclosed 2023-11-06","2023-11-06","Beijing Public Transport Group","BJ-BUS-NEV-PRE-2023","precutoff_reported_snapshot_date_unknown","Cross-check only; do not pair with a different-date total fleet count or infer exact share"],
+ ["hydrogen_fuel_cell_bus_fleet",217,"vehicles","2023-06-19","2023-06-19","Beijing bus industry; operated by Beijing Public Transport Group","BJ-H2-BUS-2023","official_midyear_snapshot","Do not assume this count stayed unchanged through year-end without evidence"],
+ ["total_public_bus_category_fleet",23385,"vehicles","2023 year-end","2024-03-22 or later current table","Beijing Municipality / Public Transport Group category 公共电汽车","BJ-BUS-HIST","retrospective_full_year","Category label is not BEV-only"],
+ ["new_energy_bus_fleet",16832,"vehicles","2023 year-end","2024-07-11","Beijing Bus Group reporting scope","BJ-BUS-SR-2023","retrospective_official_operator_report","Does not publish BEV/H2 split in cited summary"],
+ ["clean_energy_plus_new_energy_share",0.947,"share","2023 year-end","2024-07-11","Beijing Bus Group reporting scope","BJ-BUS-SR-2023","retrospective_official_operator_report","Denominator not explicitly confirmed to match 23385; do not infer precise fuel counts"],
+]
+write_csv("P0_bus_fleet_count_evidence.csv", bus_count_rows)
+print("Round 3 substitute datasets written: bus activity, bus operating cost, Beijing PHEV daily VKT, and dated bus fleet-count evidence.")
