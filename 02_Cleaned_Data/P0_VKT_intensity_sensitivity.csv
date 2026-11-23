@@ -1,0 +1,14 @@
+indicator,value,unit,reference_year,geography,source_id,evidence_status,model_use,notes
+private_all_vehicle_daily_intensity,28.4,vehicle-km/vehicle/day,2023,Beijing,BJ-EV-CHARGE-2024,reported_indicator,annual_activity_anchor,Annualized by 365 only under calendar-day-average interpretation
+private_all_vehicle_annualized_anchor,10366,km/vehicle/year,2023,Beijing,BJ-EV-CHARGE-2024,derived,baseline_total_VKT,28.4 × 365
+private_all_vehicle_annual_mean,12168,km/vehicle/year,2019,Beijing central urban area,BJ-VKT-REPORT-2021,official_sample_statistic,historical_high_cross_check,Sample mean from 2021 Beijing Transport Development Annual Report
+private_all_vehicle_annual_mean,10382,km/vehicle/year,2020,Beijing central urban area,BJ-VKT-REPORT-2021,official_sample_statistic,historical_cross_check,Sample mean affected by COVID-era travel
+private_BEV_monthly_annualized,12384,km/vehicle/year,2022,Beijing,BJ-EV-CHARGE-2024,derived_annualization,low_BEV_VKT_sensitivity,8 sessions/month ×129 km/session ×12
+private_BEV_monthly_annualized,18723.84,km/vehicle/year,2023-10,Beijing,BJ-EV-CHARGE-2024,derived_annualization,central_BEV_VKT_scenario,9.2 sessions/month ×169.6 km/session ×12; one-month annualization
+private_PHEV_annual_window_Q1,7333,km/vehicle/year-window,2018,Shanghai,SH-PHEV-GPS-2019,observed_sample_quantile,low_PHEV_VKT_sensitivity,668 retained private PHEV GPS sample
+private_PHEV_annual_window_median,12648,km/vehicle/year-window,2018,Shanghai,SH-PHEV-GPS-2019,observed_sample_quantile,central_robustness_check,668 retained private PHEV GPS sample
+private_PHEV_annual_window_mean,14774.95,km/vehicle/year-window,2018,Shanghai,SH-PHEV-GPS-2019,observed_sample_mean,central_PHEV_VKT_proxy,Not Beijing 2023
+private_PHEV_annual_window_Q3,19373,km/vehicle/year-window,2018,Shanghai,SH-PHEV-GPS-2019,observed_sample_quantile,high_PHEV_VKT_sensitivity,668 retained private PHEV GPS sample
+private_PHEV_daily_VKT,47.1,km/vehicle/day,2021,Beijing,BJ-PHEV-UF-2021,reported_sample_mean,cross_check_only,Seven-city PHEV sample; day denominator requires clarification; do not annualize by 365
+electric_bus_monthly_VKT,3770.8,vehicle-km/vehicle/month,2023-10,Beijing,BJ-EV-CHARGE-2024,reported_sample_mean,central_bus_VKT_scenario,Annualized by ×12 for first-pass estimate
+electric_bus_monthly_VKT,2890.65,vehicle-km/vehicle/month,2022,Beijing,BJ-EV-CHARGE-2024,derived_from_reported_growth,low_bus_VKT_sensitivity,2023 value divided by 1.305; based on reported 30.5% year-over-year increase
