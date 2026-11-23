@@ -59,7 +59,7 @@ def main():
             if p_share == 0:
                 basis = "boundary case if all 528000 reported private NEVs are BEV; not asserted as fact"
             elif p_share == 0.2396:
-                basis = "national 2023 NEV stock mix comparator only; not Beijing central"
+                basis = "national 2023 non-BEV mix comparator includes FCEV; all non-BEV treated as PHEV in this scenario; not Beijing central"
             else:
                 basis = f"low local-mix sensitivity {p_share:.0%}; not observed"
             rows.append([
