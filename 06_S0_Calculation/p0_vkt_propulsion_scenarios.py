@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Reproduce P0 private passenger VKT and public-bus propulsion estimates.
+"""Legacy comparator scenarios for private passenger VKT and public-bus estimates.
+
+Use p0_private_vkt_policy_mix_sensitivity.py for the policy-aware local PHEV sensitivity.
+The national 76.04% BEV share is a comparison scenario, not Beijing's central split.
 
 Run from repository root:
     python 06_S0_Calculation/p0_vkt_propulsion_scenarios.py
@@ -39,9 +42,9 @@ D_PHEV_MEAN = 14_774.95
 D_PHEV_Q1 = 7_333.0
 D_PHEV_MEDIAN = 12_648.0
 D_PHEV_Q3 = 19_373.0
-# National 2023 NEV stock: 76.04% BEV; remaining 23.96% is PHEV + fuel cell.
-# For Beijing private passenger NEVs, the non-BEV share is treated as PHEV
-# for scenario modelling; this is a proxy, not a local cross-tab.
+# Legacy national-mix comparator and broad sensitivity values only.
+# Beijing's quota-policy NEV category is pure-electric; do not use these as
+# a Beijing central split. See the policy-aware scenario grid.
 PHEV_SHARES = [0.10, 0.2396, 0.30]
 
 def write_csv(path: Path, rows: list[dict]) -> None:
