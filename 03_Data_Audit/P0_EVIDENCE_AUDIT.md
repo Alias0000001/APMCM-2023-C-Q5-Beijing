@@ -150,3 +150,83 @@ The current P0 baseline is a retrospective 2023 reconstruction. Several 2023-obs
 Pre-cutoff evidence in the current source set includes the 2021 Beijing Transport Development Annual Report (2019/2020 private-car mileage), the 2023-06-19 municipal hydrogen-bus reply (217 H2 buses at that date), the 2023-09 bus-group MTN prospectus (2023H1 public-bus VKT 552 million km), and the 2019 Shanghai private-PHEV GPS study. The 2023H1 bus VKT is not a full-year total.
 
 Do not use the retrospective center scenario as a strict contest-time evidence set. For strict 2023-12-31 reproducibility, build a separate scenario using only pre-cutoff publications and leave post-cutoff 2023 year-end observations in a retrospective appendix.
+
+
+## F. Round 3 — alternative access routes and substitute evidence (2026-11-23)
+
+### F1. Corrected access route
+
+The previously listed `http://43.254.24.235:9999/user/login` is a departmental reporting/collection backend for reporting organizations, not a public data-download page. It should no longer be presented as the user's public access route.
+
+The Beijing Municipal Transport Commission's official information-disclosure guide provides four application methods: online through the JTW portal, in-person, postal mail and fax. The published contact details are:
+- telephone: 010-12328;
+- fax: 010-55530733;
+- postal address: 北京市通州区达济街6号院3号楼 北京市交通委员会政府信息公开办公室;
+- postal code: 101160.
+The guide states that the commission generally replies within 20 working days, subject to statutory extension. A request should seek existing records or completed forms, not ask the agency to create a new statistical analysis.
+
+### F2. Pre-cutoff bus activity recovered from the 2023 MTN prospectus
+
+The September 2023 Beijing Public Transport Group MTN prospectus (pre-cutoff) reports:
+- 2020: 1.068 billion public-bus vehicle-km and 1.826 billion passenger trips;
+- 2021: 1.139 billion vehicle-km and 2.296 billion passenger trips;
+- 2022: 0.984 billion vehicle-km and 1.726 billion passenger trips;
+- 2023 H1: 0.552 billion vehicle-km and 0.977 billion passenger trips.
+
+The 2023 H1 passenger-trip/VKT ratio is 1.770 trips per vehicle-km. This is a service-intensity indicator only; it is not average passenger occupancy and cannot be substituted for PKM.
+
+The prospectus also reports 2022 full-year costs of 179,238.23万元 for fuel and 52,430.40万元 for 电车电力, and 2023 H1 costs of 82,072.54万元 and 29,434.64万元 respectively. Dividing by the corresponding total bus VKT gives 2023 H1 cost intensities of about 1.487 RMB/vehicle-km for fuel and 0.533 RMB/vehicle-km for 电车电力. These are financial accounting costs, not litres, Nm³, kg or kWh. The 电车电力 boundary is not confirmed as BEV-only. They are cost cross-checks, never LCA energy inputs or emission factors.
+
+### F3. Bus operating time series and derived indicators
+
+The Beijing Bus Group historical-statistics page now exposes a 2020–2025 annual series. The source category is `公共电汽车`; it must not be interpreted as a BEV-only class. For 2023:
+- year-end operating vehicles: 23,385;
+- annual VKT: 1.151 billion vehicle-km;
+- passenger trips: 2.08687 billion;
+- derived VKT per year-end vehicle: 49,219.6 km/year;
+- derived passenger trips per VKT: 1.8131.
+
+From 2022 to 2023, total VKT increased about 17.0%, passenger trips increased about 20.9%, while year-end operating vehicles decreased about 0.34%. The per-vehicle value uses year-end stock as denominator and is only an approximate intensity, not a fleet-weighted odometer mean.
+
+The 2023 H1 VKT in the MTN prospectus is 47.96% of the 1.151 billion full-year figure from the current operator page. If the two scopes are identical, the implied H2 residual is 599 million km; this is a reconciliation residual, not an independently reported H2 observation.
+
+### F4. Local Beijing PHEV travel sample
+
+The 2021 peer-reviewed PHEV utility-factor study reports a Beijing subsample of 45 PHEVs, 10,372 effective vehicle-days, 488,521 km total distance, mean daily VKT 47.1 km and standard deviation 56.2 km. Seasonal daily means are spring 44.9, summer 55.3, autumn 50.6 and winter 49.3 km.
+
+The study does not state a clear full-year observation window in the accessible article text. Therefore:
+- 47.1 km is treated as km per effective vehicle-day, not calendar-day VKT;
+- 250/300/365 active-day annualizations (11,775/14,130/17,191.5 km/year) are sensitivity scenarios only;
+- none of these values is a Beijing 2023 fleet mean;
+- raw telemetry is restricted by the National Monitoring and Management Centre for New Energy Vehicles.
+
+This local historical sample is a stronger geographic cross-check than the Shanghai annual-mileage proxy, but it does not replace a 2023 local VKT observation.
+
+### F5. Additional Beijing open-data routes
+
+1. The official open-data platform exposes a bus-stop dataset with 152,566 records and fields for route name, direction, stop sequence and stop name. It is useful for route topology and service-network reconstruction, but the listed fields do not include coordinates or propulsion, VKT or energy use. Download/API access requires a registered account and user key.
+2. The platform also exposes a dataset named `实时公交-公交历史运行轨迹`. Its metadata states 1,000 records, fields including device ID, direction, speed, address, location and timestamp, but no time range or geographic coverage. Crucially, it is listed under synthetic/open data and described as AI-generated by the Beijing Big Data Center. It is suitable only for pipeline/schema testing, not as observed 2023 trajectory or VKT evidence.
+3. The platform's help page says that when a dataset is not available, users can submit a data-type request through 互动交流 → 建议增加的数据类型; the platform may coordinate with the source department. This is a separate route from the JTW statutory information-disclosure application.
+
+### F6. Pre-cutoff new-energy bus count cross-check
+
+A Beijing Stock Exchange issuer-disclosure response published 2023-11-06 reports 15,137 existing new-energy buses for Beijing Bus Group. The exact observation date is not stated. It is retained as a pre-cutoff cross-check only; do not divide it by a fleet count from a different date or infer an exact share. The later 2023 year-end social-responsibility figure of 16,832 new-energy buses is retrospective and should remain a separate observation.
+
+### F7. Exact request scope recommended
+
+For a statutory information-disclosure request to the Beijing Municipal Transport Commission, ask for copies or extracts of existing 2023 records:
+- completed BMZ04-073-108 entries for pure electric, hydrogen, CNG, LNG, diesel, hybrid and trolleybus operating vehicle counts;
+- corresponding already-reported annual electricity, hydrogen, CNG, LNG and diesel consumption;
+- any existing propulsion-specific VKT, odometer, dispatch or vehicle-kilometre records for 2023;
+- the reporting scope, units, observation date and whether suburban operators are included.
+
+Phrase the request as access to existing records. If the commission does not hold the records, ask it to identify the actual holding department or the applicable public-data request channel.
+
+## G. Round 3 data-use decision
+
+- Admit the 2023 H1 public-bus VKT and passenger trips as pre-cutoff official issuer-disclosure evidence.
+- Admit 2020–2022 bus VKT and trips as historical pre-cutoff comparison values from the same prospectus.
+- Use the full-year 2023 bus activity series as retrospective data only.
+- Use bus operating-cost ratios only as financial reasonableness checks.
+- Use Beijing PHEV 47.1 km/effective-day as a historical local sensitivity anchor, never as 2023 annual VKT without an explicit active-day assumption.
+- Use open bus-stop data for route topology after obtaining the registered download; do not use synthetic trajectory records as observations.
