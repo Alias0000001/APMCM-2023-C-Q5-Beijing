@@ -52,3 +52,12 @@ These are competition-ready scenario inputs, not a substitute for an unavailable
 The 2023-10 electric-bus sample reports 2,361.3 kWh/vehicle/month. Annualized to 28,335.6 kWh/vehicle-year and multiplied by the provisional 16,615 non-hydrogen new-energy bus count, the fleet electricity estimate is 470.8 GWh/year. For a 1-million-person city under linear population scaling, this is approximately 21.54 GWh/year. This is a one-month annualization and the meter boundary (vehicle-side versus purchased/grid-side) must be confirmed before emissions calculations.
 
 Sensitivity inputs are tabulated in `P0_VKT_intensity_sensitivity.csv`, including historical private-car means, 2022/2023 private-BEV annualizations, Shanghai PHEV quartiles, and the Beijing PHEV daily-VKT cross-check.
+
+
+## Round 3 substitute datasets
+
+- `P0_bus_activity_timeseries_2020_2025.csv`: 2020–2025 operator series for vehicles, routes, VKT and passenger trips. `公共电汽车` is not BEV-only; 2024–2025 are trend-only.
+- `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`: 2022 and 2023H1 fuel/electric-traction accounting costs divided by total bus VKT. Costs are not physical energy quantities and must not be used as LCA inventory inputs.
+- `P0_BJ_PHEV_daily_VKT_sensitivity.csv`: Beijing PHEV historical sample (45 vehicles, 10,372 effective days, 47.1 km/effective day) plus 250/300/365 active-day scenarios. The study period is not specified; these are not 2023 annual observations.
+
+Reproduce the tables with `python 06_S0_Calculation/p0_round03_alternative_sources.py`.
