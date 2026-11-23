@@ -71,5 +71,6 @@ This script writes:
 - `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`
 - `02_Cleaned_Data/P0_bus_operating_cost_crosscheck_2022_2023H1.csv`
 - `02_Cleaned_Data/P0_BJ_PHEV_daily_VKT_sensitivity.csv`
+- `02_Cleaned_Data/P0_bus_fleet_count_evidence.csv`
 
 The bus cost ratios are financial cross-checks, not physical energy quantities. The Beijing PHEV annualized VKT values are active-day scenarios, not direct observations.
