@@ -2,7 +2,7 @@
 
 **Repository purpose:** a traceable data, audit, and calculation workspace for the Beijing-based analysis of Problem 5.
 
-**Status:** initial auditable data baseline with P0 VKT and bus-propulsion scenario estimates; exact Beijing private BEV/PHEV cross-tab and propulsion-specific non-BEV bus VKT remain unavailable.
+**Status:** auditable retrospective 2023 data baseline with P0 VKT and bus-propulsion scenario estimates; most 2023 observation sources were published after 2023-12-31. Exact Beijing private BEV/PHEV cross-tab and propulsion-specific non-BEV bus VKT remain unavailable.
 **Reference year:** 2023 wherever a source provides 2023 observations.
 **Population target in the problem:** 1,000,000 residents.
 **City anchor:** Beijing; each source's exact geographic boundary must still be checked before use.
