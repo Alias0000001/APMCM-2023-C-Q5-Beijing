@@ -68,7 +68,7 @@ The Beijing Public Transport Group historical table reports for 2023:
 - annual operating mileage: 1.151 billion vehicle-km;
 - passenger trips: 2.08687 billion.
 
-The 1.151 billion km is a mixed-fleet total. It must not be labelled BEV-only.
+The 1.151 billion km is a mixed-fleet total. It must not be labelled BEV-only. The 2023 MTN prospectus from the same operator independently reports 2023H1 public electric-bus VKT of 552 million km (and 2020–2022 full-year totals of 1.068, 1.139, and 0.984 billion km), supporting the operator-scope interpretation of the historical series; it does not provide the full-year 2023 fuel-specific split.
 
 ### B2. New-energy and clean-energy structure
 
@@ -98,7 +98,7 @@ The 2023 Beijing Department Data Sharing System form BMZ04-073-108 explicitly de
 - pure electric;
 - hydrogen.
 
-It also contains annual energy-consumption fields for gasoline, diesel, CNG, LNG, hydrogen, and electricity. The publicly available PDF is a blank reporting template; the populated values are not shown. The reporting scope is all urban public-transport operating enterprises in Beijing. This identifies the exact official dataset and field list needed to close the remaining gap.
+It also contains annual energy-consumption fields for gasoline, diesel, CNG, LNG, hydrogen, and electricity. The publicly available PDF is a blank reporting template; the populated values are not shown. The reporting scope is all urban public-transport operating enterprises in Beijing. It contains fuel-type vehicle counts and fuel/electricity consumption, but only total public-bus mileage rather than VKT by fuel type. Obtaining the completed form can close the fleet-count and energy-use gaps, but a separate operator odometer/dispatch extract is still needed for propulsion-specific VKT.
 
 ### B4. BEV bus VKT estimate
 
