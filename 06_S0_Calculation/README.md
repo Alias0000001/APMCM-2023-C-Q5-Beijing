@@ -74,3 +74,14 @@ This script writes:
 - `02_Cleaned_Data/P0_bus_fleet_count_evidence.csv`
 
 The bus cost ratios are financial cross-checks, not physical energy quantities. The Beijing PHEV annualized VKT values are active-day scenarios, not direct observations.
+
+
+## Policy-aware private BEV/PHEV mix sensitivity
+
+Run:
+
+```bash
+python 06_S0_Calculation/p0_private_vkt_policy_mix_sensitivity.py
+```
+
+This writes `02_Cleaned_Data/P0_private_VKT_policy_mix_sensitivity.csv`. It crosses PHEV stock shares of 0%, 5%, 10% and the 23.96% national comparator with 250/300/365 active driving days. Beijing's local BEV/PHEV stock cross-tab remains unavailable; no scenario is labelled as observed.
