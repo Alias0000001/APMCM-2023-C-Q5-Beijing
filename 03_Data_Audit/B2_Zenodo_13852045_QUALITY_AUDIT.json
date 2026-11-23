@@ -1,0 +1,115 @@
+{
+  "audit_date": "2026-11-22",
+  "source_record": "Zenodo record 13852045",
+  "source_url": "https://zenodo.org/records/13852045",
+  "article_doi": "https://doi.org/10.1038/s44333-024-00023-3",
+  "dataset_period": "2020-11-01 to 2021-10-31",
+  "dataset_scope": "Seven Chinese cities; processed figure-supporting data, not raw GPS/trip records",
+  "files": {
+    "Fig1e.Daily driving distance of different vehicle types.csv": {
+      "rows": 100,
+      "columns": [
+        "CDF Percentile",
+        "Private car",
+        "Official car",
+        "SPV",
+        "Rental car",
+        "Bus",
+        "Taxi"
+      ],
+      "missing_cells": 0,
+      "duplicate_rows": 0,
+      "percentile_min": 1,
+      "percentile_max": 100,
+      "percentile_unique": 100,
+      "cdf_monotone_by_vehicle": {
+        "Private car": true,
+        "Official car": true,
+        "SPV": true,
+        "Rental car": true,
+        "Bus": true,
+        "Taxi": true
+      },
+      "md5": "17a1dc8d71af0b3767987eab294c0bc6",
+      "expected_md5": "17a1dc8d71af0b3767987eab294c0bc6",
+      "md5_match": true,
+      "sha256": "29c99684e665d0f8139a02bcc10751575d550680b903e26013590f82fac2a05f",
+      "bytes": 4616
+    },
+    "FigSI5.Distributions of average daily driving distance by vehicle type.csv": {
+      "raw_rows_including_blank_separators": 84,
+      "all_blank_separator_rows": 42,
+      "valid_rows_after_dropping_all_blank_rows": 42,
+      "columns": [
+        "city_vehicle type",
+        "Lower Whisker",
+        "Q1 (25%)",
+        "Median (50%)",
+        "Q3 (75%)",
+        "Upper Whisker"
+      ],
+      "missing_cells_in_valid_rows": 0,
+      "duplicate_valid_rows": 0,
+      "city_count": 7,
+      "vehicle_category_counts": {
+        "Private car": 7,
+        "Taxi": 7,
+        "Official car": 7,
+        "Rental car": 7,
+        "Bus": 7,
+        "SPV": 7
+      },
+      "city_counts": {
+        "Beijing": 6,
+        "Shanghai": 6,
+        "Guangzhou": 6,
+        "Shenzhen": 6,
+        "Nanjing": 6,
+        "Chengdu": 6,
+        "Chongqing": 6
+      },
+      "all_values_finite": true,
+      "whisker_order_valid": true,
+      "md5": "b66cad7047d3f496adb70e4a99b52058",
+      "expected_md5": "b66cad7047d3f496adb70e4a99b52058",
+      "md5_match": true,
+      "sha256": "d2af33165824b1d50b318bd41f85fb17555d648abfd0cf09bb3e7ef6a06909cf",
+      "bytes": 3183,
+      "unit_note": "Zenodo/OpenAIRE data dictionary lists unit as '-' for FigSI5 distance summary; do not annualize or label km/day until the figure axis/method confirms unit."
+    }
+  },
+  "derived_statistics": {
+    "Fig1e_private_car_CDF_quantiles_km": {
+      "P25": 20,
+      "P50": 37,
+      "P75": 65,
+      "P90": 104,
+      "P95": 138.6,
+      "P99": 244.371000000002
+    },
+    "FigSI5_private_car_city_medians_source_unit_unspecified": {
+      "Beijing": 21.32162338,
+      "Shanghai": 24.44444444,
+      "Guangzhou": 30.73,
+      "Shenzhen": 27.85714286,
+      "Nanjing": 23.62845118,
+      "Chengdu": 23.1,
+      "Chongqing": 26.11666667
+    },
+    "FigSI5_unweighted_mean_of_seven_city_medians_unit_unspecified": 25.314046932857142,
+    "FigSI5_median_of_seven_city_medians_unit_unspecified": 24.44444444,
+    "FigSI5_city_median_min": 21.32162338,
+    "FigSI5_city_median_max": 30.73
+  },
+  "interpretation_flags": [
+    "Fig1e is a CDF of daily driving distance; its data dictionary explicitly specifies km.",
+    "FigSI5 describes distributions of average daily driving distance by city and vehicle type, but the data dictionary lists the unit as '-'; do not assume km/day until the figure axis/method confirms it.",
+    "Fig1e Private car P50 in uploaded CSV is 37 km, while the article narrative reports a median of about 30 km; discrepancy unresolved.",
+    "Fig1e P100 values for all six vehicle categories are close to 500; possible ceiling/truncation should be checked against processing methods before interpreting maxima.",
+    "FigSI5 contains 42 all-empty separator rows; 42 valid rows remain after dropping only fully empty rows on the analysis copy.",
+    "Neither CSV separates BEV from PHEV, includes a 2023 Beijing-specific sample, provides individual vehicle observations, or enables calculation of alpha_P.",
+    "Neither file directly provides annual mean VKT; do not multiply a median daily distance by 365 and call it annual mean mileage."
+  ],
+  "download_provenance": "Files were downloaded by the user through a browser and uploaded to the conversation. Python independently verified their MD5 values against Zenodo's published values and computed SHA-256. Python did not download these files from Zenodo.",
+  "repository_status": "The audit metadata is archived here. Original CSV bytes are not yet committed to this repository."
+}
