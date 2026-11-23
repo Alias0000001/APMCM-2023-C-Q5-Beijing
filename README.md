@@ -38,7 +38,7 @@ Never relabel a proxy or derived estimate as a Beijing observation. Preserve raw
 4. Bus structure: 16,832 new-energy buses; 217 hydrogen buses in a 2023-06-19 official snapshot; non-hydrogen new-energy bus proxy 16,615, assuming no H2 additions after the snapshot. Clean-energy plus new-energy share is 94.7%. The inferred clean-energy and other fleet counts are approximate; CNG/LNG and diesel/hybrid/trolley splits remain unknown.
 5. Electric-bus October 2023 monthly VKT 3,770.8 km and electricity 2,361.3 kWh; annualized per-vehicle VKT 45,249.6 km. Estimated BEV/electric-drive VKT is 751.8 million km/year, about 65.3% of the 1.151 billion km mixed public-bus total; the remaining 399.2 million km is left unallocated.
 
-The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` and `08_Reports/P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md`, with the consolidated audit in `03_Data_Audit/P0_EVIDENCE_AUDIT.md`. Reproducible scripts: `06_S0_Calculation/p0_vkt_propulsion_scenarios.py` (legacy national-mix comparator only), `06_S0_Calculation/p0_round03_alternative_sources.py`, and `06_S0_Calculation/p0_private_vkt_policy_mix_sensitivity.py` (policy-aware sensitivity grid).
+The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md`, `08_Reports/P0_DATA_COLLECTION_ROUND_03_ALTERNATIVE_ACCESS.md`, and `08_Reports/P0_DATA_COLLECTION_ROUND_04_PRIVATE_NEV_POLICY_AUDIT.md`, with the consolidated audit in `03_Data_Audit/P0_EVIDENCE_AUDIT.md`. Reproducible scripts: `06_S0_Calculation/p0_vkt_propulsion_scenarios.py` (legacy national-mix comparator only), `06_S0_Calculation/p0_round03_alternative_sources.py`, and `06_S0_Calculation/p0_private_vkt_policy_mix_sensitivity.py` (policy-aware sensitivity grid).
 
 ## Round 3 additions — 2026-11-23
 
@@ -50,6 +50,14 @@ The P0 estimates are documented in `08_Reports/P0_DATA_COLLECTION_ROUND_02.md` a
 6. Audited the open-data portal's bus-stop dataset (route/stop sequence, no listed coordinates) and its AI-generated 1,000-row synthetic bus-trajectory dataset (not real observations; do not use for VKT).
 
 New derived files: `02_Cleaned_Data/P0_bus_activity_timeseries_2020_2025.csv`, `P0_bus_operating_cost_crosscheck_2022_2023H1.csv`, `P0_BJ_PHEV_daily_VKT_sensitivity.csv`, `P0_bus_fleet_count_evidence.csv`, and `P0_private_VKT_policy_mix_sensitivity.csv`.
+
+## Round 4 correction — private BEV/PHEV stock split
+
+- Beijing's 2020-revised quota rules (in force in 2023) define quota-policy new-energy small passenger cars as pure-electric. The 2023 quota was 70,000 new-energy indicators and 30,000 ordinary indicators.
+- A 2025 official clarification states ordinary indicators can purchase PHEV/range-extender vehicles and that the policy has existed since 2021.
+- The 528,000 private new-energy passenger-car stock still lacks a public BEV/PHEV cross-tab. The national 76.04% BEV share is now a comparator only, not a Beijing central estimate.
+- New policy-aware grid: `02_Cleaned_Data/P0_private_VKT_policy_mix_sensitivity.csv`; script: `06_S0_Calculation/p0_private_vkt_policy_mix_sensitivity.py`.
+- Likely holder of vehicle-registration fuel-type data: Beijing Public Security Traffic Management Bureau. The Beijing Public Security Bureau provides an official information-disclosure route: https://gaj.beijing.gov.cn/zfxxgk/zfxxgkzn/index.html. Online navigation: 警务公开 → 依申请公开网页申请.
 
 ## Known Beijing-related evidence currently in the working record
 
@@ -78,6 +86,8 @@ The source register and audit notes are authoritative for use restrictions.
 - Beijing 2023 Statistical Communiqué: https://tjj.beijing.gov.cn/tjsj_31433/tjgb_31445/ndgb_31446/202403/t20240321_3595860.html
 - Beijing Public Transport Group historical statistics: https://www.bjbus.com/home/fun_statistics.php
 - Beijing Transport Commission information disclosure guide: https://jtw.beijing.gov.cn/xxgk/zfxxgk/
+- Beijing Public Security Bureau information disclosure guide: https://gaj.beijing.gov.cn/zfxxgk/zfxxgkzn/index.html
+- Beijing Public Security Bureau application form page: https://gaj.beijing.gov.cn/wsgs/bsbg/qita/202112/t20211231_2580778.html
 - Beijing public data open platform: https://data.beijing.gov.cn/
 - Beijing local PHEV actual travel study: https://www.mdpi.com/2032-6653/12/4/169
 - Beijing Bus Group 2023 MTN prospectus: https://qxb-pdf-osscache.qixin.com/AnBaseinfo/466e28c65cb1a52063e0a528c963497c.pdf
