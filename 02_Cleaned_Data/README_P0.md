@@ -45,3 +45,8 @@ The BEV/PHEV split of Beijing's 528,000 private NEVs is not officially published
 ## Use restrictions
 
 These are competition-ready scenario inputs, not a substitute for an unavailable official 2023 propulsion-by-fuel cross-tab. Keep the evidence class and caveats when copying values into the model.
+
+
+## Electric-bus electricity estimate
+
+The 2023-10 electric-bus sample reports 2,361.3 kWh/vehicle/month. Annualized to 28,335.6 kWh/vehicle-year and multiplied by the provisional 16,615 non-hydrogen new-energy bus count, the fleet electricity estimate is 470.8 GWh/year. For a 1-million-person city under linear population scaling, this is approximately 21.54 GWh/year. This is a one-month annualization and the meter boundary (vehicle-side versus purchased/grid-side) must be confirmed before emissions calculations.
