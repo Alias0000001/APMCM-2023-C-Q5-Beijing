@@ -136,3 +136,17 @@ Request from Beijing Municipal Transport Commission / Beijing Department Data Sh
 - corresponding energy consumption (litres, Nm³, kg, kWh) and meter boundary.
 
 For private passenger cars, request the Beijing Vehicle Management / traffic management authority's 2023 private passenger registration counts by energy type, plus the city traffic survey's annual VKT by vehicle type. If no public disclosure is possible, retain the current proxy scenarios rather than inventing local counts.
+
+
+## E. Publication-time eligibility
+
+The current P0 baseline is a retrospective 2023 reconstruction. Several 2023-observation inputs were published after the competition cutoff of 2023-12-31:
+- Beijing 2023 Statistical Communiqué: 2024-03-21.
+- 2024 China Major Cities Charging Infrastructure Monitoring Report: 2024 publication, with October 2023 observations.
+- Beijing Bus Group 2023 social-responsibility summary: 2024-07-11.
+- National 2023 NEV stock composition: first publicly reported in January 2024; the archived annual report is later.
+- Beijing 2023 department data-sharing form: published 2024-02-29 and blank in any case.
+
+Pre-cutoff evidence in the current source set includes the 2021 Beijing Transport Development Annual Report (2019/2020 private-car mileage), the 2023-06-19 municipal hydrogen-bus reply (217 H2 buses at that date), the 2023-09 bus-group MTN prospectus (2023H1 public-bus VKT 552 million km), and the 2019 Shanghai private-PHEV GPS study. The 2023H1 bus VKT is not a full-year total.
+
+Do not use the retrospective center scenario as a strict contest-time evidence set. For strict 2023-12-31 reproducibility, build a separate scenario using only pre-cutoff publications and leave post-cutoff 2023 year-end observations in a retrospective appendix.
