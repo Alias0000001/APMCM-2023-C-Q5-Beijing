@@ -1,0 +1,5 @@
+check,computed,expected,pass_fail,note
+diesel_CDB_material_shares_sum,0.9795,1,INCOMPLETE_COMPONENT_COVERAGE_EXPECTED,Published shares exclude some components (especially BEB battery); no mass conversion without 2023 bus mass
+natural_gas_NGB_material_shares_sum,0.9714,1,INCOMPLETE_COMPONENT_COVERAGE_EXPECTED,Published shares exclude some components (especially BEB battery); no mass conversion without 2023 bus mass
+diesel_hybrid_DHEB_material_shares_sum,0.9611000000000001,1,INCOMPLETE_COMPONENT_COVERAGE_EXPECTED,Published shares exclude some components (especially BEB battery); no mass conversion without 2023 bus mass
+battery_electric_BEB_material_shares_sum,0.7647000000000002,1,INCOMPLETE_COMPONENT_COVERAGE_EXPECTED,Published shares exclude some components (especially BEB battery); no mass conversion without 2023 bus mass
