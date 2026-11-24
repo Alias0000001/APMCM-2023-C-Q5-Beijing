@@ -1,3 +1,15 @@
+## R9.6 branch update — 2026-11-24
+
+Work is not required for the current evidence and figure workflow. See branch work/r96-figures-energy-audit-20261124 and the R9.6 data/figure audit at 08_Reports/R9_6_DATA_AND_FIGURE_AUDIT.md. It:
+- corrects private-BEV use intensity from 0.152 to 0.160 kWh/km after Table 4-1 row verification;
+- records the charging meter boundary as unresolved and keeps charging-loss sensitivity separate;
+- adds historical Beijing bus manufacturing GWP proxies from Lin et al. (2015);
+- keeps 2023 bus-only PKM as NA pending AFC OD/route passenger-turnover data;
+- adds a CSV-driven SVG generator, regression tests, and a GitHub Actions workflow;
+- does not write to main.
+
+See 08_Reports/R9_6_TEST_RUNBOOK.md for GitHub Actions and local Python alternatives.
+
 # APMCM 2023 C Problem 5 — Beijing
 
 ## Latest: R9.5 sensitivity and paper draft (2026-11-24)
