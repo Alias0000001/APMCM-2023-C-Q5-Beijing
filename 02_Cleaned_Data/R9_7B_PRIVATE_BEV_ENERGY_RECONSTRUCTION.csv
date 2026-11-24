@@ -1,0 +1,11 @@
+model,beijing_sample,nominal_kWh_per_100km,beijing_range_delta_pct,all_city_energy_delta_pct,reconstructed_real_world_kWh_per_100km,derivation_method,note
+Car 1,85,9.3,0,,9.3,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. 0%; nominal value from Table 1.
+Car 2,5771,13,-15,,15.294117647058823,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -15%; nominal value from Table 1.
+Car 3,7312,12.4,-18,,15.121951219512194,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -18%; nominal value from Table 1.
+Car 4,8031,14.1,-18,,17.19512195121951,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -18%; nominal value from Table 1.
+Car 5,6112,12.6,-10.5,,14.078212290502793,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -10.5%; nominal value from Table 1.
+Car 6,8053,13.9,-14.5,,16.25730994152047,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -14.5%; nominal value from Table 1.
+Car 7,1322,10.2,-7.2,,10.991379310344827,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -7.2%; nominal value from Table 1.
+Car 8,87,13.5,,20,16.2,ICCT_Fig4_all_city_energy_delta,No Beijing Figure 6 point; use ICCT Figure 4 all-city all-condition median energy increase of approx. 20%; only 87/44047 Beijing samples.
+Car 9,7204,13.6,-22.5,,17.548387096774192,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -22.5%; nominal value from Table 1.
+Car 10,70,8.8,-0.5,,8.844221105527638,Beijing_Fig6_range_gap,ICCT Figure 6; Beijing median range difference approx. -0.5%; nominal value from Table 1.
