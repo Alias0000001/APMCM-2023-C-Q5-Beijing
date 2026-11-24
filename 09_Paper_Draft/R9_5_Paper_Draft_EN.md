@@ -104,7 +104,7 @@ The city-level annual total is a population-scaled reference flow. For technolog
 
 ### 3.1 Activity and energy-flow construction
 
-Annual vehicle-kilometres are taken from the R7 S0 screening scenario. The corresponding R9.2 foreground energy flows are used to derive technology-specific energy intensity. For the private ICEV group, the current scenario implies approximately 0.075 L of gasoline per vehicle-kilometre. For the BEV group, the current activity and charging data imply approximately 0.152 kWh per vehicle-kilometre.
+Annual vehicle-kilometres are taken from the R7 S0 screening scenario. The corresponding R9.2 foreground energy flows are used to derive technology-specific energy intensity. For the private ICEV group, the current scenario implies approximately 0.075 L of gasoline per vehicle-kilometre. For the private-BEV group, the corrected 2023-10 private passenger-car row implies approximately 0.160 kWh per vehicle-kilometre; the earlier 0.152 value was the taxi row. The charging report does not specify the grid/charger/battery meter boundary, so charging losses are handled as a separate sensitivity.
 
 The gasoline conversion uses a density of 0.74 kg/L and a lower heating value of 43.07 MJ/kg. Electricity is converted using 3.6 MJ/kWh. These are conversion assumptions, not direct measurements of the 2023 Beijing fleet.
 
@@ -269,3 +269,20 @@ These findings support a conditional comparison of vehicle production and energy
 [8] Ministry of Ecology and Environment, National Bureau of Statistics, and National Energy Administration. 2023 Electricity Carbon Footprint Factors, published 2025-01-23. https://www.mee.gov.cn/ywdt/zbft/202501/t20250123_1101258.shtml
 
 [9] Ministry of Ecology and Environment and National Bureau of Statistics. Announcement on 2023 Electricity CO2 Emission Factors, published 2025-12-31. https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202512/t20251231_1139517.html
+
+
+## Supplementary Figures — R9.6 evidence and audit appendix
+
+![Figure 9. Lifecycle-stage coverage matrix. Historical bus manufacturing proxies are distinguished from 2023 direct observations; missing stages remain visible.](figures/Fig_R9_6_Coverage_Matrix.svg)
+
+![Figure 10. Partial physical inventory of CO2, VOC, NOx, PM2.5 and SO2. Each pollutant is shown on its own scale; the known-flow subtotals are not complete lifecycle totals.](figures/Fig_R9_6_Multi_Pollutant_Inventory.svg)
+
+![Figure 11. Joint sensitivity of two-stage GWP screening to electricity factor and vehicle lifetime.](figures/Fig_R9_6_Grid_Lifetime_Heatmap.svg)
+
+![Figure 12. Battery-only ReCiPe midpoint profile: percentage change under the hypothetical 100% hydrometallurgical recycling scenario.](figures/Fig_R9_6_Battery_ReCiPe_Profile.svg)
+
+![Figure 13. Historical Beijing bus manufacturing GWP proxies derived from Lin et al. (2015). These are not 2023 observed fleet factors.](figures/Fig_R9_6_Bus_Manufacturing_Evidence.svg)
+
+![Figure 14. R7 charging-energy measurement boundary. The source reports charging energy per distance but does not identify the physical meter point.](figures/Fig_R9_6_Energy_Meter_Boundary.svg)
+
+![Figure 15. Evidence status of 2023 bus passenger-kilometres. Published boardings and vehicle-kilometres are not sufficient to infer PKM.](figures/Fig_R9_6_PKM_Evidence_Status.svg)
