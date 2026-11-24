@@ -260,7 +260,9 @@ def main():
     all_classes=(*PASSENGER,*BUS_VKT_KEYS)
     for vehicle in all_classes:
         for phase in phases:
+            note="2023 matched stage data unavailable; all lifecycle totals remain incomplete"
             if vehicle in PASSENGER:
+                note="Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA"
                 if phase in ("vehicle_materials","parts_manufacturing",
                              "vehicle_distribution","maintenance",
                              "end_of_life_dismantling","energy_WTW"):
