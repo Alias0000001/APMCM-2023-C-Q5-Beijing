@@ -1,0 +1,8 @@
+issue_id,priority,status,owner_stage,acceptance
+A-001,P1,CLOSED,Audit-01,User-supplied problem PDF text and page checked; excerpt and SHA256 recorded
+A-002a,P1,CLOSED,Audit-01,Single authoritative current scope; historical parameters isolated
+A-002b,P1,PENDING,Audit-02/03/06,Justify urban target transfer and quantify boundary/mileage mismatch
+A-003,P1,PENDING,Audit-04,Decide material ecosystem indicators and scope; justify omissions and quantify feasible proxies
+A-004,P1,PENDING,Audit-02/06,Justify all-fossil bus mix and compare all-diesel alternative with paired S0
+A-005,P2,OUT_OF_SCOPE,User instruction,Q1-Q4 excluded; Q6 conclusion interface only
+A-006,P2,PENDING,Audit-03,Check seat-count/statistical vehicle-class mapping; document proxy and impact

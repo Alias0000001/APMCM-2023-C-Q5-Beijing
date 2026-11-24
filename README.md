@@ -1,6 +1,6 @@
 ## Final audit (before manuscript freeze)
 
-[Approved audit standard V1.0](00_Project_Management/FINAL_AUDIT_STANDARD_V1.md) | [Audit-01](08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md) | [Requirement matrix](08_Reports/Audit/AUDIT_01_REQUIREMENT_MATRIX.csv). A dimension provisional 9.6/12; final manuscript freeze blocked pending Audit-02–09 and closure of conditional items. Existing calculations unchanged.
+[Approved audit standard V1.0](00_Project_Management/FINAL_AUDIT_STANDARD_V1.md) | [Audit-01](08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md) | [Requirement matrix](08_Reports/Audit/AUDIT_01_REQUIREMENT_MATRIX.csv). A dimension provisional 10.2/12; final manuscript freeze blocked pending Audit-02–09 and closure of conditional items (see updated Audit-01 report). Existing calculations unchanged.
 
 ## R9.7G-1 — Contest manuscript reconstruction
 

@@ -78,3 +78,6 @@
 
 ## 2026-11-24 — Final Audit V1 / Audit-01
 - Recorded comprehensive ten-dimension audit standard, nine-task sequence and freeze gates; executed A01–A10 with 6 pass, 4 conditional (9.6/12 provisional). Added scope precedence clarification and Q6 interface. Original contest archive unavailable at audit; no model numbers changed. Next Audit-02.
+
+## 2026-11-24 — Audit-01 revision
+- User-supplied problem PDF text and p2 visually verified; evidence excerpt and fingerprint recorded. A-001 closed. Rewrote scope to isolate historical 2023 figures and current 2022 anchor. Q1–Q4 explicitly out of scope, Q6 interface only. Deferred issues assigned to Audit-02/03/04/06; 7 pass, 3 conditional, 10.2/12. No computation or figure changes.

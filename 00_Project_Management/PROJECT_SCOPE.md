@@ -1,76 +1,18 @@
-> **现行优先口径（Audit-01, 2026-11-24）**：正式竞赛时点模型以R9.7A–F为准，2022年北京全市常住人口21,843,000、目标1,000,000代表性城市，缩放1,000,000/21,843,000；2023年4月公交快照及其他赛题截止（2023-11-27 09:00北京时间）前公开资料为代理。金华为回顾性迁移诊断，不取代北京参考系统。下文原2023人口21,858,000及相关统计、缩放属于R7–R9.6回顾性历史口径，禁止用于现行主计算；实际PKM仍NA，条件性服务比较见R9.7D。当前S−1为汽油私车、柴油/天然气公交比例，全柴油替代待Audit-02/06审查。详细审核见08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md。原历史记录保留。
+# Project scope and frozen conventions (Audit-01 revision)
 
-# Project scope and frozen conventions
+## 1. Current competition-time model — authoritative
+Question 5 target: a hypothetical city of **1,000,000 urban residents**, as confirmed in the user-supplied problem PDF p2 (see 08_Reports/Audit/CONTEST_Q5_SOURCE_EVIDENCE.md). Beijing Municipality is the empirical anchor, not the target city; Jinhua is a separate retrospective transfer diagnostic. Q1–Q4 are outside this audit; Q6 receives a conclusion interface only.
+- Reference population: 21,843,000 Beijing municipality residents, 2022; private small/micro passenger vehicles: 4,932,000, 2022; bus operator VKT: 984,000,000 km/year, 2022. Population denominator is matched to municipality-wide car stock; operator service area and central-city travel parameters remain transfer proxies, not fully matched urban observations.
+- Target baseline scaling: 1,000,000 / 21,843,000 = 0.0457812571533. The target is urban; full-municipality per-capita rates are transferred to it under an explicit assumption, not relabelled as observed urban rates. Intensities are not population-scaled.
+- Admission cutoff: 2023-11-27 09:00 Beijing time; separate observed year and publication date. April 2023 bus composition snapshot informs proxy shares, not annual observed VKT. R9.7A–F is current main baseline.
+- Scope: private passenger cars and public buses; distinguish ICEV, BEV, PHEV, diesel, natural gas, mixed and unclassified buses. The “公共电汽车” category is not exclusively BEV. Seat-count correspondence to the problem introduction is pending Audit-03. Taxi/ride-hailing, freight, rail and other modes excluded explicitly; significance pending Audit-04.
+- Annual VKT fixed within modes; PKM is conditional service sensitivity, actual matched PKM remains NA. Passenger trips and PKM are distinct. Annual production is steady-state lifetime-VKT allocation. S−1 currently gasoline cars and diesel/natural-gas bus split, pending alternative review in Audit-02/06; S0 modeled mix; S1 bus-first; S2 car-first; S3 full BEV; S4 only operating electricity WTW factor halved.
+- Separate CO2 from CO2e, TTW from WTW, road pollutants from GWP, and stock from VKT shares. No double counting production batteries, replacements or recycling. Main included-stage GWP production+WTW, bus scrapping optional expansion only; NA not zero. No complete cradle-to-grave claim.
+- Parameter admission: unit, geography, observation/publication year, vehicle and system boundaries, denominator, evidence class, transformation and uncertainty must be recorded. Existing evidence register codes remain as originally defined; final audit standard grades are separate quality assessments (do not silently recode A–D).
+- No direct actual Jinhua VKT is claimed. Existing Jinhua diagnostic and independent transfer grid remain separate from competition baseline. No renewed failed searches without a new evidence path.
 
-## 1. Research objective
+## 2. Historical retrospective model (not current inputs)
+The prior scope used 2023 Beijing population 21,858,000 and scaling 1,000,000/21,858,000; 2023 private autos 5.431m, passenger vehicles 5.073m, NEV passenger vehicles within private automobiles 528,000. These and later-published factors are retained in R7–R9.6 only, not admitted to current baseline. Historical PROJECT_SCOPE remains accessible at Git parent 5d8e05fd8cd411bc2e6398e18ceeb81e081d5e53. Original data, scripts and results untouched.
 
-Evaluate the environmental implications of urban passenger-transport electrification for APMCM 2023 C, Problem 5, using Beijing as the real-city anchor and scaling the relevant activity indicators to the problem's 1,000,000-person representative city.
-
-This is a data-preparation and reproducibility workspace. The presence of a parameter in a register does not mean the S0 calculation is complete.
-
-## 2. Geographic and temporal scope
-
-- **Anchor geography:** Beijing Municipality, unless a source explicitly states central urban area or an operator-specific boundary.
-- **Reference year:** 2023 for the core city statistics.
-- **Target population:** 1,000,000.
-- **Retrospective publications:** a source published after 2023 may be used to describe a 2023 observation, but its publication date must remain visible. Example: the official 2023 provincial electricity CO2 factor was published on 2025-12-31.
-
-Municipality-wide statistics must not silently be relabelled as central-city statistics. Historical central-urban-area observations are retained only as separate evidence.
-
-## 3. Vehicle scope
-
-### Private passenger vehicles
-
-The 2023 Beijing Statistical Communiqué reports 5.431 million private automobiles, of which 5.073 million are passenger vehicles; it reports 528,000 new-energy passenger vehicles within the private-automobile category. These categories must remain distinct.
-
-The published count does not provide a private-passenger BEV/PHEV cross-tab. Do not derive one by applying the city-wide new-energy share to private vehicles.
-
-### Public buses
-
-The Beijing Public Transport Group historical table uses the source category label “公共电汽车”. Preserve this label. It is not sufficient evidence to classify every vehicle as a battery-electric bus (BEV), nor does it provide a propulsion-type split. Bus fleet counts, vehicle-kilometres, passenger trips, and operator-wide totals must be stored separately.
-
-### Exclusions pending evidence
-
-Taxi, ride-hailing, freight vehicles, rail, and other modes are not silently merged into the private-passenger or public-bus activity totals.
-
-## 4. Functional units and activity measures
-
-- City-system output: annual total for a representative city of 1,000,000 residents.
-- Vehicle activity: vehicle-kilometres (VKT).
-- Passenger service: passenger-kilometres (PKM), only when a compatible passenger-distance measure is available.
-
-Passenger trips are not PKM. Convert trips to PKM only with a supported average trip distance or direct passenger turnover statistic.
-
-## 5. Population scaling
-
-The baseline scaling factor is:
-
-s = 1,000,000 / 21,858,000.
-
-For an extensive count or annual activity total with a compatible geographic boundary:
-
-X_1m = s × X_Beijing.
-
-This is a transparent linear baseline, not a claim that transport demand is universally linear in population. It must be accompanied by sensitivity analysis and a limitation statement. Do not scale intensity factors (for example, kg CO2/kWh).
-
-## 6. Environmental accounting
-
-- Distinguish vehicle-stock electrification share from VKT electrification share.
-- Keep local road emissions separate from full life-cycle burdens; do not add the same operation emissions twice.
-- Distinguish CO2 from CO2e.
-- Distinguish grid-average operational electricity factors from full life-cycle electricity factors.
-- Match energy and emission factors to the same vehicle technology, geography, year, and system boundary.
-- Keep vehicle manufacturing, battery manufacturing, electricity/fuel supply, operation, maintenance, and end-of-life boundaries explicit.
-
-## 7. Evidence classes
-
-- **A — official observation/statistic:** official statistical release or administrative/official operator statistics.
-- **B — literature/institutional evidence:** peer-reviewed article or institutional study.
-- **C — derived estimate/proxy:** calculation from A/B evidence or transfer from another geography/year.
-- **D — assumption/scenario:** explicit modelling assumption, never described as observed fact.
-
-Each value must also carry a verification state: verified, carried forward pending re-open, provisional, quarantined, or missing.
-
-## 8. Admission rule
-
-A parameter is eligible for the baseline only when its definition, unit, geography, year, population, and boundary are compatible with the model equation. Otherwise it remains a cross-check, sensitivity input, proxy, or data gap.
+## 3. Remaining gates
+See 08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md and AUDIT_01_DEFERRED_ISSUES.csv. Audit-02–09 mandatory; current values frozen provisionally, not final approved.
