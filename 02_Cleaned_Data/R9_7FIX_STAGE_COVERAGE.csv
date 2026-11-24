@@ -11,7 +11,7 @@ private_ICEV,replacement_traction_battery,NOT_APPLICABLE,traction battery only,A
 private_ICEV,scrapping,SEPARATE_HISTORICAL_PHYSICAL,dismantling energy only,R9_4_PHYSICAL_STAGE_SUBTOTALS.csv,NO
 private_ICEV,recycling_credit,NA,not quantified,Audit-04 report,NO
 private_ICEV,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-private_ICEV,resuspended_dust,NA,not quantified,Audit-04 report,NO
+private_ICEV,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 private_ICEV,infrastructure,NA,not quantified,Audit-04 report,NO
 private_ICEV,noise,NA,not quantified,Audit-04 report,NO
 private_ICEV,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
@@ -27,7 +27,7 @@ private_BEV,replacement_traction_battery,SUPPLEMENTARY_PROXY,additional private 
 private_BEV,scrapping,SEPARATE_HISTORICAL_PHYSICAL,dismantling energy only,R9_4_PHYSICAL_STAGE_SUBTOTALS.csv,NO
 private_BEV,recycling_credit,SEPARATE_LCIA,Sun hypothetical recycling; battery only,R9_7AUDIT04_BATTERY_RECIPE.csv,NO
 private_BEV,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-private_BEV,resuspended_dust,NA,not quantified,Audit-04 report,NO
+private_BEV,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 private_BEV,infrastructure,NA,not quantified,Audit-04 report,NO
 private_BEV,noise,NA,not quantified,Audit-04 report,NO
 private_BEV,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
@@ -43,7 +43,7 @@ private_PHEV,replacement_traction_battery,SUPPLEMENTARY_PROXY,additional hypothe
 private_PHEV,scrapping,SEPARATE_HISTORICAL_PHYSICAL,dismantling energy only,R9_4_PHYSICAL_STAGE_SUBTOTALS.csv,NO
 private_PHEV,recycling_credit,SEPARATE_LCIA,Sun hypothetical recycling; battery only,R9_7AUDIT04_BATTERY_RECIPE.csv,NO
 private_PHEV,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-private_PHEV,resuspended_dust,NA,not quantified,Audit-04 report,NO
+private_PHEV,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 private_PHEV,infrastructure,NA,not quantified,Audit-04 report,NO
 private_PHEV,noise,NA,not quantified,Audit-04 report,NO
 private_PHEV,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
@@ -59,9 +59,9 @@ bus_diesel,replacement_traction_battery,NOT_APPLICABLE,traction battery only,Aud
 bus_diesel,scrapping,SUPPLEMENTARY_PROXY,Lin scrapping separate,R9_7G3_BUS_SCRAPPING_SENSITIVITY.csv,NO
 bus_diesel,recycling_credit,NA,not quantified,Audit-04 report,NO
 bus_diesel,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-bus_diesel,resuspended_dust,NA,not quantified,Audit-04 report,NO
+bus_diesel,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 bus_diesel,infrastructure,NA,not quantified,Audit-04 report,NO
-bus_diesel,noise,NA,not quantified,Audit-04 report,NO
+bus_diesel,noise,SUPPLEMENTARY_PROXY,low-speed generic conventional/BEV acoustic-energy scenario; not citywide exposure,R9_7FIX_NOISE_DIAGNOSTIC.csv,NO
 bus_diesel,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
 bus_natural_gas,raw_materials,INCLUDED_AGGREGATE_PROXY,not independently resolved; source-specific production boundary,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,NO
 bus_natural_gas,parts,INCLUDED_AGGREGATE_PROXY,not independently resolved; source-specific production boundary,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,NO
@@ -75,9 +75,9 @@ bus_natural_gas,replacement_traction_battery,NOT_APPLICABLE,traction battery onl
 bus_natural_gas,scrapping,SUPPLEMENTARY_PROXY,Lin scrapping separate,R9_7G3_BUS_SCRAPPING_SENSITIVITY.csv,NO
 bus_natural_gas,recycling_credit,NA,not quantified,Audit-04 report,NO
 bus_natural_gas,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-bus_natural_gas,resuspended_dust,NA,not quantified,Audit-04 report,NO
+bus_natural_gas,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 bus_natural_gas,infrastructure,NA,not quantified,Audit-04 report,NO
-bus_natural_gas,noise,NA,not quantified,Audit-04 report,NO
+bus_natural_gas,noise,SUPPLEMENTARY_PROXY,low-speed generic conventional/BEV acoustic-energy scenario; not citywide exposure,R9_7FIX_NOISE_DIAGNOSTIC.csv,NO
 bus_natural_gas,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
 bus_mixed_residual,raw_materials,INCLUDED_AGGREGATE_PROXY,not independently resolved; source-specific production boundary,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,NO
 bus_mixed_residual,parts,INCLUDED_AGGREGATE_PROXY,not independently resolved; source-specific production boundary,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,NO
@@ -91,9 +91,9 @@ bus_mixed_residual,replacement_traction_battery,NA,not quantified,Audit-04 repor
 bus_mixed_residual,scrapping,SUPPLEMENTARY_PROXY,Lin scrapping separate,R9_7G3_BUS_SCRAPPING_SENSITIVITY.csv,NO
 bus_mixed_residual,recycling_credit,NA,not quantified,Audit-04 report,NO
 bus_mixed_residual,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-bus_mixed_residual,resuspended_dust,NA,not quantified,Audit-04 report,NO
+bus_mixed_residual,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 bus_mixed_residual,infrastructure,NA,not quantified,Audit-04 report,NO
-bus_mixed_residual,noise,NA,not quantified,Audit-04 report,NO
+bus_mixed_residual,noise,SUPPLEMENTARY_PROXY,low-speed generic conventional/BEV acoustic-energy scenario; not citywide exposure,R9_7FIX_NOISE_DIAGNOSTIC.csv,NO
 bus_mixed_residual,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
 bus_BEV,raw_materials,INCLUDED_AGGREGATE_PROXY,not independently resolved; source-specific production boundary,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,NO
 bus_BEV,parts,INCLUDED_AGGREGATE_PROXY,not independently resolved; source-specific production boundary,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,NO
@@ -103,13 +103,13 @@ bus_BEV,distribution,INCLUDED_AGGREGATE_PROXY,not independently resolved; source
 bus_BEV,fuel_electricity_supply,INCLUDED_WTW_PROXY,joint WTW GWP; not separate physical upstream inventory,R9_7B_SIX_SCENARIO_ENERGY_WTW.csv,NO
 bus_BEV,operation,INCLUDED_WTW_PROXY,joint WTW GWP; not separate physical upstream inventory,R9_7B_SIX_SCENARIO_ENERGY_WTW.csv,NO
 bus_BEV,maintenance,NA,not quantified,Audit-04 report,NO
-bus_BEV,replacement_traction_battery,NA,not quantified,Audit-04 report,NO
+bus_BEV,replacement_traction_battery,SUPPLEMENTARY_PROXY,Shenzhen LFP additional pack equivalents; distinct from reference and initial pack,R9_7FIX_BUS_GAP_SCENARIOS.csv,NO
 bus_BEV,scrapping,SUPPLEMENTARY_PROXY,Lin scrapping separate,R9_7G3_BUS_SCRAPPING_SENSITIVITY.csv,NO
 bus_BEV,recycling_credit,NA,not quantified,Audit-04 report,NO
 bus_BEV,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-bus_BEV,resuspended_dust,NA,not quantified,Audit-04 report,NO
-bus_BEV,infrastructure,NA,not quantified,Audit-04 report,NO
-bus_BEV,noise,NA,not quantified,Audit-04 report,NO
+bus_BEV,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
+bus_BEV,infrastructure,SUPPLEMENTARY_PROXY,conditional 60kW plug-in charger hardware only; no entire infrastructure inventory,R9_7FIX_CHARGER_DIAGNOSTIC.csv,NO
+bus_BEV,noise,SUPPLEMENTARY_PROXY,low-speed generic conventional/BEV acoustic-energy scenario; not citywide exposure,R9_7FIX_NOISE_DIAGNOSTIC.csv,NO
 bus_BEV,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
 bus_unclassified,raw_materials,ALLOCATED_PROXY,conventional fuel split; no independent factor,R9_7C_BUS_MANUFACTURING_SCENARIOS.csv,NO
 bus_unclassified,parts,ALLOCATED_PROXY,conventional fuel split; no independent factor,R9_7C_BUS_MANUFACTURING_SCENARIOS.csv,NO
@@ -123,7 +123,7 @@ bus_unclassified,replacement_traction_battery,NA,not quantified,Audit-04 report,
 bus_unclassified,scrapping,SUPPLEMENTARY_PROXY,Lin scrapping separate,R9_7G3_BUS_SCRAPPING_SENSITIVITY.csv,NO
 bus_unclassified,recycling_credit,NA,not quantified,Audit-04 report,NO
 bus_unclassified,nonexhaust_wear,SUPPLEMENTARY_PROXY,tyre brake and surface only,R9_7AUDIT04_WEAR_SCENARIOS.csv,NO
-bus_unclassified,resuspended_dust,NA,not quantified,Audit-04 report,NO
+bus_unclassified,resuspended_dust,SUPPLEMENTARY_PROXY,uniform Yanqing mixed-road proxy; no matched local measurement,R9_7FIX_DUST_DIAGNOSTIC.csv,NO
 bus_unclassified,infrastructure,NA,not quantified,Audit-04 report,NO
 bus_unclassified,noise,NA,not quantified,Audit-04 report,NO
 bus_unclassified,passenger_service,CONDITIONAL_SERVICE,mode proxy not observed PKM,R9_7D_SERVICE_SENSITIVITY.csv,NO
