@@ -8,10 +8,10 @@ class RemediationTests(unittest.TestCase):
     def test_sensitivity(self):
         r=rows(D/"R9_7FIX_SENSITIVITY_ENVELOPE.csv")
         self.assertEqual(len(r),12)
-        z=next(x for x in r if x["design"]=="remediation_25_packages" and x["scenario"]=="S4")
-        self.assertEqual(int(float(z["sets"])),328050)
-        self.assertEqual(int(float(z["negative_sets"])),24)
-        self.assertAlmostEqual(float(z["min_reduction_pct"]),-.095129454,places=6)
+        z=next(x for x in r if x["design"]=="remediation_28_packages" and x["scenario"]=="S4")
+        self.assertEqual(int(float(z["sets"])),367416)
+        self.assertEqual(int(float(z["negative_sets"])),16643)
+        self.assertAlmostEqual(float(z["min_reduction_pct"]),-2.614040551,places=6)
     def test_road(self):
         r=rows(D/"R9_7FIX_NOX_PRIORITY.csv")[0]
         self.assertEqual(int(float(r["sets"])),590490)
