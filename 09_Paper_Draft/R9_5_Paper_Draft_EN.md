@@ -54,6 +54,10 @@ The study distinguishes three reporting domains:
 
 The city-level annual total is a population-scaled reference flow. For technology comparisons, vehicle-kilometre is used as the current functional unit because consistent passenger-kilometre data are unavailable. The use of vehicle-kilometre does not imply equal passenger service across cars and buses; passenger-kilometre comparisons are deferred until compatible occupancy or passenger-flow data are available.
 
+![LCA system boundary](figures/Fig_R9_4_LCA_System_Boundary.svg)
+
+*Figure 2. Life-cycle system boundary and current evidence coverage. The diagram distinguishes partial inventory, separate battery LCIA, and missing stages.*
+
 ### 2.2 Assumptions and explanations
 
 **Assumption 1.** The R7 activity scenario represents the annual activity of the 2023 reference city scaled to one million residents.
@@ -109,6 +113,10 @@ The gasoline conversion uses a density of 0.74 kg/L and a lower heating value of
 The physical inventory applies the available Yang et al. (2021) stage-specific factors to the scaled annual activity. The private-vehicle ledger covers the available material-production, parts-manufacturing, distribution, maintenance, end-of-life dismantling-energy, and energy-supply/use WTW flows. The bus module currently covers only diesel and the explicitly assumed electric allocation in the use-energy stage.
 
 The resulting physical CO2 subtotal is therefore incomplete. Battery-manufacturing pollutant flows, some assembly flows, unallocated bus propulsion, and other missing stages remain unresolved. The physical CO2 mass is not converted into CO2e by adding it to the GWP screening table.
+
+![Physical CO2 inventory by stage](figures/Fig_R9_4_Physical_Inventory_Stage.svg)
+
+*Figure 3. Partial physical CO2 intensity by life-cycle stage for private passenger vehicles. Values are physical CO2 mass per vehicle-kilometre, not CO2e; missing flows are not shown as zero.*
 
 ### 3.3 Two-stage GWP100 screening
 
@@ -176,7 +184,7 @@ Under the two Peng2017 WTW factors, BEV-NMC intensity changes from 166.95 to 186
 
 ![Grid-factor sensitivity](figures/Fig_R9_5_Grid_Sensitivity.svg)
 
-*Figure 2. BEV two-stage intensity under alternative electricity factors. The MEE 2023 national electricity PCF is shown only as a retrospective method-transfer marker.*
+*Figure 4. BEV two-stage intensity under alternative electricity factors. The MEE 2023 national electricity PCF is shown only as a retrospective method-transfer marker.*
 
 ### 4.3 Sensitivity to vehicle lifetime mileage
 
@@ -184,7 +192,7 @@ Increasing lifetime mileage lowers the manufacturing burden allocated to each ve
 
 ![Lifetime sensitivity](figures/Fig_R9_5_Lifetime_Sensitivity.svg)
 
-*Figure 3. Effect of assumed lifetime mileage on two-stage GWP intensity.*
+*Figure 5. Effect of assumed lifetime mileage on two-stage GWP intensity.*
 
 ### 4.4 Break-even electricity factor
 
@@ -192,7 +200,7 @@ The break-even electricity factor is obtained by equating the BEV and ICEV two-s
 
 ![Break-even analysis](figures/Fig_R9_5_BreakEven.svg)
 
-*Figure 4. Break-even electricity WTW factor as a function of lifetime mileage. The horizontal lines show the Peng2017 baseline and the retrospective MEE national PCF marker.*
+*Figure 6. Break-even electricity WTW factor as a function of lifetime mileage. The horizontal lines show the Peng2017 baseline and the retrospective MEE national PCF marker.*
 
 The threshold is conditional on the assumed gasoline consumption, BEV electricity consumption, manufacturing factors, and common lifetime mileage. It should not be interpreted as a universal threshold for all vehicle models or electricity systems.
 
@@ -202,7 +210,7 @@ Across the literature factors considered, the BEV battery-only manufacturing int
 
 ![Battery factor sensitivity](figures/Fig_R9_5_Battery_Factor_Sensitivity.svg)
 
-*Figure 5. Battery-only GWP intensity under alternative literature production factors. The hypothetical 100% recycling-credit case is reported separately.*
+*Figure 7. Battery-only GWP intensity under alternative literature production factors. The hypothetical 100% recycling-credit case is reported separately.*
 
 These battery values are not added to the vehicle-production totals above. They quantify the battery module independently and expose the sensitivity associated with chemistry and production assumptions.
 
