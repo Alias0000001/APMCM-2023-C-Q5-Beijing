@@ -1,0 +1,5 @@
+bus_type,WTT_gCO2e_per_MJ,TTW_gCO2e_per_MJ,ac_off_MJ_per_vehicle_km,ac_on_MJ_per_vehicle_km,energy_carrier,ac_off_consumption,ac_on_consumption,consumption_unit,bus_lifetime_km_assumed,source_id,source_location,evidence_status
+diesel_CDB,14.2,76.8,13.28,16.77,diesel,38,48,L/100km,400000,LIN2015_BEIJING_BUS,Table3/Table4,2015_legacy_technological_scenario_ONLY_not_2023_Beijing_observation
+natural_gas_NGB,18.3,64,11.72,14.06,natural_gas,40,48,m3/100km,400000,LIN2015_BEIJING_BUS,Table3/Table4,2015_legacy_technological_scenario_ONLY_not_2023_Beijing_observation
+diesel_hybrid_DHEB,14.2,76.8,9.78,13.98,diesel,28,40,L/100km,400000,LIN2015_BEIJING_BUS,Table3/Table4,2015_legacy_technological_scenario_ONLY_not_2023_Beijing_observation
+battery_electric_BEB,244.4,0,3.6,5.04,electricity,100,140,kWh/100km,400000,LIN2015_BEIJING_BUS,Table3/Table4,2015_legacy_technological_scenario_ONLY_not_2023_Beijing_observation
