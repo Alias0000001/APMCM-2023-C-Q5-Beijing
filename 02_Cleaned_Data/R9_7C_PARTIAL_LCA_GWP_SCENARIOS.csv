@@ -1,0 +1,7 @@
+scenario,private_vehicle_production_GWP_t_y,bus_manufacturing_GWP_t_y,total_manufacturing_GWP_t_y,WTW_operating_GWP_t_y,partial_LCA_GWP_t_y,impact_unit,scope_note
+S-1,126200.7476413405,5057.347900056776,131258.09554139728,453330.607183,584588.7027243973,CO2e,vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure
+S0,129854.66735949807,5245.1472324615615,135099.81459195964,432688.84121,567788.6558019596,CO2e,vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure
+S1,129854.66735949807,5377.470127729674,135232.13748722774,423292.549407,558524.6868942278,CO2e,vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure
+S2,189648.69487814864,5245.1472324615615,194893.84211061022,301348.035336,496241.8774466102,CO2e,vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure
+S3,189648.69487814864,5377.470127729674,195026.1650058783,291951.743533,486977.9085388783,CO2e,vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure
+S4,189648.69487814864,5377.470127729674,195026.1650058783,145975.871767,341002.0367728783,CO2e,vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure
