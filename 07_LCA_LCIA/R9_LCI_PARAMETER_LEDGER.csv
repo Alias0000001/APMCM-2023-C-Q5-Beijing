@@ -32,4 +32,6 @@ R9_BATTERY_LAI_TERNARY_RANGE,114.3-137.0,kgCO2e/kWh,ternary_battery,battery_prod
 R9_BEV_CAPACITY_PROXY,40,kWh/vehicle,private_BEV,battery_reference_vehicle,2018,2021,China,B,vehicle_model_proxy,Yang2021,"Reference Nissan Leaf battery capacity adjusted to Chinese average"
 R9_PHEV_CAPACITY_PROXY,12.8,kWh/vehicle,private_PHEV,battery_reference_vehicle,2018,2021,China,B,vehicle_model_proxy,Yang2021,"Reference PHEV battery capacity adjusted to Chinese average"
 R9_PRIVATE_LIFETIME_VKT,150000,km/vehicle,private_ICEV_BEV_PHEV,vehicle_lifetime_allocation,2018,2021,China,B,source_assumption,Yang2021,"10-year and 150000km lifetime; no battery replacement in base"
+R9_BATTERY_CHINA_WEIGHTED_AVG,68,kgCO2e/kWh,China_average_NMC_battery,battery_production,2021,2021,China,B,literature_proxy,ICCT2021_Battery,"ICCT Table 2.4 weighted average for China new-car batteries"
+R9_BATTERY_NMC811,68,kgCO2e/kWh,NMC811,battery_production,2021,2021,China,B,literature_proxy,ICCT2021_Battery,"ICCT Table 2.3 China domestic NMC811 factor"
 
