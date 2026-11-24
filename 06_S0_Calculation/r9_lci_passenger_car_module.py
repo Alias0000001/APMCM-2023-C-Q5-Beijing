@@ -98,7 +98,7 @@ MAINTENANCE = {
 }
 # ICCT 2021 China battery manufacturing GWP, kgCO2e/kWh.
 BATTERY_GWP = {
- "NMC622":69.0,"NMC111":77.0,"LFP_low":51.0,"LFP_high":56.0,
+ "China_weighted_NMC_avg":68.0,"NMC811":68.0,"NMC622":69.0,"NMC111":77.0,"LFP_low":51.0,"LFP_high":56.0,
  "Hao2017_NMC":2912/28,"Hao2017_LFP":3061/28,
  "Lai2022_ternary_low":114.3,"Lai2022_ternary_high":137.0,"Lai2022_LFP":82.5,
 }
