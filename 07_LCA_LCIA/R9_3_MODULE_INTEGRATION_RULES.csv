@@ -1,0 +1,13 @@
+module_a,module_b,admission_rule,reason,status
+Yang2021_vehicle_nonbattery_materials,Sun2020_NCM622_battery_BOM,REPLACE_NOT_ADD,Yang2021 original total vehicle mass already includes battery mass; Sun per-kWh pack mass differs; replace component with mass reconciliation or keep separate,NO_CROSS_SOURCE_MASS_ADDITION
+Yang2021_material_emission_CO2,Sun2020_battery_GWP_CO2e,SEPARATE_UNTIL_GWP_HARMONIZED,kgCO2 physical emission and kgCO2e characterised climate impacts not directly interchangeable,DO_NOT_REPORT_COMBINED_WHOLE_VEHICLE_GWP
+Sun2020_battery_factory_energy,Sun2020_production_stage_GWP,INPUT_ALREADY_CHARACTERIZED,"Factory electricity, steam and initial charge underpin published production GWP; do not multiply again and add",NO_FACTORY_ENERGY_DOUBLE_COUNT
+Sun2020_cathode_upstream_subprocess,Sun2020_final_pack_BOM,NESTED_NOT_ADDITIVE,Nickel sulphate and precursor already supply NCM622 cathode active material present in pack BOM,NO_CATHODE_PRECURSOR_DOUBLE_COUNT
+Sun2020_recycled_material_outputs,Sun2020_EoL_LCIA_credit,NO_RAW_SUBTRACTION,Full recycling LCIA credit already accounts for avoided material production under specific allocation; recovered substances not subtracted again,RECOVERY_CREDIT_ONCE
+Sun2020_hypothetical_full_recycling,R9_2023_urban_baseline,EXCLUDE_FROM_BASE,100pct end-of-life collection/hydrometallurgy is source assumption not observed 2023 Beijing treatment rate,SCENARIO_ONLY
+Sun2020_ReCiPe_PM10e_SO2e,Yang2021_physical_PM25_NOx_SO2,DO_NOT_ADD,LCIA equivalent impacts have different unit definitions and characterisation method; not physical emission mass,DIFFERENT_INDICATOR_SPACE
+Lin2015_bus_WTW,R9_Yang2021_bus_WTW,ALTERNATIVE_ONLY,2015 Beijing grid 2011-vintage factors differ from 2018 national fuel cycle; do not combine,MUTUALLY_EXCLUSIVE_ENERGY_BACKGROUNDS
+Lin2015_bus_PKM_proxy,2023_bus_actual_PKM,DIAGNOSTIC_ONLY,2015 effective passengers/vehicle not a 2023 boarding-adjusted passenger-km observation,2023_PKM_REMAINS_NA
+Lin2015_bus_material_shares,R7_2023_bus_manufacturing,NOT_YET_ELIGIBLE,Percentage of legacy bus mass without 2023 curb mass and battery materials cannot identify annual 2023 tonnes,BUS_MANUFACTURING_TOTAL_NA
+R7_2023_operational_CO2,R9_WTW_CO2e,MUTUALLY_EXCLUSIVE,R7 fuel TTW and grid CO2 included in life cycle energy factors; no adding to WTW,NO_OPERATING_DOUBLE_COUNT
+Sun2020_NCM622_pack,R9_PHEV_12_8kWh,HYPOTHETICAL_ONLY,2020 NCM622 source developed for BEV pack; Beijing PHEV chemistry and pack mass unknown,NOT_REAL_PHEV_FLEET
