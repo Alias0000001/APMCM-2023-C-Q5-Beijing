@@ -38,7 +38,7 @@ for r in vkt:
     bh=float(r["bus_mixed_nonBEV_vkt_km"]);bb=float(r["bus_BEV_vkt_km"]);bu=float(r["bus_unclassified_vkt_km"])
     ud=bu*unknown_diesel_share;ug=bu-ud
     total=((bd+ud)*107.1+(bg+ug)*113.4+bh*115.875+bb*119.37)/1e6
-    bus.append([name,bd,bg,bh,bb,bu,ud,ug,total,"CO2e","LIN2015","raw materials+assembly; EOL excluded"])
+    bus.append([name,bd,bg,bh,bb,bu,ud,ug,total,"CO2e","LIN2015","raw materials + source-defined assembly/distribution; EOL excluded"])
     ledger.append([name,mid,lo,hi,total,"do not aggregate CO2-only private and CO2e bus columns"])
     # Harmonized GWP proxy set: Qiao2017 ICEV/BEV-NMC; Xiong2019 PHEV-NMC.
     # Each whole-vehicle production factor already includes its initial battery.
