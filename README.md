@@ -1,6 +1,18 @@
 # APMCM 2023 C Problem 5 — Beijing
 
-## Latest: R5 public-source corrections (2026-11-24)
+## Latest: R9.2 lifecycle inventory construction (2026-11-24)
+
+**Read [R9.2 construction report](08_Reports/R9_LCI_CONSTRUCTION_ROUND_02_PASSENGER_CAR.md), [LCI method](07_LCA_LCIA/R9_LCI_METHOD.md), and [stage coverage ledger](07_LCA_LCIA/R9_LCI_STAGE_COVERAGE.csv).** R9 has created a partial foreground LCI for private ICEV/BEV/PHEV, a partial bus diesel/electric use-stage module, and separate battery GWP scenarios. Missing flows remain NA. Do not describe current outputs as a completed full-city LCA.
+
+Reproducible scripts:
+- `python 06_S0_Calculation/r9_lci_foreground.py`
+- `python 06_S0_Calculation/r9_lci_passenger_car_module.py`
+- `python 06_S0_Calculation/r9_lci_bus_use_module.py`
+
+Core limits: bus manufacturing, bus natural-gas WTW, mixed/unknown bus energy, vehicle assembly, battery manufacturing pollutant flows, non-exhaust emissions, and full end-of-life recycling remain incomplete. 2023 activity data published after the competition cutoff are used only for retrospective reconstruction, not claimed as contemporaneously available.
+
+## R5 baseline: public-source corrections (2026-11-24)
+
 
 **Read [R5 report](08_Reports/R5_PUBLIC_SOURCES_DATA_UPGRADE.md) and [R5 audit](03_Data_Audit/R5_PUBLIC_SOURCE_AUDIT.md) first.** The previous public departmental reporting login URL is not a public download service and should not be recommended to users. R5 uses a public 2023-04-23 bus-operator interview: 1,495 diesel, 6,795 natural gas, 15,451 mixed new-energy electric-drive buses and 6 unclassified from total 23,747. This is a 2023-April snapshot, not 2023 year-end, and the mixed electric-drive group is NOT pure BEV. R5 also replaces the old private BEV annualization of 18,723.84 km with **18,619.2 km/year as a scenario** based on the directly reported 2023-October monthly mileage 1,551.6 km. Annualized monthly values and VKT by propulsion are proxies, not 2023 odometer observations.
 
