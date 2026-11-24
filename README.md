@@ -1,3 +1,7 @@
+## Audit-03 — Data provenance
+
+[Report](08_Reports/Audit/AUDIT_03_DATA_PROVENANCE.md) | [Master parameter provenance](02_Cleaned_Data/R9_7AUDIT03_MASTER_PROVENANCE.csv) | [Gap register](08_Reports/Audit/AUDIT_03_GAP_REGISTER.csv) | [Historical bus energy stress](02_Cleaned_Data/R9_7AUDIT03_BUS_ENERGY_STRESS.csv). Provisional C score 8/12; source and design distinctions retained, no baseline numeric changes. Next Audit-04.
+
 ## Audit-02 — Mathematical framework and assumptions
 
 [Audit report](08_Reports/Audit/AUDIT_02_FRAMEWORK_AND_ASSUMPTIONS.md) | [Deferred issues](08_Reports/Audit/AUDIT_02_DEFERRED_ISSUES.csv) | [Structural alternatives](02_Cleaned_Data/R9_7AUDIT02_ALTERNATIVES.csv) | [Propulsion envelope](02_Cleaned_Data/R9_7AUDIT02_PROPULSION_ENVELOPE.csv). B dimension 8.89/10 provisional; 243 paired propulsion sets, all-diesel S−1 alternative and urban-numerator stress. Main baseline unchanged. Full grid generated in CI. Next Audit-03; no manuscript freeze.

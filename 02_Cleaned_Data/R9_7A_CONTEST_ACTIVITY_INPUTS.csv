@@ -5,8 +5,8 @@ reference_urban_population,19128000,persons,2022,2023-03-21,OFFICIAL_CONTEXT_ONL
 private_small_micro_cars,4932000,vehicles,2022,2023-08-28,SECONDARY_REPORT,https://www.sohu.com/a/715705099_100106037
 private_daily_distance,49.9,km/day,2022,2023-08-28,REPORTED_DENOMINATOR_UNRESOLVED,https://www.sohu.com/a/715705099_100106037
 central_city_dispatch_rate,0.461,fraction,2022,2023-08-28,REPORTED_SPATIAL_TRANSFER_PROXY,https://www.sohu.com/a/715705099_100106037
-bus_vkt,984000000,km/year,2022,2023-07-03,OPERATOR_REPORTED,https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html
-bus_boardings,1726000000,trips/year,2022,2023-07-03,OPERATOR_REPORTED_NOT_PKM,https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html
+bus_vkt,984000000,km/year,2022,2023-10-09,OPERATOR_REPORTED,https://www.bjbus.com/home/fun_news_detail.php?uNewsCode=00009286&uNewsType=8
+bus_boardings,1726000000,trips/year,2022,2023-10-09,OPERATOR_REPORTED_NOT_PKM,https://www.bjbus.com/home/fun_news_detail.php?uNewsCode=00009286&uNewsType=8
 all_nev_passenger_stock,571000,vehicles,2022,2023-08-28,CONTEXT_NOT_PRIVATE_STOCK,https://www.sohu.com/a/715705099_100106037
 private_nev_share,0.08,fraction,model,NA,ILLUSTRATIVE_PROXY,stress 0.05 to 0.1158; 571000 includes nonprivate vehicles
 private_bev_fraction_of_nev,0.778,fraction,2023-06,2023-07-10,NATIONAL_TRANSFER_PROXY,https://finance.people.com.cn/n1/2023/0710/c1004-40031401.html

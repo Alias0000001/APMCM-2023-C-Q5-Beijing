@@ -85,3 +85,6 @@
 ## 2026-11-24 — Audit-02
 - Audited nine mathematical-framework items; 7 pass, 2 conditional (8.89/10). Independently reconciled reference energy, WTW, production, GWP, NOx and PM2.5; introduced 243 paired propulsion stress sets and all-diesel and urban-numerator alternatives. No baseline changes.
 - Corrected manufacturing-register tonne conversion notes (values unchanged); recorded residual-technology synchronization issue for Audit-06. Added structural script and regression tests to existing CI; preserved history and main.
+
+## 2026-11-24 — Audit-03
+- Reopened key activity, fuel, UF, production and road evidence; indexed 156 provenance rows and 14 gaps; upgraded operator activity source; separate 18-row historical bus energy stress and CI checks. No baseline numeric change. Conditional 8/12; unresolved specialty issues retained.
