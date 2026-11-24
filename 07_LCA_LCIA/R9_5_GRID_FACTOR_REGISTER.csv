@@ -1,0 +1,5 @@
+scenario_id,value,unit,scope,geography,data_year,publication_year,evidence_grade,eligibility,source_id,note
+Peng2017_Table8_WTW,0.73224,kgCO2e/kWh,WTW_CO2e,China_national_2015,2015,2017,B,STRICT_PRE_2023_LITERATURE,TLCAM_2017_Table8,203.4 gCO2e/MJ × 3.6 MJ/kWh ÷ 1000; baseline WTW
+Peng2017_text_WTW,0.6048,kgCO2e/kWh,WTW_CO2e,China_national_2015,2015,2017,B,STRICT_PRE_2023_SOURCE_DISCREPANCY_SENSITIVITY,TLCAM_2017_Section4_3_4,"168 gCO2e/MJ × 3.6 ÷ 1000; internal source discrepancy, do not average with Table 8"
+MEE2023_national_PCF,0.6205,kgCO2e/kWh,electricity_lifecycle_PCF,China_national,2023,2025,A,RETROSPECTIVE_ONLY_POST_COMPETITION,MEE2023_PCF,"Official national electricity carbon-footprint factor; broader life-cycle PCF method, not Beijing-specific"
+MEE2023_Beijing_CO2,0.5554,kgCO2/kWh,generation_only_CO2,Beijing_provincial,2023,2025,A,RETROSPECTIVE_OPERATIONAL_CHECK_ONLY,MEE2023_CO2,"Official geographic-average electricity CO2 emission factor; generation CO2 only, not WTW and not CO2e"
