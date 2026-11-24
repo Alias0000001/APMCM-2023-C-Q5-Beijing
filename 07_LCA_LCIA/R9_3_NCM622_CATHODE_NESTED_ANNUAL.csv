@@ -1,0 +1,27 @@
+vehicle,step,input_flow,annual_quantity,unit,source_id,status,note
+BEV,precursor,NiSO4,264498.348592013,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,precursor,CoSO4,79349.5045776039,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,precursor,MnSO4,79349.5045776039,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,precursor,NaOH_100pct,238048.5137328117,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,precursor,NH4OH_100pct,26449.834859201303,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,precursor,natural_gas,290948.18345121434,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,precursor,water,158699.0091552078,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,ncm622_active,ncm622_precursor,264498.348592013,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,ncm622_active,Li2CO3,105799.33943680521,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,ncm622_active,oxygen,793495.045776039,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,ncm622_active,electricity,9521940.549312469,MJ/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,ncm622_active,steam,1798588.7704256885,MJ/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+BEV,ncm622_active,water,79.3495045776039,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,NiSO4,3380.652153616318,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,CoSO4,1014.1956460848954,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,MnSO4,1014.1956460848954,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,NaOH_100pct,3042.5869382546866,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,NH4OH_100pct,338.06521536163183,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,natural_gas,3718.71736897795,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,precursor,water,2028.3912921697909,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,ncm622_active,ncm622_precursor,3380.652153616318,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,ncm622_active,Li2CO3,1352.2608614465273,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,ncm622_active,oxygen,10141.956460848955,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,ncm622_active,electricity,121703.47753018746,MJ/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,ncm622_active,steam,22988.43464459096,MJ/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
+PHEV,ncm622_active,water,1.0141956460848953,m3/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
