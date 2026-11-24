@@ -26,6 +26,8 @@ GASOLINE_LHV_MJ_KG = 43.07
 GASOLINE_DENSITY_KG_L = 0.74
 ELECTRICITY_MJ_KWH = 3.6
 EOL_DISPOSAL_MJ_KG = 0.370  # 370 kJ/kg from Yang et al. (2021)
+DISTRIBUTION_DISTANCE_KM = {"ICEV":1177.94,"BEV":1065.34,"PHEV":1177.94}
+DISTRIBUTION_ALPHA_KJ_KG_KM = 0.6  # Wang et al. (2013), adopted by Yang et al. (2021)
 
 VEHICLE_MATERIALS = {
  "steel":{"ICEV":793,"BEV":827,"PHEV":847},
@@ -167,7 +169,8 @@ def main():
             parts_rows.append(row)
     write_csv(OUT/"R9_LCI_PASSENGER_PARTS_ENERGY.csv",parts_rows)
 
-    # Stage emissions from material production, parts manufacturing, maintenance, EOL and use.
+    # Stage emissions from material production, parts manufacturing, distribution,
+    # maintenance, EOL and use.
     stage_rows=[]
     for vehicle in ("ICEV","BEV","PHEV"):
         eq=equiv[vehicle]
@@ -192,6 +195,16 @@ def main():
                 pollutant=p,unit="kg/year",annual_amount=val*eq,
                 status="modelled_from_energy_input_and_life_cycle_EF",
                 source_id="Yang2021_Tables6_7"))
+        # Vehicle distribution: GDP-weighted delivery distance from Yang2021 Table 8;
+        # diesel freight energy factor is an explicit proxy assumption.
+        distribution_mj = (DISTRIBUTION_DISTANCE_KM[vehicle] * VEHICLE_MASS[vehicle]
+                           * DISTRIBUTION_ALPHA_KJ_KG_KM / 1000)
+        for p in POLLUTANTS:
+            stage_rows.append(dict(vehicle=vehicle,stage="vehicle_distribution",
+                pollutant=p,unit="kg/year",
+                annual_amount=distribution_mj*ENERGY_EF["diesel"][p]*eq,
+                status="GDP_weighted_distance_and_diesel_EF_proxy",
+                source_id="Yang2021_Table8_Wang2013"))
         # Maintenance
         for p in POLLUTANTS:
             val=sum(x[p] for x in MAINTENANCE.values())
@@ -223,6 +236,23 @@ def main():
                 status="2018_China_literature_factor_applied_to_R7_activity",
                 source_id="Yang2021_Table6"))
     write_csv(OUT/"R9_LCI_PASSENGER_STAGE_EMISSIONS.csv",stage_rows)
+
+    # Distribution activity/energy inputs, kept as a separate foreground module.
+    distribution_rows=[]
+    for vehicle in ("ICEV","BEV","PHEV"):
+        energy_mj=(DISTRIBUTION_DISTANCE_KM[vehicle]*VEHICLE_MASS[vehicle]
+                   *DISTRIBUTION_ALPHA_KJ_KG_KM/1000)
+        distribution_rows.append(dict(vehicle=vehicle,
+            delivery_distance_km=DISTRIBUTION_DISTANCE_KM[vehicle],
+            vehicle_mass_kg=VEHICLE_MASS[vehicle],
+            energy_intensity_kJ_per_kg_km=DISTRIBUTION_ALPHA_KJ_KG_KM,
+            distribution_energy_MJ_per_vehicle=energy_mj,
+            assumed_distribution_fuel="diesel",
+            annual_vehicle_equivalent=equiv[vehicle],
+            annual_distribution_energy_MJ=energy_mj*equiv[vehicle],
+            source_id="Yang2021_Table8_Wang2013",
+            status="distribution_proxy_not_local_logistics_measurement"))
+    write_csv(OUT/"R9_LCI_PASSENGER_DISTRIBUTION.csv",distribution_rows)
 
     # Battery GWP scenarios, separate from CO2-only stage rows.
     battery_rows=[]
