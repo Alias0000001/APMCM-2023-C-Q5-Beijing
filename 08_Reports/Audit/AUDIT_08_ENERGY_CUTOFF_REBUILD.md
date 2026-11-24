@@ -26,7 +26,7 @@ e_{car}=\frac{\sum_j n_j e_j^{RW}}{\sum_j n_j}.
 
 Car 8 has no Beijing point in Figure 6. It accounts for only 87 of 44,047 Beijing samples (0.20%); its value uses the report's Figure 4 all-city, all-condition median energy increase of approximately 20%. This exception is explicitly recorded in \`R9_7B_PRIVATE_BEV_ENERGY_RECONSTRUCTION.csv\`.
 
-Result: \(e_{car}=0.1583904627\) kWh/km. The Beijing-sample-weighted nominal benchmark is 0.1321126524 kWh/km. A cold-condition upper stress uses 1.60 times the nominal benchmark, anchored to the report's 25%–60% increase in Beijing cold conditions. These are weighted medians from selected models, not a raw citywide fleet mean.
+Result: \(e_{car}=0.1583904499\) kWh/km. The Beijing-sample-weighted nominal benchmark is 0.1321126524 kWh/km. A cold-condition upper stress uses 1.60 times the nominal benchmark, anchored to the report's 25%–60% increase in Beijing cold conditions. These are weighted medians from selected models, not a raw citywide fleet mean.
 
 ## 3. Pre-cutoff replacement for electric buses
 
