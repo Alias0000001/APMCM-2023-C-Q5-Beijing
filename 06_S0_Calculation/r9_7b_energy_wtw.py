@@ -8,8 +8,15 @@ def read(name):
     with (D/name).open(encoding="utf-8-sig",newline="") as f:
         return list(csv.DictReader(f))
 P={r["parameter"]:float(r["value"]) for r in read("R9_7B_ENERGY_INPUTS.csv")}
-assert math.isclose(P["car_e"],P["car_month_kWh"]/P["car_month_km"])
-assert math.isclose(P["bus_e"],P["bus_month_kWh"]/P["bus_month_km"])
+car_rows=read("R9_7B_PRIVATE_BEV_ENERGY_RECONSTRUCTION.csv")
+car_weight=sum(float(r["beijing_sample"]) for r in car_rows)
+car_reconstructed=sum(float(r["beijing_sample"])*float(r["reconstructed_real_world_kWh_per_100km"]) for r in car_rows)/car_weight/100
+assert math.isclose(P["car_e"],car_reconstructed,rel_tol=0,abs_tol=1e-9)
+bus_rows={r["parameter"]:float(r["value"]) for r in read("R9_7B_BUS_ENERGY_DERIVATION.csv")}
+bus_reconstructed=bus_rows["electric_bus_energy_equivalent"]*bus_rows["diesel_equivalent_LHV"]/bus_rows["MJ_per_kWh"]/100
+assert math.isclose(P["bus_e"],bus_reconstructed,rel_tol=0,abs_tol=1e-12)
+assert 0 < P["eta"] <= 1
+assert car_weight == 44047
 def calc(r,a):
     x=a["ac_share"]
     ds=a["diesel_off"]+(a["diesel_on"]-a["diesel_off"])*x
