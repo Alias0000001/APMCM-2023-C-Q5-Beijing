@@ -5,9 +5,9 @@
 - an independent Hangzhou (2018) bus manufacturing CO2 boundary alternative, retained separately due battery-pack accounting ambiguity;
 - PHEV production factors from Xiong et al. (2019), with Yang et al. (2021) matched CO2 production ranges as a parallel check;
 - Qiao2017 + Xiong2019 private-car production GWP proxy, integrated with Lin2015 bus GWP and R9.7B WTW for a clearly labelled partial-LCA scenario matrix;
-- [component-level derivations](02_Cleaned_Data/R9_7C_MANUFACTURING_DERIVATION.csv), [factor register](02_Cleaned_Data/R9_7C_MANUFACTURING_FACTOR_REGISTER.csv), [bus alternatives](02_Cleaned_Data/R9_7C_BUS_FACTOR_BOUNDARY_ALTERNATIVES.csv), and [partial LCA GWP results](02_Cleaned_Data/R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv).
+- [component-level derivations](02_Cleaned_Data/R9_7C_MANUFACTURING_DERIVATION.csv), [factor register](02_Cleaned_Data/R9_7C_MANUFACTURING_FACTOR_REGISTER.csv), [bus alternatives](02_Cleaned_Data/R9_7C_BUS_FACTOR_BOUNDARY_ALTERNATIVES.csv), and [partial LCA GWP results](02_Cleaned_Data/R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv), and [BEV factor source sensitivity](02_Cleaned_Data/R9_7C_PARTIAL_LCA_GWP_SOURCE_SENSITIVITY.csv).
 
-Partial S0→S3 GWP reduction is 14.23%; S0→S4 is 39.94%. This is not a complete cradle-to-grave total: maintenance, EOL, infrastructure and non-exhaust emissions remain outside the boundary. The workflow runs R9.7A/B/C and 16 regression tests; see [latest Actions run](https://github.com/Alias0000001/APMCM-2023-C-Q5-Beijing/actions/runs/45366489139). All work remains on `work/r96-figures-energy-audit-20261124`, not main.
+Partial S0→S3 GWP reduction is 14.23%; S0→S4 is 39.94%. This is not a complete cradle-to-grave total: maintenance, EOL, infrastructure and non-exhaust emissions remain outside the boundary. The workflow runs R9.7A/B/C and 16 regression tests; see [latest Actions run](https://github.com/Alias0000001/APMCM-2023-C-Q5-Beijing/actions/runs/45366863790). All work remains on `work/r96-figures-energy-audit-20261124`, not main.
 
 ## R9.6 branch update — 2026-11-24
 
