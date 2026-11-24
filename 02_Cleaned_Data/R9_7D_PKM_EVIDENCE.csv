@@ -1,0 +1,9 @@
+indicator,value,unit,observation_period,publication_year,status,source,restriction
+bus_VKT,984000000,vehicle-km/year,2022,2023,OPERATOR_REPORTED,https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html,Mixed propulsion public electric bus category
+bus_boardings,1726000000,boardings/year,2022,2023,OPERATOR_REPORTED,https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html,Not PKM
+bus_trip_distance,10.9,km/trip,historical central Beijing,2020,LITERATURE_TRANSFER,https://doi.org/10.16037/j.1007-869x.2020.08.001,Table 1 trip distance not verified boarding-leg route distance
+bus_trip_distance_short,5,km/boarding,model,NA,DESIGN_STRESS,model,Not observed
+bus_trip_distance_long,15,km/boarding,model,NA,DESIGN_STRESS,model,Not observed
+private_occupancy,1.24,persons/vehicle-trip,2014,2016,HISTORICAL_TRANSFER,https://www.chinautc.com/upload/accessorychinautc/201610/201610181511515686617.pdf,Not distance-weighted observed occupancy
+actual_bus_PKM,NA,passenger-km/year,2022-2023,NA,NOT_VERIFIED,07_LCA_LCIA/R9_6_PKM_EVIDENCE_REGISTER.csv,No matched observed total
+smartcard_OD,100000,persons,2020-10,2023,METHOD_ONLY,https://www.tr-cats.cn/CN/abstract/article/2095-9931/628,Combined bus and rail chains not matched operator bus-leg mean
