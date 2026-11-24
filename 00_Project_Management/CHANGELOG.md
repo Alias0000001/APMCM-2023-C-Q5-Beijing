@@ -68,3 +68,7 @@
 
 ## 2026-11-24 — R9.7F paper audit branch
 - Added paired 27-set transfer, 14,580 climate stress sets and 432 exhaust stress sets per pollutant, Jinhua retrospective diagnostic, reversal witness and acceptance matrix. Baseline A–E unchanged. Four regression tests and branch-specific workflow.
+
+## 2026-11-24 — R9.7G-1
+- Rebuilt English manuscript with million-city target, explicit activity and stage equations, all six scenarios and mode-specific energy/GWP/exhaust tables, conditional PKM and paired sensitivity, and updated 0.947 kgCO2e/kWh car break-even threshold. No model-input change.
+- Rechecked award-paper equation and common-distance diagnostic; differing scopes and CO2/CO2e prevent a quantitative validation claim. Added final figure specification. Prior papers and figures retained; new rendering pending G-2.

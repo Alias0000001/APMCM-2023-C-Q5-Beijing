@@ -1,3 +1,7 @@
+## R9.7G-1 — Contest manuscript reconstruction
+
+[New English manuscript](09_Paper_Draft/Q5_Contest_Manuscript_EN.md) | [Award-paper and manuscript audit](08_Reports/R9_7G1_MANUSCRIPT_AND_AWARD_AUDIT.md) | [Final figure specification](09_Paper_Draft/FINAL_FIGURE_SPECIFICATION.md). Six-scenario numerical tables use contest-time A–F outputs. The manuscript is not final typeset; new figure rendering and review remain G-2. Old manuscripts preserved, no baseline changes, no main modification.
+
 ## R9.7F — Paired transfer and nested sensitivity
 
 [Report](08_Reports/R9_7F_TRANSFER_AND_UNCERTAINTY.md) | [transfer grid](02_Cleaned_Data/R9_7F_TRANSFER_GRID.csv) | [nested envelope](02_Cleaned_Data/R9_7F_NESTED_ENVELOPE.csv) | [retrospective Jinhua diagnostic](02_Cleaned_Data/R9_7F_JINHUA_RETROSPECTIVE_DIAGNOSTIC.csv) | [manuscript audit](08_Reports/PAPER_MODEL_AUDIT_ACCEPTANCE.md). Strict baseline excludes retrospective Jinhua data. R9.7D PKM remains conditional. New paper-audit branch; main and previous work branch preserved. Final figures pending reconstruction and visual review.
