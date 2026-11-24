@@ -202,9 +202,9 @@ ICCT、Hao、Lai和Sun的电池因子具有不同年份、化学体系及核算�
 - `R9_5_BATTERY_FACTOR_SENSITIVITY.csv`（44行）
 - `R9_5_RETROSPECTIVE_GRID_CROSSCHECK.csv`（2行）
 - `R9_5_SUMMARY.csv`（5行）
-- `R9_5_TESTS.csv`（22项）
+- `R9_5_TESTS.csv`（24项）
 
-独立数值计算完成22项检查，全部PASS。**本轮已提交Python复现脚本，但尚未在本地克隆仓库环境实际运行该脚本；因此22项PASS指独立复算与数据交叉核验，不代表Python脚本运行或GitHub Actions CI通过。**
+独立数值计算完成24项检查，全部PASS。**本轮已提交Python复现脚本，但尚未在本地克隆仓库环境实际运行该脚本；因此22项PASS指独立复算与数据交叉核验，不代表Python脚本运行或GitHub Actions CI通过。**
 
 ## 6. 下一轮建议
 
