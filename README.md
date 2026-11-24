@@ -1,6 +1,16 @@
 # APMCM 2023 C Problem 5 — Beijing
 
-## Latest: R9.2 lifecycle inventory construction (2026-11-24)
+## Latest: R9.3 NCM622 battery and Beijing historical bus LCI (2026-11-24)
+
+**Read [R9.3 report](08_Reports/R9_3_NCM622_BATTERY_AND_BUS_LCI_REPORT.md)** for the detailed NCM622 material BOM, factory and recycling inventories, ReCiPe LCIA factors, and 2015 Beijing bus historical-transfer stress scenario. New models are **separate modules**: the Sun2020 battery pack mass does not match the Yang2021 vehicle battery mass, and the 2015 bus electricity/fuel system is not the 2023 observed fleet.
+
+Run:
+- `python 06_S0_Calculation/r9_3_ncm622_battery_lci.py`
+- `python 06_S0_Calculation/r9_3_legacy_beijing_bus_lci.py`
+
+See [battery source BOM](07_LCA_LCIA/R9_3_NCM622_PACK_BOM.csv), [annual battery LCIA scenarios](07_LCA_LCIA/R9_3_NCM622_BATTERY_LCIA_SCENARIOS.csv), [historical bus stress table](07_LCA_LCIA/R9_3_BEIJING_2015_BUS_TRANSFER_STRESS.csv), and [no-double-count integration rules](07_LCA_LCIA/R9_3_MODULE_INTEGRATION_RULES.csv). These files are conditional model outputs, not a completed 2023 city-wide LCA.
+
+## Previous: R9.2 lifecycle inventory construction (2026-11-24)
 
 **Read [R9.2 construction report](08_Reports/R9_LCI_CONSTRUCTION_ROUND_02_PASSENGER_CAR.md), [LCI method](07_LCA_LCIA/R9_LCI_METHOD.md), and [stage coverage ledger](07_LCA_LCIA/R9_LCI_STAGE_COVERAGE.csv).** R9 has created a partial foreground LCI for private ICEV/BEV/PHEV, a partial bus diesel/electric use-stage module, and separate battery GWP scenarios. Missing flows remain NA. Do not describe current outputs as a completed full-city LCA.
 
