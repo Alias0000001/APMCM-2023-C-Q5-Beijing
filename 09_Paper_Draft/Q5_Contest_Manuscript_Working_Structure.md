@@ -20,6 +20,17 @@ We develop a transport-activity model, a propulsion-scenario allocation model an
 
 Vehicle-kilometres are the primary functional unit for propulsion substitution; passenger-kilometres provide a supplementary equal-service comparison using distance-weighted occupancy scenarios. Bus and car comparisons in passenger-kilometres are not inferred from vehicle-kilometres alone.
 
+
+### 3.1 Manufacturing-burden annualization
+
+The manufacturing burden is annualized under a steady-state replacement assumption. For vehicle technology (k), let (M_k) denote the production-stage GWP per vehicle and (L_k) its lifetime mileage. The annualized burden is
+[
+G_{k,s}^{\mathrm{prod}}=\frac{VKT_{k,s}}{L_k}M_k.
+]
+For private cars, the provisional GWP factor set uses Qiao et al. (2017) for ICEV and BEV-NMC and Xiong et al. (2019) for PHEV-NMC; all factors include the initial traction battery. For buses, Lin et al. (2015) provides historical raw-material and assembly GWP factors for diesel, natural-gas, diesel-hybrid and battery-electric buses. These factors are annualized over 150,000 km for passenger cars and 400,000 km for buses. An independent matched CO2-only set from Yang et al. (2021) is retained as a cross-check, not added to the GWP ledger.
+
+The production GWP factors are added to the well-to-wheel operating GWP only after the impact metric and unit are harmonized. The resulting comparison is a partial LCA because maintenance, end-of-life, infrastructure and non-exhaust emissions are not yet included. The 2018 Hangzhou bus study is used as a separate manufacturing-boundary sensitivity; its CO2-only results are not averaged with the Beijing GWP factors.
+
 ## 4. Electrification scenarios
 
 | Scenario | Private cars | Buses | Charging electricity |
