@@ -7,7 +7,7 @@ def read(n):
 p={r["parameter"]:float(r["value"]) for r in read("R9_7B_ENERGY_INPUTS.csv")}
 e=[r for r in read("R9_7B_SIX_SCENARIO_ENERGY_WTW.csv") if r["case"]=="base"]
 z={r["scenario"]:r for r in read("R9_7E_ENVIRONMENTAL_MATRIX.csv")}
-cases=[("historical_bus_AC_off",1.),("historical_bus_AC_mix",1+.4*p["ac_share"]),("historical_bus_AC_on",1.4)]
+cases=[("ICCT_type_approval_alternative",p["bus_e_type_approval"]),("Ma_Beijing_low_20pct",p["bus_e_low"]),("Ma_Beijing_high_20pct",p["bus_e_high"])]
 out=[]
 for name,u in cases:
     rr=[]
@@ -19,4 +19,4 @@ for name,u in cases:
     out.extend(r+[100*(1-r[4]/base)] for r in rr)
 with (D/"R9_7AUDIT03_BUS_ENERGY_STRESS.csv").open("w",encoding="utf-8",newline="") as f:
     w=csv.writer(f,quoting=csv.QUOTE_ALL,lineterminator="\n");w.writerow(["case","bus_kWh_per_km","scenario","final_energy_PJ","partial_GWP_kt","paired_reduction_pct"]);w.writerows(out)
-print("PASS: 18 historical bus energy stress rows; baseline unchanged")
+print("PASS: 18 pre-contest bus energy alternative rows; baseline unchanged")
