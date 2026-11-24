@@ -1,0 +1,14 @@
+material_id,kg_per_72_5kWh_reference_pack,kg_per_kWh,mass_unit,component_group,integration_rule,source_id,caveat
+ncm622_cathode_active,168.3,2.3213793103,kg,active_material,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+graphite_anode,96.2,1.3268965517,kg,active_material,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+pvdf_binder,12,0.1655172414,kg,cell_material,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+copper,54.1,0.7462068966,kg,cell_material,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+wrought_aluminum,145.1,2.0013793103,kg,cell_and_pack_component,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+lipf6_salt,7.2,0.0993103448,kg,electrolyte,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+ethylene_carbonate,75.2,1.0372413793,kg,electrolyte,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+dimethyl_carbonate,34.3,0.4731034483,kg,electrolyte,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+polypropylene,9.6,0.1324137931,kg,separator,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+steel,6.3,0.0868965517,kg,battery_pack_component,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+thermal_insulation,1.9,0.0262068966,kg,battery_pack_component,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+glycol_coolant,10.1,0.1393103448,kg,battery_pack_component,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
+electronics,9.5,0.1310344828,kg,battery_pack_component,reference_pack_BOM_no_upstream_subprocess_addition,SUN2020_NCM622,Table S5; 72.5 kWh 630 kg reference pack; not the 40kWh Yang2021 fleet pack
