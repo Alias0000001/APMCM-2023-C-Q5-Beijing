@@ -1,0 +1,5 @@
+category,vehicles,reference_total,observation_date,publication_date,source_id,status,note
+diesel,1495,23747,2023-04_snapshot,2023-04-23,BJ-BUS-ENERGY-MIX-2023APR,reported_in_operator_interview,April snapshot; not year-end
+natural_gas_CNG_LNG_combined,6795,23747,2023-04_snapshot,2023-04-23,BJ-BUS-ENERGY-MIX-2023APR,reported_in_operator_interview,No CNG versus LNG cross-tab
+new_energy_electric_drive_mixed,15451,23747,2023-04_snapshot,2023-04-23,BJ-BUS-ENERGY-MIX-2023APR,reported_in_operator_interview,Includes BEV and potentially hybrid range-extended hydrogen; not BEV-only
+unclassified_difference,6,23747,2023-04_snapshot,2023-04-23,BJ-BUS-ENERGY-MIX-2023APR,arithmetic_residual,23747 minus 1495 minus 6795 minus 15451
