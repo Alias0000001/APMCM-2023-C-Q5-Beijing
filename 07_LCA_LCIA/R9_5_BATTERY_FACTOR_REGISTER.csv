@@ -1,0 +1,12 @@
+scenario_id,value,unit,chemistry,boundary,source_id,evidence_grade,eligibility,note
+ICCT2021_LFP_low,51,kgCO2e/kWh,LFP,cradle_to_gate_battery_production,ICCT2021_Battery,B,LITERATURE_FACTOR_SENSITIVITY,low endpoint of 51–56 range
+ICCT2021_LFP_high,56,kgCO2e/kWh,LFP,cradle_to_gate_battery_production,ICCT2021_Battery,B,LITERATURE_FACTOR_SENSITIVITY,high endpoint of 51–56 range
+ICCT2021_NMC811,68,kgCO2e/kWh,NMC811,cradle_to_gate_battery_production,ICCT2021_Battery,B,LITERATURE_FACTOR_SENSITIVITY,China domestic NMC811
+ICCT2021_NMC622,69,kgCO2e/kWh,NMC622,cradle_to_gate_battery_production,ICCT2021_Battery,B,LITERATURE_FACTOR_SENSITIVITY,China NMC622
+ICCT2021_NMC111,77,kgCO2e/kWh,NMC111,cradle_to_gate_battery_production,ICCT2021_Battery,B,LITERATURE_FACTOR_SENSITIVITY,China NMC111
+Lai2022_LFP,82.5,kgCO2e/kWh,LFP,cradle_to_gate_battery_production,Lai2022_Battery,B,LITERATURE_FACTOR_SENSITIVITY,China LFP alternative factor
+Hao2017_NMC,104,kgCO2e/kWh,NMC_unspecified,cradle_to_gate_battery_production,Hao2017_Battery,B,LITERATURE_FACTOR_SENSITIVITY,Hao NMC alternative factor
+Lai2022_ternary_low,114.3,kgCO2e/kWh,ternary,cradle_to_gate_battery_production,Lai2022_Battery,B,LITERATURE_FACTOR_SENSITIVITY,low endpoint of 114.3–137 range
+Sun2020_NCM622,124.48,kgCO2e/kWh,NCM622,cradle_to_gate_battery_production,SUN2020_NCM622,B,LITERATURE_FACTOR_SENSITIVITY,105.47 material + 19.01 production kgCO2e/kWh
+Lai2022_ternary_high,137,kgCO2e/kWh,ternary,cradle_to_gate_battery_production,Lai2022_Battery,B,LITERATURE_FACTOR_SENSITIVITY,high endpoint of 114.3–137 range
+Sun2020_100pct_hydromet_net,93.57,kgCO2e/kWh,NCM622,cradle_to_gate_plus_hypothetical_EoL_credit,SUN2020_NCM622,B,SEPARATE_RECYCLING_STRESS_SCENARIO,124.48 minus 30.91 kgCO2e/kWh hypothetical 100% recycling credit; separate boundary
