@@ -1,6 +1,6 @@
 parameter_id,value,unit,vehicle_or_carrier,stage,reference_year,publication_year,geography,evidence_grade,status,source_id,notes
 R9_PVT_ICE_L100,7.5,L/100km,private_ICEV,operation,2023,2026,Beijing_scaled_1m,D,scenario_assumption,R7_S0,"Fuel consumption scenario, not observed fleet mean"
-R9_PVT_BEV_KWH100,15.2,kWh/100km,private_BEV,operation,2023,2024,Beijing,B/C,monthly_sample_annual_activity,R5_CHARGE,"Charging report sample; battery-side/grid-side measurement point requires verification"
+R9_PVT_BEV_KWH100,16.0,kWh/100km,private_BEV,operation,2023-10,2024,Beijing,B/C,monthly_sample_annual_activity,R5_CHARGE,"Corrected Table 4-1 private passenger-car row: 248.7 kWh / 1551.6 km; 15.2 belongs to taxi row; meter boundary remains unspecified"
 R9_PHEV_UF,0.66,share,private_PHEV,operation,2023,2026,Beijing_scaled_1m,D,scenario_assumption,R7_S0,"Fleet-weighted UF not observed; PHEV split remains sensitivity"
 R9_PHEV_L100,7.5,L/100km,private_PHEV,operation,2023,2026,Beijing_scaled_1m,D,scenario_assumption,R7_S0,"Fuel-mode consumption assumed"
 R9_PHEV_KWH100,16,kWh/100km,private_PHEV,operation,2023,2026,Beijing_scaled_1m,D,scenario_assumption,R7_S0,"Electric-mode consumption assumed"
@@ -50,3 +50,8 @@ R9_LIN2015_BUS_LIFETIME,400000,km/vehicle,bus_reference,vehicle_lifetime,2011-20
 R9_LIN2015_BUS_OCCUPANCY_DIESEL,42.5,passengers_per_bus,bus_diesel,passenger_service,2011-2014,2015,Beijing_legacy,B,historical_only,LIN2015_BEIJING_BUS,"Not measured 2023 load; can only support optional PKM proxy"
 R9_LIN2015_BUS_OCCUPANCY_GAS,40.5,passengers_per_bus,bus_natural_gas,passenger_service,2011-2014,2015,Beijing_legacy,B,historical_only,LIN2015_BEIJING_BUS,"Not measured 2023 load"
 R9_LIN2015_BUS_OCCUPANCY_BEV,34.5,passengers_per_bus,bus_BEV,passenger_service,2011-2014,2015,Beijing_legacy,B,historical_only,LIN2015_BEIJING_BUS,"Not measured 2023 load"
+R9_BUS_BEV_KWH100,62.6,kWh/100km,bus_BEV,operation,2023-10,2024,Beijing,B/C,monthly_sample_annual_activity,R5_CHARGE,"Table 4-1 electric-bus row: 2361.3 kWh / 3770.8 km; exact grid/charger/battery meter point unspecified"
+R9_BUS_CDB_MANUFACTURE,42840,kgCO2e/vehicle,bus_diesel,vehicle_production,2011-2014,2015,Beijing_legacy,B,historical_literature_proxy,LIN2015_BEIJING_BUS,"Derived from Figure 2 raw materials+assembly per 1000 PKM × Table 5 effective passengers × 400000 km life"
+R9_BUS_NGB_MANUFACTURE,45360,kgCO2e/vehicle,bus_natural_gas,vehicle_production,2011-2014,2015,Beijing_legacy,B,historical_literature_proxy,LIN2015_BEIJING_BUS,"Derived from Figure 2 raw materials+assembly per 1000 PKM × Table 5 effective passengers × 400000 km life"
+R9_BUS_DHEB_MANUFACTURE,46350,kgCO2e/vehicle,bus_diesel_hybrid,vehicle_production,2011-2014,2015,Beijing_legacy,B,historical_literature_proxy,LIN2015_BEIJING_BUS,"Derived from Figure 2 raw materials+assembly per 1000 PKM × Table 5 effective passengers × 400000 km life"
+R9_BUS_BEB_MANUFACTURE,47748,kgCO2e/vehicle,bus_BEV,vehicle_production,2011-2014,2015,Beijing_legacy,B,historical_literature_proxy,LIN2015_BEIJING_BUS,"Derived from Figure 2 raw materials+assembly per 1000 PKM × Table 5 effective passengers × 400000 km life; historical battery chemistry"
