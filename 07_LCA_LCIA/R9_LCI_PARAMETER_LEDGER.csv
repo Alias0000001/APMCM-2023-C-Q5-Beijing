@@ -24,3 +24,12 @@ R9_BUS_NONH2_NEV_STOCK,16615,vehicles,bus_nonH2_new_energy_proxy,vehicle_activit
 R9_BUS_ALT_VKT_PER_VEHICLE,45249.6,km/vehicle-year,bus_nonH2_new_energy_proxy,vehicle_activity,2023,2024,Beijing,B/C,monthly_sample_annualized,R5_BUS_OCT,"October monthly average multiplied by 12"
 R9_BUS_ALT_KWH_PER_VEHICLE,28335.6,kWh/vehicle-year,bus_nonH2_new_energy_proxy,vehicle_activity,2023,2024,Beijing,B/C,monthly_sample_annualized,R5_BUS_OCT,"October monthly average multiplied by 12"
 R9_ELECTRICITY_WTW_TEXT_ALT,168.0,gCO2e/MJ,electricity,WTW,2015,2017,China,B,source_discrepancy_sensitivity,TLCAM_2017_Section4_3_4,"Section 4.3.4 reports 168 g/MJ while Table 8 and Table 10 report about 203 g/MJ; do not average"
+R9_BEV_BATTERY_NMC622,69,kgCO2e/kWh,BEV_NMC622,battery_production,2021,2021,China,B,literature_proxy,ICCT2021_Battery,"China NMC622 battery production factor"
+R9_BEV_BATTERY_NMC111,77,kgCO2e/kWh,BEV_NMC111,battery_production,2021,2021,China,B,literature_proxy,ICCT2021_Battery,"China NMC111 battery production factor"
+R9_BEV_BATTERY_LFP_RANGE,51-56,kgCO2e/kWh,BEV_LFP,battery_production,2021,2021,China,B,literature_proxy,ICCT2021_Battery,"China LFP battery production factor range"
+R9_BATTERY_HAO_NMC,104,kgCO2e/kWh,NMC,battery_production,2017,2017,China,B,high_sensitivity,Hao2017_Battery,"2912 kgCO2e per 28 kWh pack"
+R9_BATTERY_LAI_TERNARY_RANGE,114.3-137.0,kgCO2e/kWh,ternary_battery,battery_production,2022,2022,China,B,alternative_sensitivity,Lai2022_Battery,"Chinese ternary battery production factor range"
+R9_BEV_CAPACITY_PROXY,40,kWh/vehicle,private_BEV,battery_reference_vehicle,2018,2021,China,B,vehicle_model_proxy,Yang2021,"Reference Nissan Leaf battery capacity adjusted to Chinese average"
+R9_PHEV_CAPACITY_PROXY,12.8,kWh/vehicle,private_PHEV,battery_reference_vehicle,2018,2021,China,B,vehicle_model_proxy,Yang2021,"Reference PHEV battery capacity adjusted to Chinese average"
+R9_PRIVATE_LIFETIME_VKT,150000,km/vehicle,private_ICEV_BEV_PHEV,vehicle_lifetime_allocation,2018,2021,China,B,source_assumption,Yang2021,"10-year and 150000km lifetime; no battery replacement in base"
+
