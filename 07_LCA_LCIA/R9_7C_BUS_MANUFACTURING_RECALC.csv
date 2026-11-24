@@ -1,0 +1,5 @@
+technology,raw_material_kgCO2e_per_1000_PKM,assembly_kgCO2e_per_1000_PKM,manufacturing_kgCO2e_per_1000_PKM,effective_passengers,life_km,manufacturing_tCO2e_per_bus,annualized_manufacturing_gCO2e_per_vehicle_km,source,scope
+diesel_bus,2.25,0.27,42.5,400000,2.52,17000000,42.84,107.1,Lin et al. 2015 Figure 2 and Table 5,Historical Beijing; raw materials+assembly; scrapping excluded
+natural_gas_bus,2.5,0.3,40.5,400000,2.8,16200000,45.36,113.4,Lin et al. 2015 Figure 2 and Table 5,Historical Beijing; raw materials+assembly; scrapping excluded
+diesel_hybrid_bus,2.76,0.33,37.5,400000,3.09,15000000,46.35,115.875,Lin et al. 2015 Figure 2 and Table 5,Historical Beijing; raw materials+assembly; scrapping excluded
+battery_electric_bus,3.06,0.4,34.5,400000,3.46,13800000,47.748,119.37,Lin et al. 2015 Figure 2 and Table 5,Historical Beijing; raw materials+assembly; scrapping excluded
