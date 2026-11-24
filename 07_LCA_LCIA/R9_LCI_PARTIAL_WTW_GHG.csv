@@ -1,0 +1,7 @@
+carrier,annual_amount,amount_unit,annual_energy_MJ,WTW_factor_gCO2e_MJ,WTT_share,WTT_tCO2e,TTW_tCO2e,WTW_tCO2e,factor_scenario,status,note
+gasoline,147547097.72165796,L,4702591589.165138,90.2,0.2341,99299.07753032501,324874.6838123705,424173.7613426955,TLCAM_2017_Table_8,literature_proxy_not_2023_local_factor,2015 China pathway; paper narrative gives 91.3 g/MJ alternative
+diesel,1160286.8941691555,L,41570387.552486375,92.3,0.2211,848.3489310889922,2988.5978400055,3836.9467710944923,TLCAM_2017_Table_8,literature_proxy_not_2023_local_factor,2015 China pathway; paper narrative gives 93.3 g/MJ alternative
+electricity,83906492.4929479,kWh,302063372.9746125,203.4,,,,61439.69006303618,TLCAM_2017_Table_8,literature_proxy_not_2023_local_factor,2015 national electricity mix; full WTW; do not add R7 0.5554 kg CO2/kWh
+gasoline,147547097.72165796,L,4702591589.165138,91.3,0.2341,100510.04189045091,328836.57020032615,429346.6120907771,TLCAM_2017_text_alternative,literature_proxy_not_2023_local_factor,Narrative Section 4.3; source discrepancy sensitivity
+diesel,1160286.8941691555,L,41570387.552486375,93.3,0.2211,857.540143776847,3020.977014870132,3878.5171586469787,TLCAM_2017_text_alternative,literature_proxy_not_2023_local_factor,Narrative Section 4.3; source discrepancy sensitivity
+CNG_or_LNG,4520295.907814283,kg,NA,72.3,0.2195,NA,NA,NA,TLCAM_2017_CNG_reference_only,not_calculated,"CNG/LNG split, gas LHV and R7 mass-consumption basis unresolved"
