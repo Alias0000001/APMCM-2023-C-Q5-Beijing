@@ -66,6 +66,14 @@ jobs:
       - name: Render final and diagnostic SVG and PNG pairs
         run: python 06_S0_Calculation/r9_7g2_final_figures.py
 
+      - name: Reproduce pre-writing coupled stress and road stress
+        run: |
+          node 06_S0_Calculation/audit06_remediation.mjs
+          node 06_S0_Calculation/audit06_road_remediation.mjs
+
+      - name: Render pre-writing replacement figures
+        run: python 06_S0_Calculation/audit07_remediation_figures.py
+
       - name: Run regression tests and SVG validation
         run: python -m unittest discover -s tests -v
 
