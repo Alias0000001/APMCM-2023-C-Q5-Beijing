@@ -77,6 +77,9 @@ jobs:
       - name: Independent six-scenario numerical cross-check
         run: python 06_S0_Calculation/audit05_independent.py
 
+      - name: Compute new pre-contest gap alternatives
+        run: node 06_S0_Calculation/audit06_gap_alternatives.mjs
+
       - name: Render pre-writing replacement figures
         run: python 06_S0_Calculation/audit07_remediation_figures.py
 

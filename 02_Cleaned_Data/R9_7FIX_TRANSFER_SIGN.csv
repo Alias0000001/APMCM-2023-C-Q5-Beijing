@@ -1,0 +1,5 @@
+scenario,private_delta_kt,bus_delta_kt,formula,scope
+S1,0,9.263968908,"Delta = x*private_delta + y*bus_delta; x,y positive",reference intensities only
+S2,71.546778356,0,"Delta = x*private_delta + y*bus_delta; x,y positive",reference intensities only
+S3,71.546778356,9.263968908,"Delta = x*private_delta + y*bus_delta; x,y positive",reference intensities only
+S4,205.016590385,21.770028646,"Delta = x*private_delta + y*bus_delta; x,y positive",reference intensities only

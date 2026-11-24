@@ -17,7 +17,7 @@ D=ROOT/"02_Cleaned_Data"
 F=ROOT/"09_Paper_Draft"/"figures_final"/"remediation"
 F.mkdir(parents=True,exist_ok=True)
 W=15/2.54
-ICE="#496783"; NMC="#C56D88"; LFP="#82ADD0"; PHEV="#9B8AB8"; BUS="#D3A16F"
+ICE="#496783"; NMC="#C56D88"; LFP="#82ADD0"; PHEV="#9B8AB8"; BUS="#94AA9C"
 ENERGY="#4E6D8A"; MATERIAL="#8DB6D8"; PARTS="#5C8DB6"; DIST="#CCD6E0"
 DARK="#263849"; BEV="#497C79"; GREY="#B7BEC5"; LIGHT="#EDF1F4"
 plt.rcParams.update({"font.family":"DejaVu Sans","font.size":9,"axes.labelsize":9,"axes.titlesize":10,"axes.titleweight":"semibold","xtick.labelsize":8.5,"ytick.labelsize":8.5,"legend.fontsize":8.5,"axes.spines.top":False,"axes.spines.right":False,"axes.edgecolor":"#8492A0","text.color":DARK,"axes.labelcolor":DARK,"xtick.color":DARK,"ytick.color":DARK,"figure.facecolor":"white","axes.facecolor":"white","savefig.facecolor":"white","svg.fonttype":"none","hatch.linewidth":.65})
@@ -106,9 +106,9 @@ block(ax,.04,.76,.92,.18,"Annual included-stage climate GWP","Source-specific pr
 block(ax,.04,.50,.44,.19,"Road combustion","CO, VOCs, NOx,\nPM2.5, PM10","#F4E4E8")
 block(ax,.52,.50,.44,.19,"Road wear","Brake, tyre, surface\nPM2.5 and PM10","#F4E4E8")
 block(ax,.04,.25,.44,.18,"Private battery LCIA","Independent NCM622\nrecycling scenarios","#E8E3F0")
-block(ax,.52,.25,.44,.18,"Replacement stress","Extra private packs;\nbus replacement NA","#E8E3F0")
+block(ax,.52,.25,.44,.18,"Replacement stress","Private and bus pack\nreplacement stress","#E8E3F0")
 block(ax,.04,.02,.92,.16,"Not fully quantified","Full maintenance, EOL, dust, infrastructure, noise",LIGHT)
-save(f,"F03_Boundary","R9_7FIX_STAGE_COVERAGE.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv; R9_7AUDIT04_BATTERY_RECIPE.csv","Included production (Qiao includes selected consumable replacements) + WTW is not complete cradle-to-grave LCA. Road wear and private battery LCIA are separate modules; some stages remain NA. Detailed 128-cell ledger in A05.")
+save(f,"F03_Boundary","R9_7FIX_STAGE_COVERAGE.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv; R9_7AUDIT04_BATTERY_RECIPE.csv; R9_7FIX_BUS_GAP_SCENARIOS.csv","Included production (Qiao includes selected consumable replacements) + WTW is not complete cradle-to-grave LCA. Road wear and private battery LCIA are separate modules; bus replacement is a separate transfer stress; other stages remain NA. Detailed 128-cell ledger in A05.")
 # F04 energy and separate GWP panels.
 f=plt.figure(figsize=(W,5.0),layout="constrained");gs=f.add_gridspec(2,2,height_ratios=[1,1.15]);ax=f.add_subplot(gs[0,:]);axs=[f.add_subplot(gs[1,0]),f.add_subplot(gs[1,1])]
 bottom=np.zeros(6)
@@ -133,11 +133,11 @@ for ax,k,lab in zip(axs.flat,["CO","VOCs","NOx","PM2_5","PM10"],["CO","VOCs","NO
     if k.startswith("PM"):
         a=[one(PM,scenario=s,pollutant=k) for s in SS];w=vals(a,"private_wear_t_y");v=vals(a,"bus_wear_t_y")
         ax.bar(XX,w,bottom=c+b,color="#A9C7DD",edgecolor=ICE,hatch="..",lw=.3)
-        ax.bar(XX,v,bottom=c+b+w,color="#E5C7A6",edgecolor=DARK,hatch="xx",lw=.3)
+        ax.bar(XX,v,bottom=c+b+w,color="#CAD8CE",edgecolor=DARK,hatch="xx",lw=.3)
         assert np.allclose(c+b+w+v,vals(a,"covered_road_PM_t_y"))
     ticks(ax);axis(ax,"t/year");ax.set_title(lab,loc="left")
 axs.flat[5].axis("off")
-axs.flat[5].legend(handles=[Patch(facecolor=ICE,label="Car exhaust"),Patch(facecolor=BUS,edgecolor=DARK,hatch="//",label="Bus exhaust"),Patch(facecolor="#A9C7DD",edgecolor=ICE,hatch="..",label="Car wear (PM)"),Patch(facecolor="#E5C7A6",edgecolor=DARK,hatch="xx",label="Bus wear (PM)")],loc="center",frameon=False)
+axs.flat[5].legend(handles=[Patch(facecolor=ICE,label="Car exhaust"),Patch(facecolor=BUS,edgecolor=DARK,hatch="//",label="Bus exhaust"),Patch(facecolor="#A9C7DD",edgecolor=ICE,hatch="..",label="Car wear (PM)"),Patch(facecolor="#CAD8CE",edgecolor=DARK,hatch="xx",label="Bus wear (PM)")],loc="center",frameon=False)
 save(f,"F05_Road_Pollutants","R9_7E_ROAD_POLLUTANT_SCENARIOS.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv","2022 anchor, illustrative China V draft factors, EEA generic wear. PM panels include tyre/brake/surface wear; gas panels only combustion. Dust and secondary PM excluded. Independent panel scales; PM size categories overlap.")
 # F06 decision trade-off.
 f,ax=make(3.2)
