@@ -47,3 +47,13 @@
 - Added the Beijing Public Security Bureau information-disclosure guide, online application navigation, and official request-form page; identified the Traffic Management Bureau as the vehicle-registration record holder.
 - Added the 2025 retrospective clarification that ordinary indicators can purchase PHEV/range-extender vehicles and that the policy has existed since 2021.
 - Final validation: all eight key CSV/register files have zero malformed rows; policy-aware private VKT grid contains 12 scenarios.
+
+## 2026-11-24 — R5: open-source bus propulsion + corrected pure-BEV monthly VKT
+
+- Replaced inaccessible departmental data-collection/login URL with accessible public operator interview, transport statistics and PDF original Table 4-1.
+- Added 2023-04-23 Beijing bus snapshots: 1495 diesel, 6795 natural gas, 15451 mixed new-energy electric-drive; 6 vehicle residual against total 23747, explicitly not assigned.
+- Replaced indirect 2023 private BEV monthly mileage 1560.32 with direct observed 1551.6 km/vehicle/month, yielding annualized scenario 18619.2 instead of old 18723.84.
+- Added R5 bus VKT pressure scenarios (relative electric-drive annual mileage 0.8,1.0,1.2), keeping mixed electric-drive separate from confirmed BEV.
+- Added R5 corrected private propulsion sensitivity, provenance register entries, no-binary status, quality audit and runnable script.
+- Flagged legacy BEV-only interpretations of 16832 minus 217 buses and associated VKT/energy totals as superseded/conditional; original files retained.
+- No PDF/HTML source bytes archived; no SHA-256 claimed for unarchived sources.
