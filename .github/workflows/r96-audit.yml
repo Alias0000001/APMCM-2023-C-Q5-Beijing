@@ -1,9 +1,10 @@
-name: R9.6 reproducibility and figure audit
+name: R9.7 contest-time reproducibility and figure audit
 
 on:
   push:
     branches:
       - work/paper-model-audit-20261124
+      - work/paper-audit08-contest-time-20261125
   workflow_dispatch:
 
 permissions:
@@ -89,15 +90,17 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Commit regenerated CSV and SVG outputs to this branch
-        if: github.ref_name == 'work/paper-model-audit-20261124'
+        if: github.ref_name == 'work/paper-model-audit-20261124' || github.ref_name == 'work/paper-audit08-contest-time-20261125'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add 02_Cleaned_Data/R7_S0_CO2_scenarios.csv
+          git add 02_Cleaned_Data/R9_7B_PRIVATE_BEV_ENERGY_RECONSTRUCTION.csv 02_Cleaned_Data/R9_7B_BUS_ENERGY_DERIVATION.csv
           git add 02_Cleaned_Data/R9_7*.csv
           git add 07_LCA_LCIA/*.csv
+          git add 04_References/SOURCE_REGISTER.csv 08_Reports/Audit/AUDIT_PREWRITE_ISSUE_LEDGER.csv 08_Reports/Audit/AUDIT_08_ENERGY_CUTOFF_REBUILD.md
           git add 09_Paper_Draft/figures/*.svg
           git add 09_Paper_Draft/figures/R9_6_FIGURE_MANIFEST.csv
           git add 09_Paper_Draft/figures_final 09_Paper_Draft/figures_diagnostic 09_Paper_Draft/FINAL_FIGURE_MANIFEST.csv
