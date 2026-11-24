@@ -1,0 +1,43 @@
+source_id,technology,component,value,unit,source_location,note
+LIN2015,bus_diesel,raw_material_production,2.25,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
+LIN2015,bus_diesel,vehicle_assembly,0.27,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_diesel,effective_passengers,42.5,passengers/bus,Table 5,source historical service factor
+LIN2015,bus_natural_gas,raw_material_production,2.50,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
+LIN2015,bus_natural_gas,vehicle_assembly,0.30,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_natural_gas,effective_passengers,40.5,passengers/bus,Table 5,source historical service factor
+LIN2015,bus_diesel_hybrid,raw_material_production,2.76,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
+LIN2015,bus_diesel_hybrid,vehicle_assembly,0.33,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_diesel_hybrid,effective_passengers,37.5,passengers/bus,Table 5,source historical service factor
+LIN2015,bus_BEV,raw_material_production,3.06,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
+LIN2015,bus_BEV,vehicle_assembly,0.40,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_BEV,effective_passengers,34.5,passengers/bus,Table 5,source historical service factor
+LIN2015,all_bus_types,vehicle_lifetime,400000,km/vehicle,Table 5,annualized manufacturing basis
+XIONG2019,BEV_LFP,vehicle_body,3982,kgCO2e/vehicle,Section 3.2.1,production stage
+XIONG2019,BEV_LFP,battery,3369,kgCO2e/vehicle,Section 3.2.2,included; do not add separate battery
+XIONG2019,BEV_LFP,fluids,72.82,kgCO2e/vehicle,Section 3.2.3,production stage
+XIONG2019,BEV_LFP,assembly,1800,kgCO2e/vehicle,Section 3.2.4,approximate source value
+XIONG2019,BEV_LFP,transport,292,kgCO2e/vehicle,Section 3.2.5,production/distribution
+XIONG2019,BEV_NMC,vehicle_body,4240,kgCO2e/vehicle,Section 3.2.1,production stage
+XIONG2019,BEV_NMC,battery,5113,kgCO2e/vehicle,Section 3.2.2,included; do not add separate battery
+XIONG2019,BEV_NMC,fluids,72.82,kgCO2e/vehicle,Section 3.2.3,production stage
+XIONG2019,BEV_NMC,assembly,1800,kgCO2e/vehicle,Section 3.2.4,approximate source value
+XIONG2019,BEV_NMC,transport,292,kgCO2e/vehicle,Section 3.2.5,production/distribution
+XIONG2019,PHEV_LFP,vehicle_body,4189,kgCO2e/vehicle,Section 3.2.1,production stage
+XIONG2019,PHEV_LFP,battery,1207,kgCO2e/vehicle,Section 3.2.2,included; do not add separate battery
+XIONG2019,PHEV_LFP,fluids,91.43,kgCO2e/vehicle,Section 3.2.3,production stage
+XIONG2019,PHEV_LFP,assembly,1900,kgCO2e/vehicle,Section 3.2.4,approximate source value
+XIONG2019,PHEV_LFP,transport,265,kgCO2e/vehicle,Section 3.2.5,production/distribution
+XIONG2019,PHEV_NMC,vehicle_body,4306,kgCO2e/vehicle,Section 3.2.1,production stage
+XIONG2019,PHEV_NMC,battery,2108,kgCO2e/vehicle,Section 3.2.2,included; do not add separate battery
+XIONG2019,PHEV_NMC,fluids,91.43,kgCO2e/vehicle,Section 3.2.3,production stage
+XIONG2019,PHEV_NMC,assembly,1900,kgCO2e/vehicle,Section 3.2.4,approximate source value
+XIONG2019,PHEV_NMC,transport,265,kgCO2e/vehicle,Section 3.2.5,production/distribution
+YING2018,bus_diesel,vehicle_materials,120.054,tCO2/vehicle,Table 6,vehicle raw material production/processing
+YING2018,bus_diesel,assembly,1.580,tCO2/vehicle,Table 6,manufacturing
+YING2018,bus_BEV,vehicle_materials,125.178,tCO2/vehicle,Table 6,vehicle materials excluding battery
+YING2018,bus_BEV,battery_production_lifetime,88.280,tCO2/vehicle,Table 6,six times 14.713t per set; conflicts with one-replacement text
+YING2018,bus_BEV,assembly,1.580,tCO2/vehicle,Table 6,manufacturing
+YANG2021,private_BEV,production_CO2_intensity,81-103,gCO2/km,Section 4.1,"vehicle production includes materials, parts, assembly/distribution, batteries and accessories"
+YANG2021,private_PHEV,production_CO2_intensity,74-90,gCO2/km,Section 4.1,vehicle production includes battery; 150000km FU
+YANG2021,private_ICEV,relative_production_CO2,133% BEV;119% PHEV,ratio,Section 4.1,ICEV production intensity inferred from ratios
+YANG2021,private_all,vehicle_lifetime,150000,km/vehicle,Section 3.1,"10 years, 150000km; no battery replacement"
