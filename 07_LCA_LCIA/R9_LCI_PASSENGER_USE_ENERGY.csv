@@ -1,4 +1,4 @@
 vehicle,annual_VKT_km,gasoline_L,electricity_kWh,annual_vehicle_equivalent,lifetime_VKT_km_assumed,source_id,status
 ICEV,1961492143.8374965,147111910.78781223,0,13076.614292249977,150000,R7_activity_plus_Yang2021_energy_EF,conditional_foreground_flow
 BEV,427275629.9752951,0,64945895.75624485,2848.504199835301,150000,R7_activity_plus_Yang2021_energy_EF,conditional_foreground_flow
-PHEV,17066154.26846006,435186.9338457315,1802185.8865149644,113.77436178973375,150000,R7_activity_plus_Yang2021_energy_EF,conditional_foreground_flow
+PHEV,17066154.26846006,435186.9338457315,1802185.8907493828,113.77436178973375,150000,R7_activity_plus_Yang2021_energy_EF,conditional_foreground_flow
