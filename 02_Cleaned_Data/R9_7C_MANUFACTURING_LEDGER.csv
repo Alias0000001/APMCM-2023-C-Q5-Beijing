@@ -1,0 +1,7 @@
+scenario,private_manufacturing_CO2_base_t_y,private_manufacturing_CO2_low_t_y,private_manufacturing_CO2_high_t_y,bus_manufacturing_GHG_tCO2e_y,aggregation_rule
+S-1,19633.284765,17683.966657,21507.527015,NaN,separate indicators; no grand total
+S0,20105.140323,18076.666477,22064.544380,NaN,separate indicators; no grand total
+S1,20105.140323,18076.666477,22064.544380,NaN,separate indicators; no grand total
+S2,26162.798960,23034.638215,29290.959705,NaN,separate indicators; no grand total
+S3,26162.798960,23034.638215,29290.959705,NaN,separate indicators; no grand total
+S4,26162.798960,23034.638215,29290.959705,NaN,separate indicators; no grand total
