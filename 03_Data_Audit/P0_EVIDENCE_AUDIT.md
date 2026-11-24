@@ -289,3 +289,9 @@ The likely record-holding authority is the Beijing Public Security Traffic Manag
 The application should request aggregated private small-passenger-car stock by fuel/power type as of 2023-12-31, not owner-level data. Ask the PSB to route the request to its Traffic Management Bureau / Vehicle Management Office if the records are held there.
 
 A 2025 official clarification states that ordinary small-passenger-car indicators can be used to purchase plug-in hybrid (including range-extender) and fuel-cell passenger cars, and says this practice has existed since 2021. This is a post-cutoff clarification of the policy path, not a 2023 registration count. Source: https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202509/t20250909_4194533.html.
+
+## R5 supersession notice (2026-11-24)
+
+The prior R2/B3 estimation of 16,615 BEV buses (16,832 new-energy minus 217 hydrogen) and 751.8 million annual BEV-only vehicle-km is **not admissible as a verified BEV-specific baseline**. The dated 2023-04-23 operator interview explicitly describes the 15,451 new-energy **electric-drive** class as a mixed category spanning BEV and other technologies; R5 keeps this umbrella group intact. Also the R2/4 private BEV 18,723.84 km/year inferred from charging frequency × charge distance is superseded by the 2023-10 original Table 4-1 directly observed monthly mean 1,551.6 km, annualized to 18,619.2 km/year as a scenario, not an annual odometer observation.
+
+Read `03_Data_Audit/R5_PUBLIC_SOURCE_AUDIT.md` and `08_Reports/R5_PUBLIC_SOURCES_DATA_UPGRADE.md` for the current evidence decisions. Keep historical files for comparison, not current preferred baselines.
