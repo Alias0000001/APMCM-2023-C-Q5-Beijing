@@ -1,0 +1,7 @@
+scenario,bus_diesel_VKT_km,bus_natural_gas_VKT_km,bus_hybrid_residual_VKT_km,bus_BEV_VKT_km,bus_unclassified_VKT_km,unclassified_allocated_diesel_VKT_km,unclassified_allocated_gas_VKT_km,bus_manufacturing_GHG_tCO2e_y,impact_unit,source_id,scope_note
+S-1,8123991.769977,36924765.268891,0.000000,0.000000,0.000000,0.000000,0.000000,NaN,CO2e,LIN2015,raw materials+assembly; EOL excluded
+S0,2836058.945261,12890314.737824,5862200.235883,23448800.943532,11382.176369,2052.636149,9329.540220,NaN,CO2e,LIN2015,raw materials+assembly; EOL excluded
+S1,0.000000,0.000000,0.000000,45048757.038868,0.000000,0.000000,0.000000,NaN,CO2e,LIN2015,raw materials+assembly; EOL excluded
+S2,2836058.945261,12890314.737824,5862200.235883,23448800.943532,11382.176369,2052.636149,9329.540220,NaN,CO2e,LIN2015,raw materials+assembly; EOL excluded
+S3,0.000000,0.000000,0.000000,45048757.038868,0.000000,0.000000,0.000000,NaN,CO2e,LIN2015,raw materials+assembly; EOL excluded
+S4,0.000000,0.000000,0.000000,45048757.038868,0.000000,0.000000,0.000000,NaN,CO2e,LIN2015,raw materials+assembly; EOL excluded
