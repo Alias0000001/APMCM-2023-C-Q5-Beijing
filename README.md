@@ -1,6 +1,19 @@
 # APMCM 2023 C Problem 5 — Beijing
 
-## Latest: R9.4 gated integration (2026-11-24)
+## Latest: R9.5 sensitivity and paper draft (2026-11-24)
+
+**Read [R9.5 sensitivity report](08_Reports/R9_5_SENSITIVITY_REPORT.md)** and [English paper draft](09_Paper_Draft/R9_5_Paper_Draft_EN.md). R9.5 adds:
+- [lifetime-mileage sensitivity](07_LCA_LCIA/R9_5_LIFETIME_SENSITIVITY.csv) (15 rows);
+- [electricity-factor sensitivity](07_LCA_LCIA/R9_5_GRID_FACTOR_SENSITIVITY.csv) (6 rows);
+- [grid × lifetime factorial](07_LCA_LCIA/R9_5_GRID_LIFETIME_FACTORIAL.csv) (18 rows);
+- [BEV break-even electricity factors](07_LCA_LCIA/R9_5_BREAK_EVEN_GRID_FACTOR.csv) (10 rows);
+- [battery-only factor sensitivity](07_LCA_LCIA/R9_5_BATTERY_FACTOR_SENSITIVITY.csv) (44 rows);
+- [retrospective electricity cross-checks](07_LCA_LCIA/R9_5_RETROSPECTIVE_GRID_CROSSCHECK.csv);
+- [24 audit checks](07_LCA_LCIA/R9_5_TESTS.csv).
+
+Run `python 06_S0_Calculation/r9_5_sensitivity.py`. Strict contest-time results retain pre-2023 Peng2017 WTW factors; 2023 official MEE electricity factors published in 2025 are retrospective checks only. Battery-only GWP is never added to Qiao BEV production. See [paper style research and figure standards](09_Paper_Draft/论文写作与图表风格研究.md) and [R9.5 vector figures](09_Paper_Draft/figures/).
+
+## Previous: R9.4 gated integration (2026-11-24)
 
 **Read [R9.4 integration report](08_Reports/R9_4_LCI_LCIA_INTEGRATION_REPORT.md).** This version integrates the R7/R9 foreground activity into **three intentionally separate reporting domains**:
 - [physical pollutant masses, kg/year](07_LCA_LCIA/R9_4_PHYSICAL_FLOW_LEDGER.csv) — partial Yang2021 life-cycle sub-stages, no full-LCA totals;
