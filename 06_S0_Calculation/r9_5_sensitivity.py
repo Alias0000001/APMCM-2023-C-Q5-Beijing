@@ -83,7 +83,7 @@ def main():
             m=manufacture[vehicle]/200000
             e=bev_kwh_km*ef
             total=(m+e)*1000
-            eligible=factor['eligibility']=='STRICT_PRE_2023_LITERATURE'
+            eligible=factor['eligibility'].startswith('STRICT_PRE_2023')
             grid_sensitivity.append(dict(scenario=factor['scenario_id'],scope=factor['scope'],
                 geography=factor['geography'],factor_kg_per_kWh=ef,vehicle=vehicle,
                 manufacturing_gCO2e_per_km=m*1000,electricity_component_g_per_km=e*1000,
