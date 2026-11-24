@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="425.19685pt" height="360pt" viewBox="0 0 425.19685 360" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360 
+L 425.19685 360 
+L 425.19685 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 61.687732 66.012155 
+L 363.509119 66.012155 
+Q 371.054653 66.012155 371.054653 59.640163 
+L 371.054653 20.700216 
+Q 371.054653 14.328225 363.509119 14.328225 
+L 61.687732 14.328225 
+Q 54.142197 14.328225 54.142197 20.700216 
+L 54.142197 59.640163 
+Q 54.142197 66.012155 61.687732 66.012155 
+z
+" clip-path="url(#pd2ccd7e613)" style="fill: #edf1f4; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 61.687732 140.352054 
+L 363.509119 140.352054 
+Q 371.054653 140.352054 371.054653 133.980062 
+L 371.054653 95.040115 
+Q 371.054653 88.668124 363.509119 88.668124 
+L 61.687732 88.668124 
+Q 54.142197 88.668124 54.142197 95.040115 
+L 54.142197 133.980062 
+Q 54.142197 140.352054 61.687732 140.352054 
+z
+" clip-path="url(#pd2ccd7e613)" style="fill: #ddebf5; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 12.22256 232.391929 
+L 133.789508 232.391929 
+Q 141.335042 232.391929 141.335042 226.019938 
+L 141.335042 169.380014 
+Q 141.335042 163.008023 133.789508 163.008023 
+L 12.22256 163.008023 
+Q 4.677025 163.008023 4.677025 169.380014 
+L 4.677025 226.019938 
+Q 4.677025 232.391929 12.22256 232.391929 
+z
+" clip-path="url(#pd2ccd7e613)" style="fill: #ddebf5; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 150.557362 232.391929 
+L 272.12431 232.391929 
+Q 279.669844 232.391929 279.669844 226.019938 
+L 279.669844 169.380014 
+Q 279.669844 163.008023 272.12431 163.008023 
+L 150.557362 163.008023 
+Q 143.011828 163.008023 143.011828 169.380014 
+L 143.011828 226.019938 
+Q 143.011828 232.391929 150.557362 232.391929 
+z
+" clip-path="url(#pd2ccd7e613)" style="fill: #f4e4e8; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 288.892165 232.391929 
+L 410.459112 232.391929 
+Q 418.004647 232.391929 418.004647 226.019938 
+L 418.004647 169.380014 
+Q 418.004647 163.008023 410.459112 163.008023 
+L 288.892165 163.008023 
+Q 281.34663 163.008023 281.34663 169.380014 
+L 281.34663 226.019938 
+Q 281.34663 232.391929 288.892165 232.391929 
+z
+" clip-path="url(#pd2ccd7e613)" style="fill: #e8e3f0; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 49.111841 306.731828 
+L 376.08501 306.731828 
+Q 383.630544 306.731828 383.630544 300.359837 
+L 383.630544 257.879894 
+Q 383.630544 251.507903 376.08501 251.507903 
+L 49.111841 251.507903 
+Q 41.566306 251.507903 41.566306 257.879894 
+L 41.566306 300.359837 
+Q 41.566306 306.731828 49.111841 306.731828 
+z
+" clip-path="url(#pd2ccd7e613)" style="fill: #edf1f4; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="33.414483" transform="rotate(-0 212.598425 33.414483)">Beijing evidence</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="52.179845" transform="rotate(-0 212.598425 52.179845)">Population, stock, travel and energy</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="107.754383" transform="rotate(-0 212.598425 107.754383)">Million-resident representative city</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="126.519744" transform="rotate(-0 212.598425 126.519744)">Mode VKT, propulsion mix and six scenarios</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 212.598425 65.181777 
+Q 212.598425 77.340196 212.598425 88.380581 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 214.398425 84.780581 
+L 212.598425 88.380581 
+L 210.798425 84.780581 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="73.006034" y="187.439431" transform="rotate(-0 73.006034 187.439431)">Climate</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(33.133729 208.344623)">Production + WTW</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(47.049823 218.508631)">Final energy</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 210.634555 137.91848 
+Q 142.801015 151.680285 76.063188 165.219796 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 79.9492 166.268086 
+L 76.063188 165.219796 
+L 79.233427 162.739961 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 74.978424 229.910065 
+Q 142.803565 241.950153 209.527881 253.794827 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 206.297908 251.393312 
+L 209.527881 253.794827 
+L 205.668686 254.937896 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="211.340836" y="187.404275" transform="rotate(-0 211.340836 187.404275)">Road ecology</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(167.608336 208.344623)">Combustion exhaust</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(163.90486 218.508631)">Tyre, brake, road wear</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 212.509847 139.514762 
+Q 211.969651 151.679589 211.479053 162.727482 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 213.436987 159.210879 
+L 211.479053 162.727482 
+L 209.840531 159.051174 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 211.442309 231.559391 
+Q 211.969632 241.949939 212.440287 251.22389 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 214.055507 247.537284 
+L 212.440287 251.22389 
+L 210.460135 247.71975 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="349.675638" y="187.369118" transform="rotate(-0 349.675638 187.369118)">Battery LCIA</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(301.87974 208.344623)">11 separate indicators</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(310.539115 218.508631)">Not added to GWP</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 214.560376 137.925394 
+Q 281.138702 151.680383 346.622117 165.209166 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 343.460757 162.71802 
+L 346.622117 165.209166 
+L 342.732384 166.243566 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 347.705321 229.916115 
+Q 281.135241 241.95024 215.665362 253.785477 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 219.528146 254.916362 
+L 215.665362 253.785477 
+L 218.887741 251.373781 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="271.691317" transform="rotate(-0 212.598425 271.691317)">Paired tests and transfer</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="291.87292" transform="rotate(-0 212.598425 291.87292)">VKT/PKM, grid, lifetime, replacement</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 212.598425 305.900586 
+Q 212.598425 312.751748 212.598425 318.484876 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 214.398425 314.884876 
+L 212.598425 318.484876 
+L 210.798425 314.884876 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="fill: #263849; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="337.529786" transform="rotate(-0 212.598425 337.529786)">Conditional environmental decisions</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd2ccd7e613">
+   <rect x="3.00024" y="3.00024" width="419.19637" height="353.99952"/>
+  </clipPath>
+ </defs>
+</svg>

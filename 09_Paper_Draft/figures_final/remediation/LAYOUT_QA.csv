@@ -1,0 +1,14 @@
+figure,native_width_cm,min_font_pt,out_of_canvas_text_count,text_outside,visual_gate
+F01_Framework,15.0,8.5,0,,PENDING human print-size review
+F02_Activity,15.0,8.5,0,,PENDING human print-size review
+F03_Boundary,15.0,8.5,0,,PENDING human print-size review
+F04_Energy_GWP,15.0,8.5,0,,PENDING human print-size review
+F05_Road_Pollutants,15.0,8.5,0,,PENDING human print-size review
+F06_Policy_Tradeoff,15.0,8.5,2,−10 | 120,PENDING human print-size review
+F07_Paired_Envelope,15.0,8.5,2,−40 | 80,PENDING human print-size review
+F08_Threshold,15.0,8.5,2,325 | 325,PENDING human print-size review
+A01_Transfer,15.0,8.5,0,,PENDING human print-size review
+A02_PKM,15.0,8.5,0,,PENDING human print-size review
+A03_Meter,15.0,8.5,0,,PENDING human print-size review
+A04_Battery_LCIA,15.0,8.5,1,40,PENDING human print-size review
+A05_Coverage,15.0,8.5,0,,PENDING human print-size review

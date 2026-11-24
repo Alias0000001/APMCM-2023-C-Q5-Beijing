@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="425.19685pt" height="187.2pt" viewBox="0 0 425.19685 187.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 187.2 
+L 425.19685 187.2 
+L 425.19685 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 15.576131 80.553635 
+L 124.567187 80.553635 
+Q 132.112722 80.553635 132.112722 77.292043 
+L 132.112722 28.368173 
+Q 132.112722 25.106581 124.567187 25.106581 
+L 15.576131 25.106581 
+Q 8.030596 25.106581 8.030596 28.368173 
+L 8.030596 77.292043 
+Q 8.030596 80.553635 15.576131 80.553635 
+z
+" clip-path="url(#p72b2bb8979)" style="fill: #ddebf5; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 158.102897 80.553635 
+L 267.093953 80.553635 
+Q 274.639488 80.553635 274.639488 77.292043 
+L 274.639488 28.368173 
+Q 274.639488 25.106581 267.093953 25.106581 
+L 158.102897 25.106581 
+Q 150.557362 25.106581 150.557362 28.368173 
+L 150.557362 77.292043 
+Q 150.557362 80.553635 158.102897 80.553635 
+z
+" clip-path="url(#p72b2bb8979)" style="fill: #edf1f4; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 300.629663 80.553635 
+L 409.620719 80.553635 
+Q 417.166254 80.553635 417.166254 77.292043 
+L 417.166254 28.368173 
+Q 417.166254 25.106581 409.620719 25.106581 
+L 300.629663 25.106581 
+Q 293.084128 25.106581 293.084128 28.368173 
+L 293.084128 77.292043 
+Q 293.084128 80.553635 300.629663 80.553635 
+z
+" clip-path="url(#p72b2bb8979)" style="fill: #ddebf5; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="70.071659" y="44.803973" transform="rotate(-0 70.071659 44.803973)">Grid input</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(45.269589 61.128624)">WTW factor</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(58.402089 71.292631)">Qgrid</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="44.768817" transform="rotate(-0 212.598425 44.768817)">Charger</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(182.230183 61.128624)">Loss if outside</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(180.172917 71.292631)">reported meter</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="355.125191" y="44.733661" transform="rotate(-0 355.125191 44.733661)">Battery</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(325.540543 61.128624)">Meter may be</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'" transform="translate(318.21859 71.292631)">here or upstream</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 130.757907 51.92411 
+Q 141.335324 51.92411 150.794707 51.92411 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 147.194707 50.12411 
+L 150.794707 51.92411 
+L 147.194707 53.72411 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 273.284673 51.92411 
+Q 283.86209 51.92411 293.321473 51.92411 
+" style="fill: none; stroke: #496783; stroke-linecap: round"/>
+    <path d="M 289.721473 50.12411 
+L 293.321473 51.92411 
+L 289.721473 53.72411 
+z
+" style="fill: #496783; stroke: #496783; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: #263849; font: 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="118.967933" transform="rotate(-0 212.598425 118.967933)">Delivered interpretation: use reported kWh</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #263849; font: 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="146.147861" transform="rotate(-0 212.598425 146.147861)">Battery-side interpretation: Qgrid = Qreported / η</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #263849; font: 700 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="171.515794" transform="rotate(-0 212.598425 171.515794)">Historical bus proxy: test both interpretations</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p72b2bb8979">
+   <rect x="3.00024" y="3.00024" width="419.19637" height="181.19952"/>
+  </clipPath>
+ </defs>
+</svg>
