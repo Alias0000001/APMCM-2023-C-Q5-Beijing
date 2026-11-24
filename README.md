@@ -1,3 +1,7 @@
+## R9.7D — Passenger service and mileage denominator
+
+[Report](08_Reports/R9_7D_PASSENGER_SERVICE_AND_MILEAGE_AUDIT.md) | [PKM evidence](02_Cleaned_Data/R9_7D_PKM_EVIDENCE.csv) | [30 service cases](02_Cleaned_Data/R9_7D_SERVICE_SENSITIVITY.csv) | [six mileage alternatives](02_Cleaned_Data/R9_7D_MILEAGE_DENOMINATOR_SENSITIVITY.csv). Actual PKM remains NA. VKT is primary; conditional PKM and equal-service sensitivity are auxiliary. R9.7C bus CSV field order and PHEV boundary wording corrected. Next R9.7E local pollutants. No main modification.
+
 ## R9.7C manufacturing-factor audit — 2026-11-24
 
 **Read [R9.7C audit](08_Reports/R9_7C_MANUFACTURING_FACTOR_AUDIT.md).** The contest-time branch now contains:

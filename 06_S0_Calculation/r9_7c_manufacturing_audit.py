@@ -13,10 +13,10 @@ for name,raw,assembly,occ,life in rows:
     out.append(dict(technology=name,raw_material_kgCO2e_per_1000_PKM=raw,
       assembly_kgCO2e_per_1000_PKM=assembly,
       manufacturing_kgCO2e_per_1000_PKM=raw+assembly,
-      effective_passengers=occ,life_km=life,
+      effective_passengers=occ,life_km=life,lifetime_PKM_per_bus=occ*life,
       manufacturing_tCO2e_per_bus=manufacture/1000,
       annualized_manufacturing_gCO2e_per_vehicle_km=annualized,
-      source="Lin2015_Fig2_Table5",scope="historical raw material + assembly; EOL excluded"))
+      source="Lin2015_Fig2_Table5",scope="historical raw material + assembly/distribution; EOL excluded"))
 assert [round(r["manufacturing_tCO2e_per_bus"],3) for r in out]==[42.84,45.36,46.35,47.748]
 with (D/"R9_7C_BUS_MANUFACTURING_RECALC.csv").open("w",newline="",encoding="utf-8") as f:
     w=csv.DictWriter(f,fieldnames=list(out[0]));w.writeheader();w.writerows(out)

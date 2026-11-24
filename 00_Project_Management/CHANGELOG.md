@@ -57,3 +57,7 @@
 - Added R5 corrected private propulsion sensitivity, provenance register entries, no-binary status, quality audit and runnable script.
 - Flagged legacy BEV-only interpretations of 16832 minus 217 buses and associated VKT/energy totals as superseded/conditional; original files retained.
 - No PDF/HTML source bytes archived; no SHA-256 claimed for unarchived sources.
+
+## 2026-11-24 — R9.7D
+- Added 30 conditional service cases and six mileage-denominator alternatives; actual PKM remains NA.
+- Corrected bus manufacturing audit CSV column order and PHEV production/vehicle-cycle wording. Added regression tests and pipeline steps; figure manifest staging restored. No new Jinhua VKT search.
