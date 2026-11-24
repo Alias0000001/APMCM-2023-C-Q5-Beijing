@@ -27,6 +27,7 @@ bus=[]
 ledger=[]
 gwp=[]
 partial=[]
+source_sensitivity=[]
 for r in vkt:
     name=r["scenario"]
     vi=float(r["private_ICEV_vkt_km"]);vb=float(r["private_BEV_vkt_km"]);vp=float(r["private_PHEV_vkt_km"])
@@ -46,7 +47,15 @@ for r in vkt:
     mfg_gwp=car_gwp+total
     wtw=energy_by_s[name]
     gwp.append([name,car_gwp,total,mfg_gwp,"CO2e","QIAO2017+XIONG2019","Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included"])
-    partial.append([name,car_gwp,total,mfg_gwp,wtw,mfg_gwp+wtw,"CO2e","vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure"])
+    partial.append([name,car_gwp,total,mfg_gwp,wtw,mfg_gwp+wtw,"CO2e","vehicle production + bus raw materials/assembly-distribution + WTW operation; excludes maintenance/EOL/infrastructure"])
+    # Structural BEV production-factor alternative: Xiong2019 NMC instead of Qiao2017 NMC.
+    car_gwp_xiong_bev=(vi*9985+vb*11517.82+vp*8670.43)/150000/1000
+    for set_name, car_alt, note in (
+        ("QIAO2017_BEV_NMC",car_gwp,"Qiao ICEV+BEV NMC; Xiong PHEV NMC"),
+        ("XIONG2019_BEV_NMC",car_gwp_xiong_bev,"Qiao ICEV; Xiong BEV/PHEV NMC")
+    ):
+        mfg_alt=car_alt+total
+        source_sensitivity.append([set_name,name,car_alt,total,mfg_alt,wtw,mfg_alt+wtw,"CO2e",note])
 write("R9_7C_PRIVATE_MANUFACTURING_SCENARIOS.csv",
  ["scenario","private_ICEV_vkt_km","private_BEV_vkt_km","private_PHEV_vkt_km","manufacturing_CO2_low_t_y","manufacturing_CO2_base_t_y","manufacturing_CO2_high_t_y","impact_unit","source_id","scope_note"],priv)
 write("R9_7C_BUS_MANUFACTURING_SCENARIOS.csv",
@@ -58,8 +67,10 @@ write("R9_7C_PRIVATE_MANUFACTURING_GWP_SCENARIOS.csv",
  [[r[0],r[1],r[5],r[6]] for r in gwp])
 write("R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv",
  ["scenario","private_vehicle_production_GWP_t_y","bus_manufacturing_GWP_t_y","total_manufacturing_GWP_t_y","WTW_operating_GWP_t_y","partial_LCA_GWP_t_y","impact_unit","scope_note"],partial)
+write("R9_7C_PARTIAL_LCA_GWP_SOURCE_SENSITIVITY.csv",
+ ["factor_set","scenario","private_vehicle_production_GWP_t_y","bus_manufacturing_GWP_t_y","total_manufacturing_GWP_t_y","WTW_operating_GWP_t_y","partial_LCA_GWP_t_y","impact_unit","source_note"],source_sensitivity)
 assert len(energy)==6
-assert len(partial)==6 and len(gwp)==6
+assert len(partial)==6 and len(gwp)==6 and len(source_sensitivity)==12
 for row in partial:
     assert all(math.isfinite(float(x)) and float(x)>=0 for x in row[1:6])
 assert math.isclose(next(r[3] for r in partial if r[0]=="S3"),
