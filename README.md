@@ -1,3 +1,7 @@
+## Final audit (before manuscript freeze)
+
+[Approved audit standard V1.0](00_Project_Management/FINAL_AUDIT_STANDARD_V1.md) | [Audit-01](08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md) | [Requirement matrix](08_Reports/Audit/AUDIT_01_REQUIREMENT_MATRIX.csv). A dimension provisional 9.6/12; final manuscript freeze blocked pending Audit-02–09 and closure of conditional items. Existing calculations unchanged.
+
 ## R9.7G-1 — Contest manuscript reconstruction
 
 [New English manuscript](09_Paper_Draft/Q5_Contest_Manuscript_EN.md) | [Award-paper and manuscript audit](08_Reports/R9_7G1_MANUSCRIPT_AND_AWARD_AUDIT.md) | [Final figure specification](09_Paper_Draft/FINAL_FIGURE_SPECIFICATION.md). Six-scenario numerical tables use contest-time A–F outputs. The manuscript is not final typeset; new figure rendering and review remain G-2. Old manuscripts preserved, no baseline changes, no main modification.
