@@ -1,15 +1,15 @@
 source_id,technology,component,value,unit,source_location,note
 LIN2015,bus_diesel,raw_material_production,2.25,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
-LIN2015,bus_diesel,vehicle_assembly,0.27,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_diesel,vehicle_assembly_distribution,0.27,kgCO2e/1000PKM,Figure 2,EOL excluded; source-defined assembly/distribution stage
 LIN2015,bus_diesel,effective_passengers,42.5,passengers/bus,Table 5,source historical service factor
 LIN2015,bus_natural_gas,raw_material_production,2.50,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
-LIN2015,bus_natural_gas,vehicle_assembly,0.30,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_natural_gas,vehicle_assembly_distribution,0.30,kgCO2e/1000PKM,Figure 2,EOL excluded; source-defined assembly/distribution stage
 LIN2015,bus_natural_gas,effective_passengers,40.5,passengers/bus,Table 5,source historical service factor
 LIN2015,bus_diesel_hybrid,raw_material_production,2.76,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
-LIN2015,bus_diesel_hybrid,vehicle_assembly,0.33,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_diesel_hybrid,vehicle_assembly_distribution,0.33,kgCO2e/1000PKM,Figure 2,EOL excluded; source-defined assembly/distribution stage
 LIN2015,bus_diesel_hybrid,effective_passengers,37.5,passengers/bus,Table 5,source historical service factor
 LIN2015,bus_BEV,raw_material_production,3.06,kgCO2e/1000PKM,Figure 2,pre-contest; Beijing historical
-LIN2015,bus_BEV,vehicle_assembly,0.40,kgCO2e/1000PKM,Figure 2,EOL excluded
+LIN2015,bus_BEV,vehicle_assembly_distribution,0.40,kgCO2e/1000PKM,Figure 2,EOL excluded; source-defined assembly/distribution stage
 LIN2015,bus_BEV,effective_passengers,34.5,passengers/bus,Table 5,source historical service factor
 LIN2015,all_bus_types,vehicle_lifetime,400000,km/vehicle,Table 5,annualized manufacturing basis
 XIONG2019,BEV_LFP,vehicle_body,3982,kgCO2e/vehicle,Section 3.2.1,production stage
