@@ -81,3 +81,7 @@
 
 ## 2026-11-24 — Audit-01 revision
 - User-supplied problem PDF text and p2 visually verified; evidence excerpt and fingerprint recorded. A-001 closed. Rewrote scope to isolate historical 2023 figures and current 2022 anchor. Q1–Q4 explicitly out of scope, Q6 interface only. Deferred issues assigned to Audit-02/03/04/06; 7 pass, 3 conditional, 10.2/12. No computation or figure changes.
+
+## 2026-11-24 — Audit-02
+- Audited nine mathematical-framework items; 7 pass, 2 conditional (8.89/10). Independently reconciled reference energy, WTW, production, GWP, NOx and PM2.5; introduced 243 paired propulsion stress sets and all-diesel and urban-numerator alternatives. No baseline changes.
+- Corrected manufacturing-register tonne conversion notes (values unchanged); recorded residual-technology synchronization issue for Audit-06. Added structural script and regression tests to existing CI; preserved history and main.

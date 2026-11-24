@@ -1,3 +1,7 @@
+## Audit-02 — Mathematical framework and assumptions
+
+[Audit report](08_Reports/Audit/AUDIT_02_FRAMEWORK_AND_ASSUMPTIONS.md) | [Deferred issues](08_Reports/Audit/AUDIT_02_DEFERRED_ISSUES.csv) | [Structural alternatives](02_Cleaned_Data/R9_7AUDIT02_ALTERNATIVES.csv) | [Propulsion envelope](02_Cleaned_Data/R9_7AUDIT02_PROPULSION_ENVELOPE.csv). B dimension 8.89/10 provisional; 243 paired propulsion sets, all-diesel S−1 alternative and urban-numerator stress. Main baseline unchanged. Full grid generated in CI. Next Audit-03; no manuscript freeze.
+
 ## Final audit (before manuscript freeze)
 
 [Approved audit standard V1.0](00_Project_Management/FINAL_AUDIT_STANDARD_V1.md) | [Audit-01](08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md) | [Requirement matrix](08_Reports/Audit/AUDIT_01_REQUIREMENT_MATRIX.csv). A dimension provisional 10.2/12; final manuscript freeze blocked pending Audit-02–09 and closure of conditional items (see updated Audit-01 report). Existing calculations unchanged.
