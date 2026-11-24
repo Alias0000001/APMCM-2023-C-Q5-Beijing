@@ -117,7 +117,7 @@ def main():
             break_even.append(dict(lifetime_km=life,vehicle=vehicle,
                 break_even_grid_EF_kgCO2e_per_kWh=threshold,
                 Peng2017_Table8_grid_EF_kgCO2e_per_kWh=default_ef,
-                baseline_BE V_below_threshold='YES' if default_ef<threshold else 'NO',
+                baseline_BEV_below_threshold='YES' if default_ef<threshold else 'NO',
                 ICEV_gCO2e_per_km=ice*1000,
                 BEV_at_break_even_equals_ICEV_gCO2e_per_km=ice*1000,
                 formula='(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km'))
