@@ -52,6 +52,7 @@ jobs:
           python 06_S0_Calculation/r9_7d_service.py
           python 06_S0_Calculation/r9_7e_environment.py
           python 06_S0_Calculation/r9_7f_transfer.py
+          python 06_S0_Calculation/r9_7g3_bus_scrapping.py
 
       - name: Generate legacy SVG figures from CSV inputs
         run: python 06_S0_Calculation/r9_6_generate_figures.py

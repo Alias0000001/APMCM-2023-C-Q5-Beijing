@@ -108,3 +108,6 @@ This branch adds a GitHub Actions workflow and standard-library Python tests. Th
 7. Commit regenerated CSV/SVG outputs back to this branch only.
 
 If GitHub Actions is disabled or the linked GitHub App cannot write workflow results, the same commands can be run locally from the repository root with Python 3.11+; no third-party package is required for the audit/generator/tests. See the accompanying manual runbook in the chat response.
+
+## Later clarification (R9.7G-3A)
+The formula above gives kg per bus when dividing by 1000; to express tonnes per bus divide by 1,000,000. The displayed tonne values are correct. The R9.6 inputs are retrospective, not the contest baseline. See R9_7G3A_EVIDENCE_RECONCILIATION.md for the reconciled evidence and independent scrapping sensitivity.

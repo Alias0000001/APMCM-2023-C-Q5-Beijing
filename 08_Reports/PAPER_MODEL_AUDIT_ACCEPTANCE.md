@@ -23,3 +23,6 @@ Final figures must be authored as new assets from the new data tables, not merel
 
 ## G-1 progress update
 New draft: `09_Paper_Draft/Q5_Contest_Manuscript_EN.md`. Title, abstract, mathematical model, notation, city-anchor rationale, separate mode/stage results, service analysis, paired uncertainty and conclusion reconstructed. Award comparison and common-distance diagnostic in `08_Reports/R9_7G1_MANUSCRIPT_AND_AWARD_AUDIT.md`. Final figure design in `09_Paper_Draft/FINAL_FIGURE_SPECIFICATION.md`. Prior acceptance matrix above is retained as history. Remaining gates: implement new figures, render and visually inspect; verify source bibliographic metadata, all manuscript values and cross-references, final layout; no full cradle-to-grave claim. No numeric baseline modifications.
+
+## G-3A evidence update
+See `R9_7G3A_EVIDENCE_RECONCILIATION.md`: 2022/2023 energy rows confirmed by 2024 report screenshot and 2023 transcription; actual PKM remains NA. Historical bus scrapping separately quantified; no complete LCA. G-2 generation passed, four legacy PNGs visually inspected; remaining layout gate open.

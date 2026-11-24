@@ -1,0 +1,5 @@
+technology,source_scrapping_kgCO2e_per_1000_PKM,effective_passengers,lifetime_km,scrapping_tCO2e_per_bus,scrapping_gCO2e_per_vehicle_km,source,scope
+diesel_bus,0.040000000,42.500000000,400000.000000000,0.680000000,1.700000000,Lin2015_Fig2_Table5,historical scrapping proxy; not complete recycling inventory
+natural_gas_bus,0.040000000,40.500000000,400000.000000000,0.648000000,1.620000000,Lin2015_Fig2_Table5,historical scrapping proxy; not complete recycling inventory
+diesel_hybrid_bus,0.060000000,37.500000000,400000.000000000,0.900000000,2.250000000,Lin2015_Fig2_Table5,historical scrapping proxy; not complete recycling inventory
+battery_electric_bus,0.170000000,34.500000000,400000.000000000,2.346000000,5.865000000,Lin2015_Fig2_Table5,historical scrapping proxy; not complete recycling inventory

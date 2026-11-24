@@ -1,0 +1,7 @@
+scenario,bus_scrapping_tCO2e_y,original_partial_GWP_tCO2e_y,expanded_partial_GWP_tCO2e_y,reduction_vs_paired_S0_pct,scope
+S-1,73.628905745,584588.702724000,584662.331629744,-2.939834963,bus scrapping only; other unquantified stages remain NA
+S0,176.439381483,567788.655802000,567965.095183483,0.000000000,bus scrapping only; other unquantified stages remain NA
+S1,264.210960033,558524.686894000,558788.897854033,1.615626983,bus scrapping only; other unquantified stages remain NA
+S2,176.439381483,496241.877447000,496418.316828483,12.597037910,bus scrapping only; other unquantified stages remain NA
+S3,264.210960033,486977.908539000,487242.119499033,14.212664892,bus scrapping only; other unquantified stages remain NA
+S4,264.210960033,341002.036773000,341266.247733033,39.914221732,bus scrapping only; other unquantified stages remain NA

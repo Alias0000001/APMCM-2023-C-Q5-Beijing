@@ -72,3 +72,6 @@
 ## 2026-11-24 — R9.7G-1
 - Rebuilt English manuscript with million-city target, explicit activity and stage equations, all six scenarios and mode-specific energy/GWP/exhaust tables, conditional PKM and paired sensitivity, and updated 0.947 kgCO2e/kWh car break-even threshold. No model-input change.
 - Rechecked award-paper equation and common-distance diagnostic; differing scopes and CO2/CO2e prevent a quantitative validation claim. Added final figure specification. Prior papers and figures retained; new rendering pending G-2.
+
+## 2026-11-24 — R9.7G-3A
+- Reconciled R9.6 versus contest-time evidence, checked Lin2015 Figure 2 and 2024 Table 4-1, corrected prose unit conversion, added independent bus scrapping sensitivity and tests. A–F baseline unchanged; four priority PNGs visually inspected, remaining figure and typeset review pending.
