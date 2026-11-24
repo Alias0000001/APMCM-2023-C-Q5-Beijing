@@ -6,7 +6,7 @@
 
 ## Abstract
 
-This study develops a traceable life-cycle assessment framework for road-transport technologies in a 2023 Beijing reference city scaled to one million residents. The available evidence does not support a complete cradle-to-grave inventory for every vehicle class. To avoid false aggregation, the framework separates (i) physical pollutant mass flows, (ii) a two-stage climate-change screening that combines vehicle production with fuel and electricity well-to-wheel (WTW) emissions, and (iii) a battery-only life-cycle impact assessment. The strict two-stage comparison uses Qiao et al. (2017) vehicle-production factors and Peng et al. (2017) China WTW factors. Under the baseline assumption of 200,000 vehicle-km lifetime mileage, the estimated intensities are 265.54 gCO2e/km for ICEVs, 186.33 gCO2e/km for BEV-NMC, and 187.17 gCO2e/km for BEV-LFP. Sensitivity analysis shows that the BEV-NMC result ranges from 161.32 to 261.35 gCO2e/km as assumed lifetime mileage varies from 300,000 to 100,000 km. The break-even electricity WTW factor is approximately 1.253 kgCO2e/kWh for a 200,000-km BEV-NMC. These values are conditional two-stage screening results rather than complete life-cycle totals. Missing vehicle manufacturing, battery chemistry, bus fuel allocation, maintenance, and end-of-life flows are explicitly retained as unresolved inputs.
+This study develops a traceable life-cycle assessment framework for road-transport technologies in a 2023 Beijing reference city scaled to one million residents. The available evidence does not support a complete cradle-to-grave inventory for every vehicle class. To avoid false aggregation, the framework separates (i) physical pollutant mass flows, (ii) a two-stage climate-change screening that combines vehicle production with fuel and electricity well-to-wheel (WTW) emissions, and (iii) a battery-only life-cycle impact assessment. The strict two-stage comparison uses Qiao et al. (2017) vehicle-production factors and Peng et al. (2017) China WTW factors. Under the baseline assumption of 200,000 vehicle-km lifetime mileage, the estimated intensities are 265.54 gCO2e/km for ICEVs, 192.18 gCO2e/km for BEV-NMC, and 193.03 gCO2e/km for BEV-LFP. Sensitivity analysis shows that the BEV-NMC result ranges from 167.18 to 267.21 gCO2e/km as assumed lifetime mileage varies from 300,000 to 100,000 km. The break-even electricity WTW factor is approximately 1.191 kgCO2e/kWh for a 200,000-km BEV-NMC. These values are conditional two-stage screening results rather than complete life-cycle totals. Missing vehicle manufacturing, battery chemistry, bus fuel allocation, maintenance, and end-of-life flows are explicitly retained as unresolved inputs.
 
 **Keywords:** Life-cycle assessment; vehicle electrification; well-to-wheel emissions; GWP100; sensitivity analysis; Beijing
 
@@ -173,10 +173,10 @@ At a lifetime mileage of 200,000 km and the Peng2017 Table 8 electricity WTW fac
 | Vehicle type | Manufacturing (tCO2e/year) | Energy WTW (tCO2e/year) | Two-stage total (tCO2e/year) | Intensity (gCO2e/km) |
 |---|---:|---:|---:|---:|
 | ICEV | 97,927.50 | 422,922.67 | 520,850.17 | 265.54 |
-| BEV-NMC | 32,056.35 | 47,555.98 | 79,612.34 | 186.33 |
-| BEV-LFP | 32,417.40 | 47,555.98 | 79,973.38 | 187.17 |
+| BEV-NMC | 32,056.35 | 50,058.93 | 82,115.28 | 192.18 |
+| BEV-LFP | 32,417.40 | 50,058.93 | 82,476.33 | 193.03 |
 
-BEV-NMC is approximately 29.83% lower than ICEV in this two-stage screening scenario. BEV-NMC and BEV-LFP are alternative chemistry cases applied to the same BEV activity; their annual totals must not be added.
+BEV-NMC is approximately 27.62% lower than ICEV in this two-stage screening scenario. BEV-NMC and BEV-LFP are alternative chemistry cases applied to the same BEV activity; their annual totals must not be added.
 
 ![Baseline two-stage GWP comparison](figures/Fig_R9_5_Baseline_GWP_Comparison.svg)
 
@@ -184,7 +184,7 @@ BEV-NMC is approximately 29.83% lower than ICEV in this two-stage screening scen
 
 ### 4.2 Sensitivity to electricity carbon intensity
 
-Under the two Peng2017 WTW factors, BEV-NMC intensity changes from 166.95 to 186.33 gCO2e/km. The corresponding BEV-LFP intensity changes from 167.80 to 187.17 gCO2e/km. This indicates that the electricity factor materially changes the estimated magnitude of the BEV advantage.
+Under the two Peng2017 WTW factors, BEV-NMC intensity changes from 171.79 to 192.18 gCO2e/km. The corresponding BEV-LFP intensity changes from 172.64 to 193.03 gCO2e/km. This indicates that the electricity factor materially changes the estimated magnitude of the BEV advantage.
 
 ![Grid-factor sensitivity](figures/Fig_R9_5_Grid_Sensitivity.svg)
 
