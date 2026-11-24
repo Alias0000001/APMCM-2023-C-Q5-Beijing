@@ -1,18 +1,20 @@
 stage,substage,vehicle_scope,current_status,evidence_grade,entered_in_R9,blocking_gap,decision
-vehicle_cycle,raw_materials_and_components,private_ICEV_BEV,PARTIAL_GWP_PROXY,B,yes_as_separate_proxy,detailed_material_mass_and_process_inventory,Do not call GWP proxy a full raw-material LCI
-vehicle_cycle,vehicle_assembly,private_ICEV_BEV,PARTIAL_GWP_PROXY,B,yes_as_separate_proxy,vehicle-specific Chinese production inventory,Keep cradle-to-gate GWP factor separate from WTW
-vehicle_cycle,vehicle_and_battery_production,private_PHEV,NA,NA,no,matched PHEV manufacturing inventory,Do not interpolate from BEV/ICEV
-vehicle_cycle,vehicle_and_battery_production,bus_diesel_gas_BEV,NA,NA,no,matched bus manufacturing inventory and vehicle type split,Do not substitute 2024/2025 data into strict 2023 cutoff
-battery_cycle,initial_battery,private_BEV,INCLUDED_IN_QIAO_BEV_FACTOR,B,no_separate_addition,battery chemistry share and capacity,Do not double count initial battery
-battery_cycle,battery_replacement,private_BEV_PHEV_and_bus,NA,NA,no,battery life chemistry capacity replacement rate,Use separate replacement module when supported
-fuel_cycle,gasoline_WTT_TTW,private_ICEV_PHEV,PARTIAL_WTW_PROXY,B,yes,2023 Beijing fuel supply pathway and fuel consumption observed,Use WTW factor instead of adding R7 TTW
-fuel_cycle,diesel_WTT_TTW,bus_diesel,PARTIAL_WTW_PROXY,B,yes,2023 bus diesel physical consumption,Use WTW factor instead of adding R7 TTW
-fuel_cycle,CNG_LNG_WTT_TTW,bus_gas,REFERENCE_FACTOR_ONLY,B,no,CNG/LNG split and physical fuel energy basis,Keep natural gas WTW result NA
-fuel_cycle,electricity_WTW,private_BEV_PHEV_bus,OLD_NATIONAL_PROXY,B,yes_as_sensitivity,2023 Beijing life-cycle grid factor and meter boundary,Do not add to R7 0.5554 operational factor
-vehicle_use,tailpipe_and_electricity,all,PARTIAL_R7_OPERATIONAL_CO2,C/D,yes_as_legacy_comparator,complete species-resolved emissions by propulsion,Not equivalent to WTW CO2e
-maintenance,tyres_fluids_filters_batteries,all,NA,NA,no,annual replacement rates and material inventories,Keep missing
-end_of_life,dismantling_recycling_disposal,all,NA,NA,no,material recovery rates and allocation method,Report no recycling credit in base
-non_exhaust,tyre_brake_road_dust,all,NA,NA,no,vehicle mass tyre brake wear and local road factors,Needed for PM and health impacts
-infrastructure,roads_chargers_depots,all,EXCLUDED,NA,no,capital stock and lifetime allocation,Optional extension outside core
-LCIA,climate_change,all,PARTIAL_GWP_ONLY,B/C,partial,complete inventory and chosen GWP version,Do not call full LCIA
-LCIA,air_pollution_resource_water_all,all,NA,NA,no,flow inventory and characterization factors,Do not report unsupported categories
+vehicle_cycle,raw_materials_and_components,private_ICEV_BEV_PHEV,PARTIAL_FOREGROUND_MATERIAL_LCI,B,yes,"Yang2021 material bill for reference vehicles; material EF only covers major materials","Use 150000km lifetime allocation; lead-acid/fluid/tire and detailed battery material flows remain partial"
+vehicle_cycle,parts_manufacturing,private_ICEV_BEV_PHEV,PARTIAL_PROCESS_ENERGY_LCI,B,yes,"Parts manufacturing energy available; full assembly and distribution not complete","Use Table7 energy inputs and Table6 EFs; keep assembly/distribution NA"
+vehicle_cycle,vehicle_assembly_and_distribution,private_ICEV_BEV_PHEV,NA_PARTIAL_REFERENCE,B,no,"Assembly and distribution distances/energy allocation not reconciled","Do not import total vehicle GWP proxy and add it to detailed module"
+vehicle_cycle,vehicle_and_battery_production,bus_diesel_gas_BEV,NA,NA,no,"Matched bus manufacturing inventory and vehicle type split","Do not substitute 2024/2025 data into strict 2023 competition information set"
+battery_cycle,initial_battery,private_BEV_PHEV,PARTIAL_GWP_PROXY,B,yes,"NCM capacity proxy 40kWh BEV and 12.8kWh PHEV; chemistry mix unknown; no pollutant flows","Use ICCT2021 NMC range 69-77kgCO2e/kWh and LFP sensitivity 51-56; do not add Qiao total vehicle factor"
+battery_cycle,battery_replacement,private_BEV_PHEV_and_bus,NA_IN_BASE, B,no,"Replacement probability and chemistry-specific life","Yang2021 assumes no battery replacement within 150000km; one-replacement scenario later"
+fuel_cycle,gasoline_WTT_TTW,private_ICEV_PHEV,PARTIAL_WTW_MULTI_POLLUTANT,B,yes,"2023 Beijing fuel pathway and observed fuel use unavailable","Use Yang2021 Table6 life-cycle energy factors as national 2018 proxy; do not add R7 TTW"
+fuel_cycle,electricity_WTW,private_BEV_PHEV,OLD_NATIONAL_MULTI_POLLUTANT_PROXY,B,yes,"2023 Beijing lifecycle grid factor and charging meter boundary","Use Yang2021 Table6 2018 China factor as proxy; R7 0.5554 operational CO2 is separate"
+fuel_cycle,CNG_LNG_WTT_TTW,bus_gas,REFERENCE_FACTOR_ONLY,B,no,"CNG/LNG split and physical fuel energy basis","Keep natural gas WTW result NA"
+vehicle_use,tailpipe_and_electricity,bus_diesel_gas_BEV_mixed,PARTIAL_R7_OPERATIONAL_CO2,C/D,yes,"Complete bus powertrain split and measured energy use","R7 mixed-bus 0.9kg/km placeholder excluded"
+maintenance,tyres_fluids_filters_batteries,private_ICEV_BEV_PHEV,PARTIAL_LITERATURE_REPLACEMENT_SCHEDULE,B,yes,"Local maintenance replacement rates and first-fit component production","Use Yang2021 Table10 for 150000km proxy; not a Beijing fleet observation"
+maintenance,tyres_fluids_filters_batteries,buses,NA,NA,no,"Bus-specific service intervals and material use","Keep missing"
+end_of_life,dismantling_energy,private_ICEV_BEV_PHEV,PARTIAL_DISPOSAL_ENERGY_ONLY,B,yes,"Recycling/reuse material flows and allocation method","Use 370kJ/kg dismantling energy; no recycling credit"
+end_of_life,dismantling_recycling_disposal,buses,NA,NA,no,"Bus-specific vehicle mass, battery and recovery rates","Keep missing"
+non_exhaust,tyre_brake_road_dust,all,NA,NA,no,"Vehicle mass tyre brake wear and local road factors","Needed for PM and health impacts"
+infrastructure,roads_chargers_depots,all,EXCLUDED,NA,no,"Capital stock and lifetime allocation","Optional extension outside core"
+LCIA,climate_change,private_vehicles,PARTIAL_CO2_AND_BATTERY_GWP,B/C,partial,"CO2 stages and battery CO2e use different characterisation bases","Keep CO2 and CO2e separate until GWP harmonised"
+LCIA,air_pollution,private_vehicles,PARTIAL_VOC_NOX_PM25_SO2,B,partial,"Battery manufacturing pollutant flows and some material/assembly stages missing","Do not call full passenger-car LCIA"
+LCIA,air_pollution_resource_water_all,buses_and_full_city,NA,NA,no,"Flow inventory and characterization factors","Do not report unsupported categories"
