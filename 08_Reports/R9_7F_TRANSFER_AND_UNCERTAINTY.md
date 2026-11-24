@@ -26,3 +26,6 @@ Jinhua diagnostic m=1:
 Activity-transfer scenarios with Beijing technical intensities, not actual Jinhua emissions. R9.7D equal-PKM stress remains separate; no mode substitution. Partial GWP excludes unquantified stages.
 
 Reproduce after A–E: python 06_S0_Calculation/r9_7f_transfer.py. Base grid 162 rows; retrospective diagnostic 18 rows; paired envelopes 36 rows. Independent JS calculation before commit.
+
+## Reversal witness
+Worst paired S3 reduction: -6.008%; energy case gasoline_low, production QIAO2017_BEV_NMC, car/bus lifetimes 100000/500000 km, g/m/b=1.2/1.2/0.8, denominator multiplier 2.1691973969631237. See reversal witness CSV. This is a modeled conditional counterexample, not observed city data.

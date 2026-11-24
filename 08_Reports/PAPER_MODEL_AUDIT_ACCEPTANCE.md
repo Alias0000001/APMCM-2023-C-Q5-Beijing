@@ -1,0 +1,22 @@
+# Paper-model audit: tracked acceptance matrix (2026-11-24)
+
+Working branch: work/paper-model-audit-20261124. Parent: faf953a57. Preserve main, previous work branch, and old manuscripts and figures. Reviewed R9.5 draft, contest-facing working structure, figure-style study, R9.4/R9.5/R9.6 reports, R9.7A/D/E and R7.1. No R9.4_Paper_Draft_EN.md in the inspected tree. The user-supplied task specification ends at the requirement for separate private-car and bus results; do not invent its missing continuation.
+
+| Original issue | Current resolution | Location | Remaining work | Acceptance criterion |
+|---|---|---|---|---|
+| Title suggests Beijing itself | Structure corrected | Q5_Contest_Manuscript_Working_Structure.md title | Old R9.5 draft remains archival | New manuscript title explicitly says city of one million |
+| Abstract focuses on deficiencies, old per-km results | Not resolved in manuscript | R9_5_Paper_Draft_EN.md abstract | Rewrite from R9.7A-F | Goal, activity allocation, production+WTW and road exhaust, S0-S4 results, conditions and main conclusion |
+| City selection not justified | Partial | working structure section 2; R9.7A; R9.7F | Explain why data anchor chosen; matched numerator/denominator, 2022 COVID limitation, transfer stress | Do not claim a real Beijing million-person district; Jinhua retrospective separate |
+| Linear population scaling | Tested | R9.7F paired transfer grid | Interpret sign reversals and diagnostic limits in paper | Ownership × mileage once; bus independent |
+| Repeated limitations; internal release labels | Partial | working structure sections 3–4 | New manuscript in mathematical terms; concise limitation section | Define notation, clear equations, no R-series headings in body |
+| Six scenarios and mode-specific results | Computed | R9.7B/C/E/F CSV | Integrate into new manuscript, include mode-specific rows or panels | Both modes, all six scenarios, separate units and stages |
+| PKM comparable service | Conditional | R9.7D | Direct matched PKM still unavailable; Lin2015 service load dependence central | Distinguish boardings, trip lengths and distance-weighted occupancy, show equal-PKM conditional results |
+| Full LCA claimed/unclear | Partial boundary only | R9.4 three domains and R9.7C/E | Do not mix physical pollutants, battery ReCiPe and GWP; maintenance/EOL/infrastructure missing | No claim of complete cradle-to-grave or zero nonexhaust |
+| Figures unsuitable | Open | figure style study and legacy SVG | Rebuild new figures from contest-time A–F CSV, preserve old figures | White background, consistent technology/mode colors, axis names and units, standalone caption (year/boundary/source), clear legibility at print size, no clipping or overlaps, no mixed units on one axis, separate pollutant panels, NA not zero, no misleading truncation, vector output and visual review |
+| Sensitivity generality | Improved | R9.7F | Explain tested grid not probabilistic and examples of failure | Pair S0 by parameter set, report conditional ranking and reversal witness |
+| Award paper comparison | Open | 论文写作与图表风格研究.md | Compare structure and figure purpose; quantitative comparison only when functional unit and stages align | Later award papers are stylistic references only, not contest-time model data |
+| Final reproduction | Pending new branch CI | .github/workflows/r96-audit.yml | Verify regenerated results and final figure layout; independent numerical tests | No merge to main; record commit and test status |
+
+PKM recheck: 2022 Beijing official statistical communiqué published 2023-03-20, https://tjj.beijing.gov.cn/zxfbu/202303/t20230320_2940009.html, corroborates approximately 1.73 billion public bus boardings, not a matched bus-only PKM. Do not substitute all road passenger turnover. R9.7D conditional 10.9-km average trip proxy remains explicitly not observed boarding-leg route distance. No change to D estimates.
+
+Final figures must be authored as new assets from the new data tables, not merely recolored legacy figures. Suggested main-paper figures: model framework; system boundary; paired class-specific production/WTW stacked bars; pollutant reductions in separated panels; transfer/energy/lifetime sensitivity with zero-reduction threshold; conditional PKM comparison. Keep detailed evidence tables and extra diagnostics in appendix. No image layout compliance is claimed until visual inspection.

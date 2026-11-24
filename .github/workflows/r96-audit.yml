@@ -3,7 +3,7 @@ name: R9.6 reproducibility and figure audit
 on:
   push:
     branches:
-      - work/r96-figures-energy-audit-20261124
+      - work/paper-model-audit-20261124
   workflow_dispatch:
 
 permissions:
@@ -43,7 +43,7 @@ jobs:
           python 06_S0_Calculation/r9_4_integrate_lci.py
           python 06_S0_Calculation/r9_5_sensitivity.py
 
-      - name: Run contest-time R9.7A through R9.7E modules
+      - name: Run contest-time R9.7A through R9.7F modules
         run: |
           python 06_S0_Calculation/r9_7a_activity_scenarios.py
           python 06_S0_Calculation/r9_7b_energy_wtw.py
@@ -51,6 +51,7 @@ jobs:
           python 06_S0_Calculation/r9_7c_manufacturing_audit.py
           python 06_S0_Calculation/r9_7d_service.py
           python 06_S0_Calculation/r9_7e_environment.py
+          python 06_S0_Calculation/r9_7f_transfer.py
 
       - name: Generate SVG figures from CSV inputs
         run: python 06_S0_Calculation/r9_6_generate_figures.py
@@ -59,6 +60,7 @@ jobs:
         run: python -m unittest discover -s tests -v
 
       - name: Commit regenerated CSV and SVG outputs to this branch
+        if: github.ref_name == 'work/paper-model-audit-20261124'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

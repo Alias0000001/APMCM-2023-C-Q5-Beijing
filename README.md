@@ -1,3 +1,7 @@
+## R9.7F — Paired transfer and nested sensitivity
+
+[Report](08_Reports/R9_7F_TRANSFER_AND_UNCERTAINTY.md) | [transfer grid](02_Cleaned_Data/R9_7F_TRANSFER_GRID.csv) | [nested envelope](02_Cleaned_Data/R9_7F_NESTED_ENVELOPE.csv) | [retrospective Jinhua diagnostic](02_Cleaned_Data/R9_7F_JINHUA_RETROSPECTIVE_DIAGNOSTIC.csv) | [manuscript audit](08_Reports/PAPER_MODEL_AUDIT_ACCEPTANCE.md). Strict baseline excludes retrospective Jinhua data. R9.7D PKM remains conditional. New paper-audit branch; main and previous work branch preserved. Final figures pending reconstruction and visual review.
+
 ## R9.7E — Environmental scenario matrix
 
 [Report](08_Reports/R9_7E_ENVIRONMENTAL_MATRIX.md) | [road factors](02_Cleaned_Data/R9_7E_ROAD_FACTORS.csv) | [eight factor cases](02_Cleaned_Data/R9_7E_ROAD_CASES.csv) | [240 pollutant results](02_Cleaned_Data/R9_7E_ROAD_POLLUTANT_SCENARIOS.csv) | [six-scenario matrix](02_Cleaned_Data/R9_7E_ENVIRONMENTAL_MATRIX.csv). National 2023-08 consultation-draft basic factors, China V illustrative reference and IV/VI sensitivity. Separate physical exhaust masses, final energy, WTW and partial GWP. Full life-cycle and non-exhaust flows remain NA. Next R9.7F transfer sensitivity, not renewed Jinhua VKT search.

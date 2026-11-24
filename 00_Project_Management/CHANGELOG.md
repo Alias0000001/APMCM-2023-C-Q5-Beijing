@@ -65,3 +65,6 @@
 ## 2026-11-24 — R9.7E
 - Added nine pre-contest national basic emission factor rows, eight cases and 240 road-exhaust screening results, plus integrated six-scenario environmental matrix with explicit NA for non-exhaust and full life-cycle indicators.
 - Integrated generation script and four regression tests in CI. No change to A–D baseline or main branch.
+
+## 2026-11-24 — R9.7F paper audit branch
+- Added paired 27-set transfer, 14,580 climate stress sets and 432 exhaust stress sets per pollutant, Jinhua retrospective diagnostic, reversal witness and acceptance matrix. Baseline A–E unchanged. Four regression tests and branch-specific workflow.

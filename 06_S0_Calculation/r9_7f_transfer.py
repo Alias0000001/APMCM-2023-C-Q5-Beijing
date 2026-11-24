@@ -28,6 +28,7 @@ def transfer(cases):
             c=climate(s,g,d,b);rows.append([g,d,b,s,*c,100*(1-c[4]/z),*[road(s,g,d,b,1,k) for k in pol]])
     return rows
 base=transfer(grid);diag=transfer([(1.171038,d,.646917) for d in levels])
+worst=None
 stats={};counts={"gwp":[0,0],"nox":[0,0,0],"pm":[0,0,0]}
 def add(layer,s,k,x,b):
     a=stats.setdefault((layer,s,k),[math.inf,-math.inf,math.inf,-math.inf,0]);r=100*(1-x/b)
@@ -35,6 +36,8 @@ def add(layer,s,k,x,b):
 for (g,d,b),den,energy,prod,lc,lb in itertools.product(grid,[1,1/.461],ec,ms,[100000,150000,200000],[300000,400000,500000]):
     v=[climate(s,g,d,b,den,energy,prod,lc,lb)[4] for s in ss]
     for s,x in zip(ss,v): add("nested_climate",s,"partial_GWP_t",x,v[1])
+    reduction=100*(1-v[4]/v[1])
+    if worst is None or reduction<worst[-1]: worst=[g,d,b,den,energy,prod,lc,lb,v[1],v[4],reduction]
     counts["gwp"][0]+=1;counts["gwp"][1]+=int(v[5]<v[4]<v[3]<v[2]<v[1]<v[0])
 for (g,d,b),den,c,k in itertools.product(grid,[1,1/.461],pc,pol):
     v=[road(s,g,d,b,den,k,c) for s in ss]
@@ -47,4 +50,6 @@ for r in base: assert math.isclose(sum(r[4:8]),r[8],abs_tol=1e-7)
 write("R9_7F_TRANSFER_GRID.csv","g_ownership,m_mileage,b_bus_supply,scenario,private_WTW_t,bus_WTW_t,private_production_t,bus_production_t,partial_GWP_t,reduction_vs_paired_S0_pct,CO_t,VOCs_t,NOx_t,PM2_5_t,PM10_t",base)
 write("R9_7F_JINHUA_RETROSPECTIVE_DIAGNOSTIC.csv","g_ownership,m_mileage,b_bus_supply,scenario,private_WTW_t,bus_WTW_t,private_production_t,bus_production_t,partial_GWP_t,reduction_vs_paired_S0_pct,CO_t,VOCs_t,NOx_t,PM2_5_t,PM10_t",diag)
 write("R9_7F_NESTED_ENVELOPE.csv","layer,scenario,indicator,min_annual,max_annual,min_reduction_pct,max_reduction_pct,paired_sets",[[*k,*v] for k,v in stats.items()])
+write("R9_7F_REVERSAL_WITNESS.csv","g_ownership,m_mileage,b_bus_supply,mileage_denominator_multiplier,energy_case,production_set,car_lifetime_km,bus_lifetime_km,S0_partial_GWP_t,S3_partial_GWP_t,S3_reduction_pct",[worst])
+write("R9_7F_ORDERING_COUNTS.csv","indicator,sets,preferred_or_strict_order_count,opposite_count",[["partial_GWP",counts["gwp"][0],counts["gwp"][1],counts["gwp"][0]-counts["gwp"][1]],["NOx",*counts["nox"]],["PM2_5",*counts["pm"]]])
 print("PASS",counts)

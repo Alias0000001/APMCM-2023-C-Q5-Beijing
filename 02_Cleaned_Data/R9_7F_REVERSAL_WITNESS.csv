@@ -1,0 +1,2 @@
+g_ownership,m_mileage,b_bus_supply,mileage_denominator_multiplier,energy_case,production_set,car_lifetime_km,bus_lifetime_km,S0_partial_GWP_t,S3_partial_GWP_t,S3_reduction_pct
+1.200000000,1.200000000,0.800000000,2.169197397,gasoline_low,QIAO2017_BEV_NMC,100000.000000000,500000.000000000,1646916.599185762,1745868.282056649,-6.008299565
