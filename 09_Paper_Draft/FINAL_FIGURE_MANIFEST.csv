@@ -1,0 +1,21 @@
+svg,png,domain,source,caption
+figures_final/Figure_01_Framework.svg,figures_final/Figure_01_Framework.png,contest,Q5 manuscript model equations,Model structure; data anchor is not target geography.
+figures_final/Figure_02_System_Boundary.svg,figures_final/Figure_02_System_Boundary.png,contest,R9.7C/E scope; R9.4 battery domain,Included and missing stages; no double counting.
+figures_final/Figure_03_Scenario_GWP.svg,figures_final/Figure_03_Scenario_GWP.png,contest,R9_7B_SIX_SCENARIO_ENERGY_WTW.csv; R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv,"2022 activity anchor; annual production plus WTW, separate scales by mode."
+figures_final/Figure_04_Road_Exhaust.svg,figures_final/Figure_04_Road_Exhaust.png,contest,R9_7E_ROAD_POLLUTANT_SCENARIOS.csv,China V illustrative reference; modeled exhaust only.
+figures_final/Figure_05_Paired_Sensitivity.svg,figures_final/Figure_05_Paired_Sensitivity.png,contest,R9_7F_NESTED_ENVELOPE.csv; R9_7E_ENVIRONMENTAL_MATRIX.csv,"14,580 design combinations; not a confidence interval."
+figures_final/Figure_06_Passenger_Service.svg,figures_final/Figure_06_Passenger_Service.png,contest,R9_7D_SERVICE_SENSITIVITY.csv,"Historical occupancy and distance proxies, not observed PKM."
+figures_final/Figure_07_Transfer_Grid.svg,figures_final/Figure_07_Transfer_Grid.png,contest,R9_7F_TRANSFER_GRID.csv,27 transfer combinations; common color scale; no Jinhua observation.
+figures_final/Figure_08_BreakEven.svg,figures_final/Figure_08_BreakEven.png,contest,R9_7B_ENERGY_INPUTS.csv; R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,"Current contest model; threshold derived from production + WTW, not old 0.160 kWh/km."
+figures_final/Figure_09_Activity_Allocation.svg,figures_final/Figure_09_Activity_Allocation.png,contest,R9_7A_SIX_SCENARIO_VKT.csv,All shares are conditional allocations; mode VKT fixed.
+figures_final/Figure_10_Energy_Structure.svg,figures_final/Figure_10_Energy_Structure.png,contest,R9_7B_SIX_SCENARIO_ENERGY_WTW.csv; R9_7B_ENERGY_INPUTS.csv,Annual final energy converted to PJ; no primary-energy aggregation.
+figures_final/Figure_11_Charging_Boundary.svg,figures_final/Figure_11_Charging_Boundary.png,contest,R9_7B_ENERGY_INPUTS.csv; energy cases,Measurement boundary schematic; no measured loss factor.
+figures_diagnostic/Legacy_03_Physical_CO2.svg,figures_diagnostic/Legacy_03_Physical_CO2.png,retrospective_diagnostic,R9_4_PHYSICAL_STAGE_SUBTOTALS.csv,"Retrospective known-flow subtotals, not full physical inventory; NA counts shown, separate scales."
+figures_diagnostic/Legacy_05_Grid_Sensitivity.svg,figures_diagnostic/Legacy_05_Grid_Sensitivity.png,retrospective_diagnostic,R9_5_GRID_FACTOR_SENSITIVITY.csv,Historical 0.160 kWh/km model; separate LFP–NMC difference.
+figures_diagnostic/Legacy_06_Lifetime_Sensitivity.svg,figures_diagnostic/Legacy_06_Lifetime_Sensitivity.png,retrospective_diagnostic,R9_5_LIFETIME_SENSITIVITY.csv,Retrospective energy intensity; separate chemistry difference.
+figures_diagnostic/Legacy_07_BreakEven.svg,figures_diagnostic/Legacy_07_BreakEven.png,retrospective_diagnostic,R9_5_BREAK_EVEN_GRID_FACTOR.csv; R9_5_GRID_FACTOR_SENSITIVITY.csv,Historical threshold envelope; MEE reference is retrospective and methodologically different.
+figures_diagnostic/Legacy_08_Battery_Factors.svg,figures_diagnostic/Legacy_08_Battery_Factors.png,retrospective_diagnostic,R9_5_BATTERY_FACTOR_SENSITIVITY.csv,"Independent battery module, 150,000-km service life; not added to whole vehicle production."
+figures_diagnostic/Legacy_09_Coverage.svg,figures_diagnostic/Legacy_09_Coverage.png,retrospective_diagnostic,R9_4_STAGE_COVERAGE_MATRIX.csv,"Historical 88-cell coverage; H groups historical evidence statuses, not complete LCA."
+figures_diagnostic/Legacy_10_Multi_Pollutant.svg,figures_diagnostic/Legacy_10_Multi_Pollutant.png,retrospective_diagnostic,R9_4_PHYSICAL_VEHICLE_PARTIAL_SUBTOTALS.csv,Five independent pollutant panels; NA not zero.
+figures_diagnostic/Legacy_11_Grid_Lifetime.svg,figures_diagnostic/Legacy_11_Grid_Lifetime.png,retrospective_diagnostic,R9_5_GRID_LIFETIME_FACTORIAL.csv,Historical joint sensitivity; one common color scale.
+figures_diagnostic/Legacy_12_Battery_ReCiPe.svg,figures_diagnostic/Legacy_12_Battery_ReCiPe.png,retrospective_diagnostic,R9_4_BATTERY_RECIPE_ONLY.csv,"Battery-only hypothetical 100% hydrometallurgical recycling; relative within category, never summed."
