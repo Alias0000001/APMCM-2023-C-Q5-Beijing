@@ -1,8 +1,8 @@
 vehicle_class,annual_VKT_km,cradle_to_gate_kgCO2e_per_vehicle,assumed_lifetime_VKT_km,manufacturing_kgCO2e_per_vehicle_km,annualized_manufacturing_tCO2e,source_id,evidence_grade,status,note
-private_ICEV,1961492143.8374965,9985,200000,0.049925,97927.49528108702,Qiao2017_ICEV,B,partial_vehicle_cycle_proxy,Initial BEV battery included; no additional initial battery factor; steady-state allocation; excludes maintenance/EOL
-private_BEV_NMC,427275629.9752951,15005,200000,0.075025,32056.354138896513,Qiao2017_BEV_NMC,B,partial_vehicle_cycle_proxy,Initial BEV battery included; no additional initial battery factor; steady-state allocation; excludes maintenance/EOL
-private_BEV_LFP,427275629.9752951,15174,200000,0.07587,32417.402046225645,Qiao2017_BEV_LFP,B,partial_vehicle_cycle_proxy,Initial BEV battery included; no additional initial battery factor; steady-state allocation; excludes maintenance/EOL
-private_PHEV,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,Do not fill from post-2023 or mismatched vehicle class
-bus_diesel,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,Do not fill from post-2023 or mismatched vehicle class
-bus_natural_gas,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,Do not fill from post-2023 or mismatched vehicle class
-bus_BEV,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,Do not fill from post-2023 or mismatched vehicle class
+private_ICEV,1961492143.8374965,9985,200000,0.049925,97927.49528108702,Qiao2017_ICEV_TLCAM2017_200k,B,partial_vehicle_cycle_proxy,"Cradle-to-gate vehicle-production factor; 200000km allocation assumption from TLCAM2017 Table11; excludes maintenance/EOL"
+private_BEV_NMC,427275629.9752951,15005,200000,0.075025,32056.354138896513,Qiao2017_BEV_NMC_TLCAM2017_200k,B,partial_vehicle_cycle_proxy,"Cradle-to-gate BEV factor includes initial battery; 200000km allocation assumption from TLCAM2017 Table11; do not add initial battery again; excludes maintenance/EOL"
+private_BEV_LFP,427275629.9752951,15174,200000,0.07587,32417.402046225645,Qiao2017_BEV_LFP_TLCAM2017_200k,B,partial_vehicle_cycle_proxy,"Cradle-to-gate BEV factor includes initial battery; 200000km allocation assumption from TLCAM2017 Table11; do not add initial battery again; excludes maintenance/EOL"
+private_PHEV,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,"Do not fill from post-2023 or mismatched vehicle class"
+bus_diesel,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,"Do not fill from post-2023 or mismatched vehicle class"
+bus_natural_gas,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,"Do not fill from post-2023 or mismatched vehicle class"
+bus_BEV,NA,NA,NA,NA,NA,MISSING,NA,missing_local_or_eligible_factor,"Do not fill from post-2023 or mismatched vehicle class"
