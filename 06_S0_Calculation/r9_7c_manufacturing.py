@@ -11,6 +11,8 @@ def write(name,header,rows):
     with (D/name).open("w",encoding="utf-8",newline="") as f:
         w=csv.writer(f,lineterminator="\n");w.writerow(header);w.writerows(rows)
 vkt=read("R9_7A_SIX_SCENARIO_VKT.csv")
+energy=[r for r in read("R9_7B_SIX_SCENARIO_ENERGY_WTW.csv") if r["case"]=="base"]
+energy_by_s={r["scenario"]:float(r["total_WTW_tCO2e"]) for r in energy}
 unknown_diesel_share=1495/(1495+6795)
 # Yang et al. (2021), source reports production-stage CO2, not CO2e.
 # ICEV intensity is inferred from BEV/ICEV=1.33 and PHEV/ICEV=1.19.
@@ -23,6 +25,8 @@ factors={
 priv=[]
 bus=[]
 ledger=[]
+gwp=[]
+partial=[]
 for r in vkt:
     name=r["scenario"]
     vi=float(r["private_ICEV_vkt_km"]);vb=float(r["private_BEV_vkt_km"]);vp=float(r["private_PHEV_vkt_km"])
@@ -36,10 +40,22 @@ for r in vkt:
     total=((bd+ud)*107.1+(bg+ug)*113.4+bh*115.875+bb*119.37)/1e6
     bus.append([name,bd,bg,bh,bb,bu,ud,ug,total,"CO2e","LIN2015","raw materials+assembly; EOL excluded"])
     ledger.append([name,mid,lo,hi,total,"do not aggregate CO2-only private and CO2e bus columns"])
+    # Harmonized GWP proxy set: Qiao2017 ICEV/BEV-NMC; Xiong2019 PHEV-NMC.
+    # Each whole-vehicle production factor already includes its initial battery.
+    car_gwp=(vi*9985+vb*15005+vp*8670.43)/150000/1000
+    mfg_gwp=car_gwp+total
+    wtw=energy_by_s[name]
+    gwp.append([name,car_gwp,total,mfg_gwp,"CO2e","QIAO2017+XIONG2019+LIN2015","cross-study harmonized proxy; factors include initial batteries"])
+    partial.append([name,car_gwp,total,mfg_gwp,wtw,mfg_gwp+wtw,"CO2e","vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure"])
 write("R9_7C_PRIVATE_MANUFACTURING_SCENARIOS.csv",
  ["scenario","private_ICEV_vkt_km","private_BEV_vkt_km","private_PHEV_vkt_km","manufacturing_CO2_low_t_y","manufacturing_CO2_base_t_y","manufacturing_CO2_high_t_y","impact_unit","source_id","scope_note"],priv)
 write("R9_7C_BUS_MANUFACTURING_SCENARIOS.csv",
  ["scenario","bus_diesel_VKT_km","bus_natural_gas_VKT_km","bus_hybrid_residual_VKT_km","bus_BEV_VKT_km","bus_unclassified_VKT_km","unclassified_allocated_diesel_VKT_km","unclassified_allocated_gas_VKT_km","bus_manufacturing_GHG_tCO2e_y","impact_unit","source_id","scope_note"],bus)
 write("R9_7C_MANUFACTURING_LEDGER.csv",
  ["scenario","private_manufacturing_CO2_base_t_y","private_manufacturing_CO2_low_t_y","private_manufacturing_CO2_high_t_y","bus_manufacturing_GHG_tCO2e_y","aggregation_rule"],ledger)
-print(f"PASS: {len(vkt)} scenarios; private and bus VKT conserved; CO2/CO2e intentionally not aggregated")
+write("R9_7C_PRIVATE_MANUFACTURING_GWP_SCENARIOS.csv",
+ ["scenario","private_vehicle_production_GWP_tCO2e_y","source_id","scope_note"],
+ [[r[0],r[1],r[4],r[5]] for r in gwp])
+write("R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv",
+ ["scenario","private_vehicle_production_GWP_t_y","bus_manufacturing_GWP_t_y","total_manufacturing_GWP_t_y","WTW_operating_GWP_t_y","partial_LCA_GWP_t_y","impact_unit","scope_note"],partial)
+print(f"PASS: {len(vkt)} scenarios; private and bus VKT conserved; CO2 and GWP ledgers separated; partial LCA GWP reconciled")
