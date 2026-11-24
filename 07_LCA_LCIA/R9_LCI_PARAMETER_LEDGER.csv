@@ -23,3 +23,4 @@ R9_LIFETIME_VKT,200000,km/vehicle,private_ICEV_BEV,vehicle_production_allocation
 R9_BUS_NONH2_NEV_STOCK,16615,vehicles,bus_nonH2_new_energy_proxy,vehicle_activity,2023,2024,Beijing,C,alternative_proxy,P0_R2,"16,832 year-end NEV minus 217 June hydrogen snapshot; assumes no later hydrogen additions"
 R9_BUS_ALT_VKT_PER_VEHICLE,45249.6,km/vehicle-year,bus_nonH2_new_energy_proxy,vehicle_activity,2023,2024,Beijing,B/C,monthly_sample_annualized,R5_BUS_OCT,"October monthly average multiplied by 12"
 R9_BUS_ALT_KWH_PER_VEHICLE,28335.6,kWh/vehicle-year,bus_nonH2_new_energy_proxy,vehicle_activity,2023,2024,Beijing,B/C,monthly_sample_annualized,R5_BUS_OCT,"October monthly average multiplied by 12"
+R9_ELECTRICITY_WTW_TEXT_ALT,168.0,gCO2e/MJ,electricity,WTW,2015,2017,China,B,source_discrepancy_sensitivity,TLCAM_2017_Section4_3_4,"Section 4.3.4 reports 168 g/MJ while Table 8 and Table 10 report about 203 g/MJ; do not average"
