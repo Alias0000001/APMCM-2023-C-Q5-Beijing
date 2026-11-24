@@ -75,13 +75,13 @@
 ## 五、动力电池生产GWP单列
 
 Yang2021参考车型容量：BEV 40kWh、PHEV 12.8kWh。以ICCT 2021中国电池制造因子作为主情景：
-- NMC622：69 kgCO2e/kWh；
-- NMC111：77 kgCO2e/kWh；
+- 中国新车电池加权平均：68 kgCO2e/kWh；
+- NMC811：68、NMC622：69、NMC111：77 kgCO2e/kWh；
 - LFP：51—56 kgCO2e/kWh。
 
 在150,000km生命周期分摊下，年度电池制造GWP代理为：
-- BEV NMC：7,862—8,773 tCO2e/年；
-- PHEV NMC：100.5—112.1 tCO2e/年。
+- BEV NMC：7,748—8,773 tCO2e/年；
+- PHEV NMC：99.0—112.1 tCO2e/年。
 
 Hao2017与Lai2022提供更高的替代因子，已录入电池情景表。电池GWP未加进上表CO2总流，且电池制造的VOC/NOx/PM2.5/SO2因子仍缺。Yang2021基准假设150,000km内不更换动力电池；一次更换应作为独立敏感情景。
 
