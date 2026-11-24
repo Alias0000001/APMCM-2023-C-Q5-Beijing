@@ -1,0 +1,22 @@
+parameter,value,unit,observation_period,publication_date,evidence_status,source_or_rule
+target_population,1000000,persons,model,NA,DESIGN,Problem 5
+reference_population,21843000,persons,2022,2023-03-21,OFFICIAL,https://tjj.beijing.gov.cn/zxfbu/202303/t20230320_2940009.html
+reference_urban_population,19128000,persons,2022,2023-03-21,OFFICIAL_CONTEXT_ONLY,https://tjj.beijing.gov.cn/zxfbu/202303/t20230320_2940009.html
+private_small_micro_cars,4932000,vehicles,2022,2023-08-28,SECONDARY_REPORT,https://www.sohu.com/a/715705099_100106037
+private_daily_distance,49.9,km/day,2022,2023-08-28,REPORTED_DENOMINATOR_UNRESOLVED,https://www.sohu.com/a/715705099_100106037
+central_city_dispatch_rate,0.461,fraction,2022,2023-08-28,REPORTED_SPATIAL_TRANSFER_PROXY,https://www.sohu.com/a/715705099_100106037
+bus_vkt,984000000,km/year,2022,2023-07-03,OPERATOR_REPORTED,https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html
+bus_boardings,1726000000,trips/year,2022,2023-07-03,OPERATOR_REPORTED_NOT_PKM,https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html
+all_nev_passenger_stock,571000,vehicles,2022,2023-08-28,CONTEXT_NOT_PRIVATE_STOCK,https://www.sohu.com/a/715705099_100106037
+private_nev_share,0.08,fraction,model,NA,ILLUSTRATIVE_PROXY,stress 0.05 to 0.1158; 571000 includes nonprivate vehicles
+private_bev_fraction_of_nev,0.778,fraction,2023-06,2023-07-10,NATIONAL_TRANSFER_PROXY,https://finance.people.com.cn/n1/2023/0710/c1004-40031401.html
+bus_diesel_count,1495,vehicles,2023-04,2023-04,REPORTED_SNAPSHOT,https://app.bjtitle.com/8816/newshow.php?did=867950049830928&mood=&newsid=6336450&typeid=68&uid=0
+bus_gas_count,6795,vehicles,2023-04,2023-04,REPORTED_SNAPSHOT,same bus snapshot
+bus_mixed_count,15451,vehicles,2023-04,2023-04,REPORTED_SNAPSHOT,same bus snapshot
+bus_total_count,23747,vehicles,2023-04,2023-04,REPORTED_SNAPSHOT,same bus snapshot
+bus_bev_fraction_of_mixed,0.8,fraction,model,NA,ASSUMPTION,stress 0.6 to 1.0
+relative_technology_vkt,1,ratio,model,NA,ASSUMPTION,equal VKT per car and per bus within class; sensitivity later
+ownership_transfer,1,ratio,model,NA,REFERENCE_CASE,test separately
+mileage_transfer,1,ratio,model,NA,REFERENCE_CASE,test separately
+bus_supply_transfer,1,ratio,model,NA,REFERENCE_CASE,test separately
+S4_grid_factor_multiplier,0.5,ratio,model,NA,POLICY_STRESS_CASE,50 percent cleaner operational electricity factor; not a forecast
