@@ -35,7 +35,7 @@ for r in vkt:
     ud=bu*unknown_diesel_share;ug=bu-ud
     total=((bd+ud)*107.1+(bg+ug)*113.4+bh*115.875+bb*119.37)/1e6
     bus.append([name,bd,bg,bh,bb,bu,ud,ug,total,"CO2e","LIN2015","raw materials+assembly; EOL excluded"])
-    ledger.append([name,mid,lo,hi,total,"do not sum CO2-only private and CO2e bus columns"])
+    ledger.append([name,mid,lo,hi,total,"do not aggregate CO2-only private and CO2e bus columns"])
 write("R9_7C_PRIVATE_MANUFACTURING_SCENARIOS.csv",
  ["scenario","private_ICEV_vkt_km","private_BEV_vkt_km","private_PHEV_vkt_km","manufacturing_CO2_low_t_y","manufacturing_CO2_base_t_y","manufacturing_CO2_high_t_y","impact_unit","source_id","scope_note"],priv)
 write("R9_7C_BUS_MANUFACTURING_SCENARIOS.csv",
