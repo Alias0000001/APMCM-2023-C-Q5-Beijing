@@ -155,17 +155,17 @@ for j,s in enumerate(SS):
     ax.hlines(j+.14,num(new,"min_reduction_pct"),num(new,"max_reduction_pct"),lw=3.7,color=ICE)
     ax.scatter(red[j],j+.14,c=NMC,edgecolor=DARK,s=25,zorder=4)
 ax.set_yticks(XX,SL);ax.invert_yaxis();ax.set_xlim(-33,66);ax.set_xticks([-30,-20,-10,0,10,20,30,40,50,60]);ax.set_xlabel("Reduction relative to paired S0 (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.axvline(0,color=DARK,ls="--",lw=.9)
-ax.legend(handles=[plt.Line2D([0],[0],color="#A0A0A0",lw=3,label="Original: 14,580"),plt.Line2D([0],[0],color=ICE,lw=3,label="Extended: 367,416"),plt.Line2D([0],[0],marker="o",color=NMC,ls="",label="Reference")],loc="upper right",frameon=False)
+ax.legend(handles=[plt.Line2D([0],[0],color="#A0A0A0",lw=3,label="Nested: 20,412"),plt.Line2D([0],[0],color=ICE,lw=3,label="Expanded: 367,416"),plt.Line2D([0],[0],marker="o",color=NMC,ls="",label="Reference")],loc="upper right",frameon=False)
 w=one(WIT,design="remediation_28_packages",scenario="S4")
 ax.annotate(f"S4 min {float(w['red']):.3f}%",(float(w["red"]),5.14),xytext=(-10,12),ha="right",textcoords="offset points",fontsize=8.5,arrowprops={"arrowstyle":"-","color":DARK})
-save(f,"F07_Paired_Envelope","R9_7F_NESTED_ENVELOPE.csv; R9_7FIX_SENSITIVITY_ENVELOPE.csv; R9_7FIX_REVERSAL_WITNESSES.csv","Deterministic designs, not probabilities or confidence intervals; original and extended designs are not strict subsets. S4 near-zero negative witness under joint adverse assumptions. 2022 activity anchor; paired S0 in each set.")
+save(f,"F07_Paired_Envelope","R9_7F_NESTED_ENVELOPE.csv; R9_7FIX_SENSITIVITY_ENVELOPE.csv; R9_7FIX_REVERSAL_WITNESSES.csv","Deterministic designs, not probabilities or confidence intervals; original and extended designs are not strict subsets. S4 reverses under a minority of joint adverse parameter sets; minimum reduction is negative. 2022 activity anchor; paired S0 in each set.")
 # F08 private car break-even with additional private NMC pack.
 mi=num(one(prod,source_id="QIAO17_ICE"),"factor_value")*1000
 mb=num(one(prod,source_id="QIAO17_BEV_NMC"),"factor_value")*1000
 bf=num(one(B,scenario="S3",recycling_case="no_credit",indicator="GWP100"),"factor_per_kWh")
 ll=np.linspace(100000,300000,150)
 f=plt.figure(figsize=(W,5.6),layout="constrained"); gs=f.add_gridspec(3,1,height_ratios=[1,1,.20]); axs=[f.add_subplot(gs[0]),f.add_subplot(gs[1])]; lg=f.add_subplot(gs[2]);lg.axis("off")
-for ax,gas,eta,title in [(axs[0],params["gasoline_l100"],1,"(a) Reference fuel / delivered electricity"),(axs[1],6,.9,"(b) Low fuel use / conditional charging loss")]:
+for ax,gas,eta,title in [(axs[0],params["gasoline_l100"],.92,"(a) Reference fuel / η=0.92 grid input"),(axs[1],6,.90,"(b) Low fuel use / η=0.90 charging boundary")]:
     for n,col,ls in [(0,ICE,"-"),(.5,PHEV,"--"),(1,NMC,"-.")]:
         y=((mi-mb-n*40*bf)/ll+gas/100*params["gasoline_mj_l"]*params["gasoline_ef"]/1000)/(params["car_e"]/eta)
         ax.plot(ll/1000,y,color=col,ls=ls,lw=1.7,label=f"{n:g} extra pack"+("s" if n!=1 else ""))
