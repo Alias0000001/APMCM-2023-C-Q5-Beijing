@@ -1,0 +1,8 @@
+test,result,detail
+six_baselines,PASS,within 1e-6 kt
+paired_additivity_nonnegative,PASS,328050.000000000
+original_20_count,PASS,262440.000000000
+strict_order_count_20,INFO,208534.000000000
+expanded_count,PASS,328050.000000000
+strict_order_count_25,INFO,247900.000000000
+PKM_common_baseline,PASS,same conditional S0 PKM
