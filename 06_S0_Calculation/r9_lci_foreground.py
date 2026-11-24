@@ -166,7 +166,9 @@ def main():
     wtw_row("diesel",diesel_bus_l,"L",diesel_mj,92.3,0.2211,"TLCAM_2017_Table_8",
             "2015 China fuel pathway; includes WTT+TTW; 2017 paper narrative gives 93.3 g/MJ alternative")
     wtw_row("electricity",electricity_total_kwh,"kWh",electricity_mj,203.4,None,"TLCAM_2017_Table_8",
-            "2015 national electricity mix; full electricity WTW factor; do not add R7 0.5554 kg CO2/kWh")
+            "2015 national electricity mix; Table 8 and Table 10 report about 203 g/MJ; do not add R7 0.5554 kg CO2/kWh")
+    wtw_row("electricity",electricity_total_kwh,"kWh",electricity_mj,168.0,None,"TLCAM_2017_text_alternative",
+            "Section 4.3.4 reports 168 g/MJ for average grid electricity chain; retained as source-discrepancy sensitivity")
     wtw_row("gasoline",gasoline_total_l,"L",gasoline_mj,91.3,0.2341,"TLCAM_2017_text_alternative",
             "Narrative value in Section 4.3; retained as source-discrepancy sensitivity")
     wtw_row("diesel",diesel_bus_l,"L",diesel_mj,93.3,0.2211,"TLCAM_2017_text_alternative",
