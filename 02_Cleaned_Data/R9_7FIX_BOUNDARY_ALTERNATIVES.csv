@@ -1,0 +1,25 @@
+case,scenario,private_vehicle_cycle_or_production_kt,bus_production_kt,WTW_kt,included_GWP_kt,paired_reduction_pct,scope
+Qiao_NMC_reference,S-1,126.20074764134048,5.057347900056776,453.33060718300004,584.5887027243973,-2.9588556852565118,Qiao CTG source-specific with consumable replacements
+Qiao_NMC_reference,S0,129.85466735949808,5.245147232461561,432.68884120999996,567.7886558019595,0.0,Qiao CTG source-specific with consumable replacements
+Qiao_NMC_reference,S1,129.85466735949808,5.377470127729674,423.292549407,558.5246868942278,1.6315875305129235,Qiao CTG source-specific with consumable replacements
+Qiao_NMC_reference,S2,189.64869487814863,5.245147232461561,301.34803533599995,496.2418774466102,12.600952418518252,Qiao CTG source-specific with consumable replacements
+Qiao_NMC_reference,S3,189.64869487814863,5.377470127729674,291.951743533,486.9779085388783,14.232539949031208,Qiao CTG source-specific with consumable replacements
+Qiao_NMC_reference,S4,189.64869487814863,5.377470127729674,145.975871767,341.00203677287834,39.942083504426805,Qiao CTG source-specific with consumable replacements
+Qiao_LFP_same_study,S-1,126.20074764134048,5.057347900056776,453.33060718300004,584.5887027243973,-2.934754107849802,same-study BEV chemistry alternative; PHEV unchanged
+Qiao_LFP_same_study,S0,129.9876117897545,5.245147232461561,432.68884120999996,567.9216002322161,0.0,same-study BEV chemistry alternative; PHEV unchanged
+Qiao_LFP_same_study,S1,129.9876117897545,5.377470127729674,423.292549407,558.6576313244842,1.631205593156504,same-study BEV chemistry alternative; PHEV unchanged
+Qiao_LFP_same_study,S2,191.7846915082324,5.245147232461561,301.34803533599995,498.37787407669396,12.24530395165222,same-study BEV chemistry alternative; PHEV unchanged
+Qiao_LFP_same_study,S3,191.7846915082324,5.377470127729674,291.951743533,489.1139051689621,13.876509544808735,same-study BEV chemistry alternative; PHEV unchanged
+Qiao_LFP_same_study,S4,191.7846915082324,5.377470127729674,145.975871767,343.1380334029621,39.58003476841571,same-study BEV chemistry alternative; PHEV unchanged
+Gan_BEV100_vehicle_cycle,S-1,121.33471981540998,5.057347900056776,453.33060718300004,579.7226748984668,-3.586640766445104,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV100_vehicle_cycle,S0,121.71605002683962,5.245147232461561,432.68884120999996,559.6500384693012,0.0,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV100_vehicle_cycle,S1,121.71605002683962,5.377470127729674,423.292549407,550.3860695615692,1.655314620020365,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV100_vehicle_cycle,S2,130.8139948009889,5.245147232461561,301.34803533599995,437.40717736945044,21.842732546610232,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV100_vehicle_cycle,S3,130.8139948009889,5.377470127729674,291.951743533,428.1432084617186,23.498047166630588,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV100_vehicle_cycle,S4,130.8139948009889,5.377470127729674,145.975871767,282.1673366957186,49.58146747072967,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV300_vehicle_cycle,S-1,121.33471981540998,5.057347900056776,453.33060718300004,579.7226748984668,-2.827824112280508,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV300_vehicle_cycle,S0,125.84598055255664,5.245147232461561,432.68884120999996,563.7799689950182,0.0,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV300_vehicle_cycle,S1,125.84598055255664,5.377470127729674,423.292549407,554.5160000872863,1.643188729150058,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV300_vehicle_cycle,S2,197.16891970004124,5.245147232461561,301.34803533599995,503.7621022685028,10.645618863242323,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV300_vehicle_cycle,S3,197.16891970004124,5.377470127729674,291.951743533,494.4981333607709,12.288807592392391,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched
+Gan_BEV300_vehicle_cycle,S4,197.16891970004124,5.377470127729674,145.975871767,348.52226159477095,38.18115563487665,replace entire private ICEV/BEV production with Gan vehicle cycle; PHEV/bus unmatched

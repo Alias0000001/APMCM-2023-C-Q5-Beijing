@@ -39,7 +39,7 @@ Q 16.414524 19.161815 16.414524 24.756206
 L 16.414524 74.48413 
 Q 16.414524 80.078521 23.960059 80.078521 
 z
-" clip-path="url(#p1f8ef4170f)" style="fill: #ddebf5; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p1d5b546962)" style="fill: #ddebf5; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 23.960059 160.886396 
@@ -52,7 +52,7 @@ Q 16.414524 96.861695 16.414524 102.456086
 L 16.414524 155.292005 
 Q 16.414524 160.886396 23.960059 160.886396 
 z
-" clip-path="url(#p1f8ef4170f)" style="fill: #f4e4e8; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p1d5b546962)" style="fill: #f4e4e8; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 225.174316 160.886396 
@@ -65,7 +65,7 @@ Q 217.628782 96.861695 217.628782 102.456086
 L 217.628782 155.292005 
 Q 217.628782 160.886396 225.174316 160.886396 
 z
-" clip-path="url(#p1f8ef4170f)" style="fill: #f4e4e8; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p1d5b546962)" style="fill: #f4e4e8; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 23.960059 238.586276 
@@ -78,7 +78,7 @@ Q 16.414524 177.66957 16.414524 183.263962
 L 16.414524 232.991885 
 Q 16.414524 238.586276 23.960059 238.586276 
 z
-" clip-path="url(#p1f8ef4170f)" style="fill: #e8e3f0; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p1d5b546962)" style="fill: #e8e3f0; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 225.174316 238.586276 
@@ -91,7 +91,7 @@ Q 217.628782 177.66957 217.628782 183.263962
 L 217.628782 232.991885 
 Q 217.628782 238.586276 225.174316 238.586276 
 z
-" clip-path="url(#p1f8ef4170f)" style="fill: #e8e3f0; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p1d5b546962)" style="fill: #e8e3f0; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 23.960059 310.070166 
@@ -104,13 +104,13 @@ Q 16.414524 255.36945 16.414524 260.963842
 L 16.414524 304.475774 
 Q 16.414524 310.070166 23.960059 310.070166 
 z
-" clip-path="url(#p1f8ef4170f)" style="fill: #edf1f4; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#p1d5b546962)" style="fill: #edf1f4; stroke: #496783; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="40.879667" transform="rotate(-0 212.598425 40.879667)">Annual included-stage climate GWP</text>
    </g>
    <g id="text_2">
-    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="63.713859" transform="rotate(-0 212.598425 63.713859)">Vehicle production (source-specific scope) + energy WTW</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="63.713859" transform="rotate(-0 212.598425 63.713859)">Source-specific production / replacements + energy WTW</text>
    </g>
    <g id="text_3">
     <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="111.991296" y="119.547101" transform="rotate(-0 111.991296 119.547101)">Road combustion</text>
@@ -144,12 +144,12 @@ z
     <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="275.222505" transform="rotate(-0 212.598425 275.222505)">Not fully quantified</text>
    </g>
    <g id="text_12">
-    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="295.508141" transform="rotate(-0 212.598425 295.508141)">Matched maintenance, EOL, dust, infrastructure, noise</text>
+    <text style="fill: #263849; font: 8.5px 'DejaVu Sans'; text-anchor: middle" x="212.598425" y="295.508141" transform="rotate(-0 212.598425 295.508141)">Full maintenance, EOL, dust, infrastructure, noise</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p1f8ef4170f">
+  <clipPath id="p1d5b546962">
    <rect x="3.00024" y="3.00024" width="419.19637" height="310.79952"/>
   </clipPath>
  </defs>

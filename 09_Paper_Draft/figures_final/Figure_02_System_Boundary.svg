@@ -39,7 +39,7 @@ Q 14.785429 34.080169 14.785429 38.700158
 L 14.785429 87.000048 
 Q 14.785429 91.620037 26.058218 91.620037 
 z
-" clip-path="url(#pdce1ca6633)" style="fill: #ddebf5; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#pecb7c838b3)" style="fill: #ddebf5; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 197.712058 91.620037 
@@ -52,7 +52,7 @@ Q 186.439268 34.080169 186.439268 38.700158
 L 186.439268 87.000048 
 Q 186.439268 91.620037 197.712058 91.620037 
 z
-" clip-path="url(#pdce1ca6633)" style="fill: #ddebf5; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#pecb7c838b3)" style="fill: #ddebf5; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 369.365897 91.620037 
@@ -65,7 +65,7 @@ Q 358.093107 34.080169 358.093107 38.700158
 L 358.093107 87.000048 
 Q 358.093107 91.620037 369.365897 91.620037 
 z
-" clip-path="url(#pdce1ca6633)" style="fill: #f4e4e8; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#pecb7c838b3)" style="fill: #f4e4e8; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 26.058218 188.219817 
@@ -78,7 +78,7 @@ Q 14.785429 132.779943 14.785429 137.399933
 L 14.785429 183.599827 
 Q 14.785429 188.219817 26.058218 188.219817 
 z
-" clip-path="url(#pdce1ca6633)" style="fill: #f1f2f4; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#pecb7c838b3)" style="fill: #f1f2f4; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 282.257978 188.219817 
@@ -91,7 +91,7 @@ Q 270.985189 132.779943 270.985189 137.399933
 L 270.985189 183.599827 
 Q 270.985189 188.219817 282.257978 188.219817 
 z
-" clip-path="url(#pdce1ca6633)" style="fill: #e8e3f0; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
+" clip-path="url(#pecb7c838b3)" style="fill: #e8e3f0; stroke: #283e50; stroke-width: 0.8; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="fill: #263849; font: 700 9px 'DejaVu Sans'; text-anchor: middle" x="87.546161" y="53.783567" transform="rotate(-0 87.546161 53.783567)">Production</text>
@@ -154,7 +154,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pdce1ca6633">
+  <clipPath id="pecb7c838b3">
    <rect x="3.00024" y="3.00024" width="512.39952" height="209.99952"/>
   </clipPath>
  </defs>
