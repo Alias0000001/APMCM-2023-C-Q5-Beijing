@@ -55,7 +55,7 @@ write("R9_7C_MANUFACTURING_LEDGER.csv",
  ["scenario","private_manufacturing_CO2_base_t_y","private_manufacturing_CO2_low_t_y","private_manufacturing_CO2_high_t_y","bus_manufacturing_GHG_tCO2e_y","aggregation_rule"],ledger)
 write("R9_7C_PRIVATE_MANUFACTURING_GWP_SCENARIOS.csv",
  ["scenario","private_vehicle_production_GWP_tCO2e_y","source_id","scope_note"],
- [[r[0],r[1],r[4],r[5]] for r in gwp])
+ [[r[0],r[1],r[5],r[6]] for r in gwp])
 write("R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv",
  ["scenario","private_vehicle_production_GWP_t_y","bus_manufacturing_GWP_t_y","total_manufacturing_GWP_t_y","WTW_operating_GWP_t_y","partial_LCA_GWP_t_y","impact_unit","scope_note"],partial)
 print(f"PASS: {len(vkt)} scenarios; private and bus VKT conserved; CO2 and GWP ledgers separated; partial LCA GWP reconciled")
