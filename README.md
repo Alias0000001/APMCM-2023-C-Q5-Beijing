@@ -1,3 +1,7 @@
+## R9.7E — Environmental scenario matrix
+
+[Report](08_Reports/R9_7E_ENVIRONMENTAL_MATRIX.md) | [road factors](02_Cleaned_Data/R9_7E_ROAD_FACTORS.csv) | [eight factor cases](02_Cleaned_Data/R9_7E_ROAD_CASES.csv) | [240 pollutant results](02_Cleaned_Data/R9_7E_ROAD_POLLUTANT_SCENARIOS.csv) | [six-scenario matrix](02_Cleaned_Data/R9_7E_ENVIRONMENTAL_MATRIX.csv). National 2023-08 consultation-draft basic factors, China V illustrative reference and IV/VI sensitivity. Separate physical exhaust masses, final energy, WTW and partial GWP. Full life-cycle and non-exhaust flows remain NA. Next R9.7F transfer sensitivity, not renewed Jinhua VKT search.
+
 ## R9.7D — Passenger service and mileage denominator
 
 [Report](08_Reports/R9_7D_PASSENGER_SERVICE_AND_MILEAGE_AUDIT.md) | [PKM evidence](02_Cleaned_Data/R9_7D_PKM_EVIDENCE.csv) | [30 service cases](02_Cleaned_Data/R9_7D_SERVICE_SENSITIVITY.csv) | [six mileage alternatives](02_Cleaned_Data/R9_7D_MILEAGE_DENOMINATOR_SENSITIVITY.csv). Actual PKM remains NA. VKT is primary; conditional PKM and equal-service sensitivity are auxiliary. R9.7C bus CSV field order and PHEV boundary wording corrected. Next R9.7E local pollutants. No main modification.

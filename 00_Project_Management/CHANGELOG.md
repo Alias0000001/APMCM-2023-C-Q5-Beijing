@@ -61,3 +61,7 @@
 ## 2026-11-24 — R9.7D
 - Added 30 conditional service cases and six mileage-denominator alternatives; actual PKM remains NA.
 - Corrected bus manufacturing audit CSV column order and PHEV production/vehicle-cycle wording. Added regression tests and pipeline steps; figure manifest staging restored. No new Jinhua VKT search.
+
+## 2026-11-24 — R9.7E
+- Added nine pre-contest national basic emission factor rows, eight cases and 240 road-exhaust screening results, plus integrated six-scenario environmental matrix with explicit NA for non-exhaust and full life-cycle indicators.
+- Integrated generation script and four regression tests in CI. No change to A–D baseline or main branch.

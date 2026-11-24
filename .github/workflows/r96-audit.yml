@@ -43,13 +43,14 @@ jobs:
           python 06_S0_Calculation/r9_4_integrate_lci.py
           python 06_S0_Calculation/r9_5_sensitivity.py
 
-      - name: Run contest-time R9.7A through R9.7D modules
+      - name: Run contest-time R9.7A through R9.7E modules
         run: |
           python 06_S0_Calculation/r9_7a_activity_scenarios.py
           python 06_S0_Calculation/r9_7b_energy_wtw.py
           python 06_S0_Calculation/r9_7c_manufacturing.py
           python 06_S0_Calculation/r9_7c_manufacturing_audit.py
           python 06_S0_Calculation/r9_7d_service.py
+          python 06_S0_Calculation/r9_7e_environment.py
 
       - name: Generate SVG figures from CSV inputs
         run: python 06_S0_Calculation/r9_6_generate_figures.py

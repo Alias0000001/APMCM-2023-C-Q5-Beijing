@@ -52,3 +52,6 @@ The remaining sections are to be populated from verified contest-time results: d
 
 ## R9.7D passenger service
 A historical central-city bus trip-distance proxy (10.9 km) and private trip occupancy (1.24) are conditional transfers, not measured matched PKM. Compare fixed VKT first; auxiliary equal-service sensitivity fixes each class S0 PKM by adjusting VKT inversely with assumed distance-weighted occupancy. No modal shift is inferred. Test the mileage denominator alternative separately, without duplicate transfer corrections.
+
+## R9.7E environmental indicators
+Report six-scenario final energy, WTW GWP, production GWP and partial GWP separately from road CO, VOCs, NOx, PM2.5 and PM10. Use August 2023 consultation-draft Appendix F national basic factors for an illustrative China V reference, with IV/VI sensitivity; actual fleet emissions-standard weights are unavailable. BEV zero covered combustion exhaust does not mean zero non-exhaust or upstream pollution. PM2.5 and PM10 overlap and must not be summed. See R9.7E environmental matrix.
