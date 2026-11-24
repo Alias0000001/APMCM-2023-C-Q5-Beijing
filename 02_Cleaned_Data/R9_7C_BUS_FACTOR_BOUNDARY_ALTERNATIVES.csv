@@ -1,0 +1,5 @@
+source_id,technology,manufacturing_total,unit,lifetime_km,manufacturing_g_per_vehicle_km,impact_unit,status
+LIN2015,diesel,42.840000,tCO2e/vehicle,400000.000000,107.100000,CO2e,base_historical_proxy
+LIN2015,BEV,47.748000,tCO2e/vehicle,400000.000000,119.370000,CO2e,base_historical_proxy
+YING2018,diesel,121.634000,tCO2/vehicle,950000.000000,128.035789,CO2,alternative_boundary
+YING2018,BEV,215.037000,tCO2/vehicle,950000.000000,226.354737,CO2,alternative_boundary
