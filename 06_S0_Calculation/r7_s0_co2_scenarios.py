@@ -52,13 +52,21 @@ def calc(phev_share=.05,active_days=300,r=1.,q=.8,uf=.66,
     }
     # Do not assign fuel or emission factor to the 6 unclassified April buses.
     co2=sum(components.values())
+    bus_bev=bus["electric_drive_mixed"]*q
+    bus_mixed_nonbev=bus["electric_drive_mixed"]*(1-q)
     return dict(private_total_vkt_km=PRIVATE_TOTAL*P,bus_total_vkt_km=BUS*P,
-      private_ICE_vkt_km=ice,private_BEV_vkt_km=bev,private_PHEV_vkt_km=phev,
+      # Canonical lowercase field names consumed by downstream R9 modules.
+      ice_vkt_km=ice,private_bev_vkt_km=bev,phev_vkt_km=phev,
       bus_diesel_vkt_km=bus["diesel"],bus_gas_vkt_km=bus["gas"],
-      bus_BEV_vkt_km_assumed=bus["electric_drive_mixed"]*q,
-      bus_other_mixed_vkt_km_assumed=bus["electric_drive_mixed"]*(1-q),
+      bus_bev_vkt_km_assumed=bus_bev,
+      bus_nonbev_mixed_vkt_km=bus_mixed_nonbev,
+      bus_unknown_vkt_km=bus["unclassified"],
+      # Backward-compatible descriptive aliases retained for audit readers.
+      private_ICE_vkt_km=ice,private_BEV_vkt_km=bev,private_PHEV_vkt_km=phev,
+      bus_BEV_vkt_km_assumed=bus_bev,
+      bus_other_mixed_vkt_km_assumed=bus_mixed_nonbev,
       bus_unclassified_vkt_km=bus["unclassified"],
-      electric_kwh=e,co2_tonnes_conditional=co2/1000,
+      electric_kwh=e,co2_tonnes_conditional=co2/1000,co2_tons_conditional=co2/1000,
       unclassified_co2="NA", **{k+"_tCO2":v/1000 for k,v in components.items()})
 
 def main():
