@@ -56,6 +56,20 @@ class R97CManufacturingTests(unittest.TestCase):
         self.assertEqual(len(rs), 6)
         self.assertTrue(all("do not aggregate" in r["aggregation_rule"] for r in rs))
 
+    def test_partial_lca_gwp_reconciles_and_s4_is_lower(self):
+        rs = {r["scenario"]: r for r in rows("R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv")}
+        self.assertEqual(len(rs), 6)
+        self.assertAlmostEqual(float(rs["S0"]["partial_LCA_GWP_t_y"]), 567788.6558, delta=0.02)
+        self.assertAlmostEqual(float(rs["S3"]["partial_LCA_GWP_t_y"]), 486977.9085, delta=0.02)
+        self.assertAlmostEqual(float(rs["S4"]["partial_LCA_GWP_t_y"]), 341002.0368, delta=0.02)
+        self.assertLess(float(rs["S4"]["partial_LCA_GWP_t_y"]), float(rs["S3"]["partial_LCA_GWP_t_y"]))
+        for r in rs.values():
+            self.assertAlmostEqual(
+                float(r["private_vehicle_production_GWP_t_y"]) +
+                float(r["bus_manufacturing_GWP_t_y"]) +
+                float(r["WTW_operating_GWP_t_y"]),
+                float(r["partial_LCA_GWP_t_y"]), delta=0.02)
+
     def test_factor_register_contains_phev_and_bus(self):
         rs = rows("R9_7C_MANUFACTURING_FACTOR_REGISTER.csv")
         ids = {r["source_id"] for r in rs}
