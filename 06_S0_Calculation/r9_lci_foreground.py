@@ -56,8 +56,7 @@ def main():
     phev_vkt = v("phev_vkt_km")
     bus_diesel_vkt = v("bus_diesel_vkt_km")
     bus_gas_vkt = v("bus_gas_vkt_km")
-    bus_mixed_vkt = v("bus_bev_vkt_km_assumed")
-    bus_bev_vkt = bus_mixed_vkt * BUS_Q
+    bus_bev_vkt = v("bus_bev_vkt_km_assumed")
     bus_other_mixed_vkt = v("bus_nonbev_mixed_vkt_km")
     bus_mixed_vkt = bus_bev_vkt + bus_other_mixed_vkt
     bus_unknown_vkt = v("bus_unknown_vkt_km")
