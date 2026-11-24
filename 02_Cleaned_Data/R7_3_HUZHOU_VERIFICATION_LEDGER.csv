@@ -1,0 +1,10 @@
+field,reference_year,geography,value,unit,evidence_grade,source_url,note
+Huzhou 2023 district private passenger cars,2023,Huzhou urban districts,,vehicles,MISSING_LOCAL_OBSERVATION,https://www.tjnjdata.com/Yearbook/huzhou-tongji-nianjian-2024.html,"Yearbook table 5-10 directory only, no matching cross tab"
+Huzhou 2023 private car annual mean mileage,2023,Huzhou urban districts,,km/car-year,MISSING_LOCAL_OBSERVATION,,No local observations found
+Huzhou 2023 city-wide private cars,2023,Huzhou whole municipality,1045110,vehicles,WRONG_AREA_FOR_CITY_DISTRICT,https://tjgb.hongheiku.com/djs/45666.html,All-city numerator not match 1.6m urban-district denominator
+China 2023 passenger-car mean mileage,2023,China,10220,km/car-year,NONLOCAL_LITERATURE_PROXY,https://file.jgvogel.cn/125/upload/resources/file/586252.pdf,"Whitepaper published 2024, printed p15, original figure verified"
+Six cities 2017 small passenger car mean mileage,2017,Six selected Chinese cities,12000,km/car-year,HISTORICAL_NONLOCAL_PROXY,https://cbjl.cbpt.cnki.net/portal/journal/portal/client/paper/e18bd5945c4c54cee28db08988fdab0d,"Approximate, 4.183m annual inspection records"
+Huzhou 2023 city bus operating VKT,2023,Huzhou municipal bus operations,28850000,km,BUS_BUSINESS_TYPE_NOT_GIS,https://custom.huzhou.gov.cn/DFS/file/2024/03/04/202403041714184615233rp.pdf,City-bus services not proof of boundary-inside travel
+Huzhou 2023 rural bus operating VKT,2023,Huzhou municipal bus operations,32150000,km,BUS_BUSINESS_TYPE_NOT_GIS,https://custom.huzhou.gov.cn/DFS/file/2024/03/04/202403041714184615233rp.pdf,"Rural-bus services, not GIS district activity"
+Wuxing subset 2023 planned total vehicles,2023,Wuxing planning area,248400,vehicles,FORECAST_NOT_OBSERVED,https://custom.huzhou.gov.cn/DFS/file/2023/08/25/20230825173803478amy76d.pdf,"Charging plan projection, not official vehicle stock"
+South Taihu 2023 planned total vehicles,2023,South Taihu New Area planning,118800,vehicles,FORECAST_NOT_OBSERVED,https://custom.huzhou.gov.cn/DFS/file/2023/08/25/20230825173803478amy76d.pdf,"Charging plan projection, not official vehicle stock"
