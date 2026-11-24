@@ -1,0 +1,5 @@
+parameter,value,unit,source,note
+electric_bus_energy_equivalent,14.1,L_diesel_equivalent/100km,Ma et al. (2021) Energy 210 119196,Reported mean energy consumption for electric buses in the Beijing route study; 630 routes. Interpreted as diesel-equivalent energy not electricity-meter kWh.
+diesel_equivalent_LHV,36,MJ/L,Project generic energy conversion assumption,Explicit conversion assumption for diesel-equivalent litres; not a local fuel assay.
+MJ_per_kWh,3.6,MJ/kWh,SI unit conversion,Exact unit conversion.
+bus_e,1.41,kWh/km,Derived from Ma et al. (2021),(14.1 L/100km × 36 MJ/L) / (3.6 MJ/kWh × 100 km) = 1.41 kWh/km.
