@@ -1,5 +1,15 @@
 # APMCM 2023 C Problem 5 — Beijing
 
+## Latest: R5 public-source corrections (2026-11-24)
+
+**Read [R5 report](08_Reports/R5_PUBLIC_SOURCES_DATA_UPGRADE.md) and [R5 audit](03_Data_Audit/R5_PUBLIC_SOURCE_AUDIT.md) first.** The previous public departmental reporting login URL is not a public download service and should not be recommended to users. R5 uses a public 2023-04-23 bus-operator interview: 1,495 diesel, 6,795 natural gas, 15,451 mixed new-energy electric-drive buses and 6 unclassified from total 23,747. This is a 2023-April snapshot, not 2023 year-end, and the mixed electric-drive group is NOT pure BEV. R5 also replaces the old private BEV annualization of 18,723.84 km with **18,619.2 km/year as a scenario** based on the directly reported 2023-October monthly mileage 1,551.6 km. Annualized monthly values and VKT by propulsion are proxies, not 2023 odometer observations.
+
+New datasets: `02_Cleaned_Data/R5_bus_2023_04_fleet_snapshot.csv`, `R5_bus_vkt_allocation_scenarios.csv`, `R5_private_bev_2023_october_observed.csv`, `R5_private_VKT_corrected_sensitivity.csv`. Re-run `python 06_S0_Calculation/r5_public_proxy_scenarios.py`.
+
+Earlier R2–R4 model files remain available as archive/contrast and must not override R5 corrections.
+
+
+
 **Repository purpose:** a traceable data, audit, and calculation workspace for the Beijing-based analysis of Problem 5.
 
 **Status:** auditable retrospective 2023 data baseline with P0 VKT and bus-propulsion scenario estimates; most 2023 observation sources were published after 2023-12-31. Exact Beijing private BEV/PHEV cross-tab and propulsion-specific non-BEV bus VKT remain unavailable.
