@@ -1,0 +1,7 @@
+vehicle_class,reported_kWh_per_100km,assumed_charging_efficiency,grid_input_kWh_per_100km,scenario_status,note
+private_BEV,16.0,0.90,17.777777778,IF_REPORTED_VALUE_IS_BATTERY_SIDE_ONLY,Illustrative boundary sensitivity; not adopted as base
+private_BEV,16.0,0.92,17.391304348,IF_REPORTED_VALUE_IS_BATTERY_SIDE_ONLY,Illustrative boundary sensitivity; not adopted as base
+private_BEV,16.0,0.95,16.842105263,IF_REPORTED_VALUE_IS_BATTERY_SIDE_ONLY,Illustrative boundary sensitivity; not adopted as base
+electric_bus,62.6,0.90,69.555555556,IF_REPORTED_VALUE_IS_BATTERY_SIDE_ONLY,Illustrative boundary sensitivity; not adopted as base
+electric_bus,62.6,0.92,68.043478261,IF_REPORTED_VALUE_IS_BATTERY_SIDE_ONLY,Illustrative boundary sensitivity; not adopted as base
+electric_bus,62.6,0.95,65.894736842,IF_REPORTED_VALUE_IS_BATTERY_SIDE_ONLY,Illustrative boundary sensitivity; not adopted as base
