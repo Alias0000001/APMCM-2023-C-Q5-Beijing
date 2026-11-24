@@ -1,7 +1,7 @@
 scenario,private_vehicle_production_GWP_tCO2e_y,source_id,scope_note
-S-1,126200.7476413405,QIAO2017+XIONG2019+LIN2015,cross-study harmonized proxy; factors include initial batteries
-S0,129854.66735949807,QIAO2017+XIONG2019+LIN2015,cross-study harmonized proxy; factors include initial batteries
-S1,129854.66735949807,QIAO2017+XIONG2019+LIN2015,cross-study harmonized proxy; factors include initial batteries
-S2,189648.69487814864,QIAO2017+XIONG2019+LIN2015,cross-study harmonized proxy; factors include initial batteries
-S3,189648.69487814864,QIAO2017+XIONG2019+LIN2015,cross-study harmonized proxy; factors include initial batteries
-S4,189648.69487814864,QIAO2017+XIONG2019+LIN2015,cross-study harmonized proxy; factors include initial batteries
+S-1,126200.7476413405,QIAO2017+XIONG2019,Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included
+S0,129854.66735949807,QIAO2017+XIONG2019,Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included
+S1,129854.66735949807,QIAO2017+XIONG2019,Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included
+S2,189648.69487814864,QIAO2017+XIONG2019,Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included
+S3,189648.69487814864,QIAO2017+XIONG2019,Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included
+S4,189648.69487814864,QIAO2017+XIONG2019,Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included
