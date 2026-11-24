@@ -1,0 +1,18 @@
+stage,substage,vehicle_scope,current_status,evidence_grade,entered_in_R9,blocking_gap,decision
+vehicle_cycle,raw_materials_and_components,private_ICEV_BEV,PARTIAL_GWP_PROXY,B,yes_as_separate_proxy,detailed_material_mass_and_process_inventory,Do not call GWP proxy a full raw-material LCI
+vehicle_cycle,vehicle_assembly,private_ICEV_BEV,PARTIAL_GWP_PROXY,B,yes_as_separate_proxy,vehicle-specific Chinese production inventory,Keep cradle-to-gate GWP factor separate from WTW
+vehicle_cycle,vehicle_and_battery_production,private_PHEV,NA,NA,no,matched PHEV manufacturing inventory,Do not interpolate from BEV/ICEV
+vehicle_cycle,vehicle_and_battery_production,bus_diesel_gas_BEV,NA,NA,no,matched bus manufacturing inventory and vehicle type split,Do not substitute 2024/2025 data into strict 2023 cutoff
+battery_cycle,initial_battery,private_BEV,INCLUDED_IN_QIAO_BEV_FACTOR,B,no_separate_addition,battery chemistry share and capacity,Do not double count initial battery
+battery_cycle,battery_replacement,private_BEV_PHEV_and_bus,NA,NA,no,battery life chemistry capacity replacement rate,Use separate replacement module when supported
+fuel_cycle,gasoline_WTT_TTW,private_ICEV_PHEV,PARTIAL_WTW_PROXY,B,yes,2023 Beijing fuel supply pathway and fuel consumption observed,Use WTW factor instead of adding R7 TTW
+fuel_cycle,diesel_WTT_TTW,bus_diesel,PARTIAL_WTW_PROXY,B,yes,2023 bus diesel physical consumption,Use WTW factor instead of adding R7 TTW
+fuel_cycle,CNG_LNG_WTT_TTW,bus_gas,REFERENCE_FACTOR_ONLY,B,no,CNG/LNG split and physical fuel energy basis,Keep natural gas WTW result NA
+fuel_cycle,electricity_WTW,private_BEV_PHEV_bus,OLD_NATIONAL_PROXY,B,yes_as_sensitivity,2023 Beijing life-cycle grid factor and meter boundary,Do not add to R7 0.5554 operational factor
+vehicle_use,tailpipe_and_electricity,all,PARTIAL_R7_OPERATIONAL_CO2,C/D,yes_as_legacy_comparator,complete species-resolved emissions by propulsion,Not equivalent to WTW CO2e
+maintenance,tyres_fluids_filters_batteries,all,NA,NA,no,annual replacement rates and material inventories,Keep missing
+end_of_life,dismantling_recycling_disposal,all,NA,NA,no,material recovery rates and allocation method,Report no recycling credit in base
+non_exhaust,tyre_brake_road_dust,all,NA,NA,no,vehicle mass tyre brake wear and local road factors,Needed for PM and health impacts
+infrastructure,roads_chargers_depots,all,EXCLUDED,NA,no,capital stock and lifetime allocation,Optional extension outside core
+LCIA,climate_change,all,PARTIAL_GWP_ONLY,B/C,partial,complete inventory and chosen GWP version,Do not call full LCIA
+LCIA,air_pollution_resource_water_all,all,NA,NA,no,flow inventory and characterization factors,Do not report unsupported categories
