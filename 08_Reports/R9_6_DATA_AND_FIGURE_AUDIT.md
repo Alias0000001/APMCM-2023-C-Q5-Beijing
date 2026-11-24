@@ -62,10 +62,12 @@ These are 2011–2014-era Beijing technology proxies published in 2015. They are
 
 ## 3. 2023 actual bus PKM audit
 
-Beijing Bus Group's 2023 operator statistics report:
+Beijing Bus Group's 2023 operator statistics expose two columns. The R7 bus scope uses the Public Electric Bus column:
 
 - 1.151 billion vehicle-km.
 - 2.08687 billion passenger boardings.
+
+The same page's Total column reports 1.47566 billion vehicle-km and 2.14368 billion passenger boardings. These are retained as scope cross-checks, not substituted into the R7 public-electric-bus activity anchor.
 
 Their ratio is 1.813 passenger trips per vehicle-km. It is not passengers aboard per kilometre and not passenger-km.
 
