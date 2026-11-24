@@ -92,7 +92,7 @@ def main():
                 ICEV_Peng2017_Table8_g_per_km=ice_intensity,
                 relative_change_vs_ICEV_pct=(1-total/ice_intensity)*100,
                 eligible_for_strict_comparison='YES' if eligible else 'NO_RETROSPECTIVE_METHOD_OR_GEOGRAPHY_CHANGE',
-                status='TWO_STAGE_SCREENING' if eligible else 'RETROSPECTIVE_ELECTRICITY_FACTOR_TRANSFER'))
+                status=('TWO_STAGE_SCREENING' if factor['eligibility']=='STRICT_PRE_2023_LITERATURE' else ('TWO_STAGE_SOURCE_DISCREPANCY_SENSITIVITY' if eligible else 'RETROSPECTIVE_ELECTRICITY_FACTOR_TRANSFER'))))
     write('R9_5_GRID_FACTOR_SENSITIVITY.csv',grid_sensitivity)
 
     factorial=[]
