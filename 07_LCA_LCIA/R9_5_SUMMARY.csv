@@ -1,0 +1,6 @@
+metric,value,unit,scenario
+ICEV_two_stage_GWP100,265.537727,gCO2e/vehicle-km,"Peng2017 Table8 + Qiao2017, 200000 km"
+BEV_NMC_two_stage_GWP100,186.32548,gCO2e/vehicle-km,"Peng2017 Table8 + Qiao2017, 200000 km"
+BEV_LFP_two_stage_GWP100,187.17048,gCO2e/vehicle-km,"Peng2017 Table8 + Qiao2017, 200000 km"
+BEV_NMC_reduction_vs_ICEV,29.830882374013846,%,strict two-stage screening only
+BEV_NMC_break_even_grid_EF,1.2533732039473684,kgCO2e/kWh,equal vehicle lifetime 200000 km
