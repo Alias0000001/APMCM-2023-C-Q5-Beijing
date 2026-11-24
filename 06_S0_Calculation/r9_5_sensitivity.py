@@ -187,6 +187,8 @@ def main():
     ck('Battery_factor_no_double_count',int(all(x['add_to_Qiao_vehicle_manufacturing']=='NO' for x in battery)),1)
     ck('MEE_grid_generation_scope_separate',int(next(x for x in retrospective if x['scenario']=='MEE2023_Beijing_CO2')['scope']=='generation_only_CO2'),1)
     ck('MEE2023_post_competition_flag',int(next(x for x in grids if x['scenario_id']=='MEE2023_national_PCF')['eligibility']=='RETROSPECTIVE_ONLY_POST_COMPETITION'),1)
+    ck('Peng_text_alt_is_pre2023_sensitivity',int(next(x for x in grids if x['scenario_id']=='Peng2017_text_WTW')['eligibility'].startswith('STRICT_PRE_2023')),1)
+    ck('MEE_national_PCF_excluded_from_strict_set',int(not next(x for x in grids if x['scenario_id']=='MEE2023_national_PCF')['eligibility'].startswith('STRICT_PRE_2023')),1)
     ck('Lifetime_monotonic_manufacturing',int(all(next(x for x in lifetime if x['vehicle']=='BEV_NMC' and x['lifetime_km']==a)['manufacturing_gCO2e_per_km'] > next(x for x in lifetime if x['vehicle']=='BEV_NMC' and x['lifetime_km']==b)['manufacturing_gCO2e_per_km'] for a,b in [(100000,150000),(150000,200000),(200000,250000),(250000,300000)])),1)
     ck('Battery_factor_rows',len(battery),44)
     ck('Lifetime_rows',len(lifetime),15)
