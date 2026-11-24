@@ -1,0 +1,14 @@
+# Pre-writing remediation: Audit-01–07
+Scope: Q5; Beijing evidence anchor and hypothetical million-resident city, Jinhua retrospective diagnostic only. Preserve historical records, manuscript and previous figure sets. Not final acceptance and not manuscript rewriting.
+ 
+## Verified and reproducible results
+- Reproduce 262,440 paired climate sets; extended 25-package design 328,050. All design points, not probabilities. S4 worst −0.095129454%, 24 negative cases; report conditional reversals, not unconditional superiority. Original 14,580 and extended designs are not strict subsets. Original mixed residual energy-only variations must not be interpreted as full technology substitutions.
+- 590,490 NOx pairs; 406,290 bus-first and 184,200 car-first. 4,133,430 PM pairs with no negative reductions within the specified wear design. Dust and secondary PM excluded.
+- Qiao exact reported factors verified from publisher preview; selected consumable replacements included. Gan alternative replaces whole private vehicle-cycle term, never added to original. PHEV transport and bus boundaries remain source-specific. See AUDIT_PREWRITE_SOURCE_BOUNDARY.md.
+- New independent audit reads input registers, reconstructs the six scenarios and compares numerical outputs, with separate CSV and CI gate. Baseline values unchanged.
+- Thirteen replacement figures separately stored under 09_Paper_Draft/figures_final/remediation; SVG/PDF/300 dpi PNG, native 15 cm, >=8 pt, semantic colors, no mixed physical/LCIA units. Screen rendering inspected; final typeset paper and physical print review pending. No paper references changed yet.
+ 
+## Remaining evidence limits and decision
+Do not restart known unsuccessful Jinhua VKT / Beijing bus PKM collection. Charging report original PDF and meter, exact seat filter, actual private NEV split, actual propulsion-specific VKT, hydrogen and range-extender mix, bus pack replacement, harmonized full maintenance/EOL, dust/noise/infrastructure and complete upstream pollutant inventories remain unobserved or incomplete. Conditional designs and explicit NA constrain claims. Source substitution and omitted burden margin are not missing-stage measurements. More same-topic award originals remain unavailable/unverified; do not substitute invented papers. Existing other-paper style notes are not newly independently reverified here.
+ 
+The companion issue ledger records dispositions for prior IDs; E/F/H IDs summarize later audit findings (H-007 added here for literature access). PROXY_TESTED is a conditional treatment, not data recovery or final user acceptance. ASSET_REBUILT does not mean manuscript incorporation. PARTIAL means open. Audit-08 writing, bibliography, final citation and figure placement, grayscale and final print review, Audit-09 scores/approval and applicable contest rules remain open. Do not declare the >=90 final gate passed. The user must approve the residual scope before final freeze.

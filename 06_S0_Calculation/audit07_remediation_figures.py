@@ -99,7 +99,7 @@ for ax,keys,labels,colors,total,title in [
     ticks(ax);ax.set_ylim(0,100);axis(ax,"VKT share (%)")
     ax.set_title(f"{title} | {den[0]/1e6:,.2f} million km/year",loc="left")
     ax.legend(loc="upper center",bbox_to_anchor=(.5,-.17),ncol=2,frameon=False)
-save(f,"F02_Activity","R9_7A_SIX_SCENARIO_VKT.csv","2022 activity anchor; April 2023 propulsion snapshot. Annual private and bus VKT are fixed within mode. Shares are conditional allocations, not observed propulsion-specific mileage.")
+save(f,"F02_Activity","R9_7A_SIX_SCENARIO_VKT.csv","2022 activity anchor; April 2023 propulsion snapshot. Annual private and bus VKT are fixed within mode. Shares are conditional allocations, not observed propulsion-specific mileage. S0 unclassified bus share is 0.0253%, too small for easy visual discrimination.")
 # F03: boundaries and limits.
 f,ax=diagram(4.4)
 block(ax,.04,.76,.92,.18,"Annual included-stage climate GWP","Source-specific production / replacements + energy WTW","#DDEBF5")
@@ -157,22 +157,22 @@ for j,s in enumerate(SS):
 ax.set_yticks(XX,SL);ax.invert_yaxis();ax.set_xlim(-33,66);ax.set_xticks([-30,-20,-10,0,10,20,30,40,50,60]);ax.set_xlabel("Reduction relative to paired S0 (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.axvline(0,color=DARK,ls="--",lw=.9)
 ax.legend(handles=[plt.Line2D([0],[0],color="#A0A0A0",lw=3,label="Original: 14,580"),plt.Line2D([0],[0],color=ICE,lw=3,label="Extended: 328,050"),plt.Line2D([0],[0],marker="o",color=NMC,ls="",label="Reference")],loc="upper right",frameon=False)
 w=one(WIT,design="remediation_25_packages",scenario="S4")
-ax.annotate(f"S4 min {float(w['red']):.3f}%",(float(w["red"]),5.14),xytext=(13,9),textcoords="offset points",fontsize=8.5,arrowprops={"arrowstyle":"-","color":DARK})
+ax.annotate(f"S4 min {float(w['red']):.3f}%",(float(w["red"]),5.14),xytext=(-10,12),ha="right",textcoords="offset points",fontsize=8.5,arrowprops={"arrowstyle":"-","color":DARK})
 save(f,"F07_Paired_Envelope","R9_7F_NESTED_ENVELOPE.csv; R9_7FIX_SENSITIVITY_ENVELOPE.csv; R9_7FIX_REVERSAL_WITNESSES.csv","Deterministic designs, not probabilities or confidence intervals; original and extended designs are not strict subsets. S4 near-zero negative witness under joint adverse assumptions. 2022 activity anchor; paired S0 in each set.")
 # F08 private car break-even with additional private NMC pack.
 mi=num(one(prod,source_id="QIAO17_ICE"),"factor_value")*1000
 mb=num(one(prod,source_id="QIAO17_BEV_NMC"),"factor_value")*1000
 bf=num(one(B,scenario="S3",recycling_case="no_credit",indicator="GWP100"),"factor_per_kWh")
 ll=np.linspace(100000,300000,150)
-f,axs=make(5.0,2,1)
+f=plt.figure(figsize=(W,5.6),layout="constrained"); gs=f.add_gridspec(3,1,height_ratios=[1,1,.20]); axs=[f.add_subplot(gs[0]),f.add_subplot(gs[1])]; lg=f.add_subplot(gs[2]);lg.axis("off")
 for ax,gas,eta,title in [(axs[0],params["gasoline_l100"],1,"(a) Reference fuel / delivered electricity"),(axs[1],6,.9,"(b) Low fuel use / conditional charging loss")]:
     for n,col,ls in [(0,ICE,"-"),(.5,PHEV,"--"),(1,NMC,"-.")]:
         y=((mi-mb-n*40*bf)/ll+gas/100*params["gasoline_mj_l"]*params["gasoline_ef"]/1000)/(params["car_e"]/eta)
-        ax.plot(ll/1000,y,color=col,ls=ls,lw=1.7,label=f"{n:g} extra packs")
+        ax.plot(ll/1000,y,color=col,ls=ls,lw=1.7,label=f"{n:g} extra pack"+("s" if n!=1 else ""))
     ax.axhline(params["grid_ef"],color=DARK,ls=":",label="Reference grid")
     ax.axhline(params["grid_ef"]*.5,color=BEV,ls=":",label="Half factor")
     ax.set_ylim(0,1.15);ax.set_xticks([100,150,200,250,300]);axis(ax,"Threshold (kg CO₂e/kWh)","Lifetime (thousand km)");ax.set_title(title,loc="left")
-axs[0].legend(ncol=2,frameon=True,facecolor="white",framealpha=1,edgecolor="none",loc="lower right")
+handles,labels=axs[0].get_legend_handles_labels();lg.legend(handles,labels,ncol=3,frameon=False,loc="center")
 save(f,"F08_Threshold","R9_7B_ENERGY_INPUTS.csv; R9_7C_MANUFACTURING_FACTOR_REGISTER.csv; R9_7AUDIT04_BATTERY_RECIPE.csv","Private gasoline versus NMC BEV, matched lifetime and production + WTW boundary. Extra 40 kWh NMC packs at Sun proxy 124.48 kg CO2e/kWh. Curves are conditional; below threshold BEV has lower GWP. Not city-wide threshold.")
 # A01 transfer (no retrospective inputs).
 f,axs=make(2.9,1,3);levels=[.8,1,1.2];tr=[r for r in T if r["scenario"]=="S3"];vv=vals(tr,"reduction_vs_paired_S0_pct")
@@ -182,7 +182,7 @@ for ax,b in zip(axs,levels):
     for i,j in np.ndindex(mat.shape):ax.text(j,i,f"{mat[i,j]:.2f}",ha="center",va="center",fontsize=8.5,color="white" if mat[i,j]>(min(vv)+max(vv))/2 else DARK)
     ax.set_xticks(range(3),["0.8","1","1.2"]);ax.set_yticks(range(3),["0.8","1","1.2"]);ax.set_xlabel("Mileage m");ax.set_title(f"Bus b={b:g}",fontsize=9)
 axs[0].set_ylabel("Ownership g");f.colorbar(im,ax=axs,label="S3 reduction (%)",shrink=.65)
-save(f,"A01_Transfer","R9_7F_TRANSFER_GRID.csv","27 reference-intensity transfer settings; common color scale. No actual Jinhua VKT. Retrospective Jinhua diagnostic table remains separately labelled.")
+save(f,"A01_Transfer","R9_7F_TRANSFER_GRID.csv","27 reference-intensity transfer settings; common color scale zoomed to the calculated range; numeric labels show the small absolute differences. No actual Jinhua VKT. Retrospective Jinhua diagnostic table remains separately labelled.")
 # A02 conditional passenger service.
 f,axs=make(4.4,2,1);r=[one(D0,case="reference",scenario=s) for s in SS]
 axs[0].bar(XX-.18,vals(r,"car_partial_GWP_g_per_PKM"),.36,color=ICE,label="Cars");axs[0].bar(XX+.18,vals(r,"bus_partial_GWP_g_per_PKM"),.36,color=BUS,edgecolor=DARK,hatch="//",label="Buses")
@@ -212,7 +212,7 @@ for i,v in enumerate(z):
     ax.barh(i,v,color=NMC if v>0 else ICE,edgecolor=DARK,lw=.3,hatch="//" if v>0 else "")
     if abs(v)<1e-12:ax.text(1,i,"≈0",va="center",fontsize=8.5)
 ax.set_yticks(range(len(labels)),labels);ax.set_xlim(-100,40);ax.set_xticks([-100,-75,-50,-25,0,25,40]);ax.invert_yaxis();ax.axvline(0,color=DARK,lw=.8);ax.set_xlabel("Change within each category (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.set_axisbelow(True)
-save(f,"A04_Battery_LCIA","R9_7AUDIT04_BATTERY_RECIPE.csv","S3 hypothetical private NCM622 battery only, Sun 2020 ReCiPe Midpoint(H), reported 100% recycling compared with no-credit material + production. Rounded factors limit precision. Categories not summed, not added to whole-vehicle GWP.")
+save(f,"A04_Battery_LCIA","R9_7AUDIT04_BATTERY_RECIPE.csv","S3 hypothetical private NCM622 battery only, Sun 2020 ReCiPe Midpoint(H), reported 100% recycling compared with no-credit material + production. Rounded factors limit precision; approximately zero means equality at reported precision. Categories not summed, not added to whole-vehicle GWP.")
 # A05 actual 8x16 coverage matrix.
 f,ax=make(6.1)
 vehicles=list(dict.fromkeys(x["vehicle"] for x in C));stages=list(dict.fromkeys(x["stage"] for x in C));assert len(vehicles)==8 and len(stages)==16 and len(C)==128

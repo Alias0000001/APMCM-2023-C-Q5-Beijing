@@ -74,6 +74,9 @@ jobs:
       - name: Reconcile source-specific production and replacement boundaries
         run: python 06_S0_Calculation/audit06_source_boundary.py
 
+      - name: Independent six-scenario numerical cross-check
+        run: python 06_S0_Calculation/audit05_independent.py
+
       - name: Render pre-writing replacement figures
         run: python 06_S0_Calculation/audit07_remediation_figures.py
 
