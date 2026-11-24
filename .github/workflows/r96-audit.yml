@@ -71,6 +71,9 @@ jobs:
           node 06_S0_Calculation/audit06_remediation.mjs
           node 06_S0_Calculation/audit06_road_remediation.mjs
 
+      - name: Reconcile source-specific production and replacement boundaries
+        run: python 06_S0_Calculation/audit06_source_boundary.py
+
       - name: Render pre-writing replacement figures
         run: python 06_S0_Calculation/audit07_remediation_figures.py
 

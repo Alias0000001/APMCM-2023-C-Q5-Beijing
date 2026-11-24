@@ -70,7 +70,7 @@ T=read("R9_7F_TRANSFER_GRID.csv")
 D0=read("R9_7D_SERVICE_SENSITIVITY.csv")
 PK=read("R9_7FIX_CALIBRATED_PKM.csv")
 B=read("R9_7AUDIT04_BATTERY_RECIPE.csv")
-C=read("R9_7AUDIT04_STAGE_COVERAGE.csv")
+C=read("R9_7FIX_STAGE_COVERAGE.csv")
 params={r["parameter"]:float(r["value"]) for r in read("R9_7B_ENERGY_INPUTS.csv")}
 prod=read("R9_7C_MANUFACTURING_FACTOR_REGISTER.csv")
 gref=vals(G,"partial_LCA_GWP_t_y")/1000
@@ -102,13 +102,13 @@ for ax,keys,labels,colors,total,title in [
 save(f,"F02_Activity","R9_7A_SIX_SCENARIO_VKT.csv","2022 activity anchor; April 2023 propulsion snapshot. Annual private and bus VKT are fixed within mode. Shares are conditional allocations, not observed propulsion-specific mileage.")
 # F03: boundaries and limits.
 f,ax=diagram(4.4)
-block(ax,.04,.76,.92,.18,"Annual included-stage climate GWP","Vehicle production (source-specific scope) + energy WTW","#DDEBF5")
+block(ax,.04,.76,.92,.18,"Annual included-stage climate GWP","Source-specific production / replacements + energy WTW","#DDEBF5")
 block(ax,.04,.50,.44,.19,"Road combustion","CO, VOCs, NOx,\nPM2.5, PM10","#F4E4E8")
 block(ax,.52,.50,.44,.19,"Road wear","Brake, tyre, surface\nPM2.5 and PM10","#F4E4E8")
 block(ax,.04,.25,.44,.18,"Private battery LCIA","Independent NCM622\nrecycling scenarios","#E8E3F0")
 block(ax,.52,.25,.44,.18,"Replacement stress","Extra private packs;\nbus replacement NA","#E8E3F0")
-block(ax,.04,.02,.92,.16,"Not fully quantified","Matched maintenance, EOL, dust, infrastructure, noise",LIGHT)
-save(f,"F03_Boundary","R9_7AUDIT04_STAGE_COVERAGE.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv; R9_7AUDIT04_BATTERY_RECIPE.csv","Included production + WTW is not complete cradle-to-grave LCA. Road wear and private battery LCIA are separate modules; some stages remain NA. Detailed 128-cell ledger in A05.")
+block(ax,.04,.02,.92,.16,"Not fully quantified","Full maintenance, EOL, dust, infrastructure, noise",LIGHT)
+save(f,"F03_Boundary","R9_7FIX_STAGE_COVERAGE.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv; R9_7AUDIT04_BATTERY_RECIPE.csv","Included production (Qiao includes selected consumable replacements) + WTW is not complete cradle-to-grave LCA. Road wear and private battery LCIA are separate modules; some stages remain NA. Detailed 128-cell ledger in A05.")
 # F04 energy and separate GWP panels.
 f=plt.figure(figsize=(W,5.0),layout="constrained");gs=f.add_gridspec(2,2,height_ratios=[1,1.15]);ax=f.add_subplot(gs[0,:]);axs=[f.add_subplot(gs[1,0]),f.add_subplot(gs[1,1])]
 bottom=np.zeros(6)
@@ -144,7 +144,7 @@ f,ax=make(3.2)
 nox=np.array([num(one(P,scenario=s,pollutant="NOx"),"total_t_y") for s in SS]);nr=100*(1-nox/nox[1])
 for i,col,marker,offset in [(1,GREY,"s",(4,4)),(2,BUS,"^",(5,-12)),(3,ICE,"s",(5,4)),(4,NMC,"o",(-32,-17)),(5,BEV,"D",(5,-17))]:
     ax.scatter(red[i],nr[i],s=65,c=col,marker=marker,edgecolor=DARK,zorder=3);ax.annotate(SL[i],(red[i],nr[i]),xytext=offset,textcoords="offset points",fontsize=9)
-ax.set(xlim=(-3,50),ylim=(-5,108));axis(ax,"NOₓ exhaust reduction (%)","Included-stage GWP reduction (%)")
+ax.set(xlim=(-3,50),ylim=(-5,108));ax.set_xticks([0,10,20,30,40,50]);ax.set_yticks([0,20,40,60,80,100]);axis(ax,"NOₓ exhaust reduction (%)","Included-stage GWP reduction (%)")
 ax.axhline(0,color=DARK,lw=.7);ax.axvline(0,color=DARK,lw=.7)
 save(f,"F06_Policy_Tradeoff","R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv; R9_7E_ROAD_POLLUTANT_SCENARIOS.csv","Reference S0–S4 reductions, relative to S0; climate and road NOx objectives differ. This is not a cost-constrained Pareto frontier or a forecast.")
 # F07 comparison of deterministic envelopes.
@@ -154,25 +154,25 @@ for j,s in enumerate(SS):
     ax.hlines(j-.14,num(old,"min_reduction_pct"),num(old,"max_reduction_pct"),lw=3,color="#A0A0A0")
     ax.hlines(j+.14,num(new,"min_reduction_pct"),num(new,"max_reduction_pct"),lw=3.7,color=ICE)
     ax.scatter(red[j],j+.14,c=NMC,edgecolor=DARK,s=25,zorder=4)
-ax.set_yticks(XX,SL);ax.invert_yaxis();ax.set_xlim(-33,66);ax.set_xlabel("Reduction relative to paired S0 (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.axvline(0,color=DARK,ls="--",lw=.9)
+ax.set_yticks(XX,SL);ax.invert_yaxis();ax.set_xlim(-33,66);ax.set_xticks([-30,-20,-10,0,10,20,30,40,50,60]);ax.set_xlabel("Reduction relative to paired S0 (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.axvline(0,color=DARK,ls="--",lw=.9)
 ax.legend(handles=[plt.Line2D([0],[0],color="#A0A0A0",lw=3,label="Original: 14,580"),plt.Line2D([0],[0],color=ICE,lw=3,label="Extended: 328,050"),plt.Line2D([0],[0],marker="o",color=NMC,ls="",label="Reference")],loc="upper right",frameon=False)
 w=one(WIT,design="remediation_25_packages",scenario="S4")
-ax.annotate(f"S4 min {float(w['red']):.3f}%",(float(w["red"]),5.14),xytext=(10,-18),textcoords="offset points",fontsize=8.5,arrowprops={"arrowstyle":"-","color":DARK})
+ax.annotate(f"S4 min {float(w['red']):.3f}%",(float(w["red"]),5.14),xytext=(13,9),textcoords="offset points",fontsize=8.5,arrowprops={"arrowstyle":"-","color":DARK})
 save(f,"F07_Paired_Envelope","R9_7F_NESTED_ENVELOPE.csv; R9_7FIX_SENSITIVITY_ENVELOPE.csv; R9_7FIX_REVERSAL_WITNESSES.csv","Deterministic designs, not probabilities or confidence intervals; original and extended designs are not strict subsets. S4 near-zero negative witness under joint adverse assumptions. 2022 activity anchor; paired S0 in each set.")
 # F08 private car break-even with additional private NMC pack.
 mi=num(one(prod,source_id="QIAO17_ICE"),"factor_value")*1000
 mb=num(one(prod,source_id="QIAO17_BEV_NMC"),"factor_value")*1000
 bf=num(one(B,scenario="S3",recycling_case="no_credit",indicator="GWP100"),"factor_per_kWh")
 ll=np.linspace(100000,300000,150)
-f,axs=make(4.6,2,1)
+f,axs=make(5.0,2,1)
 for ax,gas,eta,title in [(axs[0],params["gasoline_l100"],1,"(a) Reference fuel / delivered electricity"),(axs[1],6,.9,"(b) Low fuel use / conditional charging loss")]:
     for n,col,ls in [(0,ICE,"-"),(.5,PHEV,"--"),(1,NMC,"-.")]:
         y=((mi-mb-n*40*bf)/ll+gas/100*params["gasoline_mj_l"]*params["gasoline_ef"]/1000)/(params["car_e"]/eta)
         ax.plot(ll/1000,y,color=col,ls=ls,lw=1.7,label=f"{n:g} extra packs")
     ax.axhline(params["grid_ef"],color=DARK,ls=":",label="Reference grid")
     ax.axhline(params["grid_ef"]*.5,color=BEV,ls=":",label="Half factor")
-    ax.set_ylim(0,1.15);axis(ax,"Threshold (kg CO₂e/kWh)","Lifetime (thousand km)");ax.set_title(title,loc="left")
-axs[0].legend(ncol=2,frameon=False,loc="lower right")
+    ax.set_ylim(0,1.15);ax.set_xticks([100,150,200,250,300]);axis(ax,"Threshold (kg CO₂e/kWh)","Lifetime (thousand km)");ax.set_title(title,loc="left")
+axs[0].legend(ncol=2,frameon=True,facecolor="white",framealpha=1,edgecolor="none",loc="lower right")
 save(f,"F08_Threshold","R9_7B_ENERGY_INPUTS.csv; R9_7C_MANUFACTURING_FACTOR_REGISTER.csv; R9_7AUDIT04_BATTERY_RECIPE.csv","Private gasoline versus NMC BEV, matched lifetime and production + WTW boundary. Extra 40 kWh NMC packs at Sun proxy 124.48 kg CO2e/kWh. Curves are conditional; below threshold BEV has lower GWP. Not city-wide threshold.")
 # A01 transfer (no retrospective inputs).
 f,axs=make(2.9,1,3);levels=[.8,1,1.2];tr=[r for r in T if r["scenario"]=="S3"];vv=vals(tr,"reduction_vs_paired_S0_pct")
@@ -189,7 +189,7 @@ axs[0].bar(XX-.18,vals(r,"car_partial_GWP_g_per_PKM"),.36,color=ICE,label="Cars"
 ticks(axs[0]);axis(axs[0],"g CO₂e/PKM");axs[0].legend(frameon=False);axs[0].set_title("(a) Conditional intensity",loc="left")
 z=vals(PK,"S3_GWP_kt")
 axs[1].bar(range(3),z,color=[NMC,LFP,BEV],edgecolor=DARK,lw=.4);axs[1].axhline(gref[1],color=DARK,ls="--",label="Paired S0")
-axs[1].set_xticks(range(3),["Lower","Reference","Higher"]);axis(axs[1],"GWP (kt CO₂e/year)");axs[1].set_title("(b) Equal S0 passenger service",loc="left");axs[1].legend(frameon=False,loc="lower right")
+axs[1].set_xticks(range(3),["Lower","Reference","Higher"]);axis(axs[1],"GWP (kt CO₂e/year)");axs[1].set_title("(b) Equal S0 passenger service",loc="left");axs[1].set_ylim(0,700);axs[1].legend(frameon=False,loc="upper right")
 save(f,"A02_PKM","R9_7D_SERVICE_SENSITIVITY.csv; R9_7FIX_CALIBRATED_PKM.csv","Proxy 10.9 km per bus boarding and 1.24 car occupants; not observed PKM. Equal-service stresses recalibrate each S0 to common conditional service volumes; annual GWP unchanged by calibration.")
 # A03 meter.
 f,ax=diagram(2.6)
@@ -210,12 +210,13 @@ for x in r:
 for i,v in enumerate(z):
     if not np.isfinite(v):ax.text(0,i,"NA",fontsize=8.5);continue
     ax.barh(i,v,color=NMC if v>0 else ICE,edgecolor=DARK,lw=.3,hatch="//" if v>0 else "")
-ax.set_yticks(range(len(labels)),labels);ax.invert_yaxis();ax.axvline(0,color=DARK,lw=.8);ax.set_xlabel("Change within each category (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.set_axisbelow(True)
+    if abs(v)<1e-12:ax.text(1,i,"≈0",va="center",fontsize=8.5)
+ax.set_yticks(range(len(labels)),labels);ax.set_xlim(-100,40);ax.set_xticks([-100,-75,-50,-25,0,25,40]);ax.invert_yaxis();ax.axvline(0,color=DARK,lw=.8);ax.set_xlabel("Change within each category (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.set_axisbelow(True)
 save(f,"A04_Battery_LCIA","R9_7AUDIT04_BATTERY_RECIPE.csv","S3 hypothetical private NCM622 battery only, Sun 2020 ReCiPe Midpoint(H), reported 100% recycling compared with no-credit material + production. Rounded factors limit precision. Categories not summed, not added to whole-vehicle GWP.")
 # A05 actual 8x16 coverage matrix.
 f,ax=make(6.1)
 vehicles=list(dict.fromkeys(x["vehicle"] for x in C));stages=list(dict.fromkeys(x["stage"] for x in C));assert len(vehicles)==8 and len(stages)==16 and len(C)==128
-status={"INCLUDED_AGGREGATE_PROXY":("I",0),"INCLUDED_WTW_PROXY":("W",0),"ALLOCATED_PROXY":("A",1),"SUPPLEMENTARY_PROXY":("P",1),"CONDITIONAL_SERVICE":("C",1),"SEPARATE_LCIA":("L",2),"SEPARATE_HISTORICAL_PHYSICAL":("H",2),"NA":("NA",3),"NOT_APPLICABLE":("—",4)}
+status={"INCLUDED_PARTIAL_CONSUMABLES":("I*",0),"INCLUDED_AGGREGATE_PROXY":("I",0),"INCLUDED_WTW_PROXY":("W",0),"ALLOCATED_PROXY":("A",1),"SUPPLEMENTARY_PROXY":("P",1),"CONDITIONAL_SERVICE":("C",1),"SEPARATE_LCIA":("L",2),"SEPARATE_HISTORICAL_PHYSICAL":("H",2),"NA":("NA",3),"NOT_APPLICABLE":("—",4)}
 mat=np.zeros((16,8));codes={}
 for i,s in enumerate(stages):
     for j,v in enumerate(vehicles):
@@ -226,7 +227,7 @@ for (i,j),c in codes.items():ax.text(j,i,c,ha="center",va="center",fontsize=8.5,
 ax.set_xticks(range(8),[v.replace("private_","Car ").replace("bus_","Bus ").replace("_"," ") for v in vehicles],rotation=48,ha="right")
 ax.set_yticks(range(16),[s.replace("_"," ") for s in stages]);ax.tick_params(length=0)
 ax.set_xticks(np.arange(-.5,8,1),minor=True);ax.set_yticks(np.arange(-.5,16,1),minor=True);ax.grid(which="minor",color="white",lw=.8)
-save(f,"A05_Coverage","R9_7AUDIT04_STAGE_COVERAGE.csv","128 actual ledger cells. I aggregate production; W joint WTW; A allocated proxy; P supplementary proxy; C conditional service; L separate LCIA; H historical physical; NA unidentified; — not applicable. Cell counts do not measure impact coverage.")
+save(f,"A05_Coverage","R9_7FIX_STAGE_COVERAGE.csv","128 actual ledger cells. I aggregate production; I* selected consumable replacements already in aggregate; W joint WTW; A allocated proxy; P supplementary proxy; C conditional service; L separate LCIA; H historical physical; NA unidentified; — not applicable. Cell counts do not measure impact coverage.")
 for name,header,rows in [("MANIFEST.csv",["svg","png","pdf","domain","source","caption"],manifest),("LAYOUT_QA.csv",["figure","native_width_cm","min_font_pt","out_of_canvas_text_count","text_outside","visual_gate"],qa)]:
     with (F/name).open("w",encoding="utf-8",newline="") as o:
         w=csv.writer(o,lineterminator="\n");w.writerow(header);w.writerows(rows)

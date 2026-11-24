@@ -29,3 +29,4 @@ class RemediationTests(unittest.TestCase):
         for x in rows(F/"LAYOUT_QA.csv"):
             self.assertGreaterEqual(float(x["min_font_pt"]),8)
             self.assertEqual(float(x["native_width_cm"]),15)
+            self.assertEqual(int(x["out_of_canvas_text_count"]),0)

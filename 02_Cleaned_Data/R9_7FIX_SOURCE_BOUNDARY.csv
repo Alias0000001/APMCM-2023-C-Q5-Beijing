@@ -1,0 +1,7 @@
+source_id,publication_date,technology,value,unit,source_location,doi,scope
+QIAO17_ICE,2017-10-15,private_ICEV,9985,kgCO2e/vehicle,Overview Fig 2; Table 2,10.1016/j.apenergy.2017.05.041,source-defined CTG includes selected consumable replacement; excludes vehicle distribution operation disposal
+QIAO17_BEV_NMC,2017-10-15,private_BEV_NMC,15005,kgCO2e/vehicle,Overview Fig 2; Table 2,10.1016/j.apenergy.2017.05.041,source-defined CTG includes selected consumable replacement; traction pack replacement not indicated in Table 2
+QIAO17_BEV_LFP,2017-10-15,private_BEV_LFP,15174,kgCO2e/vehicle,Overview Fig 2; Table 2,10.1016/j.apenergy.2017.05.041,same-study chemistry alternative; no extra NMC pack factor
+GAN23_ICE,2023-02-01,private_ICEV,64,gCO2e/km,Section 3.1 Fig 1 and Table 1,10.3390/su15032627,vehicle cycle incl materials assembly disposal recycling and component replacement; source 200000 km
+GAN23_BEV100,2023-02-01,private_BEV100,69,gCO2e/km,Section 3.1 Fig 1 and Table 1,10.3390/su15032627,vehicle cycle only; not full city LCA
+GAN23_BEV300,2023-02-01,private_BEV300,104,gCO2e/km,Section 3.1 Fig 1 and Table 1,10.3390/su15032627,vehicle cycle only; not full city LCA
