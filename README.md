@@ -1,3 +1,7 @@
+## Audit-04 — Lifecycle and ecology
+
+[Report](08_Reports/Audit/AUDIT_04_LIFECYCLE_AND_ECOLOGY.md) | [Coverage](02_Cleaned_Data/R9_7AUDIT04_STAGE_COVERAGE.csv) | [Wear](02_Cleaned_Data/R9_7AUDIT04_WEAR_SCENARIOS.csv) | [Battery](02_Cleaned_Data/R9_7AUDIT04_BATTERY_RECIPE.csv) | [Replacement](02_Cleaned_Data/R9_7AUDIT04_REPLACEMENT_STRESS.csv). Baseline preserved. Next Audit-05.
+
 ## Audit-03 — Data provenance
 
 [Report](08_Reports/Audit/AUDIT_03_DATA_PROVENANCE.md) | [Master parameter provenance](02_Cleaned_Data/R9_7AUDIT03_MASTER_PROVENANCE.csv) | [Gap register](08_Reports/Audit/AUDIT_03_GAP_REGISTER.csv) | [Historical bus energy stress](02_Cleaned_Data/R9_7AUDIT03_BUS_ENERGY_STRESS.csv). Provisional C score 8/12; source and design distinctions retained, no baseline numeric changes. Next Audit-04.

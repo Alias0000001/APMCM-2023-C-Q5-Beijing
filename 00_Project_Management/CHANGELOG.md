@@ -90,3 +90,6 @@
 - Reopened key activity, fuel, UF, production and road evidence; indexed 156 provenance rows and 14 gaps; upgraded operator activity source; separate 18-row historical bus energy stress and CI checks. No baseline numeric change. Conditional 8/12; unresolved specialty issues retained.
 
 - Audit-03 follow-up: added 13-group formula-to-input crosswalk, synchronized operator release dates and inherited issue owners; prior Audit-03 CI 45413722445 passed. No numerical changes.
+
+## Audit-04 — ecological scope
+Added 128-cell coverage, 84 wear rows, 132 private-battery LCIA rows and 18 extra-pack stress rows. Baseline unchanged; 7/10 provisional.
