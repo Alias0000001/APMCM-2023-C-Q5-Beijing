@@ -70,6 +70,17 @@ class R97CManufacturingTests(unittest.TestCase):
                 float(r["WTW_operating_GWP_t_y"]),
                 float(r["partial_LCA_GWP_t_y"]), delta=0.02)
 
+    def test_bev_manufacturing_source_sensitivity(self):
+        rs = {(r["factor_set"], r["scenario"]): r
+              for r in rows("R9_7C_PARTIAL_LCA_GWP_SOURCE_SENSITIVITY.csv")}
+        self.assertEqual(len(rs), 12)
+        self.assertAlmostEqual(float(rs[("QIAO2017_BEV_NMC", "S3")]["partial_LCA_GWP_t_y"]),
+                               486977.9085, delta=0.02)
+        self.assertAlmostEqual(float(rs[("XIONG2019_BEV_NMC", "S3")]["partial_LCA_GWP_t_y"]),
+                               442903.3243, delta=0.02)
+        self.assertLess(float(rs[("XIONG2019_BEV_NMC", "S3")]["partial_LCA_GWP_t_y"]),
+                        float(rs[("QIAO2017_BEV_NMC", "S3")]["partial_LCA_GWP_t_y"]))
+
     def test_factor_register_contains_phev_and_bus(self):
         rs = rows("R9_7C_MANUFACTURING_FACTOR_REGISTER.csv")
         ids = {r["source_id"] for r in rs}
