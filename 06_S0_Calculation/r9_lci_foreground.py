@@ -51,15 +51,16 @@ def write_csv(path, rows):
 def main():
     r = read_r7()
     v = lambda key: float(r[key])
-    ice_vkt = v("private_ICE_vkt_km")
-    bev_vkt = v("private_BEV_vkt_km")
-    phev_vkt = v("private_PHEV_vkt_km")
+    ice_vkt = v("ice_vkt_km")
+    bev_vkt = v("private_bev_vkt_km")
+    phev_vkt = v("phev_vkt_km")
     bus_diesel_vkt = v("bus_diesel_vkt_km")
     bus_gas_vkt = v("bus_gas_vkt_km")
-    bus_mixed_vkt = v("bus_BEV_vkt_km_assumed") / BUS_Q
+    bus_mixed_vkt = v("bus_bev_vkt_km_assumed")
     bus_bev_vkt = bus_mixed_vkt * BUS_Q
-    bus_other_mixed_vkt = bus_mixed_vkt * (1 - BUS_Q)
-    bus_unknown_vkt = v("bus_unclassified_vkt_km")
+    bus_other_mixed_vkt = v("bus_nonbev_mixed_vkt_km")
+    bus_mixed_vkt = bus_bev_vkt + bus_other_mixed_vkt
+    bus_unknown_vkt = v("bus_unknown_vkt_km")
 
     phev_fuel_vkt = phev_vkt * (1 - PHEV_UF)
     phev_electric_vkt = phev_vkt * PHEV_UF
