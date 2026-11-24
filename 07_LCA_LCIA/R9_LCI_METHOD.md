@@ -253,3 +253,26 @@ R9.4统一`vehicle`、`stage`、`source_id`、`flow`、`unit`、`status`等字�
 - 本轮独立读取源CSV并完成32项实际计算与守恒检查，已输出 `R9_4_INTEGRATION_TESTS.csv`；尚未在克隆仓库对新Python脚本进行完整实际运行，勿称GitHub CI验证通过。
 
 R9.4所有车型和城市均**未形成完整cradle-to-grave LCA**；研究论文须清楚区分“部分物理清单”“两阶段GWP筛查”“电池专项LCIA”和“仍缺失的环境影响阶段”。
+
+## 16. R9.5 GWP sensitivity and break-even extension
+
+R9.5 keeps the R9.4 reporting domains separate and extends only the comparable private-car two-stage climate-change screening:
+`I_v(L,EF_e)=M_v/L+E_v`.
+For ICEV, (E_v) is gasoline WTW per vehicle-km; for BEV, (E_v) is electricity WTW per vehicle-km. Annual two-stage GWP is annual VKT multiplied by intensity.
+
+**Strict contest-time sensitivity:**
+- Peng2017 Table 8: 203.4 gCO2e/MJ = 0.73224 kgCO2e/kWh;
+- Peng2017 Section 4.3.4 text alternative: 168 gCO2e/MJ = 0.6048 kgCO2e/kWh. This is a pre-2023 source discrepancy sensitivity, not an averaged value.
+- Vehicle lifetime mileage: 150,000 km (Yang2021 reference), 200,000 km (Qiao/TLCAM allocation reference), plus 100,000/250,000/300,000 km D-grade stress cases.
+- BEV break-even electricity factor is solved by equating ICEV and BEV two-stage intensity at a common lifetime mileage.
+
+**Retrospective-only electricity checks:**
+- MEE 2023 national electricity carbon-footprint factor: 0.6205 kgCO2e/kWh, published 2025-01-23. It is a national lifecycle PCF factor, not Beijing-specific and not the strict competition-time factor.
+- MEE 2023 Beijing electricity CO2 emission factor: 0.5554 kgCO2/kWh, published 2025-12-31. This is generation CO2 only, not WTW or CO2e; it is used only to cross-check the BEV grid-generation component.
+
+**Battery-only sensitivity:** ICCT2021, Hao2017, Lai2022 and Sun2020 production factors are applied to the 40kWh BEV and exploratory 12.8kWh PHEV reference packs. The Sun2020 100%-hydromet recycling credit is a separate net end-of-life scenario. These results are never added to Qiao2017 BEV manufacturing because Qiao already includes the initial traction battery.
+
+Reproduce:
+`python 06_S0_Calculation/r9_5_sensitivity.py`
+
+Outputs: lifetime sensitivity, electricity-factor sensitivity, grid × lifetime factorial, break-even thresholds, battery-only factor sensitivity, retrospective electricity checks, summary, and 24 audit checks. The script is committed; until executed in a cloned repository, independent numeric checks must not be represented as a Python/CI execution pass.
