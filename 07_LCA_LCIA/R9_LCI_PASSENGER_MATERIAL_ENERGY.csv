@@ -1,4 +1,4 @@
-vehicle,energy_carrier,MJ_per_vehicle,annual_vehicle_equivalent,annual_energy_MJ,source_id,status,note
+﻿vehicle,energy_carrier,MJ_per_vehicle,annual_vehicle_equivalent,annual_energy_MJ,source_id,status,note
 ICEV,coal,21773.471,13076.614292249977,284723282.0704904,Yang2021_Table5,material_production_energy_input,"Table 5 excludes battery, tyres and fluids; not multiplied by energy EF to avoid double counting Table 4 material emissions"
 ICEV,electricity,3496.627,13076.614292249977,45724042.602867156,Yang2021_Table5,material_production_energy_input,"Table 5 excludes battery, tyres and fluids; not multiplied by energy EF to avoid double counting Table 4 material emissions"
 ICEV,natural_gas,12180.161000000002,13076.614292249977,159275267.41450578,Yang2021_Table5,material_production_energy_input,"Table 5 excludes battery, tyres and fluids; not multiplied by energy EF to avoid double counting Table 4 material emissions"

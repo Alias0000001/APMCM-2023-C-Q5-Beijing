@@ -1,4 +1,4 @@
-vehicle,scenario,stage,flow,annual_quantity,unit,source_id,flow_role,caveat
+﻿vehicle,scenario,stage,flow,annual_quantity,unit,source_id,flow_role,caveat
 BEV,new_pack_manufacturing,battery_material_BOM,ncm622_cathode_active,264498.348592013,kg/year,SUN2020_NCM622,reference_pack_material_intake,Separate battery BOM; not additive to Yang2021 embedded battery mass
 BEV,new_pack_manufacturing,battery_material_BOM,graphite_anode,151186.81601057714,kg/year,SUN2020_NCM622,reference_pack_material_intake,Separate battery BOM; not additive to Yang2021 embedded battery mass
 BEV,new_pack_manufacturing,battery_material_BOM,pvdf_binder,18859.06229092213,kg/year,SUN2020_NCM622,reference_pack_material_intake,Separate battery BOM; not additive to Yang2021 embedded battery mass

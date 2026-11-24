@@ -1,11 +1,11 @@
-scenario,carrier,annual_amount,unit,annual_energy_MJ,evidence_grade,status,note,CO2_kg_per_year,VOC_kg_per_year,NOx_kg_per_year,PM2.5_kg_per_year,SO2_kg_per_year
+﻿scenario,carrier,annual_amount,unit,annual_energy_MJ,evidence_grade,status,note,CO2_kg_per_year,VOC_kg_per_year,NOx_kg_per_year,PM2.5_kg_per_year,SO2_kg_per_year
 R7_base_q0.8,diesel,1160286.8941691555,L/year,41570387.55248637,D,modelled_R7_flow,R7 diesel VKT × assumed 35 L/100km,3770434.151010514,4988.4465062983645,997.6893012596729,41.570387552486366,1080.8300763646455
-R7_base_q0.8,electricity,17158410.84595367,kWh/year,61770279.04543321,D,modelled_or_alternative,R7 q=0.8 assumed BEV share of mixed bus group,11785645.701310566,1050.0947437723646,6424.109020725054,864.7839066360649,6980.041532133952
-R7_base_q0.8,CNG_or_LNG,4520295.907814283,kg/year,NA,D,NA_energy_and_WTW,CNG/LNG split and gas LHV unresolved,NA,NA,NA,NA,NA
-R7_base_q0.8,mixed_nonBEV_unallocated,NA,NA,NA,D,NA_energy_and_WTW,No fuel type assigned; R7 0.9kgCO2/km placeholder excluded,NA,NA,NA,NA,NA
+R7_base_q0.8,electricity,17158410.84595367,kWh/year,61770279.04543321,D,modelled_or_alternative,R7 q=0.8,11785645.701310566,1050.0947437723646,6424.109020725054,864.7839066360649,6980.041532133952
+R7_base_q0.8,CNG_or_LNG,4520295.907814283,kg/year,NA,C,NA_energy_and_WTW,CNG/LNG split and gas LHV unresolved,NA,NA,NA,NA,NA
+R7_base_q0.8,mixed_nonBEV_unallocated,NA,NA,NA,D,NA_energy_and_WTW,No fuel type assigned; R7 placeholder CO2/km excluded,NA,NA,NA,NA,NA
 R7_base_q0.8,unclassified_bus,NA,NA,NA,C,NA_energy_and_WTW,Powertrain and fuel unknown,NA,NA,NA,NA,NA
-P0_alternative_nonH2_NEV,diesel,1160286.8941691555,L/year,41570387.55248637,D,modelled_R7_flow,R7 diesel VKT × assumed 35 L/100km,3770434.151010514,4988.4465062983645,997.6893012596729,41.570387552486366,1080.8300763646455
-P0_alternative_nonH2_NEV,electricity,21538841.339555312,kWh/year,77539828.82239912,C,modelled_or_alternative,P0 annualized 2023-10 sample; replace base, do not add,14794444.259656107,1318.177089980785,8064.142197529509,1085.5576035135878,8762.0006569311
-P0_alternative_nonH2_NEV,CNG_or_LNG,4520295.907814283,kg/year,NA,D,NA_energy_and_WTW,CNG/LNG split and gas LHV unresolved,NA,NA,NA,NA,NA
-P0_alternative_nonH2_NEV,mixed_nonBEV_unallocated,NA,NA,NA,D,NA_energy_and_WTW,No fuel type assigned; R7 0.9kgCO2/km placeholder excluded,NA,NA,NA,NA,NA
-P0_alternative_nonH2_NEV,unclassified_bus,NA,NA,NA,C,NA_energy_and_WTW,Powertrain and fuel unknown,NA,NA,NA,NA,NA
+P0_alternative_nonH2_NEv,diesel,1160286.8941691555,L/year,41570387.55248637,D,modelled_R7_flow,R7 diesel VKT × assumed 35 L/100km,3770434.151010514,4988.4465062983645,997.6893012596729,41.570387552486366,1080.8300763646455
+P0_alternative_nonH2_NEv,electricity,21538841.339555312,kWh/year,77539828.82239912,C,modelled_or_alternative,"P0 annualized 2023-10 sample; replace base, do not add",14794444.259656107,1318.177089980785,8064.142197529509,1085.5576035135878,8762.0006569311
+P0_alternative_nonH2_NEv,CNG_or_LNG,4520295.907814283,kg/year,NA,C,NA_energy_and_WTW,CNG/LNG split and gas LHV unresolved,NA,NA,NA,NA,NA
+P0_alternative_nonH2_NEv,mixed_nonBEV_unallocated,NA,NA,NA,D,NA_energy_and_WTW,No fuel type assigned; R7 placeholder CO2/km excluded,NA,NA,NA,NA,NA
+P0_alternative_nonH2_NEv,unclassified_bus,NA,NA,NA,C,NA_energy_and_WTW,Powertrain and fuel unknown,NA,NA,NA,NA,NA

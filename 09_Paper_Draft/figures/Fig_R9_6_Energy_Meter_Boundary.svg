@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Figure 14. R7 charging-energy measurement boundary">
+<title>Figure 14. R7 charging-energy measurement boundary</title><desc>Reported charging energy per distance is verified; the physical meter location is not identified by the source.</desc>
+<rect x="0.0" y="0.0" width="1200.0" height="760.0" fill="#FFFFFF" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="58.0" y="58.0" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172B3A" text-anchor="start" font-weight="700">Figure 14. R7 charging-energy measurement boundary</text>
+<text x="60.0" y="91.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#647783" text-anchor="start" font-weight="400">Reported charging energy per distance is verified; the physical meter location is not identified by the source.</text>
+<line x1="58.0" y1="112.0" x2="1142.0" y2="112.0" stroke="#DCE3E8" stroke-width="1.2"/>
+<rect x="80.0" y="285.0" width="150.0" height="100.0" fill="#EEF3F7" stroke="#A8BAC3" stroke-width="1.5" rx="10" opacity="1"/>
+<text x="155.0" y="342.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#172B3A" text-anchor="middle" font-weight="700">Grid supply</text>
+<rect x="315.0" y="285.0" width="150.0" height="100.0" fill="#EEF3F7" stroke="#A8BAC3" stroke-width="1.5" rx="10" opacity="1"/>
+<text x="390.0" y="342.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#172B3A" text-anchor="middle" font-weight="700">Charging equipment</text>
+<rect x="550.0" y="285.0" width="150.0" height="100.0" fill="#EEF3F7" stroke="#A8BAC3" stroke-width="1.5" rx="10" opacity="1"/>
+<text x="625.0" y="342.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#172B3A" text-anchor="middle" font-weight="700">Battery pack</text>
+<rect x="785.0" y="285.0" width="150.0" height="100.0" fill="#EEF3F7" stroke="#A8BAC3" stroke-width="1.5" rx="10" opacity="1"/>
+<text x="860.0" y="342.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#172B3A" text-anchor="middle" font-weight="700">Traction motor</text>
+<rect x="1020.0" y="285.0" width="150.0" height="100.0" fill="#EEF3F7" stroke="#A8BAC3" stroke-width="1.5" rx="10" opacity="1"/>
+<text x="1095.0" y="342.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#172B3A" text-anchor="middle" font-weight="700">Wheels</text>
+<line x1="230.0" y1="335.0" x2="312.0" y2="335.0" stroke="#496783" stroke-width="3"/>
+<polygon points="312.0,335.0 300.0,328.0 300.0,342.0" fill="#496783" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="465.0" y1="335.0" x2="547.0" y2="335.0" stroke="#496783" stroke-width="3"/>
+<polygon points="547.0,335.0 535.0,328.0 535.0,342.0" fill="#496783" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="700.0" y1="335.0" x2="782.0" y2="335.0" stroke="#496783" stroke-width="3"/>
+<polygon points="782.0,335.0 770.0,328.0 770.0,342.0" fill="#496783" stroke="none" stroke-width="1" opacity="1"/>
+<line x1="935.0" y1="335.0" x2="1017.0" y2="335.0" stroke="#496783" stroke-width="3"/>
+<polygon points="1017.0,335.0 1005.0,328.0 1005.0,342.0" fill="#496783" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="285.0" y="165.0" width="475.0" height="75.0" fill="#FFF3E7" stroke="#D3A16F" stroke-width="1.5" rx="8" opacity="1"/>
+<text x="522.0" y="195.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="middle" font-weight="700">R5_CHARGE Table 4-1</text>
+<text x="522.0" y="220.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#647783" text-anchor="middle" font-weight="400">Monthly charging energy ÷ monthly vehicle distance</text>
+<line x1="522.0" y1="240.0" x2="522.0" y2="275.0" stroke="#D3A16F" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="75.0" y="465.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#C56D88" text-anchor="start" font-weight="700">Private BEV: 16.0 kWh/100 km</text>
+<text x="75.0" y="495.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4F968D" text-anchor="start" font-weight="700">Bus: 62.6 kWh/100 km</text>
+<rect x="690.0" y="440.0" width="440.0" height="105.0" fill="#F8F4EE" stroke="#C29A6B" stroke-width="1.3" rx="8" opacity="1"/>
+<text x="910.0" y="474.0" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#172B3A" text-anchor="middle" font-weight="700">Meter point unresolved</text>
+<text x="910.0" y="500.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">Grid input / charger output / battery discharge</text>
+<text x="60.0" y="630.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#647783" text-anchor="start" font-weight="400">Base case uses the reported charging-energy intensity without an extra loss multiplier.</text>
+<text x="60.0" y="660.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#647783" text-anchor="start" font-weight="400">If the value is battery-side, apply a separate grid-input sensitivity: reported kWh ÷ charging efficiency.</text>
+</svg>

@@ -1,22 +1,22 @@
-check_id,actual,expected,tolerance,status,note
-BOM_rounded_mass_kg,629.8,629.8,0.01,PASS,630kg stated; 0.2kg table rounding difference
-S6_factory_electricity_MJ_per_kWh,72,72,0.000001,PASS,
-S6_factory_steam_MJ_per_kWh,34,34,0.000001,PASS,
-initial_charge_MJ_per_kWh,4,4,0.000001,PASS,
-factory_electricity_steam_initial_charge_MJ_per_kWh,110,110,0.000001,PASS,
-ReCiPe_GWP100,93.57000000000001,93.57,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_terrestrial_acidification,0.49,0.49,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_photochemical_oxidant_formation,0.29000000000000004,0.29,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_freshwater_eutrophication,0.01,0.01,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_marine_eutrophication,0.020000000000000004,0.02,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_human_toxicity,12.530000000000001,12.53,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_terrestrial_ecotoxicity,0.009999999999999998,0.01,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_freshwater_ecotoxicity,1.5,1.5,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_particulate_matter_formation,0.15,0.15,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_metal_depletion,7.789999999999999,7.79,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
-ReCiPe_fossil_depletion,24.140000000000004,24.14,0.021,PASS,"Published rounded impacts are LCIA, not directly emitted pollutant masses"
+﻿check_id,actual,expected,tolerance,status,note
+BOM_rounded_mass_kg,629.8,629.8,0.01,PASS,630 kg stated total; 0.2 kg table rounding difference
+S6_factory_electricity_MJ_per_kWh,72.0,72.0,1e-06,PASS,
+S6_factory_steam_MJ_per_kWh,34.0,34.0,1e-06,PASS,
+initial_charge_MJ_per_kWh,4.0,4.0,1e-06,PASS,
+factory_electricity_steam_initial_charge_MJ_per_kWh,110.0,110.0,1e-06,PASS,
+ReCiPe_GWP100,93.57000000000001,93.57,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_terrestrial_acidification,0.49,0.49,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_photochemical_oxidant_formation,0.29000000000000004,0.29,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_freshwater_eutrophication,0.01,0.01,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_marine_eutrophication,0.020000000000000004,0.02,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_human_toxicity,12.530000000000001,12.53,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_terrestrial_ecotoxicity,0.009999999999999998,0.01,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_freshwater_ecotoxicity,1.5,1.5,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_particulate_matter_formation,0.15,0.15,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_metal_depletion,7.789999999999999,7.79,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
+ReCiPe_fossil_depletion,24.140000000000004,24.14,0.021,PASS,Source Table2 values rounded to 2 decimals; impacts not raw emissions
 R7_private_activity_reconciliation,2405833928.081252,2405833928.0812516,0.0001,PASS,
-BEV_annual_pack_capacity,113940.16799341203,113940.16799341203,0.000001,PASS,
-BEV_annual_pack_capacity,113940.16799341203,113940.16799341203,0.000001,PASS,
-PHEV_annual_pack_capacity,1456.3118309085921,1456.3118309085921,0.000001,PASS,
-PHEV_annual_pack_capacity,1456.3118309085921,1456.3118309085921,0.000001,PASS,
+BEV_annual_pack_capacity,113940.16799341203,113940.16799341203,1e-06,PASS,
+BEV_annual_pack_capacity,113940.16799341203,113940.16799341203,1e-06,PASS,
+PHEV_annual_pack_capacity,1456.3118309085921,1456.3118309085921,1e-06,PASS,
+PHEV_annual_pack_capacity,1456.3118309085921,1456.3118309085921,1e-06,PASS,

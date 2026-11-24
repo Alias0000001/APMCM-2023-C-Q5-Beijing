@@ -1,4 +1,4 @@
-check,computed,reference,unit,status
+﻿check,computed,reference,unit,status
 private_VKT_sum,2405833928.081252,2405833928.0812516,km/year,PASS
 annual_vehicle_equivalent_ICEV,13076.614292249977,13076.614292249977,vehicles/year,PASS
 material_mass_ICEV,1350,1350,kg/vehicle,PASS

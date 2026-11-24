@@ -1,89 +1,89 @@
-vehicle,stage,annual_VKT_km,coverage_status,source_id,is_2023_direct_observation,fully_modelled_cradle_to_grave,note
-ICEV,vehicle_materials,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,parts_manufacturing,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,vehicle_distribution,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,vehicle_assembly,1961492143.8374965,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,battery_manufacturing,1961492143.8374965,NOT_APPLICABLE_TRACTION_BATTERY,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,energy_WTW,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,maintenance,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,end_of_life_dismantling,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,end_of_life_recycling,1961492143.8374965,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,non_exhaust,1961492143.8374965,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-ICEV,passenger_km,1961492143.8374965,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,vehicle_materials,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,parts_manufacturing,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,vehicle_distribution,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,vehicle_assembly,427275629.9752951,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,battery_manufacturing,427275629.9752951,SEPARATE_LCIA_ONLY,Sun2020,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,energy_WTW,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,maintenance,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,end_of_life_dismantling,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,end_of_life_recycling,427275629.9752951,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,non_exhaust,427275629.9752951,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-BEV,passenger_km,427275629.9752951,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,vehicle_materials,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,parts_manufacturing,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,vehicle_distribution,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,vehicle_assembly,17066154.26846006,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,battery_manufacturing,17066154.26846006,SEPARATE_LCIA_ONLY,Sun2020,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,energy_WTW,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,maintenance,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,end_of_life_dismantling,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,end_of_life_recycling,17066154.26846006,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,non_exhaust,17066154.26846006,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-PHEV,passenger_km,17066154.26846006,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,vehicle_materials,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,parts_manufacturing,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,vehicle_distribution,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,vehicle_assembly,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,battery_manufacturing,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,energy_WTW,3315105.4119118727,PARTIAL_PHYSICAL,Yang2021_Table6 + R7,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,maintenance,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,end_of_life_dismantling,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,end_of_life_recycling,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,non_exhaust,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_diesel,passenger_km,3315105.4119118727,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,vehicle_materials,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,parts_manufacturing,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,vehicle_distribution,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,vehicle_assembly,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,battery_manufacturing,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,energy_WTW,27409601.990341324,PARTIAL_PHYSICAL,Yang2021_Table6 + R7,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,maintenance,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,end_of_life_dismantling,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,end_of_life_recycling,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,non_exhaust,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_assumed_BEV,passenger_km,27409601.990341324,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,vehicle_materials,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,parts_manufacturing,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,vehicle_distribution,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,vehicle_assembly,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,battery_manufacturing,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,energy_WTW,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,maintenance,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,end_of_life_dismantling,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,end_of_life_recycling,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,non_exhaust,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_natural_gas,passenger_km,15067653.02604761,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,vehicle_materials,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,parts_manufacturing,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,vehicle_distribution,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,vehicle_assembly,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,battery_manufacturing,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,energy_WTW,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,maintenance,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,end_of_life_dismantling,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,end_of_life_recycling,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,non_exhaust,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unassigned_nonBEV,passenger_km,6852400.497585329,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,vehicle_materials,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,parts_manufacturing,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,vehicle_distribution,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,vehicle_assembly,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,battery_manufacturing,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,energy_WTW,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,maintenance,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,end_of_life_dismantling,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,end_of_life_recycling,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,non_exhaust,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
-bus_unclassified,passenger_km,13304.770883927249,MISSING,NA,NO,NO,2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable
+﻿vehicle,stage,annual_VKT_km,coverage_status,source_id,is_2023_direct_observation,fully_modelled_cradle_to_grave,note
+ICEV,vehicle_materials,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,parts_manufacturing,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,vehicle_distribution,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,vehicle_assembly,1961492143.8374965,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,battery_manufacturing,1961492143.8374965,NOT_APPLICABLE_TRACTION_BATTERY,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,energy_WTW,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,maintenance,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,end_of_life_dismantling,1961492143.8374965,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,end_of_life_recycling,1961492143.8374965,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,non_exhaust,1961492143.8374965,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+ICEV,passenger_km,1961492143.8374965,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,vehicle_materials,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,parts_manufacturing,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,vehicle_distribution,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,vehicle_assembly,427275629.9752951,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,battery_manufacturing,427275629.9752951,SEPARATE_LCIA_ONLY,Sun2020,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,energy_WTW,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,maintenance,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,end_of_life_dismantling,427275629.9752951,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,end_of_life_recycling,427275629.9752951,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,non_exhaust,427275629.9752951,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+BEV,passenger_km,427275629.9752951,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,vehicle_materials,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,parts_manufacturing,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,vehicle_distribution,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,vehicle_assembly,17066154.26846006,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,battery_manufacturing,17066154.26846006,SEPARATE_LCIA_ONLY,Sun2020,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,energy_WTW,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,maintenance,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,end_of_life_dismantling,17066154.26846006,PARTIAL_PHYSICAL,Yang2021,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,end_of_life_recycling,17066154.26846006,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,non_exhaust,17066154.26846006,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+PHEV,passenger_km,17066154.26846006,MISSING,NA,NO,NO,Partial Yang2021 passenger-car proxy; not a complete 2023 local vehicle LCA
+bus_diesel,vehicle_materials,3315105.4119118727,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing raw-material GWP proxy; not 2023 matched vehicle production
+bus_diesel,parts_manufacturing,3315105.4119118727,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_diesel,vehicle_distribution,3315105.4119118727,HISTORICAL_PROXY_NOT_SEPARABLE,LIN2015_BEIJING_BUS,NO,NO,Distribution is not separately disaggregated from the historical assembly/distribution boundary
+bus_diesel,vehicle_assembly,3315105.4119118727,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing assembly/distribution-boundary proxy; not 2023 matched vehicle production
+bus_diesel,battery_manufacturing,3315105.4119118727,NOT_APPLICABLE_TRACTION_BATTERY,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_diesel,energy_WTW,3315105.4119118727,PARTIAL_PHYSICAL,Yang2021_Table6 + R7,NO,NO,Partial WTW physical flows only; bus manufacturing and other fuels remain unresolved
+bus_diesel,maintenance,3315105.4119118727,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_diesel,end_of_life_dismantling,3315105.4119118727,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_diesel,end_of_life_recycling,3315105.4119118727,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_diesel,non_exhaust,3315105.4119118727,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_diesel,passenger_km,3315105.4119118727,HISTORICAL_REFERENCE_ONLY,LIN2015_BEIJING_BUS,NO,NO,Historical Beijing bus passenger-turnover reference only; no public 2023 city-bus PKM
+bus_assumed_BEV,vehicle_materials,27409601.990341324,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing raw-material GWP proxy; not 2023 matched vehicle production
+bus_assumed_BEV,parts_manufacturing,27409601.990341324,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_assumed_BEV,vehicle_distribution,27409601.990341324,HISTORICAL_PROXY_NOT_SEPARABLE,LIN2015_BEIJING_BUS,NO,NO,Distribution is not separately disaggregated from the historical assembly/distribution boundary
+bus_assumed_BEV,vehicle_assembly,27409601.990341324,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing assembly/distribution-boundary proxy; not 2023 matched vehicle production
+bus_assumed_BEV,battery_manufacturing,27409601.990341324,HISTORICAL_INCLUDED_IN_MATERIALS_NOT_SEPARATE,LIN2015_BEIJING_BUS,NO,NO,Historical BEB battery-production contribution is embedded in material-stage proxy; chemistry and 2023 pack are not matched
+bus_assumed_BEV,energy_WTW,27409601.990341324,PARTIAL_PHYSICAL,Yang2021_Table6 + R7,NO,NO,Partial WTW physical flows only; bus manufacturing and other fuels remain unresolved
+bus_assumed_BEV,maintenance,27409601.990341324,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_assumed_BEV,end_of_life_dismantling,27409601.990341324,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_assumed_BEV,end_of_life_recycling,27409601.990341324,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_assumed_BEV,non_exhaust,27409601.990341324,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_assumed_BEV,passenger_km,27409601.990341324,HISTORICAL_REFERENCE_ONLY,LIN2015_BEIJING_BUS,NO,NO,Historical Beijing bus passenger-turnover reference only; no public 2023 city-bus PKM
+bus_natural_gas,vehicle_materials,15067653.02604761,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing raw-material GWP proxy; not 2023 matched vehicle production
+bus_natural_gas,parts_manufacturing,15067653.02604761,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,vehicle_distribution,15067653.02604761,HISTORICAL_PROXY_NOT_SEPARABLE,LIN2015_BEIJING_BUS,NO,NO,Distribution is not separately disaggregated from the historical assembly/distribution boundary
+bus_natural_gas,vehicle_assembly,15067653.02604761,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing assembly/distribution-boundary proxy; not 2023 matched vehicle production
+bus_natural_gas,battery_manufacturing,15067653.02604761,NOT_APPLICABLE_TRACTION_BATTERY,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,energy_WTW,15067653.02604761,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,maintenance,15067653.02604761,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,end_of_life_dismantling,15067653.02604761,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,end_of_life_recycling,15067653.02604761,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,non_exhaust,15067653.02604761,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_natural_gas,passenger_km,15067653.02604761,HISTORICAL_REFERENCE_ONLY,LIN2015_BEIJING_BUS,NO,NO,Historical Beijing bus passenger-turnover reference only; no public 2023 city-bus PKM
+bus_unassigned_nonBEV,vehicle_materials,6852400.497585329,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing raw-material GWP proxy; not 2023 matched vehicle production
+bus_unassigned_nonBEV,parts_manufacturing,6852400.497585329,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,vehicle_distribution,6852400.497585329,HISTORICAL_PROXY_NOT_SEPARABLE,LIN2015_BEIJING_BUS,NO,NO,Distribution is not separately disaggregated from the historical assembly/distribution boundary
+bus_unassigned_nonBEV,vehicle_assembly,6852400.497585329,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing assembly/distribution-boundary proxy; not 2023 matched vehicle production
+bus_unassigned_nonBEV,battery_manufacturing,6852400.497585329,NOT_APPLICABLE_TRACTION_BATTERY,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,energy_WTW,6852400.497585329,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,maintenance,6852400.497585329,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,end_of_life_dismantling,6852400.497585329,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,end_of_life_recycling,6852400.497585329,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,non_exhaust,6852400.497585329,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unassigned_nonBEV,passenger_km,6852400.497585329,HISTORICAL_REFERENCE_ONLY,LIN2015_BEIJING_BUS,NO,NO,Historical Beijing bus passenger-turnover reference only; no public 2023 city-bus PKM
+bus_unclassified,vehicle_materials,13304.770883927249,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing raw-material GWP proxy; not 2023 matched vehicle production
+bus_unclassified,parts_manufacturing,13304.770883927249,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,vehicle_distribution,13304.770883927249,HISTORICAL_PROXY_NOT_SEPARABLE,LIN2015_BEIJING_BUS,NO,NO,Distribution is not separately disaggregated from the historical assembly/distribution boundary
+bus_unclassified,vehicle_assembly,13304.770883927249,HISTORICAL_GWP_PROXY_ONLY,LIN2015_BEIJING_BUS,NO,NO,2015 Beijing assembly/distribution-boundary proxy; not 2023 matched vehicle production
+bus_unclassified,battery_manufacturing,13304.770883927249,NOT_APPLICABLE_TRACTION_BATTERY,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,energy_WTW,13304.770883927249,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,maintenance,13304.770883927249,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,end_of_life_dismantling,13304.770883927249,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,end_of_life_recycling,13304.770883927249,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,non_exhaust,13304.770883927249,MISSING,NA,NO,NO,2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete
+bus_unclassified,passenger_km,13304.770883927249,HISTORICAL_REFERENCE_ONLY,LIN2015_BEIJING_BUS,NO,NO,Historical Beijing bus passenger-turnover reference only; no public 2023 city-bus PKM

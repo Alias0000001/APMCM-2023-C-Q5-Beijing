@@ -1,7 +1,7 @@
-material,vehicle,kg_per_vehicle,annual_vehicle_equivalent,annual_material_kg,CO2_factor_kg_per_kg,VOC_factor_g_per_kg,NOx_factor_g_per_kg,PM25_factor_g_per_kg,SO2_factor_g_per_kg,status,source_id
-steel,ICEV,793,13076.614292249977,10369755.133754231,2,3.12,1.9,0.74,8.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
-steel,BEV,827,2848.504199835301,2355712.9732637936,2,3.12,1.9,0.74,8.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
-steel,PHEV,847,113.77436178973375,96366.88443590449,2,3.12,1.9,0.74,8.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
+﻿material,vehicle,kg_per_vehicle,annual_vehicle_equivalent,annual_material_kg,CO2_factor_kg_per_kg,VOC_factor_g_per_kg,NOx_factor_g_per_kg,PM25_factor_g_per_kg,SO2_factor_g_per_kg,status,source_id
+steel,ICEV,793,13076.614292249977,10369755.133754231,2.0,3.12,1.9,0.74,8.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
+steel,BEV,827,2848.504199835301,2355712.9732637936,2.0,3.12,1.9,0.74,8.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
+steel,PHEV,847,113.77436178973375,96366.88443590449,2.0,3.12,1.9,0.74,8.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
 cast_iron,ICEV,139,13076.614292249977,1817649.3866227467,0.55,2.52,1.31,0.57,3.67,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
 cast_iron,BEV,25,2848.504199835301,71212.60499588252,0.55,2.52,1.31,0.57,3.67,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
 cast_iron,PHEV,78,113.77436178973375,8874.400219599233,0.55,2.52,1.31,0.57,3.67,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
@@ -26,15 +26,15 @@ rubber,PHEV,26,113.77436178973375,2958.1334065330775,3.62,6.27,5.03,0.44,13.75,m
 other,ICEV,23,13076.614292249977,300762.12872174947,2.7,1.77,3.42,0.66,9.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
 other,BEV,37,2848.504199835301,105394.65539390613,2.7,1.77,3.42,0.66,9.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
 other,PHEV,27,113.77436178973375,3071.907768322811,2.7,1.77,3.42,0.66,9.39,material_factor_from_Yang2021_Table4,Yang2021_Tables3_4
-lead_acid_battery,ICEV,15,13076.614292249977,196149.21438374964,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-lead_acid_battery,BEV,15,2848.504199835301,42727.562997529516,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-lead_acid_battery,PHEV,15,113.77436178973375,1706.6154268460061,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-fluid,ICEV,26,13076.614292249977,339991.9715984994,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-fluid,BEV,26,2848.504199835301,74061.10919571781,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-fluid,PHEV,26,113.77436178973375,2958.1334065330775,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-tire,ICEV,36,13076.614292249977,470758.11452099914,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-tire,BEV,36,2848.504199835301,102546.15119407083,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-tire,PHEV,36,113.77436178973375,4095.877024430415,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-lithium_ion_battery,ICEV,0,13076.614292249977,0,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-lithium_ion_battery,BEV,286,2848.504199835301,814672.201152896,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
-lithium_ion_battery,PHEV,128,113.77436178973375,14563.11830908592,,,,,,partial_material_flow_factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+lead_acid_battery,ICEV,15,13076.614292249977,196149.21438374964,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+lead_acid_battery,BEV,15,2848.504199835301,42727.562997529516,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+lead_acid_battery,PHEV,15,113.77436178973375,1706.6154268460061,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+fluid,ICEV,26,13076.614292249977,339991.9715984994,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+fluid,BEV,26,2848.504199835301,74061.10919571781,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+fluid,PHEV,26,113.77436178973375,2958.1334065330775,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+tire,ICEV,36,13076.614292249977,470758.11452099914,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+tire,BEV,36,2848.504199835301,102546.15119407083,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+tire,PHEV,36,113.77436178973375,4095.877024430415,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+lithium_ion_battery,ICEV,0,13076.614292249977,0.0,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+lithium_ion_battery,BEV,286,2848.504199835301,814672.201152896,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4
+lithium_ion_battery,PHEV,128,113.77436178973375,14563.11830908592,,,,,,partial_material_flow; factor_NA_for_battery_tire_fluid_lead_acid,Yang2021_Tables3_4

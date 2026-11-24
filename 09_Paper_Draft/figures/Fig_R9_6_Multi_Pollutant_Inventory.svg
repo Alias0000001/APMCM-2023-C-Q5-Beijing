@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Figure 10. Partial physical inventory across five pollutants">
+<title>Figure 10. Partial physical inventory across five pollutants</title><desc>Each pollutant has its own scale; known-flow subtotals are not complete lifecycle emissions.</desc>
+<rect x="0.0" y="0.0" width="1200.0" height="760.0" fill="#FFFFFF" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="58.0" y="58.0" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172B3A" text-anchor="start" font-weight="700">Figure 10. Partial physical inventory across five pollutants</text>
+<text x="60.0" y="91.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#647783" text-anchor="start" font-weight="400">Each pollutant has its own scale; known-flow subtotals are not complete lifecycle emissions.</text>
+<line x1="58.0" y1="112.0" x2="1142.0" y2="112.0" stroke="#DCE3E8" stroke-width="1.2"/>
+<rect x="65.0" y="180.0" width="345.0" height="245.0" fill="#F6F8FA" stroke="none" stroke-width="1" rx="10" opacity="1"/>
+<text x="81.0" y="208.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">CO2 (t/year)</text>
+<line x1="103.0" y1="370.0" x2="398.0" y2="370.0" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="103.0" y1="302.5" x2="398.0" y2="302.5" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="103.0" y1="235.0" x2="398.0" y2="235.0" stroke="#DCE3E8" stroke-width="1"/>
+<rect x="120.0" y="257.5" width="32.0" height="112.5" fill="#496783" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="136.0" y="251.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">475955.1</text>
+<text x="136.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">ICE</text>
+<rect x="175.0" y="355.5" width="32.0" height="14.5" fill="#C56D88" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="191.0" y="349.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">61474.2</text>
+<text x="191.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">BEV</text>
+<rect x="230.0" y="369.3" width="32.0" height="0.7" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="246.0" y="363.3" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">3026.9</text>
+<text x="246.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
+<rect x="285.0" y="369.1" width="32.0" height="0.9" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="301.0" y="363.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">3770.4</text>
+<text x="301.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
+<rect x="340.0" y="367.2" width="32.0" height="2.8" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="356.0" y="361.2" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">11785.6</text>
+<text x="356.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">E-bus</text>
+<rect x="440.0" y="180.0" width="345.0" height="245.0" fill="#F6F8FA" stroke="none" stroke-width="1" rx="10" opacity="1"/>
+<text x="456.0" y="208.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">VOC (t/year)</text>
+<line x1="478.0" y1="370.0" x2="773.0" y2="370.0" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="478.0" y1="302.5" x2="773.0" y2="302.5" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="478.0" y1="235.0" x2="773.0" y2="235.0" stroke="#DCE3E8" stroke-width="1"/>
+<rect x="495.0" y="257.5" width="32.0" height="112.5" fill="#496783" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="511.0" y="251.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">664.4</text>
+<text x="511.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">ICE</text>
+<rect x="550.0" y="366.2" width="32.0" height="3.8" fill="#C56D88" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="566.0" y="360.2" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">22.7</text>
+<text x="566.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">BEV</text>
+<rect x="605.0" y="369.6" width="32.0" height="0.4" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="621.0" y="363.6" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">2.6</text>
+<text x="621.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
+<rect x="660.0" y="369.2" width="32.0" height="0.8" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="676.0" y="363.2" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">5.0</text>
+<text x="676.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
+<rect x="715.0" y="369.8" width="32.0" height="0.2" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="731.0" y="363.8" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.1</text>
+<text x="731.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">E-bus</text>
+<rect x="815.0" y="180.0" width="345.0" height="245.0" fill="#F6F8FA" stroke="none" stroke-width="1" rx="10" opacity="1"/>
+<text x="831.0" y="208.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">NOx (t/year)</text>
+<line x1="853.0" y1="370.0" x2="1148.0" y2="370.0" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="853.0" y1="302.5" x2="1148.0" y2="302.5" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="853.0" y1="235.0" x2="1148.0" y2="235.0" stroke="#DCE3E8" stroke-width="1"/>
+<rect x="870.0" y="257.5" width="32.0" height="112.5" fill="#496783" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="886.0" y="251.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">188.6</text>
+<text x="886.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">ICE</text>
+<rect x="925.0" y="347.0" width="32.0" height="23.0" fill="#C56D88" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="941.0" y="341.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">38.6</text>
+<text x="941.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">BEV</text>
+<rect x="980.0" y="369.1" width="32.0" height="0.9" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="996.0" y="363.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.6</text>
+<text x="996.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
+<rect x="1035.0" y="369.4" width="32.0" height="0.6" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="1051.0" y="363.4" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.0</text>
+<text x="1051.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
+<rect x="1090.0" y="366.2" width="32.0" height="3.8" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="1106.0" y="360.2" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">6.4</text>
+<text x="1106.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">E-bus</text>
+<rect x="65.0" y="445.0" width="345.0" height="245.0" fill="#F6F8FA" stroke="none" stroke-width="1" rx="10" opacity="1"/>
+<text x="81.0" y="473.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">PM2.5 (t/year)</text>
+<line x1="103.0" y1="635.0" x2="398.0" y2="635.0" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="103.0" y1="567.5" x2="398.0" y2="567.5" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="103.0" y1="500.0" x2="398.0" y2="500.0" stroke="#DCE3E8" stroke-width="1"/>
+<rect x="120.0" y="522.5" width="32.0" height="112.5" fill="#496783" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="136.0" y="516.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">18.4</text>
+<text x="136.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">ICE</text>
+<rect x="175.0" y="595.9" width="32.0" height="39.1" fill="#C56D88" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="191.0" y="589.9" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">6.4</text>
+<text x="191.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">BEV</text>
+<rect x="230.0" y="633.6" width="32.0" height="1.4" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="246.0" y="627.6" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">0.2</text>
+<text x="246.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
+<rect x="285.0" y="634.7" width="32.0" height="0.3" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="301.0" y="628.7" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">0.0</text>
+<text x="301.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
+<rect x="340.0" y="629.7" width="32.0" height="5.3" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="356.0" y="623.7" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">0.9</text>
+<text x="356.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">E-bus</text>
+<rect x="440.0" y="445.0" width="345.0" height="245.0" fill="#F6F8FA" stroke="none" stroke-width="1" rx="10" opacity="1"/>
+<text x="456.0" y="473.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">SO2 (t/year)</text>
+<line x1="478.0" y1="635.0" x2="773.0" y2="635.0" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="478.0" y1="567.5" x2="773.0" y2="567.5" stroke="#DCE3E8" stroke-width="1"/>
+<line x1="478.0" y1="500.0" x2="773.0" y2="500.0" stroke="#DCE3E8" stroke-width="1"/>
+<rect x="495.0" y="522.5" width="32.0" height="112.5" fill="#496783" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="511.0" y="516.5" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">339.5</text>
+<text x="511.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">ICE</text>
+<rect x="550.0" y="612.9" width="32.0" height="22.1" fill="#C56D88" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="566.0" y="606.9" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">66.6</text>
+<text x="566.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">BEV</text>
+<rect x="605.0" y="634.1" width="32.0" height="0.9" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="621.0" y="628.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">2.7</text>
+<text x="621.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
+<rect x="660.0" y="634.6" width="32.0" height="0.4" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="676.0" y="628.6" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.1</text>
+<text x="676.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
+<rect x="715.0" y="632.7" width="32.0" height="2.3" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<text x="731.0" y="626.7" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">7.0</text>
+<text x="731.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">E-bus</text>
+<text x="60.0" y="710.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="start" font-weight="400">Physical pollutant masses are not CO₂e or ReCiPe characterization factors; missing bus flows remain NA.</text>
+</svg>

@@ -1,4 +1,4 @@
-vehicle,step,input_flow,annual_quantity,unit,source_id,status,note
+﻿vehicle,step,input_flow,annual_quantity,unit,source_id,status,note
 BEV,precursor,NiSO4,264498.348592013,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
 BEV,precursor,CoSO4,79349.5045776039,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice
 BEV,precursor,MnSO4,79349.5045776039,kg/year,SUN2020_NCM622,NESTED_PRECURSOR_CHAIN_NOT_ADDITIVE_TO_FINAL_BOM,NCM622 cathode active mass multiplied by S2/S3 process inputs; do not add precursor twice

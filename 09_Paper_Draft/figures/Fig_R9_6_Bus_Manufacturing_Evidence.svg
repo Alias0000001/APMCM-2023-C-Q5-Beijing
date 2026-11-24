@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Figure 13. Historical Beijing bus manufacturing GWP proxies">
+<title>Figure 13. Historical Beijing bus manufacturing GWP proxies</title><desc>Derived from Lin et al. (2015) Figure 2 and Table 5; 2011–2014 technology, not 2023 observed bus factors.</desc>
+<rect x="0.0" y="0.0" width="1200.0" height="760.0" fill="#FFFFFF" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="58.0" y="58.0" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172B3A" text-anchor="start" font-weight="700">Figure 13. Historical Beijing bus manufacturing GWP proxies</text>
+<text x="60.0" y="91.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#647783" text-anchor="start" font-weight="400">Derived from Lin et al. (2015) Figure 2 and Table 5; 2011–2014 technology, not 2023 observed bus factors.</text>
+<line x1="58.0" y1="112.0" x2="1142.0" y2="112.0" stroke="#DCE3E8" stroke-width="1.2"/>
+<text x="370.0" y="224.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="end" font-weight="700">Diesel</text>
+<rect x="390.0" y="190.0" width="690.0" height="58.0" fill="#EEF2F5" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<rect x="390.0" y="190.0" width="537.4" height="58.0" fill="#D3A16F" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<text x="939.4" y="226.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">42.84 t CO₂e/bus</text>
+<text x="370.0" y="329.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="end" font-weight="700">Natural gas</text>
+<rect x="390.0" y="295.0" width="690.0" height="58.0" fill="#EEF2F5" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<rect x="390.0" y="295.0" width="569.1" height="58.0" fill="#D3A16F" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<text x="971.1" y="331.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">45.36 t CO₂e/bus</text>
+<text x="370.0" y="434.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="end" font-weight="700">Diesel hybrid</text>
+<rect x="390.0" y="400.0" width="690.0" height="58.0" fill="#EEF2F5" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<rect x="390.0" y="400.0" width="581.5" height="58.0" fill="#D3A16F" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<text x="983.5" y="436.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">46.35 t CO₂e/bus</text>
+<text x="370.0" y="539.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="end" font-weight="700">Battery electric</text>
+<rect x="390.0" y="505.0" width="690.0" height="58.0" fill="#EEF2F5" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<rect x="390.0" y="505.0" width="599.0" height="58.0" fill="#4F968D" stroke="none" stroke-width="1" rx="5" opacity="1"/>
+<text x="1001.0" y="541.0" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#172B3A" text-anchor="start" font-weight="700">47.75 t CO₂e/bus</text>
+<text x="60.0" y="680.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="start" font-weight="400">Manufacturing = raw-material production + assembly/distribution proxy. Vehicle scrapping is excluded and remains a separate stage.</text>
+<text x="60.0" y="710.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="start" font-weight="400">Not a 2023 local purchase-factor observation; use only as historical literature sensitivity.</text>
+</svg>

@@ -1,11 +1,11 @@
-lifetime_km,vehicle,break_even_grid_EF_kgCO2e_per_kWh,Peng2017_Table8_grid_EF_kgCO2e_per_kWh,baseline_BEV_below_threshold,ICEV_gCO2e_per_km,BEV_at_break_even_equals_ICEV_gCO2e_per_km,formula
-100000,BEV_NMC,1.088241625,0.73224,YES,315.462727,315.462727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-100000,BEV_LFP,1.0771232039473684,0.73224,YES,315.462727,315.462727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-150000,BEV_NMC,1.1983293442982457,0.73224,YES,282.17939366666667,282.17939366666667,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-150000,BEV_LFP,1.1909170635964912,0.73224,YES,282.17939366666667,282.17939366666667,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-200000,BEV_NMC,1.2533732039473684,0.73224,YES,265.537727,265.537727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-200000,BEV_LFP,1.2478139934210528,0.73224,YES,265.537727,265.537727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-250000,BEV_NMC,1.2863995197368425,0.73224,YES,255.55272700000003,255.55272700000003,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-250000,BEV_LFP,1.2819521513157897,0.73224,YES,255.55272700000003,255.55272700000003,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-300000,BEV_NMC,1.3084170635964913,0.73224,YES,248.89606033333337,248.89606033333337,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
-300000,BEV_LFP,1.3047109232456144,0.73224,YES,248.89606033333337,248.89606033333337,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+﻿lifetime_km,vehicle,break_even_grid_EF_kgCO2e_per_kWh,Peng2017_Table8_grid_EF_kgCO2e_per_kWh,baseline_BEV_below_threshold,ICEV_gCO2e_per_km,BEV_at_break_even_equals_ICEV_gCO2e_per_km,formula
+100000,BEV_NMC,1.03382954375,0.73224,YES,315.462727,315.462727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+100000,BEV_LFP,1.0232670437499998,0.73224,YES,315.462727,315.462727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+150000,BEV_NMC,1.1384128770833333,0.73224,YES,282.17939366666667,282.17939366666667,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+150000,BEV_LFP,1.1313712104166667,0.73224,YES,282.17939366666667,282.17939366666667,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+200000,BEV_NMC,1.19070454375,0.73224,YES,265.537727,265.537727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+200000,BEV_LFP,1.18542329375,0.73224,YES,265.537727,265.537727,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+250000,BEV_NMC,1.2220795437500003,0.73224,YES,255.55272700000003,255.55272700000003,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+250000,BEV_LFP,1.2178545437500001,0.73224,YES,255.55272700000003,255.55272700000003,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+300000,BEV_NMC,1.2429962104166667,0.73224,YES,248.89606033333337,248.89606033333337,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km
+300000,BEV_LFP,1.2394753770833336,0.73224,YES,248.89606033333337,248.89606033333337,(ICEV_manufacturing_per_km + gasoline_WTW_per_km - BEV_manufacturing_per_km) / BEV_kWh_per_km

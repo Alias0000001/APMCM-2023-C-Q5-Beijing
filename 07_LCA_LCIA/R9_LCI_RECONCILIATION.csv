@@ -1,7 +1,7 @@
-check,computed,reference,unit,status
-private_VKT_reconciliation,2405833928.081252,2405833928.0812516,km/year,PASS
-bus_VKT_reconciliation,52658065.69677006,52658065.696770065,km/year,PASS
-electricity_reconciliation,83906492.4929479,83906492.4929479,kWh/year,PASS
-gasoline_total_reconciliation,147547097.72165796,147547097.72165796,L/year,PASS
+﻿check,computed,reference,unit,status
+private_VKT_reconciliation,2405833928.081252098,2405833928.081251621,km/year,PASS
+bus_VKT_reconciliation,52658065.696770065,52658065.696770065,km/year,PASS
+electricity_reconciliation,87324697.532750279,87324697.532750279,kWh/year,PASS
+gasoline_total_reconciliation,147547097.721657962,147547097.721657962,L/year,PASS
 bus_mixed_nonBEV_left_unallocated,6852400.497585329,6852400.497585329,km/year,PASS
-R7_mixed_bus_placeholder_excluded,0,0,kgCO2/year,PASS
+R7_mixed_bus_placeholder_excluded,0.000000000,0.000000000,kgCO2/year,PASS

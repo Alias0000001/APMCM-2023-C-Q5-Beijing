@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Figure 15. Evidence status of 2023 bus passenger-kilometres">
+<title>Figure 15. Evidence status of 2023 bus passenger-kilometres</title><desc>Published bus boardings and vehicle-kilometres do not identify passenger-kilometres.</desc>
+<rect x="0.0" y="0.0" width="1200.0" height="760.0" fill="#FFFFFF" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="58.0" y="58.0" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172B3A" text-anchor="start" font-weight="700">Figure 15. Evidence status of 2023 bus passenger-kilometres</text>
+<text x="60.0" y="91.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#647783" text-anchor="start" font-weight="400">Published bus boardings and vehicle-kilometres do not identify passenger-kilometres.</text>
+<line x1="58.0" y1="112.0" x2="1142.0" y2="112.0" stroke="#DCE3E8" stroke-width="1.2"/>
+<rect x="75.0" y="185.0" width="470.0" height="245.0" fill="#F4F7F9" stroke="#DCE3E8" stroke-width="1" rx="12" opacity="1"/>
+<text x="105.0" y="225.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#172B3A" text-anchor="start" font-weight="700">2023 direct operator statistics</text>
+<text x="105.0" y="285.0" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#496783" text-anchor="start" font-weight="700">1.151 billion vehicle-km</text>
+<text x="105.0" y="335.0" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#C56D88" text-anchor="start" font-weight="700">2.08687 billion passenger boardings</text>
+<text x="105.0" y="385.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#647783" text-anchor="start" font-weight="400">1.813 boardings per vehicle-km</text>
+<rect x="625.0" y="185.0" width="500.0" height="245.0" fill="#FBF6F3" stroke="#E7C7B9" stroke-width="1" rx="12" opacity="1"/>
+<text x="875.0" y="225.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#172B3A" text-anchor="middle" font-weight="700">2023 city-bus PKM</text>
+<text x="875.0" y="300.0" font-family="Arial,Helvetica,sans-serif" font-size="34" fill="#C56D88" text-anchor="middle" font-weight="700">NA</text>
+<text x="875.0" y="350.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#647783" text-anchor="middle" font-weight="400">No public bus-only annual total located</text>
+<text x="875.0" y="390.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#647783" text-anchor="middle" font-weight="400">Do not infer from boardings × arbitrary trip length</text>
+<rect x="75.0" y="490.0" width="1050.0" height="120.0" fill="#F4F7F9" stroke="#DCE3E8" stroke-width="1" rx="10" opacity="1"/>
+<text x="105.0" y="530.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#496783" text-anchor="start" font-weight="700">Historical reference only: approximately 32.85 billion passenger-km around 2017</text>
+<text x="105.0" y="570.0" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#647783" text-anchor="start" font-weight="400">Lin et al. (2015) cite this earlier Beijing conventional-bus estimate; it is not a 2023 observation.</text>
+<text x="60.0" y="690.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="start" font-weight="400">Preferred next source: 2023 AFC boarding/alighting OD, route-level passenger turnover, or bus-operator passenger-km records.</text>
+</svg>

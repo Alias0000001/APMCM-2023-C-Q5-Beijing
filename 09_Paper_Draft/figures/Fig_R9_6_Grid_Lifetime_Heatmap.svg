@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Figure 11. Joint electricity-factor × lifetime sensitivity">
+<title>Figure 11. Joint electricity-factor × lifetime sensitivity</title><desc>Two-stage GWP100 screening in g CO₂e/vehicle-km; the same color scale is used across vehicle panels.</desc>
+<rect x="0.0" y="0.0" width="1200.0" height="760.0" fill="#FFFFFF" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="58.0" y="58.0" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#172B3A" text-anchor="start" font-weight="700">Figure 11. Joint electricity-factor × lifetime sensitivity</text>
+<text x="60.0" y="91.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#647783" text-anchor="start" font-weight="400">Two-stage GWP100 screening in g CO₂e/vehicle-km; the same color scale is used across vehicle panels.</text>
+<line x1="58.0" y1="112.0" x2="1142.0" y2="112.0" stroke="#DCE3E8" stroke-width="1.2"/>
+<text x="220.0" y="170.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#172B3A" text-anchor="middle" font-weight="700">Private ICEV</text>
+<text x="162.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">150k</text>
+<text x="254.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">200k</text>
+<text x="346.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">250k</text>
+<text x="152.0" y="272.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="end" font-weight="400">Table8</text>
+<rect x="162.0" y="220.0" width="87.0" height="95.0" fill="#34536F" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="205.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">282.2</text>
+<rect x="254.0" y="220.0" width="87.0" height="95.0" fill="#4E6981" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="297.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">265.5</text>
+<rect x="346.0" y="220.0" width="87.0" height="95.0" fill="#5D768D" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="389.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">255.6</text>
+<text x="152.0" y="372.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="end" font-weight="400">text</text>
+<rect x="162.0" y="320.0" width="87.0" height="95.0" fill="#34536F" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="205.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">282.2</text>
+<rect x="254.0" y="320.0" width="87.0" height="95.0" fill="#4E6981" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="297.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">265.5</text>
+<rect x="346.0" y="320.0" width="87.0" height="95.0" fill="#5D768D" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="389.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">255.6</text>
+<text x="600.0" y="170.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#172B3A" text-anchor="middle" font-weight="700">BEV-NMC</text>
+<text x="542.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">150k</text>
+<text x="634.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">200k</text>
+<text x="726.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">250k</text>
+<text x="532.0" y="272.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="end" font-weight="400">Table8</text>
+<rect x="542.0" y="220.0" width="87.0" height="95.0" fill="#99A9B7" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="585.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">217.2</text>
+<rect x="634.0" y="220.0" width="87.0" height="95.0" fill="#BFC9D3" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="677.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">192.2</text>
+<rect x="726.0" y="220.0" width="87.0" height="95.0" fill="#D6DDE3" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="769.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">177.2</text>
+<text x="532.0" y="372.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="end" font-weight="400">text</text>
+<rect x="542.0" y="320.0" width="87.0" height="95.0" fill="#B8C3CE" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="585.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">196.8</text>
+<rect x="634.0" y="320.0" width="87.0" height="95.0" fill="#DFE4E9" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="677.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">171.8</text>
+<rect x="726.0" y="320.0" width="87.0" height="95.0" fill="#F6F8FA" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="769.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">156.8</text>
+<text x="980.0" y="170.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#172B3A" text-anchor="middle" font-weight="700">BEV-LFP</text>
+<text x="922.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">150k</text>
+<text x="1014.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">200k</text>
+<text x="1106.0" y="202.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="middle" font-weight="400">250k</text>
+<text x="912.0" y="272.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="end" font-weight="400">Table8</text>
+<rect x="922.0" y="220.0" width="87.0" height="95.0" fill="#97A7B6" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="965.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">218.3</text>
+<rect x="1014.0" y="220.0" width="87.0" height="95.0" fill="#BEC8D2" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="1057.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">193.0</text>
+<rect x="1106.0" y="220.0" width="87.0" height="95.0" fill="#D5DCE3" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="1149.5" y="275.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">177.9</text>
+<text x="912.0" y="372.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="end" font-weight="400">text</text>
+<rect x="922.0" y="320.0" width="87.0" height="95.0" fill="#B6C2CC" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="965.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">197.9</text>
+<rect x="1014.0" y="320.0" width="87.0" height="95.0" fill="#DDE3E8" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="1057.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">172.6</text>
+<rect x="1106.0" y="320.0" width="87.0" height="95.0" fill="#F5F7F9" stroke="white" stroke-width="1" rx="4" opacity="1"/>
+<text x="1149.5" y="375.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#172B3A" text-anchor="middle" font-weight="700">157.5</text>
+<text x="60.0" y="650.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="start" font-weight="400">Shared color range: 156.8–282.2 g CO₂e/km. MEE2023 retrospective electricity factors are not included in this strict two-scenario factorial.</text>
+</svg>
