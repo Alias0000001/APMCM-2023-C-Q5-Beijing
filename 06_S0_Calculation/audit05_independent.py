@@ -20,7 +20,7 @@ car0=[V*(1-p),V*p*t,V*p*(1-t)];bus0=[B*d/n,B*g/n,B*m*(1-q)/n,B*m*q/n,B*u/n]
 allcar=[0,V,0];allbus=[0,0,0,B,0]
 sc={"S-1":([V,0,0],[B*rho,B*(1-rho),0,0,0],1),"S0":(car0,bus0,1),"S1":(car0,allbus,1),"S2":(allcar,bus0,1),"S3":(allcar,allbus,1),"S4":(allcar,allbus,a["S4_grid_factor_multiplier"])}
 A=rows("R9_7A_SIX_SCENARIO_VKT.csv");E=rows("R9_7B_SIX_SCENARIO_ENERGY_WTW.csv");G=rows("R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv");F=rows("R9_7C_MANUFACTURING_FACTOR_REGISTER.csv");P=rows("R9_7E_ROAD_FACTORS.csv");O=rows("R9_7E_ROAD_POLLUTANT_SCENARIOS.csv");W=rows("R9_7AUDIT04_WEAR_FACTORS.csv");Z=rows("R9_7AUDIT04_WEAR_SCENARIOS.csv");K=rows("R9_7AUDIT04_BATTERY_CAPACITY.csv");S=rows("R9_7D_SERVICE_SENSITIVITY.csv")
-L={x["parameter_id"]:float(x["value"]) for x in read(R/"07_LCA_LCIA"/"R9_LCI_PARAMETER_LEDGER.csv")}
+L={x["parameter_id"]:float(x["value"]) for x in read(R/"07_LCA_LCIA"/"R9_LCI_PARAMETER_LEDGER.csv") if x["parameter_id"] in {"R9_BEV_CAPACITY_PROXY","R9_PHEV_CAPACITY_PROXY","R9_PRIVATE_LIFETIME_VKT"}}
 checks=[]
 def ck(s,k,x,y):
     y=float(y);tol=max(1e-5,abs(y)*1e-9);err=abs(x-y);checks.append([s,k,x,y,err,tol,"PASS" if err<=tol else "FAIL"])
