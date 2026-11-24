@@ -86,3 +86,18 @@ Under this partial boundary, S0→S3 reduction is 14.23%, and S0→S4 is 39.94%.
 The composite GWP factor set is a transparent cross-study proxy, not a single harmonized fleet-specific LCA: Qiao2017 supplies ICEV/BEV and Xiong2019 supplies PHEV. The PHEV factor is the largest structural uncertainty. Yang2021 reports a matched PHEV production CO2 intensity of 74–90g/km (CO2-only), equivalent to 11.1–13.5t CO2 over 150,000km; this is not directly substituted into GWP. Peng2023 reports PHEV vehicle-cycle GWP 11.572–12.186t/vehicle, which includes stages beyond production and is a cross-check only. Keep these parallel source estimates visible and test the PHEV factor in R9.7F.
 
 The Hangzhou2018 bus alternative remains separate: its Table 6 breaks the BEV raw-material stage into vehicle materials 125.178t CO2 and battery production 88.280t CO2, plus 1.580t assembly; its diesel counterpart is 120.054t plus1.580t. The paper's methods mention one battery replacement, but 88.280/14.713=6 battery-set equivalents; this pack-count/replacement interpretation is unresolved. The same study explicitly omits vehicle transportation and several non-core maintenance processes. Use 215.037t BEV and121.634t diesel only as a source-specific CO2 boundary alternative, not as the base GWP factor.
+
+
+## 9. BEV manufacturing source sensitivity
+
+Qiao2017 gives 15.005tCO2e/vehicle for BEV-NMC, while Xiong2019's production-only component sum gives 11.51782tCO2e/vehicle for BEV-NMC. Both include the initial battery, but the reference vehicles and inventory boundaries differ. This is a structural source alternative, not a statistical confidence interval.
+
+Replacing only the private BEV factor with Xiong2019 (keeping Qiao2017 ICEV, Xiong2019 PHEV, Lin2015 bus and the same WTW operation) changes the partial LCA results:
+
+| Scenario | Qiao2017 BEV factor | Xiong2019 BEV factor |
+|---|---:|---:|
+| S0 | 567.789 ktCO2e/y | 565.045 ktCO2e/y |
+| S3 | 486.978 ktCO2e/y | 442.903 ktCO2e/y |
+| S4 | 341.002 ktCO2e/y | 296.927 ktCO2e/y |
+
+Under the alternative BEV production factor, S0→S3 reduction becomes 21.62% and S0→S4 becomes 47.45%, compared with 14.23% and39.94% under Qiao2017. Thus the BEV manufacturing source choice materially affects the reported lifecycle benefit and must remain visible in the final sensitivity analysis. The Qiao2017 factor is retained as the current baseline because it is already the vehicle-production GWP anchor in R9.4; the Xiong2019 factor is a required alternative.
