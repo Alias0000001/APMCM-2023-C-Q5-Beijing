@@ -150,13 +150,13 @@ save(f,"F06_Policy_Tradeoff","R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv; R9_7E_ROAD_PO
 # F07 comparison of deterministic envelopes.
 f,ax=make(3.9)
 for j,s in enumerate(SS):
-    old=one(N,scenario=s,indicator="partial_GWP_t");new=one(FIX,design="remediation_25_packages",scenario=s)
+    old=one(N,scenario=s,indicator="partial_GWP_t");new=one(FIX,design="remediation_28_packages",scenario=s)
     ax.hlines(j-.14,num(old,"min_reduction_pct"),num(old,"max_reduction_pct"),lw=3,color="#A0A0A0")
     ax.hlines(j+.14,num(new,"min_reduction_pct"),num(new,"max_reduction_pct"),lw=3.7,color=ICE)
     ax.scatter(red[j],j+.14,c=NMC,edgecolor=DARK,s=25,zorder=4)
 ax.set_yticks(XX,SL);ax.invert_yaxis();ax.set_xlim(-33,66);ax.set_xticks([-30,-20,-10,0,10,20,30,40,50,60]);ax.set_xlabel("Reduction relative to paired S0 (%)");ax.grid(axis="x",color="#D9E1E8",lw=.5);ax.axvline(0,color=DARK,ls="--",lw=.9)
-ax.legend(handles=[plt.Line2D([0],[0],color="#A0A0A0",lw=3,label="Original: 14,580"),plt.Line2D([0],[0],color=ICE,lw=3,label="Extended: 328,050"),plt.Line2D([0],[0],marker="o",color=NMC,ls="",label="Reference")],loc="upper right",frameon=False)
-w=one(WIT,design="remediation_25_packages",scenario="S4")
+ax.legend(handles=[plt.Line2D([0],[0],color="#A0A0A0",lw=3,label="Original: 14,580"),plt.Line2D([0],[0],color=ICE,lw=3,label="Extended: 367,416"),plt.Line2D([0],[0],marker="o",color=NMC,ls="",label="Reference")],loc="upper right",frameon=False)
+w=one(WIT,design="remediation_28_packages",scenario="S4")
 ax.annotate(f"S4 min {float(w['red']):.3f}%",(float(w["red"]),5.14),xytext=(-10,12),ha="right",textcoords="offset points",fontsize=8.5,arrowprops={"arrowstyle":"-","color":DARK})
 save(f,"F07_Paired_Envelope","R9_7F_NESTED_ENVELOPE.csv; R9_7FIX_SENSITIVITY_ENVELOPE.csv; R9_7FIX_REVERSAL_WITNESSES.csv","Deterministic designs, not probabilities or confidence intervals; original and extended designs are not strict subsets. S4 near-zero negative witness under joint adverse assumptions. 2022 activity anchor; paired S0 in each set.")
 # F08 private car break-even with additional private NMC pack.
@@ -195,10 +195,10 @@ save(f,"A02_PKM","R9_7D_SERVICE_SENSITIVITY.csv; R9_7FIX_CALIBRATED_PKM.csv","Pr
 f,ax=diagram(2.6)
 block(ax,.02,.58,.28,.29,"Grid input","WTW factor\nQgrid","#DDEBF5");block(ax,.36,.58,.28,.29,"Charger","Loss if outside\nreported meter",LIGHT);block(ax,.70,.58,.28,.29,"Battery","Meter may be\nhere or upstream","#DDEBF5")
 arrow(ax,.30,.73,.36,.73);arrow(ax,.64,.73,.70,.73)
-ax.text(.5,.36,"Delivered interpretation: use reported kWh",ha="center",fontsize=9)
-ax.text(.5,.21,"Battery-side interpretation: Qgrid = Qreported / η",ha="center",fontsize=9)
-ax.text(.5,.07,"Historical bus proxy: test both interpretations",ha="center",weight="bold",fontsize=8.5)
-save(f,"A03_Meter","R9_7B_ENERGY_INPUTS.csv; R9_7FIX_TECH_PACKAGES.csv","Meter position is unresolved. Apply charger loss only when excluded from recorded quantity. Historical high bus electricity use tested both delivered and battery-side; no claim measured losses.")
+ax.text(.5,.36,"Pre-cutoff vehicle-side energy proxies",ha="center",fontsize=9)
+ax.text(.5,.21,"Grid input = vehicle energy / η (η = 0.92)",ha="center",fontsize=9)
+ax.text(.5,.07,"η stress: 0.90–0.95; meter not observed",ha="center",weight="bold",fontsize=8.5)
+save(f,"A03_Meter","R9_7B_ENERGY_INPUTS.csv; R9_7B_PRIVATE_BEV_ENERGY_RECONSTRUCTION.csv; R9_7B_BUS_ENERGY_DERIVATION.csv","Private BEV intensity reconstructed from 2021 Beijing model medians; bus energy converted from Ma et al. (2021) diesel-equivalent consumption. Charging efficiency 0.92 is a Shenzhen transfer assumption, stressed over 0.90–0.95; no Beijing meter point is observed.")
 # A04 battery-only LCIA.
 f,ax=make(4.9)
 r=[x for x in B if x["scenario"]=="S3" and x["recycling_case"]=="no_credit"]
