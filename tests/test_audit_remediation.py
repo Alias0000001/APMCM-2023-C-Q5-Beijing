@@ -30,3 +30,15 @@ class RemediationTests(unittest.TestCase):
             self.assertGreaterEqual(float(x["min_font_pt"]),8)
             self.assertEqual(float(x["native_width_cm"]),15)
             self.assertEqual(int(x["out_of_canvas_text_count"]),0)
+
+    def test_gap_alternatives(self):
+        for name,n in [("R9_7FIX_BUS_GAP_SCENARIOS.csv",60),("R9_7FIX_DUST_DIAGNOSTIC.csv",12),("R9_7FIX_PKM_BREAK_EVEN.csv",6),("R9_7FIX_MILEAGE_SOURCE_ALTERNATIVES.csv",30),("R9_7FIX_CHARGER_DIAGNOSTIC.csv",36),("R9_7FIX_NOISE_DIAGNOSTIC.csv",54),("R9_7FIX_GENERATION_POLLUTANTS.csv",24)]:
+            data=rows(D/name); self.assertEqual(len(data),n)
+        b=rows(D/"R9_7FIX_BUS_GAP_SCENARIOS.csv")
+        for x in b:
+            if x['scenario']=='S0':self.assertAlmostEqual(float(x['reduction_vs_paired_S0_pct']),0)
+        c=rows(D/"R9_7FIX_STAGE_COVERAGE.csv")
+        self.assertEqual(len(c),128)
+        self.assertEqual(next(x['coverage'] for x in c if x['vehicle']=='bus_BEV' and x['stage']=='replacement_traction_battery'),'SUPPLEMENTARY_PROXY')
+        self.assertEqual(next(x['coverage'] for x in c if x['vehicle']=='bus_BEV' and x['stage']=='resuspended_dust'),'SUPPLEMENTARY_PROXY')
+        svg=(F/'F05_Road_Pollutants.svg').read_text().lower();self.assertIn('#94aa9c',svg);self.assertIn('#cad8ce',svg);self.assertNotIn('#d3a16f',svg)

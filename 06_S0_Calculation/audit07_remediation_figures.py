@@ -107,8 +107,8 @@ block(ax,.04,.50,.44,.19,"Road combustion","CO, VOCs, NOx,\nPM2.5, PM10","#F4E4E
 block(ax,.52,.50,.44,.19,"Road wear","Brake, tyre, surface\nPM2.5 and PM10","#F4E4E8")
 block(ax,.04,.25,.44,.18,"Private battery LCIA","Independent NCM622\nrecycling scenarios","#E8E3F0")
 block(ax,.52,.25,.44,.18,"Replacement stress","Private and bus pack\nreplacement stress","#E8E3F0")
-block(ax,.04,.02,.92,.16,"Not fully quantified","Full maintenance, EOL, dust, infrastructure, noise",LIGHT)
-save(f,"F03_Boundary","R9_7FIX_STAGE_COVERAGE.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv; R9_7AUDIT04_BATTERY_RECIPE.csv; R9_7FIX_BUS_GAP_SCENARIOS.csv","Included production (Qiao includes selected consumable replacements) + WTW is not complete cradle-to-grave LCA. Road wear and private battery LCIA are separate modules; bus replacement is a separate transfer stress; other stages remain NA. Detailed 128-cell ledger in A05.")
+block(ax,.04,.02,.92,.16,"Not fully quantified","Full maintenance, EOL, exposure and upstream inventory",LIGHT)
+save(f,"F03_Boundary","R9_7FIX_STAGE_COVERAGE.csv; R9_7AUDIT04_WEAR_SCENARIOS.csv; R9_7AUDIT04_BATTERY_RECIPE.csv; R9_7FIX_BUS_GAP_SCENARIOS.csv; R9_7FIX_DUST_DIAGNOSTIC.csv; R9_7FIX_CHARGER_DIAGNOSTIC.csv; R9_7FIX_NOISE_DIAGNOSTIC.csv","Included production (Qiao includes selected consumable replacements) + WTW is not complete cradle-to-grave LCA. Road wear and private battery LCIA are separate modules; bus replacement, dust, charger hardware and low-speed noise are separate transfer stresses, not main totals. Detailed 128-cell ledger in A05.")
 # F04 energy and separate GWP panels.
 f=plt.figure(figsize=(W,5.0),layout="constrained");gs=f.add_gridspec(2,2,height_ratios=[1,1.15]);ax=f.add_subplot(gs[0,:]);axs=[f.add_subplot(gs[1,0]),f.add_subplot(gs[1,1])]
 bottom=np.zeros(6)
@@ -227,7 +227,7 @@ for (i,j),c in codes.items():ax.text(j,i,c,ha="center",va="center",fontsize=8.5,
 ax.set_xticks(range(8),[v.replace("private_","Car ").replace("bus_","Bus ").replace("_"," ") for v in vehicles],rotation=48,ha="right")
 ax.set_yticks(range(16),[s.replace("_"," ") for s in stages]);ax.tick_params(length=0)
 ax.set_xticks(np.arange(-.5,8,1),minor=True);ax.set_yticks(np.arange(-.5,16,1),minor=True);ax.grid(which="minor",color="white",lw=.8)
-save(f,"A05_Coverage","R9_7FIX_STAGE_COVERAGE.csv","128 actual ledger cells. I aggregate production; I* selected consumable replacements already in aggregate; W joint WTW; A allocated proxy; P supplementary proxy; C conditional service; L separate LCIA; H historical physical; NA unidentified; — not applicable. Cell counts do not measure impact coverage.")
+save(f,"A05_Coverage","R9_7FIX_STAGE_COVERAGE.csv","128 actual ledger cells. I aggregate production; I* selected consumable replacements already in aggregate; W joint WTW; A allocated proxy; P supplementary proxy; C conditional service; L separate LCIA; H historical physical; NA unidentified; — not applicable. Cell counts do not measure impact coverage. P includes separate transfer-only dust, charger hardware, noise and bus-pack stresses.")
 for name,header,rows in [("MANIFEST.csv",["svg","png","pdf","domain","source","caption"],manifest),("LAYOUT_QA.csv",["figure","native_width_cm","min_font_pt","out_of_canvas_text_count","text_outside","visual_gate"],qa)]:
     with (F/name).open("w",encoding="utf-8",newline="") as o:
         w=csv.writer(o,lineterminator="\n");w.writerow(header);w.writerows(rows)

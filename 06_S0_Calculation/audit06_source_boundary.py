@@ -34,6 +34,14 @@ for r in C:
         r.update(coverage="INCLUDED_PARTIAL_CONSUMABLES",boundary="selected tire/fluids/lead-acid replacement in Qiao aggregate; no additive maintenance; full maintenance unresolved",source="R9_7FIX_SOURCE_BOUNDARY.csv")
     if r["vehicle"]=="private_BEV" and r["stage"]=="replacement_traction_battery":
         r["boundary"]="additional private NMC pack design; Table 2 Qiao traction pack has no replacement count; not added to Gan vehicle cycle"
+    if r["vehicle"]=="bus_BEV" and r["stage"]=="replacement_traction_battery":
+        r.update(coverage="SUPPLEMENTARY_PROXY",boundary="Shenzhen LFP additional pack equivalents; distinct from reference and initial pack",source="R9_7FIX_BUS_GAP_SCENARIOS.csv")
+    if r["stage"]=="resuspended_dust":
+        r.update(coverage="SUPPLEMENTARY_PROXY",boundary="uniform Yanqing mixed-road proxy; no matched local measurement",source="R9_7FIX_DUST_DIAGNOSTIC.csv")
+    if r["vehicle"]=="bus_BEV" and r["stage"]=="infrastructure":
+        r.update(coverage="SUPPLEMENTARY_PROXY",boundary="conditional 60kW plug-in charger hardware only; no entire infrastructure inventory",source="R9_7FIX_CHARGER_DIAGNOSTIC.csv")
+    if r["vehicle"] in ("bus_diesel","bus_natural_gas","bus_mixed_residual","bus_BEV") and r["stage"]=="noise":
+        r.update(coverage="SUPPLEMENTARY_PROXY",boundary="low-speed generic conventional/BEV acoustic-energy scenario; not citywide exposure",source="R9_7FIX_NOISE_DIAGNOSTIC.csv")
 write("R9_7FIX_STAGE_COVERAGE.csv",list(C[0]),[list(r.values()) for r in C])
 assert len(C)==128 and sum(r["coverage"]=="INCLUDED_PARTIAL_CONSUMABLES" for r in C)==2
 print("PASS: source substitutions and corrected stage coverage")

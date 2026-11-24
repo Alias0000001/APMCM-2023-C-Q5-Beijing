@@ -1,50 +1,50 @@
-"issue_id","disposition","evidence","remaining_condition"
-"A-001","CLOSED","AUDIT_01_TASK_COMPLIANCE.md","Task excerpt checked; retain."
-"A-002a","CLOSED","AUDIT_01_TASK_COMPLIANCE.md","Million-resident scope; retrospective data separate."
-"A-002b","PROXY_TESTED","R9_7AUDIT02_ALTERNATIVES.csv; R9_7FIX_JINHUA_DIAGNOSTIC.csv","Municipal/urban scope still not identified; conditional stress only."
-"A-003","PROXY_TESTED","R9_7FIX_STAGE_COVERAGE.csv; R9_7FIX_ROAD_ENVELOPE.csv","Separate climate/road/battery domains; uncovered flows NA."
-"A-004","CLOSED","R9_7AUDIT02_ALTERNATIVES.csv","Mixed fossil S-1 retained; all-diesel alternative."
-"A-005","OUT_OF_SCOPE","FINAL_AUDIT_STANDARD_V1.md","Q1–4 excluded; Q6 interface only."
-"A-006","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","10% activity exclusion design; exact seat subset NA."
-"B-001","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","Both denominator interpretations; not an observed multiplier."
-"B-002","PROXY_TESTED","audit06_remediation.mjs","Joint structural and material stress; original preserved."
-"B-003","PROXY_TESTED","audit06_remediation.mjs; audit06_road_remediation.mjs","Residual operation/production/exhaust synchronized in new designs; original mixed energy axes rate-only."
-"B-004","PROXY_TESTED","AUDIT_PREWRITE_SOURCE_BOUNDARY.md; R9_7FIX_BOUNDARY_ALTERNATIVES.csv","Qiao selected replacements already included; Xiong and Lin source scopes differ."
-"B-005","PROXY_TESTED","R9_7FIX_CALIBRATED_PKM.csv","Common conditional S0 service, not measured."
-"B-006","PROXY_TESTED","R9_7FIX_JINHUA_DIAGNOSTIC.csv","No duplicate ownership/mileage/urban multiplier; transfer diagnostic."
-"B-007","CLOSED","R9_7AUDIT02_ALTERNATIVES.csv","All-diesel S-1 alternative."
-"B-008","CLOSED","R9_7C_MANUFACTURING_FACTOR_REGISTER.csv","Correct conversion note."
-"C-001","PROXY_TESTED","R9_7D_MILEAGE_DENOMINATOR_SENSITIVITY.csv","Original denominator unresolved; paired alternatives."
-"C-002","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","Seat filter design, not empirical."
-"C-003","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","NEV mix and non-PHEV residual reassignment design."
-"C-004","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv; R9_7FIX_ROAD_ENVELOPE.csv","Unknown/hydrogen/range-extender split NA; coherent residual proxy, not measured hydrogen."
-"C-005","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","Original charging PDF unavailable; meter and high historical bus intensity tested."
-"C-006","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","Alternative grid and fuel paths; 20% uplift design, not methane measurement."
-"C-007","PROXY_TESTED","AUDIT_PREWRITE_SOURCE_BOUNDARY.md; R9_7FIX_BOUNDARY_ALTERNATIVES.csv","Qiao publisher preview exact; Gan replacement alternative; unmatched PHEV/bus."
-"C-008","PROXY_TESTED","R9_7FIX_CALIBRATED_PKM.csv","Observed PKM unavailable; common conditional service."
-"C-009","PROXY_TESTED","R9_7FIX_STAGE_COVERAGE.csv; R9_7FIX_OMITTED_MARGIN.csv","No complete LCA; omitted differential threshold."
-"C-010","PROXY_TESTED","R9_7FIX_JINHUA_DIAGNOSTIC.csv","Actual Jinhua VKT unavailable; retrospective ratios only."
-"C-011","PROXY_TESTED","R9_7FIX_ROAD_ENVELOPE.csv","IV/V/VI plus residual and blended operation stresses."
-"C-012","PARTIAL","audit06_remediation.mjs; audit05_independent.py","New capacity inputs centralized; older hardcoded constants and complete bibliography audit remain."
-"C-013","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv; audit06_road_remediation.mjs","CD gasoline and separate exhaust stress; UF not engine-off fraction."
-"C-014","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","2022 pandemic anchor; scale stress not normal-year forecast."
-"D-001","PROXY_TESTED","R9_7FIX_ROAD_ENVELOPE.csv; F05_Road_Pollutants","Wear explicitly nonzero; dust NA."
-"D-002","PROXY_TESTED","R9_7AUDIT04_BATTERY_RECIPE.csv; A04_Battery_LCIA","11 independent battery indicators; no aggregation."
-"D-003","PROXY_TESTED","R9_7FIX_TECH_PACKAGES.csv","Private packs coupled with lifetime and grid; bus pack capacity/replacement NA."
-"D-004","PROXY_TESTED","AUDIT_PREWRITE_SOURCE_BOUNDARY.md; R9_7FIX_STAGE_COVERAGE.csv","Selected consumables included; no duplicate addition."
-"D-005","PROXY_TESTED","audit06_remediation.mjs; audit06_road_remediation.mjs","Residual alternatives; no hydrogen-specific inventory."
-"D-006","CLOSED_WITH_SCOPE","R9_7FIX_STAGE_COVERAGE.csv","Dust, infrastructure, noise and full upstream pollutants unquantified."
-"D-007","PROXY_TESTED","R9_7FIX_OMITTED_MARGIN.csv; R9_7FIX_BOUNDARY_ALTERNATIVES.csv","Omitted differential thresholds and whole private-cycle substitutions; not complete city LCA."
-"D-008","ASSET_REBUILT","figures_final/remediation","128-cell matrix, wear and battery plots; manuscript linkage pending."
-"E-001","RECALC_CHECK","audit05_independent.py; R9_7FIX_TEST_SUMMARY.csv","Independent cross-check and invariants; latest CI required."
-"E-002","ASSET_REBUILT","F05_Road_Pollutants; A04_Battery_LCIA","Results in new assets; writing held as requested."
-"E-003","PROXY_TESTED","AUDIT_PREWRITE_SOURCE_BOUNDARY.md","Correct production/consumable/transport boundary."
-"E-004","PARTIAL","audit06_remediation.mjs; audit05_independent.py","Central ledger lookup; legacy refactor not complete."
-"F-001","PROXY_TESTED","R9_7FIX_REVERSAL_WITNESSES.csv; F07_Paired_Envelope","S4 negative witness, conditional; update claims during writing."
-"H-001","ASSET_REBUILT","F01_Framework; F02_Activity; F03_Boundary","Scope and chronology separated."
-"H-002","ASSET_REBUILT","F04_Energy_GWP; F05_Road_Pollutants","Mode/stage and pollutant units separate."
-"H-003","ASSET_REBUILT","F07_Paired_Envelope; F08_Threshold","Deterministic envelope, threshold, legend separate."
-"H-004","ASSET_REBUILT","A01_Transfer; A02_PKM; A03_Meter","Conditional service, transfer and meter."
-"H-005","ASSET_REBUILT","A04_Battery_LCIA; A05_Coverage","Battery domain and coverage matrix."
-"H-006","PARTIAL","LAYOUT_QA.csv; MANIFEST.csv","Screen-rendered plots inspected, 15cm native, final printed manuscript and grayscale check pending."
-"H-007","PARTIAL","R6_AWARD_PAPER_Q5_METHOD_AUDIT.md; R9_7G1_MANUSCRIPT_AND_AWARD_AUDIT.md","One same-topic verified; additional obtainable award papers not confirmed; no fabricated samples."
+issue_id,disposition,evidence,remaining_condition
+A-001,CLOSED,AUDIT_01_TASK_COMPLIANCE.md,Task excerpt checked; retain.
+A-002a,CLOSED,AUDIT_01_TASK_COMPLIANCE.md,Million-resident scope; retrospective data separate.
+A-002b,PROXY_TESTED,R9_7AUDIT02_ALTERNATIVES.csv; R9_7FIX_JINHUA_DIAGNOSTIC.csv,Municipal/urban scope still not identified; conditional stress only.
+A-003,PROXY_TESTED,R9_7FIX_STAGE_COVERAGE.csv; R9_7FIX_ROAD_ENVELOPE.csv,Separate climate/road/battery domains; uncovered flows NA.
+A-004,CLOSED,R9_7AUDIT02_ALTERNATIVES.csv,Mixed fossil S-1 retained; all-diesel alternative.
+A-005,OUT_OF_SCOPE,FINAL_AUDIT_STANDARD_V1.md,Q1–4 excluded; Q6 interface only.
+A-006,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv,10% activity exclusion design; exact seat subset NA.
+B-001,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv,Both denominator interpretations; not an observed multiplier.
+B-002,PROXY_TESTED,audit06_remediation.mjs,Joint structural and material stress; original preserved.
+B-003,PROXY_TESTED,audit06_remediation.mjs; audit06_road_remediation.mjs,Residual operation/production/exhaust synchronized in new designs; original mixed energy axes rate-only.
+B-004,PROXY_TESTED,AUDIT_PREWRITE_SOURCE_BOUNDARY.md; R9_7FIX_BOUNDARY_ALTERNATIVES.csv,Qiao selected replacements already included; Xiong and Lin source scopes differ.
+B-005,PROXY_TESTED,R9_7FIX_CALIBRATED_PKM.csv,"Common conditional S0 service, not measured."
+B-006,PROXY_TESTED,R9_7FIX_JINHUA_DIAGNOSTIC.csv,No duplicate ownership/mileage/urban multiplier; transfer diagnostic.
+B-007,CLOSED,R9_7AUDIT02_ALTERNATIVES.csv,All-diesel S-1 alternative.
+B-008,CLOSED,R9_7C_MANUFACTURING_FACTOR_REGISTER.csv,Correct conversion note.
+C-001,PROXY_TESTED,R9_7FIX_MILEAGE_SOURCE_ALTERNATIVES.csv; R9_7D_MILEAGE_DENOMINATOR_SENSITIVITY.csv,"2019 Beijing I/M 10,500 km independent annual proxy; exact 2022 original denominator unresolved."
+C-002,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv,"Seat filter design, not empirical."
+C-003,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv,NEV mix and non-PHEV residual reassignment design.
+C-004,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv; R9_7FIX_ROAD_ENVELOPE.csv,"Unknown/hydrogen/range-extender split NA; coherent residual proxy, not measured hydrogen."
+C-005,PROXY_TESTED,R9_7FIX_BUS_GAP_SCENARIOS.csv; R9_7FIX_GAP_INPUTS.csv,Shenzhen 1 kWh/km + 92% charging efficiency with separately known boundary; national excerpt 0.736 (page 502); original Beijing meter unresolved.
+C-006,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv,"Alternative grid and fuel paths; 20% uplift design, not methane measurement."
+C-007,PROXY_TESTED,AUDIT_PREWRITE_SOURCE_BOUNDARY.md; R9_7FIX_BOUNDARY_ALTERNATIVES.csv,Qiao publisher preview exact; Gan replacement alternative; unmatched PHEV/bus.
+C-008,PROXY_TESTED,R9_7FIX_PKM_BREAK_EVEN.csv; R9_7FIX_CALIBRATED_PKM.csv,"Explicit occupancy/boarding-distance break-even, no observed bus PKM."
+C-009,PROXY_TESTED,R9_7FIX_STAGE_COVERAGE.csv; R9_7FIX_OMITTED_MARGIN.csv,No complete LCA; omitted differential threshold.
+C-010,PROXY_TESTED,R9_7FIX_TRANSFER_SIGN.csv; R9_7FIX_JINHUA_DIAGNOSTIC.csv,"Reference sign invariant for positive separate mode scaling; absolute Jinhua VKT NA; 13,500 southern-city stress is not Jinhua."
+C-011,PROXY_TESTED,R9_7FIX_ROAD_ENVELOPE.csv,IV/V/VI plus residual and blended operation stresses.
+C-012,PARTIAL,audit06_gap_alternatives.mjs; audit05_independent.py; R9_7FIX_GAP_INPUTS.csv,Private capacities and factor now ledger-derived in new extension; legacy constants and bibliography not all refactored.
+C-013,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv; audit06_road_remediation.mjs,CD gasoline and separate exhaust stress; UF not engine-off fraction.
+C-014,PROXY_TESTED,R9_7FIX_TECH_PACKAGES.csv,2022 pandemic anchor; scale stress not normal-year forecast.
+D-001,PROXY_TESTED,R9_7FIX_ROAD_ENVELOPE.csv; F05_Road_Pollutants,Wear explicitly nonzero; dust NA.
+D-002,PROXY_TESTED,R9_7AUDIT04_BATTERY_RECIPE.csv; A04_Battery_LCIA,11 independent battery indicators; no aggregation.
+D-003,PROXY_TESTED,R9_7FIX_BUS_GAP_SCENARIOS.csv; World Bank 2021 p107,Bus LFP capacity and extra pack now conditional proxy; private plus bus replacement stress; actual Beijing fleet capacities/replacements unknown.
+D-004,PROXY_TESTED,AUDIT_PREWRITE_SOURCE_BOUNDARY.md; R9_7FIX_STAGE_COVERAGE.csv,Selected consumables included; no duplicate addition.
+D-005,PROXY_TESTED,R9_7FIX_H2_RESIDUAL_DIAGNOSTIC.csv; R9_7FIX_GAP_INPUTS.csv,Foshan consumption transfer and designed hydrogen WTW factors; manufacturing differential thresholds; actual hydrogen and range-extender mix not identified.
+D-006,PROXY_TESTED,R9_7FIX_DUST_DIAGNOSTIC.csv; R9_7FIX_CHARGER_DIAGNOSTIC.csv; R9_7FIX_NOISE_DIAGNOSTIC.csv; R9_7FIX_GENERATION_POLLUTANTS.csv,"Separate dust, hardware, low-speed acoustics and Southern Grid generation-only stress; no matched comprehensive local exposure or upstream inventory."
+D-007,PROXY_TESTED,R9_7FIX_BUS_GAP_SCENARIOS.csv; R9_7FIX_CHARGER_DIAGNOSTIC.csv; R9_7FIX_BOUNDARY_ALTERNATIVES.csv,Joint replacement and historical scrapping stress; complete maintenance and EOL still unmatched.
+D-008,ASSET_REBUILT,figures_final/remediation,"128-cell matrix, wear and battery plots; manuscript linkage pending."
+E-001,RECALC_CHECK,audit05_independent.py; R9_7FIX_TEST_SUMMARY.csv,Independent cross-check and invariants; latest CI required.
+E-002,ASSET_REBUILT,F05_Road_Pollutants; A04_Battery_LCIA,Results in new assets; writing held as requested.
+E-003,PROXY_TESTED,AUDIT_PREWRITE_SOURCE_BOUNDARY.md,Correct production/consumable/transport boundary.
+E-004,PARTIAL,audit06_remediation.mjs; audit05_independent.py,Central ledger lookup; legacy refactor not complete.
+F-001,PROXY_TESTED,R9_7FIX_REVERSAL_WITNESSES.csv; F07_Paired_Envelope,"S4 negative witness, conditional; update claims during writing."
+H-001,ASSET_REBUILT,F01_Framework; F02_Activity; F03_Boundary,Scope and chronology separated.
+H-002,ASSET_REBUILT,F04_Energy_GWP; F05_Road_Pollutants,Mode/stage and pollutant units separate.
+H-003,ASSET_REBUILT,F07_Paired_Envelope; F08_Threshold,"Deterministic envelope, threshold, legend separate."
+H-004,ASSET_REBUILT,A01_Transfer; A02_PKM; A03_Meter,"Conditional service, transfer and meter."
+H-005,ASSET_REBUILT,A04_Battery_LCIA; A05_Coverage,Battery domain and coverage matrix.
+H-006,PARTIAL,LAYOUT_QA.csv; MANIFEST.csv; updated FINAL_AUDIT_STANDARD_V1.md,BUS sage palette user-directed; final paper print-size review remains.
+H-007,PARTIAL,R6_AWARD_PAPER_Q5_METHOD_AUDIT.md; https://github.com/BernardW18/mcm_resources,"External repository explicitly lacks 2023–25 award originals; no additional verified same-topic samples; use published LCA methodological benchmark, not mislabeled winners."
