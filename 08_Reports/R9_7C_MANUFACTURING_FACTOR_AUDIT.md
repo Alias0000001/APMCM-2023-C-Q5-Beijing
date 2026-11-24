@@ -60,3 +60,29 @@ Run:
 - python -m unittest discover -s tests -v
 
 The script writes three CSV outputs. Regression tests check six scenarios, nonnegative burdens, S3=S4 manufacturing, bus VKT allocation and the separate CO2/CO2e ledger rule. GitHub Actions is configured to run these modules and tests on this branch only.
+
+
+## 8. Provisional integrated GWP ledger
+
+To support a common GWP indicator, a second private-car factor set is used in parallel with the Yang2021 CO2-only ledger:
+- ICEV: Qiao2017 cradle-to-gate 9.985 tCO2e/vehicle.
+- BEV-NMC: Qiao2017 cradle-to-gate 15.005 tCO2e/vehicle.
+- PHEV-NMC: Xiong2019 production-only 8.67043 tCO2e/vehicle, reconstructed from body, battery, fluids, assembly and transport contributions.
+All vehicle-production factors already include the initial traction battery. Do not add R9.3 battery GWP again. Apply a common project life of 150,000km for annualization; this is the model's normalization assumption, not a claim that each source used the same lifetime.
+
+Combine this private-car GWP proxy with Lin2015 bus manufacturing GWP and R9.7B WTW operating GWP. The resulting indicator is explicitly partial: vehicle production + bus raw-material/assembly + WTW operation. It excludes vehicle maintenance, EOL/recycling, charging/refuelling infrastructure, and non-exhaust road emissions.
+
+| Scenario | Manufacturing GWP kt/y | WTW operating GWP kt/y | Partial LCA GWP kt/y |
+|---|---:|---:|---:|
+| S-1 | 131.258 | 453.331 | 584.589 |
+| S0 | 135.100 | 432.689 | 567.789 |
+| S1 | 135.232 | 423.293 | 558.525 |
+| S2 | 194.894 | 301.348 | 496.242 |
+| S3 | 195.026 | 291.952 | 486.978 |
+| S4 | 195.026 | 145.976 | 341.002 |
+
+Under this partial boundary, S0→S3 reduction is 14.23%, and S0→S4 is 39.94%. Manufacturing accounts for 23.79% of S0 and 40.05% of S3 partial GWP. This is materially different from the operation-only reductions (32.53% and 66.26%), demonstrating why production burdens must be included before claiming full lifecycle reductions.
+
+The composite GWP factor set is a transparent cross-study proxy, not a single harmonized fleet-specific LCA: Qiao2017 supplies ICEV/BEV and Xiong2019 supplies PHEV. The PHEV factor is the largest structural uncertainty. Yang2021 reports a matched PHEV production CO2 intensity of 74–90g/km (CO2-only), equivalent to 11.1–13.5t CO2 over 150,000km; this is not directly substituted into GWP. Peng2023 reports PHEV vehicle-cycle GWP 11.572–12.186t/vehicle, which includes stages beyond production and is a cross-check only. Keep these parallel source estimates visible and test the PHEV factor in R9.7F.
+
+The Hangzhou2018 bus alternative remains separate: its Table 6 breaks the BEV raw-material stage into vehicle materials 125.178t CO2 and battery production 88.280t CO2, plus 1.580t assembly; its diesel counterpart is 120.054t plus1.580t. The paper's methods mention one battery replacement, but 88.280/14.713=6 battery-set equivalents; this pack-count/replacement interpretation is unresolved. Use 215.037t BEV and121.634t diesel only as a source-specific CO2 boundary alternative, not as the base GWP factor.
