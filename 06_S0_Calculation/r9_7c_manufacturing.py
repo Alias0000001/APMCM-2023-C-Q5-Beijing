@@ -45,7 +45,7 @@ for r in vkt:
     car_gwp=(vi*9985+vb*15005+vp*8670.43)/150000/1000
     mfg_gwp=car_gwp+total
     wtw=energy_by_s[name]
-    gwp.append([name,car_gwp,total,mfg_gwp,"CO2e","QIAO2017+XIONG2019+LIN2015","cross-study harmonized proxy; factors include initial batteries"])
+    gwp.append([name,car_gwp,total,mfg_gwp,"CO2e","QIAO2017+XIONG2019","Qiao ICEV/BEV-NMC; Xiong PHEV-NMC; initial batteries included"])
     partial.append([name,car_gwp,total,mfg_gwp,wtw,mfg_gwp+wtw,"CO2e","vehicle production + bus raw materials/assembly + WTW operation; excludes maintenance/EOL/infrastructure"])
 write("R9_7C_PRIVATE_MANUFACTURING_SCENARIOS.csv",
  ["scenario","private_ICEV_vkt_km","private_BEV_vkt_km","private_PHEV_vkt_km","manufacturing_CO2_low_t_y","manufacturing_CO2_base_t_y","manufacturing_CO2_high_t_y","impact_unit","source_id","scope_note"],priv)
@@ -58,4 +58,11 @@ write("R9_7C_PRIVATE_MANUFACTURING_GWP_SCENARIOS.csv",
  [[r[0],r[1],r[5],r[6]] for r in gwp])
 write("R9_7C_PARTIAL_LCA_GWP_SCENARIOS.csv",
  ["scenario","private_vehicle_production_GWP_t_y","bus_manufacturing_GWP_t_y","total_manufacturing_GWP_t_y","WTW_operating_GWP_t_y","partial_LCA_GWP_t_y","impact_unit","scope_note"],partial)
-print(f"PASS: {len(vkt)} scenarios; private and bus VKT conserved; CO2 and GWP ledgers separated; partial LCA GWP reconciled")
+assert len(energy)==6
+assert len(partial)==6 and len(gwp)==6
+for row in partial:
+    assert all(math.isfinite(float(x)) and float(x)>=0 for x in row[1:6])
+assert math.isclose(next(r[3] for r in partial if r[0]=="S3"),
+                    next(r[3] for r in partial if r[0]=="S4"), rel_tol=0, abs_tol=1e-8)
+assert next(r[5] for r in partial if r[0]=="S4") < next(r[5] for r in partial if r[0]=="S3")
+print(f"PASS: {len(vkt)} scenarios; VKT conserved; CO2 and CO2e ledgers separate; partial LCA GWP reconciled")
