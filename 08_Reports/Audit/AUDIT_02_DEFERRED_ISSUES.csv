@@ -2,7 +2,7 @@ issue_id,priority,status,owner_stage,acceptance
 B-001,P1,CLOSED_WITH_PROXY,Audit-03,Denominators not matched; two conditional alternatives retained; C-001 requires paired stress interpretation
 B-002,P1,PENDING,Audit-06,Audit-03 confirmed source scope; 243-set structural grid done; synchronize residuals and couple material axes
 B-003,P1,PENDING,Audit-06,Synchronize mixed residual technology across operation production and exhaust in joint sensitivity or relabel rate-only
-B-004,P1,PENDING,Audit-04,Review compatible manufacturing and omitted stages; no double counting
+B-004,P1,PENDING,Audit-05/08,Audit-04 boundary mapping completed; remaining matched manufacturing and transport scope limitations tracked D-004 D-007
 B-005,P2,PENDING,Audit-06/08,Calibrate absolute PKM stress to common S0 proxy if comparing across cases; same existing equal-service annual burdens
 B-006,P1,PENDING,Audit-06,Audit-03 verified municipal and urban population; unresolved activity fractions treated as proxies; avoid duplicate multipliers
 B-007,P2,CLOSED,Audit-02,All-diesel S-1 supplementary calculation; mixed fossil baseline retained

@@ -1,0 +1,9 @@
+issue_id,severity,status,owner_stage,acceptance
+D-001,P1,CLOSED_WITH_PROXY,Audit-04,Nonexhaust wear factors and 84 rows computed; dust remains NA; include results in paper
+D-002,P1,CLOSED_WITH_PROXY,Audit-04,Private battery 11 indicator profiles with current VKT; no addition to vehicle GWP
+D-003,P1,PENDING,Audit-06,Additional private battery replacements calculated; combine with grid and lifetime when coherent; bus capacity and replacement unresolved
+D-004,P1,PENDING,Audit-05/08,Manufacturing subtotal includes source-specific transport; verify production allocation and label boundaries; no false complete LCA
+D-005,P1,PENDING,Audit-06,Hydrogen and range-extender residual unobserved; coherent proxy or quantified stress and explicit limits
+D-006,P1,CLOSED_WITH_SCOPE,Audit-04,Noise infrastructure dust and missing full upstream pollution explicitly excluded from quantified boundary; no claim of negligible impact
+D-007,P1,PENDING,Audit-06/08,Maintenance and complete EOL unmatched; report omitted differential threshold and retained partial GWP; verify scope in final paper
+D-008,P2,PENDING,Audit-07,Update coverage figure and add wear and private battery indicators; keep old diagnostic figures separate

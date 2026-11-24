@@ -34,3 +34,6 @@ A-003 ecological-scope decision addressed with quantified wear and battery categ
 
 ## Provisional score
 Five equal 2-point criteria: scope/coverage pass 2, physical/characterized separation pass 2, production compatibility conditional 1, materiality/additions conditional 1, comparison/interpretation conditional 1. 7/10. No complete cradle-to-grave or ISO compliance claim; no empirical city validation. 
+
+## Evidence and handoff
+EEA Report No 19/2020, Transport and environment report 2020: Train or plane? (2021), printed p81, Tables A1.4/A1.5. Original tables inspected visually. Source factors from EMEP/EEA 2019 Tier 1; use no dust resuspension. Previous battery-capacity proxies 40/12.8 kWh and 150000 km are already in R9_LCI_PARAMETER_LEDGER.csv; this is a hypothetical private battery calculation, not actual battery sales. Audit-04 new issue ledger: AUDIT_04_DEFERRED_ISSUES.csv. First CI 45415319202 passed; generated output commit c37474b. No final manuscript text or images changed; mandatory later integration.

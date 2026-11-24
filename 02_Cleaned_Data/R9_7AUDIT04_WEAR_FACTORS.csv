@@ -1,8 +1,8 @@
 factor_case,vehicle,pollutant,tyre_brake_g_per_km,surface_g_per_km,sum_g_per_km,source
-"EEA_generic","car","PM2_5","0.0074","0.0041","0.0115","EEA TERM 2020 (2021), p81 Tables A1.4/A1.5"
-"EEA_generic","car","PM10","0.0138","0.0075","0.0213","EEA TERM 2020 (2021), p81 Tables A1.4/A1.5"
-"EEA_generic","bus","PM2_5","0.0316","0.0205","0.0521","EEA TERM 2020 (2021), p81 Tables A1.4/A1.5"
-"EEA_generic","bus","PM10","0.059","0.038","0.097","EEA TERM 2020 (2021), p81 Tables A1.4/A1.5"
+"EEA_generic","car","PM2_5","0.0074","0.0041","0.0115","EEA Report No 19/2020, Transport and environment report 2020: Train or plane? p81, Tables A1.4/A1.5"
+"EEA_generic","car","PM10","0.0138","0.0075","0.0213","EEA Report No 19/2020, Transport and environment report 2020: Train or plane? p81, Tables A1.4/A1.5"
+"EEA_generic","bus","PM2_5","0.0316","0.0205","0.0521","EEA Report No 19/2020, Transport and environment report 2020: Train or plane? p81, Tables A1.4/A1.5"
+"EEA_generic","bus","PM10","0.059","0.038","0.097","EEA Report No 19/2020, Transport and environment report 2020: Train or plane? p81, Tables A1.4/A1.5"
 "light_low","car_BEV","PM2_5","0.0053","0.0041","0.0094","OECD 2020 Table 3.6 PC component rows; https://www.oecd.org/en/publications/non-exhaust-particulate-emissions-from-road-transport_4a4dc6ca-en/full-report/component-7.html"
 "light_low","car_BEV","PM10","0.0085","0.0075","0.016","OECD 2020 Table 3.7 PC component rows; https://www.oecd.org/en/publications/non-exhaust-particulate-emissions-from-road-transport_4a4dc6ca-en/full-report/component-7.html"
 "light_high","car_BEV","PM2_5","0.0056","0.0041","0.0097","OECD 2020 Table 3.6 PC component rows; https://www.oecd.org/en/publications/non-exhaust-particulate-emissions-from-road-transport_4a4dc6ca-en/full-report/component-7.html"

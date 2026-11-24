@@ -93,3 +93,5 @@
 
 ## Audit-04 — ecological scope
 Added 128-cell coverage, 84 wear rows, 132 private-battery LCIA rows and 18 extra-pack stress rows. Baseline unchanged; 7/10 provisional.
+
+- Audit-04 follow-up: recorded inherited issue dispositions and source locator; first Audit-04 CI 45415319202 passed. Supplementary results require integration at Audit-07/08; no numerical change.
