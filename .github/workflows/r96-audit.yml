@@ -1,0 +1,62 @@
+name: R9.6 reproducibility and figure audit
+
+on:
+  push:
+    branches:
+      - work/r96-figures-energy-audit-20261124
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Regenerate R7 activity and energy
+        run: python 06_S0_Calculation/r7_s0_co2_scenarios.py
+
+      - name: Regenerate R9.3 battery and historical bus modules
+        run: |
+          python 06_S0_Calculation/r9_3_ncm622_battery_lci.py
+          python 06_S0_Calculation/r9_3_legacy_beijing_bus_lci.py
+
+      - name: Regenerate R9.1 and R9.2 foreground modules
+        run: |
+          python 06_S0_Calculation/r9_lci_foreground.py
+          python 06_S0_Calculation/r9_lci_passenger_car_module.py
+          python 06_S0_Calculation/r9_lci_bus_use_module.py
+
+      - name: Regenerate R9.4 and R9.5 integrated outputs
+        run: |
+          python 06_S0_Calculation/r9_4_integrate_lci.py
+          python 06_S0_Calculation/r9_5_sensitivity.py
+
+      - name: Generate SVG figures from CSV inputs
+        run: python 06_S0_Calculation/r9_6_generate_figures.py
+
+      - name: Run regression tests and SVG validation
+        run: python -m unittest discover -s tests -v
+
+      - name: Commit regenerated CSV and SVG outputs to this branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 02_Cleaned_Data/R7_S0_CO2_scenarios.csv
+          git add 07_LCA_LCIA/*.csv
+          git add 09_Paper_Draft/figures/*.svg
+          git diff --cached --quiet || git commit -m "Regenerate R9.6 audited outputs and figures"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
