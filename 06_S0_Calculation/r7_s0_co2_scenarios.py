@@ -18,8 +18,8 @@ PRIVATE_TOTAL=5_073_000*28.4*365
 NEV=528_000
 ICE=4_545_000
 GRID=0.5554
-EV_CAR_KWH_KM=.152
-EV_BUS_KWH_KM=.626
+EV_CAR_KWH_KM=.160  # 2023-10 private passenger-car row: 16.0 kWh/100km; 15.2 is taxi row
+EV_BUS_KWH_KM=.626  # 2023-10 bus row; charging-meter boundary not specified
 # Assumed coefficients below: screening stress test, not measured Beijing 2023 means.
 GASOLINE_KGCO2_L=2.31
 DIESEL_KGCO2_L=2.68
