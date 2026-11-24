@@ -1,7 +1,7 @@
 scenario,private_manufacturing_CO2_base_t_y,private_manufacturing_CO2_low_t_y,private_manufacturing_CO2_high_t_y,bus_manufacturing_GHG_tCO2e_y,aggregation_rule
-S-1,130890.298562,117893.504022,143383.991379,5057.347900,separate indicators; do not aggregate CO2 with CO2e
-S0,134035.863609,120511.471389,147097.402243,5245.147232,separate indicators; do not aggregate CO2 with CO2e
-S1,134035.863609,120511.471389,147097.402243,5377.470128,separate indicators; do not aggregate CO2 with CO2e
-S2,174418.659735,153564.254766,195273.064703,5245.147232,separate indicators; do not aggregate CO2 with CO2e
-S3,174418.659735,153564.254766,195273.064703,5377.470128,separate indicators; do not aggregate CO2 with CO2e
-S4,174418.659735,153564.254766,195273.064703,5377.470128,separate indicators; do not aggregate CO2 with CO2e
+S-1,130890.29856248271,117893.50402232588,143383.99137850446,5057.347900056776,do not aggregate CO2-only private and CO2e bus columns
+S0,134035.86360876847,120511.47138860862,147097.402242724,5245.1472324615615,do not aggregate CO2-only private and CO2e bus columns
+S1,134035.86360876847,120511.47138860862,147097.402242724,5377.470127729674,do not aggregate CO2-only private and CO2e bus columns
+S2,174418.65973465185,153564.25476637826,195273.06470292545,5245.1472324615615,do not aggregate CO2-only private and CO2e bus columns
+S3,174418.65973465185,153564.25476637826,195273.06470292545,5377.470127729674,do not aggregate CO2-only private and CO2e bus columns
+S4,174418.65973465185,153564.25476637826,195273.06470292545,5377.470127729674,do not aggregate CO2-only private and CO2e bus columns
