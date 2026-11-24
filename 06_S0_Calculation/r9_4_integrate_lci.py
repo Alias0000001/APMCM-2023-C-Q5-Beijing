@@ -270,8 +270,27 @@ def main():
                     source="Sun2020" if vehicle in ("BEV","PHEV") else "NA"
                 else:grade="MISSING";source="NA"
             else:
+                note="2023 matched bus-stage input unavailable; full cradle-to-grave remains incomplete"
                 if phase=="energy_WTW" and vehicle in ("bus_diesel","bus_assumed_BEV"):
                     grade="PARTIAL_PHYSICAL";source="Yang2021_Table6 + R7"
+                    note="Partial WTW physical flows only; bus manufacturing and other fuels remain unresolved"
+                elif phase=="vehicle_materials":
+                    grade="HISTORICAL_GWP_PROXY_ONLY";source="LIN2015_BEIJING_BUS"
+                    note="2015 Beijing raw-material GWP proxy; not 2023 matched vehicle production"
+                elif phase=="vehicle_assembly":
+                    grade="HISTORICAL_GWP_PROXY_ONLY";source="LIN2015_BEIJING_BUS"
+                    note="2015 Beijing assembly/distribution-boundary proxy; not 2023 matched vehicle production"
+                elif phase=="vehicle_distribution":
+                    grade="HISTORICAL_PROXY_NOT_SEPARABLE";source="LIN2015_BEIJING_BUS"
+                    note="Distribution is not separately disaggregated from the historical assembly/distribution boundary"
+                elif phase=="battery_manufacturing" and vehicle=="bus_assumed_BEV":
+                    grade="HISTORICAL_INCLUDED_IN_MATERIALS_NOT_SEPARATE";source="LIN2015_BEIJING_BUS"
+                    note="Historical BEB battery-production contribution is embedded in material-stage proxy; chemistry and 2023 pack are not matched"
+                elif phase=="battery_manufacturing":
+                    grade="NOT_APPLICABLE_TRACTION_BATTERY";source="NA"
+                elif phase=="passenger_km":
+                    grade="HISTORICAL_REFERENCE_ONLY";source="LIN2015_BEIJING_BUS"
+                    note="Historical Beijing bus passenger-turnover reference only; no public 2023 city-bus PKM"
                 else:
                     grade="MISSING";source="NA"
             coverage.append(dict(vehicle=vehicle,stage=phase,
@@ -279,7 +298,7 @@ def main():
                 source_id=source,
                 is_2023_direct_observation="NO",
                 fully_modelled_cradle_to_grave="NO",
-                note="2015 Lin bus material shares and PKM only historical alternatives; 2023 matched inputs unavailable"))
+                note=note))
     check("COVERAGE_MATRIX_RECORDS",len(coverage),8*len(phases))
 
     # Bridge diagnostics and unsupported downstream interpretation guards.
