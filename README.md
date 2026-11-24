@@ -1,6 +1,15 @@
 # APMCM 2023 C Problem 5 — Beijing
 
-## Latest: R9.3 NCM622 battery and Beijing historical bus LCI (2026-11-24)
+## Latest: R9.4 gated integration (2026-11-24)
+
+**Read [R9.4 integration report](08_Reports/R9_4_LCI_LCIA_INTEGRATION_REPORT.md).** This version integrates the R7/R9 foreground activity into **three intentionally separate reporting domains**:
+- [physical pollutant masses, kg/year](07_LCA_LCIA/R9_4_PHYSICAL_FLOW_LEDGER.csv) — partial Yang2021 life-cycle sub-stages, no full-LCA totals;
+- [two-stage GWP100 CO2e screening](07_LCA_LCIA/R9_4_TWO_STAGE_GWP100_SCREENING.csv) — Qiao2017 complete vehicle production + Peng2017 fuel/electricity WTW, for ICEV and BEV alternatives only; PHEV/bus production NA;
+- [battery-only ReCiPe LCIA](07_LCA_LCIA/R9_4_BATTERY_RECIPE_ONLY.csv) — Sun2020 NCM622, manufacture and hypothetical 100% hydromet recycling; not added to either prior domain.
+
+**Model script**: `python 06_S0_Calculation/r9_4_integrate_lci.py`. See [coverage matrix](07_LCA_LCIA/R9_4_STAGE_COVERAGE_MATRIX.csv) and [32 independent consistency checks](07_LCA_LCIA/R9_4_INTEGRATION_TESTS.csv). Two upstream CSV issues (168g/MJ electricity factor column alignment, PHEV electricity formula reconciliation) were corrected. No claim of full citywide cradle-to-grave results or GitHub CI pass.
+
+## Previous: R9.3 NCM622 battery and Beijing historical bus LCI (2026-11-24)
 
 **Read [R9.3 report](08_Reports/R9_3_NCM622_BATTERY_AND_BUS_LCI_REPORT.md)** for the detailed NCM622 material BOM, factory and recycling inventories, ReCiPe LCIA factors, and 2015 Beijing bus historical-transfer stress scenario. New models are **separate modules**: the Sun2020 battery pack mass does not match the Yang2021 vehicle battery mass, and the 2015 bus electricity/fuel system is not the 2023 observed fleet.
 
