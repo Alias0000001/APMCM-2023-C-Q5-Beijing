@@ -25,7 +25,7 @@ bus=[]
 ledger=[]
 for r in vkt:
     name=r["scenario"]
-    vi=float(r["private_ICEV_VKT_km"]);vb=float(r["private_BEV_VKT_km"]);vp=float(r["private_PHEV_VKT_km"])
+    vi=float(r["private_ICEV_vkt_km"]);vb=float(r["private_BEV_vkt_km"]);vp=float(r["private_PHEV_vkt_km"])
     def burden(mult):
         return (vi*factors["ICEV"][mult]+vb*factors["BEV"][mult]+vp*factors["PHEV"][mult])/1e6
     lo,mid,hi=burden(1),burden(0),burden(2)
@@ -37,7 +37,7 @@ for r in vkt:
     bus.append([name,bd,bg,bh,bb,bu,ud,ug,total,"CO2e","LIN2015","raw materials+assembly; EOL excluded"])
     ledger.append([name,mid,lo,hi,total,"do not sum CO2-only private and CO2e bus columns"])
 write("R9_7C_PRIVATE_MANUFACTURING_SCENARIOS.csv",
- ["scenario","private_ICEV_VKT_km","private_BEV_VKT_km","private_PHEV_VKT_km","manufacturing_CO2_low_t_y","manufacturing_CO2_base_t_y","manufacturing_CO2_high_t_y","impact_unit","source_id","scope_note"],priv)
+ ["scenario","private_ICEV_vkt_km","private_BEV_vkt_km","private_PHEV_vkt_km","manufacturing_CO2_low_t_y","manufacturing_CO2_base_t_y","manufacturing_CO2_high_t_y","impact_unit","source_id","scope_note"],priv)
 write("R9_7C_BUS_MANUFACTURING_SCENARIOS.csv",
  ["scenario","bus_diesel_VKT_km","bus_natural_gas_VKT_km","bus_hybrid_residual_VKT_km","bus_BEV_VKT_km","bus_unclassified_VKT_km","unclassified_allocated_diesel_VKT_km","unclassified_allocated_gas_VKT_km","bus_manufacturing_GHG_tCO2e_y","impact_unit","source_id","scope_note"],bus)
 write("R9_7C_MANUFACTURING_LEDGER.csv",
