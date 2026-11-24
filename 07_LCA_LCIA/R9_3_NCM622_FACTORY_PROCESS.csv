@@ -1,0 +1,11 @@
+process,flow_id,quantity_per_kWh,unit,source_id,source_location,flow_role,reference_unit
+mixing,electricity,3.6,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+coating_drying,electricity,25.2,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+coating_drying,steam,17,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+vacuum_drying,electricity,28.8,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+vacuum_drying,steam,17,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+formation,electricity,10.8,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+module_pack_assembly,electricity,3.6,MJ,SUN2020_NCM622,Table S6,process_input,capacity_kWh_1_battery_pack
+initial_charging,electricity,4,MJ,SUN2020_NCM622,Main text Section 3.3.2; additional to Table S6 72MJ,process_input,capacity_kWh_1_battery_pack
+mixing,industrial_water,33.9,kg,SUN2020_NCM622,Main text & Table S6,process_input,capacity_kWh_1_battery_pack
+cell_manufacture,particulate_unspecified_size,20,g,SUN2020_NCM622,"Main text, not PM2.5 / not PM10 impact factor",physical_emission_unspecified_particle_size,capacity_kWh_1_battery_pack
