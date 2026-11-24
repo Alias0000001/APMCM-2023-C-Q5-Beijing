@@ -31,7 +31,7 @@ for r in vkt:
     lo,mid,hi=burden(1),burden(0),burden(2)
     priv.append([name,vi,vb,vp,lo,mid,hi,"CO2 only","YANG2021","not CO2e; keep separate from WTW GWP"])
     bd=float(r["bus_diesel_vkt_km"]);bg=float(r["bus_natural_gas_vkt_km"])
-    bh=float(r["bus_mixed_nonBEV_vkt_km"]);bb=float(r["bus_BEV_vkt_km"]);bu=float(r["bus_unclassified_VKT_km"])
+    bh=float(r["bus_mixed_nonBEV_vkt_km"]);bb=float(r["bus_BEV_vkt_km"]);bu=float(r["bus_unclassified_vkt_km"])
     ud=bu*unknown_diesel_share;ug=bu-ud
     total=((bd+ud)*107.1+(bg+ug)*113.4+bh*115.875+bb*119.37)/1e6
     bus.append([name,bd,bg,bh,bb,bu,ud,ug,total,"CO2e","LIN2015","raw materials+assembly; EOL excluded"])
