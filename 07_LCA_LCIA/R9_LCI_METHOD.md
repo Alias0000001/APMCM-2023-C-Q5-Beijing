@@ -229,3 +229,27 @@ R9.3仅将历史能源因子与R7的2023条件分组VKT相乘进行时间迁移�
 - `python 06_S0_Calculation/r9_3_legacy_beijing_bus_lci.py`
 
 R9.3已形成物理清单、经表征的电池环境影响、公交历史代理三个**相互分离**的模块，不声称全市LCA/LCIA已闭合。
+
+## 15. R9.4 跨模块整合：三条互斥的量化结果链
+
+R9.4统一`vehicle`、`stage`、`source_id`、`flow`、`unit`、`status`等字段，但**不对物种质量/CO2e/LCIA当量强行使用同一加法**。完整论证见 `08_Reports/R9_4_LCI_LCIA_INTEGRATION_REPORT.md`。
+
+**A轨物理物种清单：** Yang2021的CO2、VOC、NOx、PM2.5、SO2物种质量，按私人ICEV/BEV/PHEV材料、零部件、分销、维护、报废拆解能耗、能源WTW六阶段年化；公交仅柴油和R7假定纯电公交能源WTW。数据单位kg物种/year与kg物种/vehicle-km。未知气/混动/未分类公交保留NA；已核算小计不等于完整生命周期排放，也不一定是理论下界。
+
+**B轨两阶段CO2e筛查：** Qiao2017整车cradle-to-gate GWP/车（ICEV 9985kg、BEV-NMC 15005kg、BEV-LFP 15174kg）按200000km分配，配Peng2017燃油/电力WTW gCO2e/MJ。可以给出私车ICEV、BEV-NMC/LFP“车辆制造＋能源全链条”两阶段气候变化量，但**不包含维护、车辆报废、城市交通基础设施、非尾气污染**。BEV-NMC与BEV-LFP为同一车辆活动量下的互斥替代情景；PHEV和公交制造缺失故两阶段完整数值NA。主情景采用Peng2017 Table8，正文差异168g/MJ电力值是来源冲突的敏感性，而非2023北京电力系数。CO2e GWP100的跨论文表征版本仍需确认。
+
+**C轨电池专项ReCiPe LCIA：** Sun2020 NCM622表征结果，按私人BEV/PHEV参考容量、150000km寿命情景年化。11类影响，保留单位kgCO2e/year、kgSO2e/year、kgPM10e/year、kg1,4-DB eq/year等。只属电池模块，制造不扣回收信用；100%湿法回收净值另为极端情景，不能与Qiao已含初始电池制造GWP或Yang物理排放直接相加。
+
+**功能单位：** 北京2023年交通结构折合100万人代表城市的年度清单为城市聚合参考流；技术强度用每vehicle-km；**PKM暂不可得**，禁止把2015公交平均载客人数作为2023实测载客率。区域迁移和R8城市敏感度另设情景，不直接混入R9.4原始北京S0表。
+
+**准入测试：** 同一指标需同一物理域/表征方法、互不重叠生命周期阶段、匹配车辆动力与材料包含关系、统一寿命及时间背景。任何一个条件不满足则分离输出、标明假设或NA，而不是直接求城市全生命周期总量。
+
+**可复现：**
+`python 06_S0_Calculation/r9_4_integrate_lci.py`
+
+**R9.4上游修正：**
+- `R9_LCI_PARTIAL_WTW_GHG.csv` 文本电力WTW168gCO2e/MJ行的列错位已修复。
+- `R9_LCI_PASSENGER_USE_ENERGY.csv` PHEV年度电量已按R7的 `VKT×0.66×0.16` 对齐为1,802,185.890749kWh，保证电量总账一致。
+- 本轮独立读取源CSV并完成32项实际计算与守恒检查，已输出 `R9_4_INTEGRATION_TESTS.csv`；尚未在克隆仓库对新Python脚本进行完整实际运行，勿称GitHub CI验证通过。
+
+R9.4所有车型和城市均**未形成完整cradle-to-grave LCA**；研究论文须清楚区分“部分物理清单”“两阶段GWP筛查”“电池专项LCIA”和“仍缺失的环境影响阶段”。
