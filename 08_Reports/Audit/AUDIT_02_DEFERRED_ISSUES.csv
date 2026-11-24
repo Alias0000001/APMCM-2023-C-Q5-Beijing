@@ -1,9 +1,9 @@
 issue_id,priority,status,owner_stage,acceptance
-B-001,P1,PENDING,Audit-03,Verify 49.9 and 0.461 matching denominator or retain two conditional alternatives
-B-002,P1,PENDING,Audit-03/06,Check propulsion stock proxies and relative mileage; structural grid completed; couple only material axes
+B-001,P1,CLOSED_WITH_PROXY,Audit-03,Denominators not matched; two conditional alternatives retained; C-001 requires paired stress interpretation
+B-002,P1,PENDING,Audit-06,Audit-03 confirmed source scope; 243-set structural grid done; synchronize residuals and couple material axes
 B-003,P1,PENDING,Audit-06,Synchronize mixed residual technology across operation production and exhaust in joint sensitivity or relabel rate-only
 B-004,P1,PENDING,Audit-04,Review compatible manufacturing and omitted stages; no double counting
 B-005,P2,PENDING,Audit-06/08,Calibrate absolute PKM stress to common S0 proxy if comparing across cases; same existing equal-service annual burdens
-B-006,P1,PENDING,Audit-03/06,Urban spatial transfer evidence and duplicate adjustment checks; algebra and stress complete
+B-006,P1,PENDING,Audit-06,Audit-03 verified municipal and urban population; unresolved activity fractions treated as proxies; avoid duplicate multipliers
 B-007,P2,CLOSED,Audit-02,All-diesel S-1 supplementary calculation; mixed fossil baseline retained
 B-008,P2,CLOSED,Audit-02,Correct tonne conversion note in manufacturing register
