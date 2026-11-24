@@ -178,13 +178,17 @@ At a lifetime mileage of 200,000 km and the Peng2017 Table 8 electricity WTW fac
 
 BEV-NMC is approximately 29.83% lower than ICEV in this two-stage screening scenario. BEV-NMC and BEV-LFP are alternative chemistry cases applied to the same BEV activity; their annual totals must not be added.
 
+![Baseline two-stage GWP comparison](figures/Fig_R9_5_Baseline_GWP_Comparison.svg)
+
+*Figure 4. Baseline two-stage GWP100 intensity, decomposed into vehicle production and energy WTW.*
+
 ### 4.2 Sensitivity to electricity carbon intensity
 
 Under the two Peng2017 WTW factors, BEV-NMC intensity changes from 166.95 to 186.33 gCO2e/km. The corresponding BEV-LFP intensity changes from 167.80 to 187.17 gCO2e/km. This indicates that the electricity factor materially changes the estimated magnitude of the BEV advantage.
 
 ![Grid-factor sensitivity](figures/Fig_R9_5_Grid_Sensitivity.svg)
 
-*Figure 4. BEV two-stage intensity under alternative electricity factors. The MEE 2023 national electricity PCF is shown only as a retrospective method-transfer marker.*
+*Figure 5. BEV two-stage intensity under alternative electricity factors. The MEE 2023 national electricity PCF is shown only as a retrospective method-transfer marker.*
 
 ### 4.3 Sensitivity to vehicle lifetime mileage
 
@@ -192,7 +196,7 @@ Increasing lifetime mileage lowers the manufacturing burden allocated to each ve
 
 ![Lifetime sensitivity](figures/Fig_R9_5_Lifetime_Sensitivity.svg)
 
-*Figure 5. Effect of assumed lifetime mileage on two-stage GWP intensity.*
+*Figure 6. Effect of assumed lifetime mileage on two-stage GWP intensity.*
 
 ### 4.4 Break-even electricity factor
 
@@ -200,7 +204,7 @@ The break-even electricity factor is obtained by equating the BEV and ICEV two-s
 
 ![Break-even analysis](figures/Fig_R9_5_BreakEven.svg)
 
-*Figure 6. Break-even electricity WTW factor as a function of lifetime mileage. The horizontal lines show the Peng2017 baseline and the retrospective MEE national PCF marker.*
+*Figure 7. Break-even electricity WTW factor as a function of lifetime mileage. The horizontal lines show the Peng2017 baseline and the retrospective MEE national PCF marker.*
 
 The threshold is conditional on the assumed gasoline consumption, BEV electricity consumption, manufacturing factors, and common lifetime mileage. It should not be interpreted as a universal threshold for all vehicle models or electricity systems.
 
@@ -210,7 +214,7 @@ Across the literature factors considered, the BEV battery-only manufacturing int
 
 ![Battery factor sensitivity](figures/Fig_R9_5_Battery_Factor_Sensitivity.svg)
 
-*Figure 7. Battery-only GWP intensity under alternative literature production factors. The hypothetical 100% recycling-credit case is reported separately.*
+*Figure 8. Battery-only GWP intensity under alternative literature production factors. The hypothetical 100% recycling-credit case is reported separately.*
 
 These battery values are not added to the vehicle-production totals above. They quantify the battery module independently and expose the sensitivity associated with chemistry and production assumptions.
 
