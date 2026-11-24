@@ -1,0 +1,3 @@
+scenario,scope,geography,factor_kg_per_kWh,BEV_grid_component_gCO2e_per_km,BEV_manufacture_plus_grid_PCF_gCO2e_per_km,BEV_annual_electricity_component_tCO2e,comparison_warning
+MEE2023_national_PCF,electricity_lifecycle_PCF,China_national,0.6205,94.31600000000002,169.341,40298.92831674994,"National electricity PCF factor is post-competition and not Beijing-specific; fuel factor remains Peng2017, so this is a mixed-vintage transfer"
+MEE2023_Beijing_CO2,generation_only_CO2,Beijing_provincial,0.5554,84.4208,NA,36070.950503018394,Generation-only CO2; not WTW and not CO2e; do not combine with Qiao/Peng two-stage GWP
