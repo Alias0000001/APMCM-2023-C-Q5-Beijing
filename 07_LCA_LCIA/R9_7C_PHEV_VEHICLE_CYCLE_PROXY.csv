@@ -1,0 +1,5 @@
+technology,chemistry,vehicle_cycle_GWP_gCO2e_per_km,lifetime_km,vehicle_cycle_total_kgCO2e,vehicle_cycle_annualized_gCO2e_per_km,includes,can_be_called_manufacturing_only,source
+BEV,LFP,73.20,160000,11712,73.20,body+battery+fluids+assembly+transport+maintenance+end_of_life,NO,Xiong et al. 2019 Table 8 and vehicle-cycle results
+PHEV,LFP,56.18,160000,8988.8,56.18,body+battery+fluids+assembly+transport+maintenance+end_of_life,NO,Xiong et al. 2019 Table 8 and vehicle-cycle results
+BEV,NMC,111.36,120000,13363.2,111.36,body+battery+fluids+assembly+transport+maintenance+end_of_life,NO,Xiong et al. 2019 Table 8 and vehicle-cycle results
+PHEV,NMC,81.40,120000,9768,81.40,body+battery+fluids+assembly+transport+maintenance+end_of_life,NO,Xiong et al. 2019 Table 8 and vehicle-cycle results
