@@ -8,6 +8,10 @@ We construct a transport-activity and environmental-accounting model for a repre
 ## 1. Problem analysis
 Question 5 asks for quantitative environmental consequences of electrifying vehicles, including buses, in a city of one million residents. Electric propulsion changes both energy efficiency and the location of emissions. A meaningful comparison therefore requires three steps: reconstruct transport demand, hold that demand comparable across propulsion alternatives, and calculate climate and local exhaust impacts in separate physical units. We analyze private passenger cars and public buses; taxis, ride-hailing, freight, rail and infrastructure are not added to this defined fleet scope. The model estimates a hypothetical city, not a geographic subdivision of Beijing.
 
+![Modeling framework for the million-resident representative city](figures_final/Figure_01_Framework.svg)
+
+*Figure 1. Modeling framework for the million-resident representative city. Reference-system evidence feeds a fixed-VKT scenario model, separate impact inventories, and paired robustness checks.*
+
 ## 2. Representative-city construction
 ### 2.1 Reference-system selection
 Beijing offers complementary evidence on vehicle registrations, travel intensity, operator bus activity, propulsion mix and charging energy. This permits an auditable activity model with fewer arbitrary imputations than simply fitting vehicle counts against population. Beijing is, however, a much larger metropolis than the target city. Its total resident population in 2022 was 21.843 million (urban residents 19.128 million), and the reported private small/micro passenger fleet numbered 4.932 million [1,2]. The operator reported 984 million bus vehicle-km and 1.726 billion boardings for 2022 [3]. We use full-municipality population as the denominator for the municipality-wide car count; the operator bus activity remains a service-system proxy. Using the urban-population denominator with the full-city numerator would introduce a boundary error. The 2022 observations are used because they were published before the November 2023 competition; 2022 travel was influenced by pandemic conditions. The 2023 bus fleet snapshot informs technology composition, not annual fleet activity.
@@ -37,6 +41,10 @@ Beijing offers complementary evidence on vehicle registrations, travel intensity
 ### 2.4 Activity and allocation
 Let V_P=P(N_r/P_r)(365 d a)gm and V_B=P(V_B,r/P_r)b. The reference multipliers are one. Using d=49.9 km/day and a=0.461 conditionally gives 8,396.42 km/car-year; the source does not establish matched denominators, so 18,213.50 km/car-year (without dispatch adjustment) is tested separately. The target contains approximately 225793 private cars, 1.896 billion private vehicle-km and 45.049 million bus vehicle-km per year. Applying the April 2023 operator fleet snapshot only as a stock-density proxy gives roughly 1087 buses per million residents. We do not equate the mixed electric-drive group with pure BEVs. For each mode V_ik,s=V_i p_ik,s and sum_k p_ik,s=1. Private NEV share 8%, national BEV fraction within NEVs 77.8%, equal per-vehicle mileage, and 80% BEV allocation of mixed bus activity are illustrative proxies, not observed shares. Conventional bus activity is allocated using the diesel:natural-gas snapshot count ratio; the unclassified residual is preserved and allocated conditionally.
 
+![Conditional mode-specific annual VKT allocation; 2022 reference activity and April 2023 propulsion snapshot](figures_final/Figure_09_Activity_Allocation.svg)
+
+*Figure 2. Conditional mode-specific annual VKT allocation; 2022 reference activity and April 2023 propulsion snapshot. Shares are modeled, not directly observed.*
+
 ## 3. Environmental accounting
 ### 3.1 Scenario design
 | Scenario | Private cars | Buses | Electricity WTW factor |
@@ -50,10 +58,18 @@ Let V_P=P(N_r/P_r)(365 d a)gm and V_B=P(V_B,r/P_r)b. The reference multipliers a
 
 S4 is a policy stress, not a forecast of an observed future grid.
 
+![System boundaries: production plus WTW GWP, separate road exhaust, and unquantified stages](figures_final/Figure_02_System_Boundary.svg)
+
+*Figure 3. System boundaries: production plus WTW GWP, separate road exhaust, and unquantified stages. The battery-only LCIA is not added to vehicle production.*
+
 ### 3.2 Energy and climate model
 For mode i and technology k, carrier demand Q_ikf,s=V_ik,s u_kf. For a PHEV, fuel and electric demand are weighted by 1-UF and UF, respectively (UF=0.66 reference [12]). Report final energy after conversion to MJ; electricity is 3.6 MJ/kWh. The reference car gasoline consumption is 7.5 L/100 km, electric car and bus consumption are 0.192289 and 0.758253 kWh/km, derived from the 2023 charging report's October 2022 group means [4]. The meter location is unspecified; no extra losses are applied in the base case. Alternative charging efficiencies of 0.90–0.95 are tested. Historical bus energy rates and air-conditioning scenarios come from Lin et al. [5]. Fuel WTW factors use Peng et al. [6]: gasoline 90.2, diesel 92.3, CNG 72.0 and LNG 78.1 g CO2e/MJ; electricity 0.73224 kg CO2e/kWh. A 50/50 CNG/LNG energy split is a proxy.
 
 Annual included-stage climate impact, in t CO2e/year, is G_s=(sum_ik V_ik,s M_k/L_k + sum_ikf Q_ikf,s F_f)/1000, with all factors converted to kg units. The production terms use Qiao et al. [7] for ICEV (9.985 t/vehicle) and BEV-NMC (15.005 t/vehicle), Xiong et al. [8] component-sum PHEV proxy (8.67043 t/vehicle), and Lin et al. historical bus materials plus assembly/distribution (42.84, 45.36, 46.35, 47.748 t/vehicle for diesel, natural gas, hybrid and BEV). Reference lifetimes are 150,000 km for cars and 400,000 km for buses. These studies differ in technology age and production scope; results are a matched-metric screening, not a verified identical cradle-to-grave inventory. No stand-alone battery GWP is added to a production factor already including it.
+
+![Charging-energy measurement boundary](figures_final/Figure_11_Charging_Boundary.svg)
+
+*Figure 4. Charging-energy measurement boundary. Charging efficiency is varied only under the battery-side interpretation; the original meter location is unknown.*
 
 ### 3.3 Road exhaust
 For pollutant j, H_sj=sum_ik V_ik,s A_kj/1,000,000 t/year. National basic factors from the August 2023 consultation draft, Appendix F, [9] are used with China V as the illustrative reference, China IV and VI as stress cases. BEVs have zero modeled combustion exhaust. PHEV exhaust follows combustion distance; the mixed non-BEV bus group uses a diesel-based proxy. CO, VOCs, NOx, PM2.5 and PM10 remain independent quantities. PM size categories overlap and must not be summed. No concentration or health-effect claim is made.
@@ -74,6 +90,10 @@ The primary comparison is fixed VKT within each mode. To compare service intensi
 
 S3 reduces final energy by 68.93%; S4 has the same final energy as S3. Its lower emissions reflect energy-supply decarbonization, not additional vehicle efficiency.
 
+![Annual final energy by carrier, PJ/year, for the one-million-resident target](figures_final/Figure_10_Energy_Structure.svg)
+
+*Figure 5. Annual final energy by carrier, PJ/year, for the one-million-resident target. S3 and S4 have identical energy demand.*
+
 ### 4.2 Climate change by mode and stage
 | Scenario | Car WTW | Car production | Bus WTW | Bus production | Total | Reduction (%) |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -85,6 +105,10 @@ S3 reduces final energy by 68.93%; S4 has the same final energy as S3. Its lower
 | S4 | 133.470 | 189.649 | 12.506 | 5.377 | 341.002 | 39.94 |
 
 All climate quantities are kt CO2e/year for the million-resident reference city. S3's higher production burden is offset by reduced WTW emissions. Car-first electrification gives a larger aggregate climate reduction because private travel accounts for the majority of VKT. Under this additive fixed-VKT model the interaction S1+S2-S0-S3 is zero within rounding, not an independently estimated synergy.
+
+![Annual included-stage GWP (production plus WTW), separated by vehicle mode](figures_final/Figure_03_Scenario_GWP.svg)
+
+*Figure 6. Annual included-stage GWP (production plus WTW), separated by vehicle mode. Panels use independent vertical scales.*
 
 ### 4.3 Local road pollutants
 | Scenario | CO | VOCs | NOx | PM2.5 | PM10 |
@@ -98,6 +122,10 @@ All climate quantities are kt CO2e/year for the million-resident reference city.
 
 All entries are tonnes/year of modeled road combustion exhaust. The private/bus breakdown is retained in Appendix A. Bus-first removes most modeled NOx in the reference case; car-first removes most CO and VOCs. Electrification eliminates covered combustion exhaust in S3 and S4, but tire/brake wear, road dust, evaporative emissions and upstream pollution are not thereby eliminated.
 
+![Mode-specific combustion-exhaust screening, tonnes/year, China V illustrative reference](figures_final/Figure_04_Road_Exhaust.svg)
+
+*Figure 7. Mode-specific combustion-exhaust screening, tonnes/year, China V illustrative reference. Panel scales differ; non-exhaust and upstream pollutants are excluded.*
+
 ### 4.4 Functional-unit comparison
 | Scenario | Car g/VKT | Bus g/VKT | Car g/PKM | Bus g/PKM |
 | --- | --- | --- | --- | --- |
@@ -110,9 +138,17 @@ All entries are tonnes/year of modeled road combustion exhaust. The private/bus 
 
 Units are g CO2e per indicated distance, production plus WTW. The conditional bus intensity per passenger-km is lower than private-car intensity despite higher vehicle-km intensity. The result depends on effective occupancy and trip length; it is not a measured service comparison. The distinction is central to the bus LCA framework [5].
 
+![Conditional passenger-service intensities and equal-service S3 stress; 10.9-km bus trip and 1.24 car occupancy proxies, not actual PKM.](figures_final/Figure_06_Passenger_Service.svg)
+
+*Figure 8. Conditional passenger-service intensities and equal-service S3 stress; 10.9-km bus trip and 1.24 car occupancy proxies, not actual PKM.*
+
 ## 5. Sensitivity and decision conditions
 ### 5.1 Population transfer
 Vary g,m,b independently in {0.8,1,1.2}. Across 27 matched parameter sets at reference technical intensities, S3 reduction ranges 13.94–14.76%. This tests plausible deviations from linear per-capita activity transfer, not real-city calibration. A later-published Jinhua diagnostic is kept outside the contest-time manuscript and is not used in the base case.
+
+![Paired S3 reduction across 27 city-transfer settings; common color scale, reference technology intensity, no retrospective Jinhua inputs.](figures_final/Figure_07_Transfer_Grid.svg)
+
+*Figure 9. Paired S3 reduction across 27 city-transfer settings; common color scale, reference technology intensity, no retrospective Jinhua inputs.*
 
 ### 5.2 Technology and activity uncertainty
 Cross the transfer grid with two mileage-denominator interpretations, 15 energy cases, two manufacturing source sets, three car lifetimes and three bus lifetimes. Compare each scenario with S0 under the same parameter settings. These are deterministic stress envelopes, not confidence intervals or probabilities.
@@ -128,6 +164,10 @@ Cross the transfer grid with two mileage-denominator interpretations, 15 energy 
 
 The full monotone climate ordering holds in 14,223 of 14,580 tested sets. S3 can increase GWP by 6.01% at the combination of low gasoline use, a 100,000-km car lifetime, high ownership and mileage multipliers, and the alternative mileage denominator. S4 remains beneficial throughout the tested grid. In 337/432 exhaust stress sets bus-first is better for NOx; car-first is better in 95/432. These frequencies describe the selected design only.
 
+![Deterministic climate-reduction envelope across 14,580 paired parameter sets; not a confidence interval.](figures_final/Figure_05_Paired_Sensitivity.svg)
+
+*Figure 10. Deterministic climate-reduction envelope across 14,580 paired parameter sets; not a confidence interval.*
+
 ### 5.3 Equal passenger service
 | Occupancy stress | S3 equal-service GWP (kt/year) | Reduction vs paired S0 (%) |
 | --- | --- | --- |
@@ -139,6 +179,10 @@ The lower-occupancy case uses BEV occupancy multipliers 0.81 for cars and 0.8 fo
 
 ### 5.4 Technology break-even
 For a gasoline car and BEV with identical lifetime distance L, the threshold electricity intensity is F_e*=[M_ICE/L-M_BEV/L+u_g F_g]/u_e. At L=150,000 km, the current inputs give 0.947 kg CO2e/kWh. A cleaner grid or longer lifetime increases the feasible margin; the threshold is conditional on the selected manufacture and energy rates.
+
+![Current contest-time BEV-NMC break-even electricity WTW factor as lifetime changes](figures_final/Figure_08_BreakEven.svg)
+
+*Figure 11. Current contest-time BEV-NMC break-even electricity WTW factor as lifetime changes. Reference grid and S4 policy stress shown separately.*
 
 ## 6. Model verification and evaluation
 Checks include propulsion VKT conservation, carrier-energy consistency, separation of pollutant species and GWP, stage and mode reconciliation, paired baselines and passenger-service conservation. The evidence hierarchy distinguishes observations, literature proxies and design assumptions. Reference-city transfer, the private mileage denominator, charging boundary, production scope and fleet emission-standard distribution limit absolute precision. The model does not cover all cradle-to-grave stages or every ecological indicator; a separate battery-only LCIA must not be added to the included-stage GWP without boundary reconciliation. These limitations qualify the scope of the conclusions, rather than replacing the numerical answer.

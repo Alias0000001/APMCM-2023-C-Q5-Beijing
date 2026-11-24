@@ -14,3 +14,6 @@ All figures in English; white background; vector SVG and PDF export where availa
 | 8 (appendix) | Grid × lifetime threshold curves using current consumption and production factors, not retrospective 0.160 input | R9.7B/C |
 
 Acceptance: independently validate data totals, check SVG XML, render to PDF/PNG and visually inspect at print width; ensure symbols/subscripts and legend readable; verify no panel clipping or text collision; confirm manuscript cross references, all original assets preserved. Figure 1–6 prioritized. Do not claim visual approval until actual rendering and inspection. Next task G-2 implements all required figures and generates a reproducible output manifest.
+
+## G-2 implementation
+11 contest figures and 9 retrospective diagnostic figures generated as separate SVG/PNG pairs from repository CSVs. Final manuscript figures numbered in reading order; filenames are stable identifiers. Historical figure numbers are encoded in Legacy_* filenames and mapped in FIGURE_DIAGNOSTIC_APPENDIX.md. User's palette, non-energy split, chemistry difference panels, threshold band and coverage/LCIA safeguards are implemented. CI renders and verifies files and links; visual inspection remains a separate gate.

@@ -53,8 +53,14 @@ jobs:
           python 06_S0_Calculation/r9_7e_environment.py
           python 06_S0_Calculation/r9_7f_transfer.py
 
-      - name: Generate SVG figures from CSV inputs
+      - name: Generate legacy SVG figures from CSV inputs
         run: python 06_S0_Calculation/r9_6_generate_figures.py
+
+      - name: Install publication figure renderer
+        run: python -m pip install matplotlib==3.9.4 numpy==1.26.4
+
+      - name: Render final and diagnostic SVG and PNG pairs
+        run: python 06_S0_Calculation/r9_7g2_final_figures.py
 
       - name: Run regression tests and SVG validation
         run: python -m unittest discover -s tests -v
@@ -71,5 +77,6 @@ jobs:
           git add 07_LCA_LCIA/*.csv
           git add 09_Paper_Draft/figures/*.svg
           git add 09_Paper_Draft/figures/R9_6_FIGURE_MANIFEST.csv
+          git add 09_Paper_Draft/figures_final 09_Paper_Draft/figures_diagnostic 09_Paper_Draft/FINAL_FIGURE_MANIFEST.csv
           git diff --cached --quiet || git commit -m "Regenerate R9.6 audited outputs and figures"
           git push origin "HEAD:${GITHUB_REF_NAME}"
