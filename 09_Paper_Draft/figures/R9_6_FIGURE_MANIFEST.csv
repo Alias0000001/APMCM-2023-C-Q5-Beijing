@@ -1,0 +1,13 @@
+﻿figure,title,source_csv,scope_note
+3,Physical CO2 inventory,R9_4_PHYSICAL_STAGE_SUBTOTALS.csv,partial known-flow only
+5,Grid-factor sensitivity,R9_5_GRID_FACTOR_SENSITIVITY.csv,two-stage GWP screening
+6,Lifetime sensitivity,R9_5_LIFETIME_SENSITIVITY.csv,two-stage GWP screening
+7,Break-even grid factor,R9_5_BREAK_EVEN_GRID_FACTOR.csv,two-stage GWP screening
+8,Battery-factor sensitivity,R9_5_BATTERY_FACTOR_SENSITIVITY.csv,battery-only GWP
+9,Lifecycle coverage matrix,R9_4_STAGE_COVERAGE_MATRIX.csv,evidence completeness
+10,Multi-pollutant physical inventory,R9_4_PHYSICAL_VEHICLE_PARTIAL_SUBTOTALS.csv,partial physical masses
+11,Grid x lifetime factorial,R9_5_GRID_LIFETIME_FACTORIAL.csv,two-stage GWP screening
+12,Battery ReCiPe profile,R9_4_BATTERY_RECIPE_ONLY.csv,battery-only LCIA
+13,Bus manufacturing evidence,R9_6_BUS_MANUFACTURING_FACTOR_EVIDENCE.csv,historical 2015 proxy
+14,R7 energy meter boundary,R9_6_R7_ENERGY_BOUNDARY_AUDIT.csv,measurement-point audit
+15,Bus PKM evidence status,R9_6_PKM_EVIDENCE_REGISTER.csv,2023 PKM remains NA
