@@ -1,0 +1,10 @@
+standard,technology,CO,VOCs,NOx,PM2_5,PM10,unit,publication,evidence,source_table,source_url
+IV,private_gasoline,1.340000000,0.250000000,0.100000000,0.003000000,0.003000000,g/vehicle-km,2023-08 draft,national basic factor,F.1 p55,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+IV,bus_diesel,3.250000000,0.130000000,10.750000000,0.301000000,0.335000000,g/vehicle-km,2023-08 draft,national basic factor,F.2 p57,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+IV,bus_natural_gas,5.800000000,0.130000000,15.000000000,0.020000000,0.022000000,g/vehicle-km,2023-08 draft,national basic factor,F.3 p59,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+V,private_gasoline,0.530000000,0.120000000,0.060000000,0.003000000,0.003000000,g/vehicle-km,2023-08 draft,national basic factor,F.1 p55,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+V,bus_diesel,1.620000000,0.060000000,7.520000000,0.150000000,0.167000000,g/vehicle-km,2023-08 draft,national basic factor,F.2 p57,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+V,bus_natural_gas,1.890000000,0.080000000,15.000000000,0.020000000,0.022000000,g/vehicle-km,2023-08 draft,national basic factor,F.3 p59,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+VI,private_gasoline,0.290000000,0.080000000,0.020000000,0.002000000,0.002000000,g/vehicle-km,2023-08 draft,national basic factor,F.1 p55,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+VI,bus_diesel,1.180000000,0.030000000,3.000000000,0.014000000,0.015000000,g/vehicle-km,2023-08 draft,national basic factor,F.2 p57,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
+VI,bus_natural_gas,0.730000000,0.050000000,3.000000000,0.005000000,0.006000000,g/vehicle-km,2023-08 draft,national basic factor,F.3 p59,https://cmsfiles.zhongkefu.com.cn/cmshuanjingapp/upload/resource/W020230822432828039219.pdf
