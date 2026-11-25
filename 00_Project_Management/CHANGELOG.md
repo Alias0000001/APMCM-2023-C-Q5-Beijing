@@ -95,3 +95,13 @@
 Added 128-cell coverage, 84 wear rows, 132 private-battery LCIA rows and 18 extra-pack stress rows. Baseline unchanged; 7/10 provisional.
 
 - Audit-04 follow-up: recorded inherited issue dispositions and source locator; first Audit-04 CI 45415319202 passed. Supplementary results require integration at Audit-07/08; no numerical change.
+
+
+## 2026-11-25 — Same-contest exemplar review and Q5 manuscript rewrite
+
+- Identified the 2023 APMCM C5 sample by Team apmcm2303763 in the organizing committee's compiled "excellent papers" section; exact prize grade was not confirmed and is not claimed.
+- Added a detailed writing-style analysis and promoted this same-contest sample above unrelated MCM/ICM references.
+- Rewrote the contest-facing English Q5 manuscript with Summary Sheet, hierarchical Contents, assumptions/justifications, notation, problem analysis, nested activity/environment model, six-scenario core-results table, mode-specific VKT, carrier-specific energy/WTW, annualized production, road exhaust and non-exhaust PM, PKM, sensitivity/error analysis, model evaluation and conclusion.
+- Added the pre-contest Jinhua Statistical Yearbook 2023 (published October 2023) as an external transfer-boundary diagnostic. No matched Jinhua VKT/PKM or absolute Jinhua emissions total is fabricated; post-cutoff retrospective diagnostics remain excluded.
+- Corrected GWP equation units, clarified production factor conversion and source boundaries, expanded propulsion-share sensitivity, added table captions and aligned the figure specification with the ten figures used in the manuscript.
+- No model input CSV, baseline numerical output, existing source asset or main branch was changed. Final typesetting, bibliographic verification and visual review remain pending.
