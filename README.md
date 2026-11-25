@@ -14,9 +14,9 @@
 
 [Approved audit standard V1.0](00_Project_Management/FINAL_AUDIT_STANDARD_V1.md) | [Audit-01](08_Reports/Audit/AUDIT_01_TASK_COMPLIANCE.md) | [Requirement matrix](08_Reports/Audit/AUDIT_01_REQUIREMENT_MATRIX.csv). A dimension provisional 10.2/12; final manuscript freeze blocked pending Audit-02–09 and closure of conditional items (see updated Audit-01 report). Existing calculations unchanged.
 
-## R9.7G-1 — Contest manuscript reconstruction
+## R9.7G-1 — Contest manuscript reconstruction and same-contest writing benchmark
 
-[New English manuscript](09_Paper_Draft/Q5_Contest_Manuscript_EN.md) | [Award-paper and manuscript audit](08_Reports/R9_7G1_MANUSCRIPT_AND_AWARD_AUDIT.md) | [Final figure specification](09_Paper_Draft/FINAL_FIGURE_SPECIFICATION.md). Six-scenario numerical tables use contest-time A–F outputs. The manuscript is not final typeset; new figure rendering and review remain G-2. Old manuscripts preserved, no baseline changes, no main modification.
+[Rewritten English Q5 manuscript](09_Paper_Draft/Q5_Contest_Manuscript_EN.md) | [2023 APMCM C5 exemplar analysis](09_Paper_Draft/2023_APMCM_C5_优秀论文写作拆解.md) | [Writing and figure style study](09_Paper_Draft/论文写作与图表风格研究.md) | [Manuscript audit](08_Reports/R9_7G1_MANUSCRIPT_AND_AWARD_AUDIT.md) | [Final figure specification](09_Paper_Draft/FINAL_FIGURE_SPECIFICATION.md). The manuscript now follows the same-contest sample's Summary Sheet → Contents → assumptions/notations → problem analysis → nested model → results → sensitivity/error analysis → model evaluation structure. It adds a six-scenario core-results table, propulsion-specific VKT, non-exhaust PM screening and the pre-contest Jinhua transfer-boundary diagnostic. Numerical outputs remain conditional on the documented activity and factor assumptions; no baseline inputs or main branch were changed. Typesetting and final visual review remain pending.
 
 ## R9.7F — Paired transfer and nested sensitivity
 
@@ -24,7 +24,7 @@
 
 ## R9.7E — Environmental scenario matrix
 
-[Report](08_Reports/R9_7E_ENVIRONMENTAL_MATRIX.md) | [road factors](02_Cleaned_Data/R9_7E_ROAD_FACTORS.csv) | [eight factor cases](02_Cleaned_Data/R9_7E_ROAD_CASES.csv) | [240 pollutant results](02_Cleaned_Data/R9_7E_ROAD_POLLUTANT_SCENARIOS.csv) | [six-scenario matrix](02_Cleaned_Data/R9_7E_ENVIRONMENTAL_MATRIX.csv). National 2023-08 consultation-draft basic factors, China V illustrative reference and IV/VI sensitivity. Separate physical exhaust masses, final energy, WTW and partial GWP. Full life-cycle and non-exhaust flows remain NA. Next R9.7F transfer sensitivity, not renewed Jinhua VKT search.
+[Report](08_Reports/R9_7E_ENVIRONMENTAL_MATRIX.md) | [road factors](02_Cleaned_Data/R9_7E_ROAD_FACTORS.csv) | [eight factor cases](02_Cleaned_Data/R9_7E_ROAD_CASES.csv) | [240 pollutant results](02_Cleaned_Data/R9_7E_ROAD_POLLUTANT_SCENARIOS.csv) | [six-scenario matrix](02_Cleaned_Data/R9_7E_ENVIRONMENTAL_MATRIX.csv). National 2023-08 consultation-draft basic factors, China V illustrative reference and IV/VI sensitivity. Separate physical exhaust masses, final energy, WTW and partial GWP. Full life-cycle stages remain incomplete; Audit-04 adds a separate generic EEA non-exhaust wear screening, while resuspended dust and secondary PM remain unquantified. Next R9.7F transfer sensitivity, not renewed Jinhua VKT search.
 
 ## R9.7D — Passenger service and mileage denominator
 
