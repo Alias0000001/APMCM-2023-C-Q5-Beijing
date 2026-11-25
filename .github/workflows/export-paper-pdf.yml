@@ -30,7 +30,7 @@ jobs:
           cp 09_Paper_Draft/Q5_Contest_Manuscript_EN.md /tmp/Q5_Contest_Manuscript_EN.md
           sed 's/\.svg)/.png)/g' /tmp/Q5_Contest_Manuscript_EN.md > /tmp/Q5_Contest_Manuscript_EN_render.md
           pandoc /tmp/Q5_Contest_Manuscript_EN_render.md \
-            --from=markdown+tex_math_dollars+raw_tex \
+            --from=markdown+tex_math_dollars+tex_math_single_backslash+raw_tex \
             --pdf-engine=xelatex \
             --resource-path=09_Paper_Draft \
             -V mainfont="DejaVu Serif" \
