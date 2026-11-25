@@ -271,7 +271,7 @@ For PHEVs, fuel and electricity demand are divided using the utility factor \(UF
 Final energy is calculated by converting each energy carrier to MJ. Gasoline is converted at 31.8718 MJ/L; historical diesel and natural-gas bus energy-use rates are taken from Lin et al. [5], with the air-conditioning share treated as a historical proxy. Electricity is converted at 3.6 MJ/kWh. WTW GWP is
 
 \[
-G^{WTW}_s=\sum_{i,k,f} Q_{ikf,s}F_f.
+G^{WTW}_s=\frac{1}{1000}\sum_{i,k,f} Q_{ikf,s}F_f.
 \]
 
 The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for diesel, 72.0 g CO₂e/MJ for CNG and 78.1 g CO₂e/MJ for LNG [6]. A 50/50 CNG/LNG energy split is used as a proxy for the natural-gas bus group. The electricity factor is 0.73224 kg CO₂e/kWh [6].
@@ -281,7 +281,7 @@ The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for die
 Let \(M_{ik}\) be the included production burden per vehicle and \(L_{ik}\) the corresponding lifetime mileage. Under steady-state replacement, the annualized production burden is
 
 \[
-G^{prod}_s=\sum_{i,k}V_{ik,s}\frac{M_{ik}}{L_{ik}}.
+G^{prod}_s=\frac{1}{1000}\sum_{i,k}V_{ik,s}\frac{M_{ik}}{L_{ik}}.
 \]
 
 The private-car production factors are 9.985 t CO₂e/vehicle for ICEVs and 15.005 t CO₂e/vehicle for BEV-NMC, based on Qiao et al. [7]. The PHEV production factor, 8.670 t CO₂e/vehicle, is a component-sum proxy derived from Xiong et al. [8]; it is less directly comparable than the ICEV/BEV factors and is treated as an uncertainty source. The initial traction battery is included in the applicable production factors and is not added a second time.
@@ -455,17 +455,35 @@ The bus has a higher GWP per VKT but a lower conditional GWP per PKM because its
 
 ## 7. Sensitivity and Error Analysis
 
-### 7.1 City-Transfer Sensitivity
+### 7.1 City-Transfer and Spatial-Boundary Sensitivity
 
 The private-car ownership multiplier \(g\), private-car mileage multiplier \(m\) and bus-supply multiplier \(b\) are independently varied over \(\{0.8,1.0,1.2\}\). This creates 27 matched transfer settings. At the reference technical intensities, the \(S_3\) partial-GWP reduction ranges from 13.94% to 14.76%.
 
 This test shows that the electrification result is not highly sensitive to modest, independent changes in the three transfer multipliers under the reference technology factors. It does not establish that every million-resident city has the same ownership, mileage or bus-supply rates.
 
+The Beijing 2022 urban population was 19.128 million, compared with the full-municipality population of 21.843 million. Their ratio is 0.8757. The model uses the full-municipality denominator because the private-car numerator is also a full-municipality stock. If, as an alternative boundary stress, the entire municipal activity numerator were assigned to the urban population, the per-resident transfer factor would rise by \(1/0.8757=1.1419\). Applying this same scalar to both modes raises the \(S_0\) partial GWP to approximately 648.380 kt/year and \(S_3\) to 556.099 kt/year, while leaving the paired percentage reduction unchanged. This is a boundary stress, not a new urban observation or a corrected target-city estimate.
+
+
+
 ![Paired S3 reduction across 27 city-transfer settings](figures_final/Figure_07_Transfer_Grid.svg)
 
 *Figure 8. Paired S3 reduction across 27 city-transfer settings. Each result is compared with the \(S_0\) baseline under the same transfer parameters.*
 
-### 7.2 Mileage-Denominator Sensitivity
+### 7.2 Propulsion-Share and Relative-Mileage Sensitivity
+
+The baseline propulsion allocation depends on several proxies: private NEV stock share \(s\), BEV fraction within NEVs \(t\), BEV share \(q\) of the mixed electric-drive bus group, relative NEV-car mileage \(r_P\) and relative BEV-bus mileage \(r_B\). These five parameters are varied over three levels each:
+
+| Parameter | Tested values | Baseline |
+|---|---|---:|
+| Private NEV stock share \(s\) | 0.05, 0.08, 0.1158 | 0.08 |
+| BEV fraction within NEVs \(t\) | 0.60, 0.778, 0.90 | 0.778 |
+| BEV fraction of mixed bus group \(q\) | 0.60, 0.80, 1.00 | 0.80 |
+| Relative NEV-car mileage \(r_P\) | 0.80, 1.00, 1.20 | 1.00 |
+| Relative BEV-bus mileage \(r_B\) | 0.80, 1.00, 1.20 | 1.00 |
+
+The full factorial design contains \(3^5=243\) paired propulsion settings. Across these settings, the \(S_3\) partial-GWP reduction ranges from 12.87% to 15.29%. The absolute \(S_3\) value is unchanged because the full-electrification scenario replaces all modeled propulsion activity; the \(S_0\) reference changes with the assumed baseline propulsion allocation. Under the reference China V exhaust factors, bus-first electrification gives the larger NOx reduction in all 243 tested settings. These are structured design points, not probability samples.
+
+### 7.3 Mileage-Denominator Sensitivity
 
 The private-car annual mileage has two interpretations:
 
@@ -479,7 +497,7 @@ D_2=49.9\times365=18,213.50\ {\rm km/year}.
 
 The second is approximately 2.169 times the first. Because the original source does not establish that the 49.9-km daily distance and the 0.461 multiplier share compatible denominators, both are retained as alternatives. The model does not present either as a directly observed annual odometer average.
 
-### 7.3 Nested Technology and Activity Stress Test
+### 7.4 Nested Technology and Activity Stress Test
 
 The nested sensitivity design combines 27 transfer settings, two mileage-denominator interpretations, 15 energy cases, two production-factor sets, three private-car lifetimes and three bus lifetimes. This yields 14,580 paired six-scenario sets. Each scenario is compared with \(S_0\) under the same parameter combination.
 
@@ -502,7 +520,7 @@ These ranges are deterministic stress envelopes. They are not confidence interva
 
 For local NOx, bus-first electrification produces the larger reduction in 337 of 432 exhaust stress cases, while private-car-first electrification is better in 95 cases. For PM₂.₅ exhaust, private-car-first is better in 431 of 432 cases. These counts depend on the chosen factor and transfer grid and should not be interpreted as probabilities.
 
-### 7.4 Equal-Passenger-Service Sensitivity
+### 7.5 Equal-Passenger-Service Sensitivity
 
 The fixed-VKT comparison preserves the annual travel of each vehicle class, not necessarily the passenger service delivered. To test this distinction, the model fixes each mode's baseline PKM and varies the effective occupancy of electric vehicles.
 
@@ -514,7 +532,7 @@ The fixed-VKT comparison preserves the annual travel of each vehicle class, not 
 
 The lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
 
-### 7.5 Electricity Break-Even Factor
+### 7.6 Electricity Break-Even Factor
 
 For a private ICEV and BEV with the same lifetime mileage \(L\), the break-even electricity WTW factor is obtained by equating their included production-plus-operation GWP:
 
