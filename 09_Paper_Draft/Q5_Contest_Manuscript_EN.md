@@ -354,6 +354,19 @@ For equal-service sensitivity, each mode's baseline PKM is held constant and VKT
 
 ## 6. Model Solution and Results
 
+The main scenario outcomes are summarized first in Table 4. The table places energy demand, WTW operation and vehicle production side by side, so the climate result can be read as the combined effect of operating energy and embodied production. The reported partial GWP is not a complete life-cycle total.
+
+| Scenario | Final energy (PJ/year) | WTW GWP (kt CO₂e/year) | Production GWP (kt CO₂e/year) | Partial GWP (kt CO₂e/year) | Change vs. \(S_0\) |
+|---|---:|---:|---:|---:|---:|
+| \(S_{-1}\) Conventional reference | 5.099 | 453.331 | 131.258 | 584.589 | +2.96% |
+| \(S_0\) Prevailing mix | 4.619 | 432.689 | 135.100 | 567.789 | 0.00% |
+| \(S_1\) Bus-first | 4.417 | 423.293 | 135.232 | 558.525 | −1.63% |
+| \(S_2\) Private-car-first | 1.638 | 301.348 | 194.894 | 496.242 | −12.60% |
+| \(S_3\) Full electrification | 1.435 | 291.952 | 195.026 | 486.978 | −14.23% |
+| \(S_4\) Full electrification + cleaner electricity | 1.435 | 145.976 | 195.026 | 341.002 | −39.94% |
+
+*Table 4. Core results for all six scenarios. Partial GWP includes the selected vehicle-production factors and WTW operation only.*
+
 ### 6.1 Baseline Activity and Propulsion Structure
 
 The target-city activity model gives approximately 225,793 private cars and 1,087 buses. Annual VKT is \(1.896\times10^9\) km for private cars and \(4.505\times10^7\) km for buses. The private-car activity estimate is sensitive to the unresolved interpretation of the 0.461 multiplier; the alternative annual mileage is therefore retained rather than suppressed.
@@ -370,7 +383,7 @@ The baseline propulsion allocation is shown in Table 2. Private-car VKT is domin
 | \(S_2\) | 0.00 | 103.08 | 158.23 | 364.55 | 17.78 | 1.638 |
 | \(S_3\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
 
-*Table 4. Annual final energy by carrier and scenario. Gasoline is in million litres; diesel and natural gas are in TJ; electricity is in GWh; total final energy is in PJ.*
+*Table 5. Annual final energy by carrier and scenario. Gasoline is in million litres; diesel and natural gas are in TJ; electricity is in GWh; total final energy is in PJ.*
 | \(S_4\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
 
 Under full electrification, final energy falls from 4.619 to 1.435 PJ/year, a reduction of 68.93%. This reflects the higher end-use efficiency of electric drivetrains under the selected consumption factors. \(S_4\) has exactly the same energy demand as \(S_3\); its additional climate benefit comes from the electricity supply factor, not from lower vehicle energy use.
@@ -390,7 +403,7 @@ Under full electrification, final energy falls from 4.619 to 1.435 PJ/year, a re
 | \(S_3\) | 266.940 | 189.649 | 25.012 | 5.377 | 486.978 | −14.23% |
 | \(S_4\) | 133.470 | 189.649 | 12.506 | 5.377 | 341.002 | −39.94% |
 
-*Table 5. Included-stage climate impact by mode and stage, kt CO₂e/year. The total is production plus WTW, not a complete life-cycle total.*
+*Table 6. Included-stage climate impact by mode and stage, kt CO₂e/year. The total is production plus WTW, not a complete life-cycle total.*
 
 *All climate values are kt CO₂e/year. The partial GWP is vehicle production plus WTW operation; it is not a complete life-cycle total.*
 
@@ -420,7 +433,7 @@ is zero under the current additive fixed-VKT model. This follows from the indepe
 | \(S_2\) | 38.475 | 1.554 | 258.921 | 1.563 | 1.737 |
 | \(S_3\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
-*Table 6. Modeled road-combustion exhaust by scenario, tonnes/year.*
+*Table 7. Modeled road-combustion exhaust by scenario, tonnes/year.*
 | \(S_4\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 *Units: tonnes/year of modeled combustion exhaust. The reference is China V illustrative factors.*
@@ -443,7 +456,7 @@ The zero values in \(S_3\) and \(S_4\) refer only to the modeled combustion-exha
 | \(S_2\) | 25.712 | 46.488 |
 | \(S_3\) | 24.149 | 44.751 |
 
-*Table 7. Covered road-PM screening: modeled combustion exhaust plus generic non-exhaust wear, tonnes/year.*
+*Table 8. Covered road-PM screening: modeled combustion exhaust plus generic non-exhaust wear, tonnes/year.*
 | \(S_4\) | 24.149 | 44.751 |
 
 *Covered road PM equals modeled combustion exhaust plus generic tyre, brake and road-surface wear. Resuspended dust and secondary particles are excluded.*
@@ -461,7 +474,7 @@ Under the generic EEA wear factors, full electrification reduces covered PM₂.�
 | \(S_3\) | 240.84 | 674.59 | 194.22 | 35.28 |
 | \(S_4\) | 170.43 | 396.98 | 137.45 | 20.76 |
 
-*Table 8. Included-stage GWP intensity per VKT and conditional PKM.*
+*Table 9. Included-stage GWP intensity per VKT and conditional PKM.*
 
 *Units: g CO₂e per indicated distance, for the included production-plus-WTW boundary. PKM values use conditional occupancy and trip-distance proxies.*
 
@@ -566,7 +579,7 @@ The fixed-VKT comparison preserves the annual travel of each vehicle class, not 
 | Lower BEV occupancy | 591.056 | −4.10% |
 | Higher BEV occupancy | 413.188 | 27.23% |
 
-*Table 9. Equal-PKM sensitivity under alternative effective-occupancy assumptions.*\n\nThe lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
+*Table 10. Equal-PKM sensitivity under alternative effective-occupancy assumptions.*\n\nThe lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
 
 ### 7.7 Electricity Break-Even Factor
 
