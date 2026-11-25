@@ -29,8 +29,8 @@
 <text x="1116.0" y="495.5" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#496783" text-anchor="end" font-weight="700">Peng2017 Table 8: 0.7322</text>
 <line x1="150.0" y1="556.0" x2="1120.0" y2="556.0" stroke="#9B8AB8" stroke-width="2" stroke-dasharray="3 5"/>
 <text x="1116.0" y="549.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#9B8AB8" text-anchor="end" font-weight="700">Peng2017 text: 0.6048</text>
-<line x1="150.0" y1="549.4" x2="1120.0" y2="549.4" stroke="#D3A16F" stroke-width="2" stroke-dasharray="2 5"/>
-<text x="1116.0" y="542.4" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#D3A16F" text-anchor="end" font-weight="700">MEE2023 national PCF: 0.6205</text>
+<line x1="150.0" y1="549.4" x2="1120.0" y2="549.4" stroke="#94AA9C" stroke-width="2" stroke-dasharray="2 5"/>
+<text x="1116.0" y="542.4" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#94AA9C" text-anchor="end" font-weight="700">MEE2023 national PCF: 0.6205</text>
 <text x="635.0" y="650.0" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#647783" text-anchor="middle" font-weight="400">Vehicle lifetime (km)</text>
 <text x="60.0" y="710.0" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#647783" text-anchor="start" font-weight="400">MEE2023 is retrospective and has a broader PCF boundary; use only as a separate reference.</text>
 </svg>

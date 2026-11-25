@@ -18,7 +18,7 @@
 <rect x="230.0" y="369.3" width="32.0" height="0.7" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="246.0" y="363.3" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">3026.9</text>
 <text x="246.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
-<rect x="285.0" y="369.1" width="32.0" height="0.9" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<rect x="285.0" y="369.1" width="32.0" height="0.9" fill="#94AA9C" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="301.0" y="363.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">3770.4</text>
 <text x="301.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
 <rect x="340.0" y="367.2" width="32.0" height="2.8" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
@@ -38,7 +38,7 @@
 <rect x="605.0" y="369.6" width="32.0" height="0.4" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="621.0" y="363.6" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">2.6</text>
 <text x="621.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
-<rect x="660.0" y="369.2" width="32.0" height="0.8" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<rect x="660.0" y="369.2" width="32.0" height="0.8" fill="#94AA9C" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="676.0" y="363.2" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">5.0</text>
 <text x="676.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
 <rect x="715.0" y="369.8" width="32.0" height="0.2" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
@@ -58,7 +58,7 @@
 <rect x="980.0" y="369.1" width="32.0" height="0.9" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="996.0" y="363.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.6</text>
 <text x="996.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
-<rect x="1035.0" y="369.4" width="32.0" height="0.6" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<rect x="1035.0" y="369.4" width="32.0" height="0.6" fill="#94AA9C" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="1051.0" y="363.4" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.0</text>
 <text x="1051.0" y="388.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
 <rect x="1090.0" y="366.2" width="32.0" height="3.8" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
@@ -78,7 +78,7 @@
 <rect x="230.0" y="633.6" width="32.0" height="1.4" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="246.0" y="627.6" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">0.2</text>
 <text x="246.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
-<rect x="285.0" y="634.7" width="32.0" height="0.3" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<rect x="285.0" y="634.7" width="32.0" height="0.3" fill="#94AA9C" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="301.0" y="628.7" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">0.0</text>
 <text x="301.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
 <rect x="340.0" y="629.7" width="32.0" height="5.3" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>
@@ -98,7 +98,7 @@
 <rect x="605.0" y="634.1" width="32.0" height="0.9" fill="#9B8AB8" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="621.0" y="628.1" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">2.7</text>
 <text x="621.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">PHEV</text>
-<rect x="660.0" y="634.6" width="32.0" height="0.4" fill="#D3A16F" stroke="none" stroke-width="1" rx="3" opacity="1"/>
+<rect x="660.0" y="634.6" width="32.0" height="0.4" fill="#94AA9C" stroke="none" stroke-width="1" rx="3" opacity="1"/>
 <text x="676.0" y="628.6" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#172B3A" text-anchor="middle" font-weight="400">1.1</text>
 <text x="676.0" y="653.0" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#647783" text-anchor="middle" font-weight="400">D-bus</text>
 <rect x="715.0" y="632.7" width="32.0" height="2.3" fill="#4F968D" stroke="none" stroke-width="1" rx="3" opacity="1"/>

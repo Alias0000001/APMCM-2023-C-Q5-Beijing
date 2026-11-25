@@ -9,7 +9,7 @@
 <text x="105.0" y="285.0" font-family="Arial,Helvetica,sans-serif" font-size="22" fill="#496783" text-anchor="start" font-weight="700">1.151 billion vehicle-km</text>
 <text x="105.0" y="335.0" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#C56D88" text-anchor="start" font-weight="700">2.08687 billion passenger boardings</text>
 <text x="105.0" y="385.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#647783" text-anchor="start" font-weight="400">1.813 boardings per vehicle-km</text>
-<rect x="625.0" y="185.0" width="500.0" height="245.0" fill="#FBF6F3" stroke="#E7C7B9" stroke-width="1" rx="12" opacity="1"/>
+<rect x="625.0" y="185.0" width="500.0" height="245.0" fill="#F2F5F3" stroke="#CAD5CF" stroke-width="1" rx="12" opacity="1"/>
 <text x="875.0" y="225.0" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#172B3A" text-anchor="middle" font-weight="700">2023 city-bus PKM</text>
 <text x="875.0" y="300.0" font-family="Arial,Helvetica,sans-serif" font-size="34" fill="#C56D88" text-anchor="middle" font-weight="700">NA</text>
 <text x="875.0" y="350.0" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#647783" text-anchor="middle" font-weight="400">No public bus-only annual total located</text>
