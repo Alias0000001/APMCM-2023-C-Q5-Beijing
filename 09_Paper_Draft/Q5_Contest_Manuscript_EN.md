@@ -141,7 +141,7 @@ The work proceeds through five connected tasks:
 | \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |
 | \(UF\) | PHEV utility factor | dimensionless |
 | \(B^*\) | Target-city bus boarding proxy | boardings/year |
-| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |
+| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |\n| \(o_{k,source}\) | Source-defined bus occupancy for factor conversion | persons/bus |\n| \(s,t,q,r_P,r_B\) | Propulsion-share and relative-mileage sensitivity parameters | dimensionless |
 | \(G_s\) | Included-stage annual GWP in scenario \(s\) | t CO₂e/year |
 | \(H_{sj}\) | Annual road-emission mass of pollutant \(j\) | t/year |
 
@@ -564,7 +564,7 @@ The second is approximately 2.169 times the first. Because the original source d
 
 ### 7.5 Nested Technology and Activity Stress Test
 
-The nested sensitivity design combines 27 transfer settings, two mileage-denominator interpretations, 15 energy cases, two production-factor sets, three private-car lifetimes and three bus lifetimes. This yields 14,580 paired six-scenario sets. Each scenario is compared with \(S_0\) under the same parameter combination.
+The nested sensitivity design combines 27 transfer settings, two mileage-denominator interpretations, 15 one-at-a-time energy cases, two production-factor sets, three private-car lifetimes and three bus lifetimes. This yields 14,580 paired six-scenario sets. The energy cases cover electricity-factor and charging-meter alternatives, PHEV utility factor, bus air-conditioning share, CNG/LNG composition, mixed-bus residual fuel and gasoline consumption. They are not an exhaustive joint energy factorial. The production-factor alternatives are the Qiao ICEV/BEV-NMC set with the Xiong PHEV component proxy, and the Qiao ICEV plus Xiong BEV/PHEV-NMC set. The tested lifetimes are 100,000/150,000/200,000 km for private cars and 300,000/400,000/500,000 km for buses. Each scenario is compared with \(S_0\) under the same parameter combination.
 
 | Scenario | Minimum GWP (kt/year) | Maximum GWP (kt/year) | Minimum reduction (%) | Maximum reduction (%) |
 |---|---:|---:|---:|---:|
