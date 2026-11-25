@@ -401,9 +401,10 @@ The baseline propulsion allocation is shown in Table 2. Private-car VKT is domin
 | \(S_2\) | 0.00 | 103.08 | 158.23 | 364.55 | 17.78 | 1.638 |
 | \(S_3\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
 
-*Table 5. Annual final energy by carrier and scenario. Gasoline is in million litres; diesel and natural gas are in TJ; electricity is in GWh; total final energy is in PJ.*
 
 | \(S_4\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
+
+*Table 5. Annual final energy by carrier and scenario. Gasoline is in million litres; diesel and natural gas are in TJ; electricity is in GWh; total final energy is in PJ.*
 
 Under full electrification, final energy falls from 4.619 to 1.435 PJ/year, a reduction of 68.93%. This reflects the higher end-use efficiency of electric drivetrains under the selected consumption factors. \(S_4\) has exactly the same energy demand as \(S_3\); its additional climate benefit comes from the electricity supply factor, not from lower vehicle energy use.
 
@@ -452,9 +453,10 @@ is zero under the current additive fixed-VKT model. This follows from the indepe
 | \(S_2\) | 38.475 | 1.554 | 258.921 | 1.563 | 1.737 |
 | \(S_3\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
-*Table 7. Modeled road-combustion exhaust by scenario, tonnes/year.*
 
 | \(S_4\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+
+*Table 7. Modeled road-combustion exhaust by scenario, tonnes/year.*
 
 *Units: tonnes/year of modeled combustion exhaust. The reference is China V illustrative factors.*
 
@@ -476,9 +478,10 @@ The zero values in \(S_3\) and \(S_4\) refer only to the modeled combustion-exha
 | \(S_2\) | 25.712 | 46.488 |
 | \(S_3\) | 24.149 | 44.751 |
 
-*Table 8. Covered road-PM screening: modeled combustion exhaust plus generic non-exhaust wear, tonnes/year.*
 
 | \(S_4\) | 24.149 | 44.751 |
+
+*Table 8. Covered road-PM screening: modeled combustion exhaust plus generic non-exhaust wear, tonnes/year.*
 
 *Covered road PM equals modeled combustion exhaust plus generic tyre, brake and road-surface wear. Resuspended dust and secondary particles are excluded.*
 
