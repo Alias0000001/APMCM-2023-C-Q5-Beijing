@@ -264,7 +264,7 @@ The total VKT of private cars and buses is conserved across all six scenarios. O
 
 ### 5.4 Energy Demand and WTW Emissions
 
-For each mode, technology and energy carrier, annual carrier demand is
+For each mode, technology and energy carrier, annual energy demand is
 
 \[
 Q_{ikf,s}=V_{ik,s}u_{kf}.
@@ -282,7 +282,7 @@ Gasoline is converted at 31.8718 MJ/L; historical diesel and natural-gas bus ene
 G^{WTW}_s=\frac{1}{1000}\left(\sum_{i,k,f\in fuels} Q_{ikf,s}F_f+\sum_{i,k}Q_{ik,e,s}F_e\right).
 \]
 
-The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for diesel, 72.0 g CO₂e/MJ for CNG and 78.1 g CO₂e/MJ for LNG [6]. A 50/50 CNG/LNG energy split is used as a proxy for the natural-gas bus group. The electricity factor is 0.73224 kg CO₂e/kWh [6].
+The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for diesel, 72.0 g CO₂e/MJ for CNG and 78.1 g CO₂e/MJ for LNG [6], equivalent to 0.0902, 0.0923, 0.0720 and 0.0781 kg CO₂e/MJ in the calculation. A 50/50 CNG/LNG energy split is used as a proxy for the natural-gas bus group. The electricity factor is 0.73224 kg CO₂e/kWh [6].
 
 ### 5.5 Annualized Vehicle-Production Burden and Partial Life-Cycle GWP
 
