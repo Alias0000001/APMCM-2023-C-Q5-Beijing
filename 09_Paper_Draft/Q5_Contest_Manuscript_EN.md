@@ -12,7 +12,7 @@ Six scenarios are evaluated: a conventional-vehicle reference, the estimated pre
 
 The environmental priorities differ by indicator. Bus-first electrification reduces modeled road-exhaust NOx by 71.08%, whereas private-car-first electrification gives the larger climate benefit under the reference VKT distribution. Full electrification eliminates the modeled combustion exhaust, but not non-exhaust particle emissions. When generic tyre, brake and road-surface wear factors are included, the reference PM₂.₅ screening total falls from 30.979 to 24.149 t/year and PM₁₀ from 51.755 to 44.751 t/year under full electrification. These are wear-plus-combustion screening totals; resuspended dust and secondary particles remain outside the boundary.
 
-Sensitivity analysis uses paired parameter sets rather than treating a single parameter combination as certain. Across 14,580 designed combinations, the full-electrification climate result ranges from a 6.01% increase to a 33.77% reduction; the lower-carbon-electricity case remains beneficial throughout the tested range. These frequencies and ranges describe the selected stress-test design, not probability distributions. The results support coordinated vehicle and electricity decarbonization, while showing that city activity, vehicle lifetime, fuel use, occupancy and non-exhaust emissions must be considered before making a general claim about environmental benefits.
+Sensitivity analysis uses paired parameter sets rather than treating a single parameter combination as certain. Across 14,580 designed combinations, the full-electrification climate result ranges from a 6.01% increase to a 33.77% reduction; the lower-carbon-electricity case remains beneficial throughout the tested range. These frequencies and ranges describe the selected stress-test design, not probability distributions. A pre-contest Jinhua statistical yearbook provides a near-million administrative city-district benchmark, but its road-passenger turnover and whole-city vehicle stock do not provide matched central-city VKT or PKM; Jinhua is therefore used as a transfer-boundary diagnostic rather than assigned a fabricated emissions total. The results support coordinated vehicle and electricity decarbonization, while showing that city activity, vehicle lifetime, fuel use, occupancy and non-exhaust emissions must be considered before making a general claim about environmental benefits.
 
 **Keywords:** urban transport; new-energy vehicles; representative city; vehicle-kilometres; well-to-wheel emissions; life-cycle screening; road pollutants; sensitivity analysis
 
@@ -483,7 +483,25 @@ The Beijing 2022 urban population was 19.128 million, compared with the full-mun
 
 *Figure 8. Paired S3 reduction across 27 city-transfer settings. Each result is compared with the \(S_0\) baseline under the same transfer parameters.*
 
-### 7.2 Propulsion-Share and Relative-Mileage Sensitivity
+### 7.2 Jinhua External Transferability Check
+
+The *Jinhua Statistical Yearbook 2023* was published in October 2023 and was therefore available before the November 2023 contest deadline [20]. It reports 2022 statistics for the administrative city-district boundary. This provides an external near-million population benchmark, but the statistical boundary must not be confused with the central built-up area.
+
+| Jinhua city-district indicator (2022) | Value | Boundary interpretation |
+|---|---:|---|
+| Year-end household population | 1,007,712 | Administrative city-district population, not resident population |
+| Urban household population | 517,946 (51.4%) | Urban component within the administrative district |
+| Rural household population | 489,766 (48.6%) | Rural component within the same district |
+| Statistical city-district area | 2,049 km² | Includes the municipal districts, Wucheng, Jinyi New District (Jindong) and the development zone |
+| Road-passenger volume | 1.27 million passenger trips | Road-passenger statistic; not verified as urban bus boardings |
+| Road-passenger turnover | 283.29 million passenger-km | Road-passenger statistic; not verified as urban bus PKM |
+| Small and micro passenger cars | 2,209,219 vehicles | Whole-city total; not a city-district-only stock |
+
+The ratio of road-passenger turnover to passenger volume is approximately 223.1 km per passenger trip. This is not a plausible substitute for an urban bus boarding-leg distance; it indicates that the published road-passenger measure has a broader service scope than the urban bus activity required by this model. Likewise, the whole-city small/micro passenger-car stock cannot be divided by the city-district population to infer a city-district private-car ownership rate. The yearbook's administrative city-district area also includes substantial rural territory and is not equivalent to the central built-up area.
+
+Consequently, the Jinhua statistics confirm that a near-million administrative city-district exists, but they do not identify matched private-car VKT, propulsion-specific VKT, bus VKT or bus PKM. We do not report an absolute Jinhua emissions total. Instead, Jinhua is retained as an external transferability diagnostic: the ownership, mileage and bus-supply multipliers are varied independently around the Beijing reference case, while the mismatch between the available Jinhua indicators and the required urban activity measures is stated explicitly. The 27-setting transfer grid above is a structured sensitivity envelope, not a calibration to measured Jinhua VKT.
+
+### 7.3 Propulsion-Share and Relative-Mileage Sensitivity
 
 The baseline propulsion allocation depends on several proxies: private NEV stock share \(s\), BEV fraction within NEVs \(t\), BEV share \(q\) of the mixed electric-drive bus group, relative NEV-car mileage \(r_P\) and relative BEV-bus mileage \(r_B\). These five parameters are varied over three levels each:
 
@@ -497,7 +515,7 @@ The baseline propulsion allocation depends on several proxies: private NEV stock
 
 The full factorial design contains \(3^5=243\) paired propulsion settings. Across these settings, the \(S_3\) partial-GWP reduction ranges from 12.87% to 15.29%. The absolute \(S_3\) value is unchanged because the full-electrification scenario replaces all modeled propulsion activity; the \(S_0\) reference changes with the assumed baseline propulsion allocation. Under the reference China V exhaust factors, bus-first electrification gives the larger NOx reduction in all 243 tested settings. These are structured design points, not probability samples.
 
-### 7.3 Mileage-Denominator Sensitivity
+### 7.4 Mileage-Denominator Sensitivity
 
 The private-car annual mileage has two interpretations:
 
@@ -511,7 +529,7 @@ D_2=49.9\times365=18,213.50\ {\rm km/year}.
 
 The second is approximately 2.169 times the first. Because the original source does not establish that the 49.9-km daily distance and the 0.461 multiplier share compatible denominators, both are retained as alternatives. The model does not present either as a directly observed annual odometer average.
 
-### 7.4 Nested Technology and Activity Stress Test
+### 7.5 Nested Technology and Activity Stress Test
 
 The nested sensitivity design combines 27 transfer settings, two mileage-denominator interpretations, 15 energy cases, two production-factor sets, three private-car lifetimes and three bus lifetimes. This yields 14,580 paired six-scenario sets. Each scenario is compared with \(S_0\) under the same parameter combination.
 
@@ -534,7 +552,7 @@ These ranges are deterministic stress envelopes. They are not confidence interva
 
 For local NOx, bus-first electrification produces the larger reduction in 337 of 432 exhaust stress cases, while private-car-first electrification is better in 95 cases. For PM₂.₅ exhaust, private-car-first is better in 431 of 432 cases. These counts depend on the chosen factor and transfer grid and should not be interpreted as probabilities.
 
-### 7.5 Equal-Passenger-Service Sensitivity
+### 7.6 Equal-Passenger-Service Sensitivity
 
 The fixed-VKT comparison preserves the annual travel of each vehicle class, not necessarily the passenger service delivered. To test this distinction, the model fixes each mode's baseline PKM and varies the effective occupancy of electric vehicles.
 
@@ -546,7 +564,7 @@ The fixed-VKT comparison preserves the annual travel of each vehicle class, not 
 
 *Table 9. Equal-PKM sensitivity under alternative effective-occupancy assumptions.*\n\nThe lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
 
-### 7.6 Electricity Break-Even Factor
+### 7.7 Electricity Break-Even Factor
 
 For a private ICEV and BEV with the same lifetime mileage \(L\), the break-even electricity WTW factor is obtained by equating their included production-plus-operation GWP:
 
@@ -588,7 +606,7 @@ The model is checked through the following identities and reconciliations:
 
 First, the absolute activity estimates depend on transferring Beijing per-capita rates to a hypothetical million-resident city. The bus operator's service area is not perfectly matched to the municipal population boundary. Second, the 49.9-km daily distance and 0.461 activity multiplier have unresolved denominators; the alternative is retained explicitly. Third, propulsion-specific VKT is inferred from stock and fleet proxies rather than direct odometer records. Fourth, the vehicle-production factors come from studies with different years and system boundaries, and the PHEV production factor is a component-sum proxy.
 
-Fifth, actual matched bus PKM is unavailable. Historical trip-distance and occupancy values are used only for conditional service sensitivity. Sixth, the main climate boundary does not fully quantify maintenance, vehicle end-of-life, recycling, infrastructure or every battery-replacement pathway. The non-exhaust particle screen excludes resuspended dust and secondary particles. Seventh, the local emission factors are an illustrative national reference and do not reconstruct the exact emission-standard composition of the target fleet. Finally, no atmospheric-dispersion or health-impact model is included; road-emission mass reductions cannot be translated directly into ambient concentration or health benefits.
+Fifth, actual matched bus PKM is unavailable. Historical trip-distance and occupancy values are used only for conditional service sensitivity. Sixth, the main climate boundary does not fully quantify maintenance, vehicle end-of-life, recycling, infrastructure or every battery-replacement pathway. The non-exhaust particle screen excludes resuspended dust and secondary particles. Seventh, the local emission factors are an illustrative national reference and do not reconstruct the exact emission-standard composition of the target fleet. Finally, no atmospheric-dispersion or health-impact model is included; road-emission mass reductions cannot be translated directly into ambient concentration or health benefits. The pre-contest Jinhua yearbook provides a useful near-million administrative-city comparison, but its available vehicle and road-passenger statistics do not provide matched central-city VKT or PKM. The paper therefore treats Jinhua as an external transferability diagnostic and does not claim a measured Jinhua emissions inventory.
 
 These limitations affect the precision and scope of the numerical results. They do not justify replacing missing flows with zero or describing the current calculation as a complete cradle-to-grave assessment.
 
@@ -687,3 +705,6 @@ The six-scenario results are generated from the activity, energy, production and
 
 
 [19] Intergovernmental Panel on Climate Change (2006). *2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy*, Chapter 1, default fuel properties and energy conversion.
+
+
+[20] Jinhua Municipal Bureau of Statistics and Jinhua Survey Team of the National Bureau of Statistics (2023). *Jinhua Statistical Yearbook 2023*. China Statistics Press, October 2023. Tables 1-1, 5-2 and 13-1. Official PDF: https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3552/site/attach/0/93171fc92a394df4be02109d70e3cf00.pdf
