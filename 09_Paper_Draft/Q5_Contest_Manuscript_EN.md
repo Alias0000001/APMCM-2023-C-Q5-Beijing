@@ -300,23 +300,25 @@ The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for die
 
 ### 5.5 Annualized Vehicle-Production Burden and Partial Life-Cycle GWP
 
-Let \(M_{ik}\) be the included production burden per vehicle and \(L_{ik}\) the corresponding lifetime mileage. Under steady-state replacement, the annualized production burden is
+Let \(M_{ik}\) be the included production burden per vehicle, in tonnes CO₂e/vehicle, and \(L_{ik}\) the corresponding lifetime mileage. Under steady-state replacement, the annualized production burden is
 
 \[
-G^{prod}_s=\sum_{i,k}V_{ik,s}\frac{M_{ik}}{L_{ik}}.
+G^{prod}_s=\sum_{i,k}V_{ik,s}\frac{M_{ik}}{L_{ik}},
 \]
 
-The private-car production factors are 9.985 t CO₂e/vehicle for ICEVs and 15.005 t CO₂e/vehicle for BEV-NMC, based on Qiao et al. [7]. The PHEV production factor, 8.670 t CO₂e/vehicle, is a component-sum proxy derived from Xiong et al. [8]; it is less directly comparable than the ICEV/BEV factors and is treated as an uncertainty source. The initial traction battery is included in the applicable production factors and is not added a second time.
+which gives tonnes CO₂e/year because \(V_{ik,s}/L_{ik}\) is the annual replacement-equivalent vehicle count.
 
-For buses, the historical Lin et al. study [5] provides source-defined materials and assembly/distribution burdens. Its passenger-service-normalized factors are converted back to a per-vehicle production proxy using the source's effective occupancy and a 400,000-km bus lifetime. The resulting factors are 42.840 t CO₂e/vehicle for diesel, 45.360 for natural gas, 46.350 for hybrid and 47.748 for BEV buses. These historical values are proxies, not contemporary measurements of the target fleet.
+For private cars, the main production factors are 9.985 t CO₂e/vehicle for ICEVs and 15.005 t CO₂e/vehicle for BEV-NMC, based on Qiao et al. [7]. The PHEV factor is 8.670 t CO₂e/vehicle, derived by summing the body, NMC battery, fluids, assembly and transport components reported by Xiong et al. [8]. The PHEV value is a component-sum proxy and is less directly comparable with the Qiao factors; this source-boundary difference is included in the production-factor sensitivity. The initial traction battery is already included in the relevant production factors and is not added again.
 
-For buses, the source factor \(f_{k,PKM}\) is converted to a per-vehicle burden using the source-defined effective occupancy \(o_{k,source}\) and the assumed bus lifetime:
+For buses, Lin et al. [5] reports production intensity per 1,000 passenger-kilometres. It is converted to a per-vehicle factor using the source-defined effective occupancy and the assumed 400,000-km lifetime:
+
 \[
-M_{bus,k}=\frac{f_{k,PKM}\,o_{k,source}\,L_{bus}}{10^6},
+M_{bus,k}=\frac{f_{k,PKM}\,o_{k,source}\,L_{bus}}{10^6}.
 \]
-where \(f_{k,PKM}\) is in kg CO₂e per 1,000 passenger-km and \(M_{bus,k}\) is in tonnes CO₂e per vehicle. All production factors are retained in tonnes per vehicle when substituted into the production equation, so \(G^{prod}_s\) is in tonnes/year. The WTW factors are in kg CO₂e per carrier unit and are divided by 1,000 in the WTW equation to obtain tonnes/year. The reference lifetime is 150,000 km for private cars and 400,000 km for buses. Alternative lifetimes are tested separately.
 
-The main climate indicator is
+Here \(f_{k,PKM}\) is in kg CO₂e per 1,000 passenger-km and \(M_{bus,k}\) is in tonnes CO₂e per vehicle. The source intensities and effective occupancies are 2.52 kg/1,000 PKM and 42.5 passengers for diesel buses; 2.80 and 40.5 for natural-gas buses; 3.09 and 37.5 for hybrid buses; and 3.46 and 34.5 for BEV buses. The resulting per-vehicle factors are 42.840, 45.360, 46.350 and 47.748 t CO₂e, respectively. These are historical Beijing proxies, not contemporary measurements of the target fleet.
+
+The reference lifetime is 150,000 km for private cars and 400,000 km for buses. Alternative lifetimes are tested separately. The main climate indicator is
 
 \[
 G^{partial}_s=G^{prod}_s+G^{WTW}_s.
