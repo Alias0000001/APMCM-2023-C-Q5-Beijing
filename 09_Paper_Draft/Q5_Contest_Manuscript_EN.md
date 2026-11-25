@@ -183,7 +183,20 @@ For buses, the annual activity is transferred separately:
 V_B=P^*\frac{V_{B,r}}{P_r}b.
 \]
 
-The reference values are \(P_r=21.843\) million residents, \(N_{P,r}=4.932\) million private small- and micro-passenger cars, and \(V_{B,r}=984\) million bus vehicle-kilometres per year [1–3]. The baseline transfer multipliers are \(g=m=b=1\).
+The reference values are \(P_r=21.843\) million residents, \(N_{P,r}=4.932\) million private small- and micro-passenger cars, and \(V_{B,r}=984\) million bus vehicle-kilometres per year [1–3]. The baseline transfer multipliers are \(g=m=b=1\). The April 2023 bus-fleet snapshot contains 23,747 buses; this stock snapshot is used only to estimate a bus-stock density, not as a matched 2022 annual fleet observation [15].
+
+The corresponding stock and activity calculations are summarized in Table 1.
+
+| Quantity | Reference value | Target-city estimate | Interpretation |
+|---|---:|---:|---|
+| Population | 21.843 million | 1.000 million | Full-municipality denominator transferred to the hypothetical target |
+| Private small/micro passenger cars | 4.932 million | 225,793 | Stock scaled by population |
+| Bus fleet snapshot | 23,747 | 1,087 | April 2023 stock-density proxy; not matched to 2022 VKT |
+| Private-car annual distance | 8,396.42 km/car/year | 8,396.42 km/car/year | Conditional use of \(49.9\times365\times0.461\) |
+| Private-car annual activity | — | 1,895.855 million vehicle-km | Target stock multiplied by conditional annual mileage |
+| Bus annual activity | 984 million vehicle-km | 45.049 million vehicle-km | Operator activity scaled by population |
+
+*Table 1. Reference-system transfer and target-city transport activity. The bus stock snapshot and 2022 operator VKT refer to different observation periods and are not divided to infer annual mileage per bus.*
 
 The private-car distance input is \(d=49.9\) km/day. The factor \(a=0.461\) is applied as a conditional activity multiplier. Its original denominator and precise interpretation are not fully established; it is therefore not described as a directly observed dispatch probability. The base annual mileage is
 
@@ -205,7 +218,7 @@ V_{ik,s}=V_i p_{ik,s},\qquad \sum_k p_{ik,s}=1.
 
 The allocation is conducted separately for private cars and buses.
 
-**Private passenger cars.** The baseline assumes an illustrative NEV stock share of 8%. The national BEV fraction within NEVs, 77.8%, is used as a transfer proxy. The remaining NEV share is represented by PHEVs. Equal annual VKT per vehicle is assumed within the three groups. This produces the baseline private-car VKT shares of 92.00% ICEV, 6.224% BEV and 1.776% PHEV.
+**Private passenger cars.** The baseline assumes an illustrative private-car NEV stock share of 8%; this is not an observed private-car-only share. The 2022 local NEV passenger-vehicle count includes non-private vehicles and is used only as broad context. The national BEV fraction within NEVs, 77.8%, is used as a transfer proxy [16], and the remaining NEV share is represented by PHEVs. Equal annual VKT per vehicle is assumed within the three groups. This produces baseline private-car VKT shares of 92.00% ICEV, 6.224% BEV and 1.776% PHEV. The 8% NEV share is varied from 5% to 11.58%, the BEV fraction within NEVs from 60% to 90%, and relative technology mileage is varied separately in Section 7.
 
 **Public buses.** The April 2023 fleet snapshot records 1,495 diesel buses, 6,795 natural-gas buses, 15,451 mixed electric-drive buses and 6 unclassified buses. The mixed electric-drive group is not assumed to consist entirely of pure BEVs. Instead, 80% of its activity is assigned to BEVs as a scenario parameter; the remaining 20% is retained as mixed non-BEV activity. Equal VKT per vehicle within each fleet group is used as the initial allocation.
 
@@ -221,6 +234,8 @@ The resulting baseline bus VKT shares are 6.30% diesel, 28.61% natural gas, 13.0
 | Buses | Mixed non-BEV | 5.862 | 13.01% |
 | Buses | BEV | 23.449 | 52.05% |
 | Buses | Unclassified | 0.011 | 0.03% |
+
+*Table 2. Baseline propulsion-specific VKT. Shares are modeled allocations, not observed odometer-based activity shares.*
 
 ![Mode-specific annual VKT allocation under the baseline assumptions](figures_final/Figure_09_Activity_Allocation.svg)
 
@@ -251,9 +266,9 @@ For each mode, technology and energy carrier, annual carrier demand is
 Q_{ikf,s}=V_{ik,s}u_{kf}.
 \]
 
-For PHEVs, fuel and electricity demand are divided using the utility factor \(UF=0.66\) [12]. The fuel share is \(1-UF\), and the electric share is \(UF\). The reference gasoline consumption is 7.5 L/100 km. The reference electricity consumption is 0.192289 kWh/km for private electric cars and 0.758253 kWh/km for electric buses [4]. The charging report does not establish the precise meter position; no additional charging loss is imposed in the base case, while alternative charging-efficiency cases are retained in sensitivity analysis.
+For PHEVs, fuel and electricity demand are divided using the utility factor \(UF=0.66\) [12]. The fuel share is \(1-UF\), and the electric share is \(UF\). The reference gasoline consumption is assumed to be 7.5 L/100 km, informed by published Chinese light-duty vehicle fuel-economy evidence but not treated as a measured fleet mean [17,18]. The reference electricity consumption is 0.192289 kWh/km for private electric cars and 0.758253 kWh/km for electric buses [4]. The charging report does not establish the precise meter position; no additional charging loss is imposed in the base case, while alternative charging-efficiency cases are retained in sensitivity analysis.
 
-Final energy is calculated by converting each energy carrier to MJ, with electricity converted at 3.6 MJ/kWh. WTW GWP is
+Final energy is calculated by converting each energy carrier to MJ. Gasoline is converted at 31.8718 MJ/L; historical diesel and natural-gas bus energy-use rates are taken from Lin et al. [5], with the air-conditioning share treated as a historical proxy. Electricity is converted at 3.6 MJ/kWh. WTW GWP is
 
 \[
 G^{WTW}_s=\sum_{i,k,f} Q_{ikf,s}F_f.
@@ -273,7 +288,11 @@ The private-car production factors are 9.985 t CO₂e/vehicle for ICEVs and 15.0
 
 For buses, the historical Lin et al. study [5] provides source-defined materials and assembly/distribution burdens. Its passenger-service-normalized factors are converted back to a per-vehicle production proxy using the source's effective occupancy and a 400,000-km bus lifetime. The resulting factors are 42.840 t CO₂e/vehicle for diesel, 45.360 for natural gas, 46.350 for hybrid and 47.748 for BEV buses. These historical values are proxies, not contemporary measurements of the target fleet.
 
-The reference lifetime is 150,000 km for private cars and 400,000 km for buses. Alternative lifetimes are tested separately.
+For buses, the source factor \(f_{k,PKM}\) is converted to a per-vehicle burden using the source-defined effective occupancy \(o_{k,source}\) and the assumed bus lifetime:
+\[
+M_{bus,k}=\frac{f_{k,PKM}\,o_{k,source}\,L_{bus}}{10^6},
+\]
+where \(f_{k,PKM}\) is in kg CO₂e per 1,000 passenger-km and \(M_{bus,k}\) is in tonnes CO₂e per vehicle. The reference lifetime is 150,000 km for private cars and 400,000 km for buses. Alternative lifetimes are tested separately.
 
 The main climate indicator is
 
@@ -321,7 +340,7 @@ PKM_i=V_i o_i,
 
 where \(o_i\) is the effective occupancy.
 
-The 2022 bus operator reported 1.726 billion boardings [3]. After scaling to the target population and applying a historical 10.9-km central-city bus-trip proxy [10], the model obtains 861.3 million bus PKM. The private-car estimate uses a historical occupancy proxy of 1.24 persons per vehicle trip [11], giving 2.351 billion private-car PKM. Neither value is a directly observed, distance-weighted target-city PKM. The bus trip-distance proxy is not verified as the average boarding-leg route distance.
+The 2022 bus operator reported 1.726 billion boardings [3]. The target-city boarding proxy is (B^*=1.726\times10^9(P^*/P_r)). After applying a historical 10.9-km central-city bus-trip proxy [10], the model obtains (PKM_B=B^*\times10.9=861.3) million bus PKM. The private-car estimate uses (PKM_P=V_P o_P), with a historical occupancy proxy (o_P=1.24) persons per vehicle trip [11], giving 2.351 billion private-car PKM. Neither value is a directly observed, distance-weighted target-city PKM. The bus trip-distance proxy is not verified as the average boarding-leg route distance.
 
 For equal-service sensitivity, each mode's baseline PKM is held constant and VKT is adjusted inversely with assumed occupancy. This tests whether the ranking changes under alternative passenger-service assumptions; it does not model modal substitution, congestion or capacity constraints.
 
@@ -557,7 +576,7 @@ The most defensible conclusion is therefore conditional: electrification can red
 
 [2] Beijing Transport Institute. *2023 Annual Report*, contemporary secondary coverage, August 2023. https://www.sohu.com/a/715705099_100106037
 
-[3] Beijing bus operator 2022 activity statistics, contemporary reporting, July 2023. https://bj.people.com.cn/n2/2023/0703/c14540-40479551.html
+[3] Beijing Public Transport Corporation. 2022 bus operation statistics, published October 9, 2023. https://www.bjbus.com/home/fun_news_detail.php?uNewsCode=00009286&uNewsType=8
 
 [4] *2023 China Major Cities Charging Infrastructure Monitoring Report*, Table 4-1. Publication corroboration: https://www.ndanev.com/2023/10/20/1-194/ (the original report PDF is not archived in this project; the table is retained as a transcription).
 
@@ -624,3 +643,12 @@ The six-scenario results are generated from the activity, energy, production and
 - The partial-GWP total is not a complete life-cycle total.
 - Zero modeled combustion exhaust is not zero road pollution.
 - Sensitivity-grid frequencies are not probabilities.
+
+
+[15] Beijing bus-fleet composition, April 2023 snapshot. Beijing Daily client report. https://app.bjtitle.com/8816/newshow.php?did=867950049830928&mood=&newsid=6336450&typeid=68&uid=0
+
+[16] National BEV share within new-energy passenger vehicles, June 2023 statistics, reported July 10, 2023. People's Daily Online. https://finance.people.com.cn/n1/2023/0710/c1004-40031401.html
+
+[17] International Energy Agency. *Fuel Economy in China*. https://www.iea.org/articles/fuel-economy-in-china
+
+[18] International Council on Clean Transportation (2021). *Evaluation of Real-World Fuel Consumption of Light-Duty Vehicles in China: A 2021 Update*. https://theicct.org/publication/evaluation-of-real-world-fuel-consumption-of-light-duty-vehicles-in-china-a-2021-update/
