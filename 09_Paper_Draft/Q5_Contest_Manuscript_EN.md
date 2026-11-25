@@ -256,6 +256,8 @@ Six scenarios are established. The conventional reference is denoted \(S_{-1}\) 
 | \(S_3\) Full electrification | All BEV | All BEV | Reference |
 | \(S_4\) Full electrification with cleaner electricity | All BEV | All BEV | Half the reference factor |
 
+*Table 3. Definition of the six propulsion and electricity scenarios.*
+
 In \(S_{-1}\), the conventional bus mix is divided between diesel and natural gas using the fleet-count ratio. In \(S_4\), vehicle activity, energy use per kilometre and production burdens are identical to \(S_3\); only the electricity WTW factor is halved. Thus, \(S_4\) is a policy stress scenario rather than a forecast of an observed future grid.
 
 The total VKT of private cars and buses is conserved across all six scenarios. Only the propulsion allocation changes.
@@ -363,6 +365,8 @@ The baseline propulsion allocation is shown in Table 2. Private-car VKT is domin
 | \(S_1\) | 131.67 | 0.00 | 0.00 | 26.96 | 34.16 | 4.417 |
 | \(S_2\) | 0.00 | 103.08 | 158.23 | 364.55 | 17.78 | 1.638 |
 | \(S_3\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
+
+*Table 4. Annual final energy by carrier and scenario. Gasoline is in million litres; diesel and natural gas are in TJ; electricity is in GWh; total final energy is in PJ.*
 | \(S_4\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
 
 Under full electrification, final energy falls from 4.619 to 1.435 PJ/year, a reduction of 68.93%. This reflects the higher end-use efficiency of electric drivetrains under the selected consumption factors. \(S_4\) has exactly the same energy demand as \(S_3\); its additional climate benefit comes from the electricity supply factor, not from lower vehicle energy use.
@@ -381,6 +385,8 @@ Under full electrification, final energy falls from 4.619 to 1.435 PJ/year, a re
 | \(S_2\) | 266.940 | 189.649 | 34.408 | 5.245 | 496.242 | −12.60% |
 | \(S_3\) | 266.940 | 189.649 | 25.012 | 5.377 | 486.978 | −14.23% |
 | \(S_4\) | 133.470 | 189.649 | 12.506 | 5.377 | 341.002 | −39.94% |
+
+*Table 5. Included-stage climate impact by mode and stage, kt CO₂e/year. The total is production plus WTW, not a complete life-cycle total.*
 
 *All climate values are kt CO₂e/year. The partial GWP is vehicle production plus WTW operation; it is not a complete life-cycle total.*
 
@@ -409,6 +415,8 @@ is zero under the current additive fixed-VKT model. This follows from the indepe
 | \(S_1\) | 930.486 | 210.676 | 105.338 | 5.267 | 5.267 |
 | \(S_2\) | 38.475 | 1.554 | 258.921 | 1.563 | 1.737 |
 | \(S_3\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
+
+*Table 6. Modeled road-combustion exhaust by scenario, tonnes/year.*
 | \(S_4\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 *Units: tonnes/year of modeled combustion exhaust. The reference is China V illustrative factors.*
@@ -430,6 +438,8 @@ The zero values in \(S_3\) and \(S_4\) refer only to the modeled combustion-exha
 | \(S_1\) | 29.416 | 50.018 |
 | \(S_2\) | 25.712 | 46.488 |
 | \(S_3\) | 24.149 | 44.751 |
+
+*Table 7. Covered road-PM screening: modeled combustion exhaust plus generic non-exhaust wear, tonnes/year.*
 | \(S_4\) | 24.149 | 44.751 |
 
 *Covered road PM equals modeled combustion exhaust plus generic tyre, brake and road-surface wear. Resuspended dust and secondary particles are excluded.*
@@ -446,6 +456,8 @@ Under the generic EEA wear factors, full electrification reduces covered PM₂.�
 | \(S_2\) | 240.84 | 880.24 | 194.22 | 46.04 |
 | \(S_3\) | 240.84 | 674.59 | 194.22 | 35.28 |
 | \(S_4\) | 170.43 | 396.98 | 137.45 | 20.76 |
+
+*Table 8. Included-stage GWP intensity per VKT and conditional PKM.*
 
 *Units: g CO₂e per indicated distance, for the included production-plus-WTW boundary. PKM values use conditional occupancy and trip-distance proxies.*
 
