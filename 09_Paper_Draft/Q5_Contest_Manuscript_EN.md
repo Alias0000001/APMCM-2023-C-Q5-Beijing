@@ -124,7 +124,7 @@ The work proceeds through five connected tasks:
 | \(Q_{ikf,s}\) | Annual demand for energy carrier \(f\) | carrier unit/year |
 | \(u_{kf}\) | Energy use of technology \(k\) per VKT | carrier unit/vehicle-km |
 | \(F_f\) | WTW emission factor of energy carrier \(f\) | kg CO₂e/carrier unit |
-| \(M_{ik}\) | Included production GWP per vehicle | kg CO₂e/vehicle |
+| \(M_{ik}\) | Included production GWP per vehicle | t CO₂e/vehicle |
 | \(L_{ik}\) | Lifetime mileage of vehicle technology \(k\) | vehicle-km |
 | \(A_{ikj}\) | Road-exhaust factor for pollutant \(j\) | g/vehicle-km |
 | \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |
@@ -183,7 +183,7 @@ For buses, the annual activity is transferred separately:
 V_B=P^*\frac{V_{B,r}}{P_r}b.
 \]
 
-The reference values are \(P_r=21.843\) million residents, \(N_{P,r}=4.932\) million private small- and micro-passenger cars, and \(V_{B,r}=984\) million bus vehicle-kilometres per year [1–3]. The baseline transfer multipliers are \(g=m=b=1\). The April 2023 bus-fleet snapshot contains 23,747 buses; this stock snapshot is used only to estimate a bus-stock density, not as a matched 2022 annual fleet observation [15].
+The reference values are \(P_r=21.843\) million residents, \(N_{P,r}=4.932\) million private small- and micro-passenger cars, and \(V_{B,r}=984\) million bus vehicle-kilometres per year [1–3]. The baseline transfer multipliers are \(g=m=b=1\). The April 2023 bus-fleet snapshot contains 23,747 buses [15]; this stock snapshot is used only to estimate a bus-stock density, not as a matched 2022 annual fleet observation.
 
 The corresponding stock and activity calculations are summarized in Table 1.
 
@@ -198,7 +198,7 @@ The corresponding stock and activity calculations are summarized in Table 1.
 
 *Table 1. Reference-system transfer and target-city transport activity. The bus stock snapshot and 2022 operator VKT refer to different observation periods and are not divided to infer annual mileage per bus.*
 
-The private-car distance input is \(d=49.9\) km/day. The factor \(a=0.461\) is applied as a conditional activity multiplier. Its original denominator and precise interpretation are not fully established; it is therefore not described as a directly observed dispatch probability. The base annual mileage is
+The private-car distance input is \(d=49.9\) km/day [2]. The factor \(a=0.461\) is applied as a conditional activity multiplier [2]. Its original denominator and precise interpretation are not fully established; it is therefore not described as a directly observed dispatch probability. The base annual mileage is
 
 \[
 365\times49.9\times0.461=8,396.42\ {\rm km/car/year}.
@@ -281,7 +281,7 @@ The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for die
 Let \(M_{ik}\) be the included production burden per vehicle and \(L_{ik}\) the corresponding lifetime mileage. Under steady-state replacement, the annualized production burden is
 
 \[
-G^{prod}_s=\frac{1}{1000}\sum_{i,k}V_{ik,s}\frac{M_{ik}}{L_{ik}}.
+G^{prod}_s=\sum_{i,k}V_{ik,s}\frac{M_{ik}}{L_{ik}}.
 \]
 
 The private-car production factors are 9.985 t CO₂e/vehicle for ICEVs and 15.005 t CO₂e/vehicle for BEV-NMC, based on Qiao et al. [7]. The PHEV production factor, 8.670 t CO₂e/vehicle, is a component-sum proxy derived from Xiong et al. [8]; it is less directly comparable than the ICEV/BEV factors and is treated as an uncertainty source. The initial traction battery is included in the applicable production factors and is not added a second time.
@@ -292,7 +292,7 @@ For buses, the source factor \(f_{k,PKM}\) is converted to a per-vehicle burden 
 \[
 M_{bus,k}=\frac{f_{k,PKM}\,o_{k,source}\,L_{bus}}{10^6},
 \]
-where \(f_{k,PKM}\) is in kg CO₂e per 1,000 passenger-km and \(M_{bus,k}\) is in tonnes CO₂e per vehicle. The reference lifetime is 150,000 km for private cars and 400,000 km for buses. Alternative lifetimes are tested separately.
+where \(f_{k,PKM}\) is in kg CO₂e per 1,000 passenger-km and \(M_{bus,k}\) is in tonnes CO₂e per vehicle. All production factors are retained in tonnes per vehicle when substituted into the production equation, so \(G^{prod}_s\) is in tonnes/year. The WTW factors are in kg CO₂e per carrier unit and are divided by 1,000 in the WTW equation to obtain tonnes/year. The reference lifetime is 150,000 km for private cars and 400,000 km for buses. Alternative lifetimes are tested separately.
 
 The main climate indicator is
 
@@ -524,13 +524,13 @@ For local NOx, bus-first electrification produces the larger reduction in 337 of
 
 The fixed-VKT comparison preserves the annual travel of each vehicle class, not necessarily the passenger service delivered. To test this distinction, the model fixes each mode's baseline PKM and varies the effective occupancy of electric vehicles.
 
-| Occupancy case | \(S_3\) equal-service GWP (kt/year) | Change relative to paired \(S_0\) |
+| Occupancy case | \(S_3\) equal-service GWP (kt/year) | GWP reduction vs. paired \(S_0\) |
 |---|---:|---:|
-| Reference | 486.978 | −14.23% |
-| Lower BEV occupancy | 591.056 | +4.10% |
-| Higher BEV occupancy | 413.188 | −27.23% |
+| Reference | 486.978 | 14.23% |
+| Lower BEV occupancy | 591.056 | −4.10% |
+| Higher BEV occupancy | 413.188 | 27.23% |
 
-The lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
+*Table 9. Equal-PKM sensitivity under alternative effective-occupancy assumptions.*\n\nThe lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
 
 ### 7.6 Electricity Break-Even Factor
 
@@ -670,3 +670,6 @@ The six-scenario results are generated from the activity, energy, production and
 [17] International Energy Agency. *Fuel Economy in China*. https://www.iea.org/articles/fuel-economy-in-china
 
 [18] International Council on Clean Transportation (2021). *Evaluation of Real-World Fuel Consumption of Light-Duty Vehicles in China: A 2021 Update*. https://theicct.org/publication/evaluation-of-real-world-fuel-consumption-of-light-duty-vehicles-in-china-a-2021-update/
+
+
+[19] Intergovernmental Panel on Climate Change (2006). *2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 2: Energy*, Chapter 1, default fuel properties and energy conversion.
