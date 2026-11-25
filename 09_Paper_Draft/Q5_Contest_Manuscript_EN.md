@@ -177,11 +177,13 @@ The corresponding annual private-car activity is
 V_P=P^*\frac{N_{P,r}}{P_r}(365da)gm.
 \]
 
-For buses, the annual activity is transferred separately:
+For buses, the annual activity and fleet-stock proxy are transferred separately:
 
 \[
-V_B=P^*\frac{V_{B,r}}{P_r}b.
+V_B=P^*\frac{V_{B,r}}{P_r}b,
+\qquad N_B^*=P^*\frac{N_{B,r}}{P_r},
 \]
+where \(N_{B,r}=23,747\) is the April 2023 fleet snapshot.
 
 The reference values are \(P_r=21.843\) million residents, \(N_{P,r}=4.932\) million private small- and micro-passenger cars, and \(V_{B,r}=984\) million bus vehicle-kilometres per year [1–3]. The baseline transfer multipliers are \(g=m=b=1\). The April 2023 bus-fleet snapshot contains 23,747 buses [15]; this stock snapshot is used only to estimate a bus-stock density, not as a matched 2022 annual fleet observation.
 
@@ -350,7 +352,7 @@ For equal-service sensitivity, each mode's baseline PKM is held constant and VKT
 
 The target-city activity model gives approximately 225,793 private cars and 1,087 buses. Annual VKT is \(1.896\times10^9\) km for private cars and \(4.505\times10^7\) km for buses. The private-car activity estimate is sensitive to the unresolved interpretation of the 0.461 multiplier; the alternative annual mileage is therefore retained rather than suppressed.
 
-The baseline propulsion allocation is shown in Table 1. Private-car VKT is dominated by ICEVs, while the bus activity estimate contains a larger BEV share. The mixed electric-drive bus category is split rather than assumed to be entirely battery-electric. This distinction matters because vehicle-stock categories do not automatically identify annual propulsion-specific activity.
+The baseline propulsion allocation is shown in Table 2. Private-car VKT is dominated by ICEVs, while the bus activity estimate contains a larger BEV share. The mixed electric-drive bus category is split rather than assumed to be entirely battery-electric. This distinction matters because vehicle-stock categories do not automatically identify annual propulsion-specific activity.
 
 ### 6.2 Annual Energy Demand
 
