@@ -4,14 +4,17 @@ All figures in English; white background; vector SVG and PDF export where availa
 
 | Figure | Purpose and design | Data |
 |---|---|---|
-| 1 | Left-to-right framework: reference data → activity/propulsion → energy and separate impact tracks → scenarios → sensitivity and decision; no internal version numbers | manuscript equations |
-| 2 | Life-cycle boundary matrix, production and WTW included; maintenance/EOL/infrastructure and non-exhaust unquantified; independent battery LCIA separate | R9.7C/E boundaries |
-| 3 | Two mode facets, stacked production and WTW GWP bars (kt CO2e/year), all six scenarios; totals on each panel if space | R9.7B/C |
-| 4 | Five small multiples of mode-stacked road exhaust bars (t/year), independent y axes and zero bars only for modeled exhaust | R9.7E road pollutant rows V_reference |
-| 5 | Horizontal paired reduction ranges with point reference values and zero line, signed percent, 14,580 climate sets | R9.7F nested envelope + E matrix |
-| 6 | Mode-specific g CO2e/PKM comparison (conditional occupancy); reference and low/high service sensitivity in separate panels or separate figure | R9.7D |
-| 7 (appendix) | Transfer grid heatmap (g×m, panels b) S3 reduction, common color scale | R9.7F transfer grid |
-| 8 (appendix) | Grid × lifetime threshold curves using current consumption and production factors, not retrospective 0.160 input | R9.7B/C |
+| 1 | Left-to-right framework: reference-city evidence → target-city activity and propulsion → energy/climate/local-emission tracks → six scenarios → sensitivity; no internal version labels | manuscript equations |
+| 2 | Two-panel baseline VKT allocation: private ICEV/BEV/PHEV and bus diesel/gas/mixed/BEV/unclassified; label million vehicle-km/year and shares | R9.7A six-scenario VKT |
+| 3 | Environmental boundary matrix: vehicle production and WTW included; generic non-exhaust wear screening shown separately; maintenance/EOL/infrastructure, resuspended dust and secondary PM remain unquantified; battery-only LCIA separate | R9.7C, Audit-04 |
+| 4 | Energy-carrier structure by scenario, with gasoline, diesel, natural gas and electricity separated; total final energy in PJ/year | R9.7B energy cases |
+| 5 | Two mode facets, stacked production and WTW GWP bars (kt CO₂e/year), all six scenarios; label partial life-cycle boundary | R9.7B/C |
+| 6 | Five small multiples of mode-stacked combustion-exhaust bars (t/year), independent y axes; zero bars refer only to modeled combustion exhaust | R9.7E road pollutant rows V_reference |
+| 7 | Mode-specific g CO₂e/VKT and conditional g CO₂e/PKM comparison; state occupancy and trip-distance proxies | R9.7D |
+| 8 | Transfer grid heatmap (g×m, panels b) for S3 paired reduction; common color scale and matched S0 baseline | R9.7F transfer grid |
+| 9 | Horizontal paired reduction ranges with point reference values and zero line, signed percent, 14,580 climate sets | R9.7F nested envelope |
+| 10 | Private-car BEV break-even electricity WTW factor across lifetime mileage; label the vehicle pair and partial-GWP boundary | R9.7B/C |
+
 
 Acceptance: independently validate data totals, check SVG XML, render to PDF/PNG and visually inspect at print width; ensure symbols/subscripts and legend readable; verify no panel clipping or text collision; confirm manuscript cross references, all original assets preserved. Figure 1–6 prioritized. Do not claim visual approval until actual rendering and inspection. Next task G-2 implements all required figures and generates a reproducible output manifest.
 
