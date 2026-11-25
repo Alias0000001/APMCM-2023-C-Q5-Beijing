@@ -1,0 +1,60 @@
+name: Export contest manuscript PDF
+
+on:
+  push:
+    branches:
+      - export/paper-pdf-20261125
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact manuscript branch
+        uses: actions/checkout@v4
+        with:
+          ref: export/paper-pdf-20261125
+
+      - name: Install Pandoc and XeLaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra fonts-dejavu-core
+
+      - name: Render PDF from the unchanged Markdown source
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cp 09_Paper_Draft/Q5_Contest_Manuscript_EN.md /tmp/Q5_Contest_Manuscript_EN.md
+          sed 's/\.svg)/.png)/g' /tmp/Q5_Contest_Manuscript_EN.md > /tmp/Q5_Contest_Manuscript_EN_render.md
+          pandoc /tmp/Q5_Contest_Manuscript_EN_render.md \
+            --from=markdown+tex_math_dollars+raw_tex \
+            --pdf-engine=xelatex \
+            --resource-path=09_Paper_Draft \
+            -V mainfont="DejaVu Serif" \
+            -V sansfont="DejaVu Sans" \
+            -V monofont="DejaVu Sans Mono" \
+            -V fontsize=10pt \
+            -V geometry:margin=0.72in \
+            -V colorlinks=true \
+            -V urlcolor=blue \
+            -o dist/Q5_Contest_Manuscript_EN.pdf
+          test -s dist/Q5_Contest_Manuscript_EN.pdf
+          pdfinfo dist/Q5_Contest_Manuscript_EN.pdf | tee dist/pdfinfo.txt
+          pdftotext dist/Q5_Contest_Manuscript_EN.pdf dist/extracted.txt
+          grep -q "Environmental Impacts of Vehicle Electrification" dist/extracted.txt
+          grep -q "national-average vector" dist/extracted.txt
+          grep -q "Jinhua remains a separate external migration-sensitivity case" dist/extracted.txt
+          test "$(grep -c 'Figure [0-9]' dist/extracted.txt)" -ge 10
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: Q5-Contest-Manuscript-PDF
+          path: |
+            dist/Q5_Contest_Manuscript_EN.pdf
+            dist/pdfinfo.txt
+          if-no-files-found: error
+          retention-days: 7
