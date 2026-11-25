@@ -402,6 +402,7 @@ The baseline propulsion allocation is shown in Table 2. Private-car VKT is domin
 | \(S_3\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
 
 *Table 5. Annual final energy by carrier and scenario. Gasoline is in million litres; diesel and natural gas are in TJ; electricity is in GWh; total final energy is in PJ.*
+
 | \(S_4\) | 0.00 | 0.00 | 0.00 | 364.55 | 34.16 | 1.435 |
 
 Under full electrification, final energy falls from 4.619 to 1.435 PJ/year, a reduction of 68.93%. This reflects the higher end-use efficiency of electric drivetrains under the selected consumption factors. \(S_4\) has exactly the same energy demand as \(S_3\); its additional climate benefit comes from the electricity supply factor, not from lower vehicle energy use.
@@ -452,6 +453,7 @@ is zero under the current additive fixed-VKT model. This follows from the indepe
 | \(S_3\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 *Table 7. Modeled road-combustion exhaust by scenario, tonnes/year.*
+
 | \(S_4\) | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 |
 
 *Units: tonnes/year of modeled combustion exhaust. The reference is China V illustrative factors.*
@@ -475,6 +477,7 @@ The zero values in \(S_3\) and \(S_4\) refer only to the modeled combustion-exha
 | \(S_3\) | 24.149 | 44.751 |
 
 *Table 8. Covered road-PM screening: modeled combustion exhaust plus generic non-exhaust wear, tonnes/year.*
+
 | \(S_4\) | 24.149 | 44.751 |
 
 *Covered road PM equals modeled combustion exhaust plus generic tyre, brake and road-surface wear. Resuspended dust and secondary particles are excluded.*
@@ -597,7 +600,9 @@ The fixed-VKT comparison preserves the annual travel of each vehicle class, not 
 | Lower BEV occupancy | 591.056 | −4.10% |
 | Higher BEV occupancy | 413.188 | 27.23% |
 
-*Table 10. Equal-PKM sensitivity under alternative effective-occupancy assumptions.*\n\nThe lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
+*Table 10. Equal-PKM sensitivity under alternative effective-occupancy assumptions.*
+
+The lower-occupancy case applies multipliers of 0.81 to private BEV occupancy and 0.80 to bus BEV occupancy. The higher-occupancy case applies 1.20 to both. If electric vehicles provide less passenger service per VKT, additional VKT is required to maintain the same PKM, and the climate benefit can reverse. This result is conditional on the occupancy assumptions; it is not evidence of an observed change in passenger demand.
 
 ### 7.7 Electricity Break-Even Factor
 
