@@ -124,7 +124,8 @@ The work proceeds through five connected tasks:
 |---|---|---|
 | \(P^*\) | Target-city population | persons |
 | \(P_r\) | Reference-city population | persons |
-| \(N_{P,r}\) | Reference private passenger-car stock | vehicles |\n| \(N_{B,r}\) | Reference bus-fleet snapshot | vehicles |
+| \(N_{P,r}\) | Reference private passenger-car stock | vehicles |
+| \(N_{B,r}\) | Reference bus-fleet snapshot | vehicles |
 | \(V_{B,r}\) | Reference annual bus activity | vehicle-km/year |
 | \(d\) | Conditional daily distance per private car | km/day |
 | \(a\) | Conditional private-car activity multiplier | dimensionless |
@@ -137,7 +138,10 @@ The work proceeds through five connected tasks:
 | \(M_{ik}\) | Included production GWP per vehicle | t CO₂e/vehicle |
 | \(L_{ik}\) | Lifetime mileage of vehicle technology \(k\) | vehicle-km |
 | \(A_{ikj}\) | Road-exhaust factor for pollutant \(j\) | g/vehicle-km |
-| \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |\n| \(UF\) | PHEV utility factor | dimensionless |\n| \(B^*\) | Target-city bus boarding proxy | boardings/year |\n| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |
+| \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |
+| \(UF\) | PHEV utility factor | dimensionless |
+| \(B^*\) | Target-city bus boarding proxy | boardings/year |
+| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |
 | \(G_s\) | Included-stage annual GWP in scenario \(s\) | t CO₂e/year |
 | \(H_{sj}\) | Annual road-emission mass of pollutant \(j\) | t/year |
 
