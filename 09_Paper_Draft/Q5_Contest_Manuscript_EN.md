@@ -141,7 +141,9 @@ The work proceeds through five connected tasks:
 | \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |
 | \(UF\) | PHEV utility factor | dimensionless |
 | \(B^*\) | Target-city bus boarding proxy | boardings/year |
-| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |\n| \(o_{k,source}\) | Source-defined bus occupancy for factor conversion | persons/bus |\n| \(s,t,q,r_P,r_B\) | Propulsion-share and relative-mileage sensitivity parameters | dimensionless |
+| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |
+| \(o_{k,source}\) | Source-defined bus occupancy for factor conversion | persons/bus |
+| \(s,t,q,r_P,r_B\) | Propulsion-share and relative-mileage sensitivity parameters | dimensionless |
 | \(G_s\) | Included-stage annual GWP in scenario \(s\) | t CO₂e/year |
 | \(H_{sj}\) | Annual road-emission mass of pollutant \(j\) | t/year |
 
