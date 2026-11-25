@@ -121,9 +121,9 @@ The work proceeds through five connected tasks:
 | \(g,m,b\) | Private-car ownership, mileage and bus-supply transfer multipliers | dimensionless |
 | \(V_P,V_B\) | Annual private-car and bus VKT | vehicle-km/year |
 | \(p_{ik,s}\) | VKT share of technology \(k\) in vehicle class \(i\), scenario \(s\) | dimensionless |
-| \(Q_{ikf,s}\) | Annual demand for energy carrier \(f\) | carrier unit/year |
-| \(u_{kf}\) | Energy use of technology \(k\) per VKT | carrier unit/vehicle-km |
-| \(F_f\) | WTW emission factor of energy carrier \(f\) | kg CO₂e/carrier unit |
+| \(Q_{ikf,s}\) | Annual energy demand for carrier \(f\) | MJ/year for fuels; kWh/year for electricity |
+| \(u_{kf}\) | Energy use of technology \(k\) per VKT | MJ/vehicle-km or kWh/vehicle-km |
+| \(F_f\) | WTW emission factor of energy carrier \(f\) | kg CO₂e/MJ for fuels; kg CO₂e/kWh for electricity |
 | \(M_{ik}\) | Included production GWP per vehicle | t CO₂e/vehicle |
 | \(L_{ik}\) | Lifetime mileage of vehicle technology \(k\) | vehicle-km |
 | \(A_{ikj}\) | Road-exhaust factor for pollutant \(j\) | g/vehicle-km |
@@ -272,10 +272,14 @@ Q_{ikf,s}=V_{ik,s}u_{kf}.
 
 For PHEVs, fuel and electricity demand are divided using the utility factor \(UF=0.66\) [12]. The fuel share is \(1-UF\), and the electric share is \(UF\). The reference gasoline consumption is assumed to be 7.5 L/100 km, informed by published Chinese light-duty vehicle fuel-economy evidence but not treated as a measured fleet mean [17,18]. The reference electricity consumption is 0.192289 kWh/km for private electric cars and 0.758253 kWh/km for electric buses [4]. The charging report does not establish the precise meter position; no additional charging loss is imposed in the base case, while alternative charging-efficiency cases are retained in sensitivity analysis.
 
-Final energy is calculated by converting each energy carrier to MJ. Gasoline is converted at 31.8718 MJ/L; historical diesel and natural-gas bus energy-use rates are taken from Lin et al. [5], with the air-conditioning share treated as a historical proxy. Electricity is converted at 3.6 MJ/kWh. WTW GWP is
+Final energy in MJ is
+\[
+E^{final}_s=\sum_{i,k,f\in fuels}Q_{ikf,s}+3.6\sum_{i,k}Q_{ik,e,s}.
+\]
+Gasoline is converted at 31.8718 MJ/L; historical diesel and natural-gas bus energy-use rates are taken from Lin et al. [5], with the air-conditioning share treated as a historical proxy. Electricity is converted at 3.6 MJ/kWh. WTW GWP is
 
 \[
-G^{WTW}_s=\frac{1}{1000}\sum_{i,k,f} Q_{ikf,s}F_f.
+G^{WTW}_s=\frac{1}{1000}\left(\sum_{i,k,f\in fuels} Q_{ikf,s}F_f+\sum_{i,k}Q_{ik,e,s}F_e\right).
 \]
 
 The fuel WTW factors are 90.2 g CO₂e/MJ for gasoline, 92.3 g CO₂e/MJ for diesel, 72.0 g CO₂e/MJ for CNG and 78.1 g CO₂e/MJ for LNG [6]. A 50/50 CNG/LNG energy split is used as a proxy for the natural-gas bus group. The electricity factor is 0.73224 kg CO₂e/kWh [6].
