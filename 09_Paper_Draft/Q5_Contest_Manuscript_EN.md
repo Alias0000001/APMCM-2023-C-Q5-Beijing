@@ -21,13 +21,23 @@ Sensitivity analysis uses paired parameter sets rather than treating a single pa
 # Contents
 
 1. Introduction  
+   1.1 Background; 1.2 Problem Restatement; 1.3 Main Work  
 2. Assumptions and Justifications  
 3. Notations  
 4. Problem Analysis  
+   4.1 Reference-City Selection; 4.2 Two-Stage Model; 4.3 Environmental Reporting Domains  
 5. Model Establishment  
+   5.1 Population-to-Activity; 5.2 Propulsion-Specific VKT; 5.3 Scenario Design  
+   5.4 Energy and WTW; 5.5 Vehicle Production and Partial Life-Cycle GWP  
+   5.6 Road Exhaust; 5.7 Non-Exhaust Particle Wear; 5.8 Passenger Service  
 6. Model Solution and Results  
+   6.1 Baseline Activity; 6.2 Energy; 6.3 Climate Impact  
+   6.4 Road Exhaust; 6.5 Non-Exhaust PM; 6.6 Functional-Unit Comparison  
 7. Sensitivity and Error Analysis  
+   7.1 City Transfer; 7.2 Jinhua Transferability; 7.3 Propulsion Shares  
+   7.4 Mileage Denominator; 7.5 Nested Stress Test; 7.6 Equal Service; 7.7 Break-Even  
 8. Model Verification and Evaluation  
+   8.1 Verification; 8.2 Advantages; 8.3 Limitations  
 9. Conclusion  
 References  
 Appendices
@@ -114,7 +124,7 @@ The work proceeds through five connected tasks:
 |---|---|---|
 | \(P^*\) | Target-city population | persons |
 | \(P_r\) | Reference-city population | persons |
-| \(N_{P,r}\) | Reference private passenger-car stock | vehicles |
+| \(N_{P,r}\) | Reference private passenger-car stock | vehicles |\n| \(N_{B,r}\) | Reference bus-fleet snapshot | vehicles |
 | \(V_{B,r}\) | Reference annual bus activity | vehicle-km/year |
 | \(d\) | Conditional daily distance per private car | km/day |
 | \(a\) | Conditional private-car activity multiplier | dimensionless |
@@ -123,11 +133,11 @@ The work proceeds through five connected tasks:
 | \(p_{ik,s}\) | VKT share of technology \(k\) in vehicle class \(i\), scenario \(s\) | dimensionless |
 | \(Q_{ikf,s}\) | Annual energy demand for carrier \(f\) | MJ/year for fuels; kWh/year for electricity |
 | \(u_{kf}\) | Energy use of technology \(k\) per VKT | MJ/vehicle-km or kWh/vehicle-km |
-| \(F_f\) | WTW emission factor of energy carrier \(f\) | kg CO₂e/MJ for fuels; kg CO₂e/kWh for electricity |
+| \(F_f,F_e\) | WTW factors for fuel and electricity | kg CO₂e/MJ; kg CO₂e/kWh |
 | \(M_{ik}\) | Included production GWP per vehicle | t CO₂e/vehicle |
 | \(L_{ik}\) | Lifetime mileage of vehicle technology \(k\) | vehicle-km |
 | \(A_{ikj}\) | Road-exhaust factor for pollutant \(j\) | g/vehicle-km |
-| \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |
+| \(o_i\) | Effective occupancy of vehicle class \(i\) | persons/vehicle |\n| \(UF\) | PHEV utility factor | dimensionless |\n| \(B^*\) | Target-city bus boarding proxy | boardings/year |\n| \(f_{k,PKM}\) | Source bus-production intensity | kg CO₂e/1,000 passenger-km |
 | \(G_s\) | Included-stage annual GWP in scenario \(s\) | t CO₂e/year |
 | \(H_{sj}\) | Annual road-emission mass of pollutant \(j\) | t/year |
 
@@ -149,7 +159,7 @@ Following the logic of a nested population-to-vehicle and vehicle-to-emission mo
 
 **Stage II: Environmental accounting.** The propulsion-specific VKT is multiplied by carrier-specific energy-use factors, WTW factors, production factors and road-emission factors. This produces separate outputs for energy, climate impact and local road pollutants.
 
-The two-stage structure ensures that the environmental calculation is linked to a clearly defined transport activity level. It also makes the main source of uncertainty visible: a change in the activity transfer affects annual totals, whereas a change in the technology factor affects the environmental intensity per kilometre.
+The two-stage structure ensures that the environmental calculation is linked to a clearly defined transport activity level. It also makes the main source of uncertainty visible: a change in the activity transfer affects annual totals, whereas a change in the technology factor affects the environmental intensity per kilometre. A polynomial population-to-fleet fit is not used. Such a fit would require a sufficiently large cross-city sample with consistent population, vehicle-stock and service-area definitions; the pre-contest evidence assembled here does not provide that matched sample. Fitting a higher-order curve to a small or boundary-inconsistent dataset would create spurious precision. The per-capita transfer is therefore used as a transparent baseline, not as a universal scaling law, and its departures are tested through separate ownership, mileage, bus-supply and spatial-boundary sensitivities.
 
 ### 4.3 Three Environmental Reporting Domains
 
@@ -270,13 +280,13 @@ For each mode, technology and energy carrier, annual energy demand is
 Q_{ikf,s}=V_{ik,s}u_{kf}.
 \]
 
-For PHEVs, fuel and electricity demand are divided using the utility factor \(UF=0.66\) [12]. The fuel share is \(1-UF\), and the electric share is \(UF\). The reference gasoline consumption is assumed to be 7.5 L/100 km, informed by published Chinese light-duty vehicle fuel-economy evidence but not treated as a measured fleet mean [17,18]. The reference electricity consumption is 0.192289 kWh/km for private electric cars and 0.758253 kWh/km for electric buses [4]. The charging report does not establish the precise meter position; no additional charging loss is imposed in the base case, while alternative charging-efficiency cases are retained in sensitivity analysis.
+For PHEVs, fuel and electricity demand are divided using the utility factor \(UF=0.66\) [12]. The fuel share is \(1-UF\), and the electric share is \(UF\). The reference gasoline consumption is assumed to be 7.5 L/100 km, informed by published Chinese light-duty vehicle fuel-economy evidence but not treated as a measured fleet mean [17,18]. The reference electricity consumption is 0.192289 kWh/km for private electric cars and 0.758253 kWh/km for electric buses [4]. The charging report does not establish the precise meter position; the per-kilometre electricity rates are ratios of reported group means, not means of individual vehicle ratios. No additional charging loss is imposed in the base case, while alternative charging-efficiency cases are retained in sensitivity analysis.
 
 Final energy in MJ is
 \[
 E^{final}_s=\sum_{i,k,f\in fuels}Q_{ikf,s}+3.6\sum_{i,k}Q_{ik,e,s}.
 \]
-Gasoline is converted at 31.8718 MJ/L; historical diesel and natural-gas bus energy-use rates are taken from Lin et al. [5], with the air-conditioning share treated as a historical proxy. Electricity is converted at 3.6 MJ/kWh. WTW GWP is
+Gasoline is converted at 31.8718 MJ/L [19]; historical diesel and natural-gas bus energy-use rates are taken from Lin et al. [5], with an air-conditioning share of 0.2333 used as a historical proxy. Electricity is converted at 3.6 MJ/kWh. WTW GWP is
 
 \[
 G^{WTW}_s=\frac{1}{1000}\left(\sum_{i,k,f\in fuels} Q_{ikf,s}F_f+\sum_{i,k}Q_{ik,e,s}F_e\right).
