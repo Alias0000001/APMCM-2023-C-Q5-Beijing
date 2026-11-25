@@ -12,8 +12,8 @@ R=Path(__file__).resolve().parents[1]; D=R/"02_Cleaned_Data"; L=R/"07_LCA_LCIA";
 F=P/"figures_final"; H=P/"figures_diagnostic"
 for p in (F,H): p.mkdir(exist_ok=True)
 plt.rcParams.update({"font.family":"DejaVu Sans","font.size":9,"axes.labelsize":9,"axes.titlesize":10,"axes.titleweight":"semibold","legend.fontsize":8,"xtick.labelsize":8,"ytick.labelsize":8,"axes.spines.top":False,"axes.spines.right":False,"axes.edgecolor":"#687987","axes.labelcolor":"#263849","xtick.color":"#263849","ytick.color":"#263849","text.color":"#263849","axes.grid":False,"figure.facecolor":"white","axes.facecolor":"white","savefig.facecolor":"white","svg.fonttype":"none","hatch.linewidth":0.65})
-ICE="#496783"; NMC="#C56D88"; LFP="#82ADD0"; PHEV="#9B8AB8"; BUS="#D3A16F"; DARK="#283E50"
-C={"ICEV":ICE,"BEV_NMC":NMC,"BEV_LFP":LFP,"BEV":LFP,"PHEV":PHEV,"bus_diesel":BUS,"bus_assumed_BEV":"#4C988C","bus_natural_gas":"#B1A580","bus_unassigned_nonBEV":"#9095A5","bus_unclassified":"#B7BEC5"}
+ICE="#496783"; NMC="#C56D88"; LFP="#82ADD0"; PHEV="#9B8AB8"; BUS="#94AA9C"; DARK="#283E50"
+C={"ICEV":ICE,"BEV_NMC":NMC,"BEV_LFP":LFP,"BEV":LFP,"PHEV":PHEV,"bus_diesel":BUS,"bus_assumed_BEV":"#4C988C","bus_natural_gas":"#B8C5BD","bus_unassigned_nonBEV":"#9095A5","bus_unclassified":"#B7BEC5"}
 VLAB={"ICEV":"ICEV","BEV":"BEV","PHEV":"PHEV","BEV_NMC":"BEV-NMC","BEV_LFP":"BEV-LFP","bus_diesel":"Diesel bus","bus_assumed_BEV":"Assumed BEV bus","bus_natural_gas":"Gas bus","bus_unassigned_nonBEV":"Mixed bus","bus_unclassified":"Unknown bus"}
 SS=["S-1","S0","S1","S2","S3","S4"]; SL=["S−1",*SS[1:]]; xx=np.arange(6)
 manifest=[]
@@ -67,7 +67,7 @@ params={r["parameter"]:val(r,"value") for r in read(D,"R9_7B_ENERGY_INPUTS.csv")
 prod=read(D,"R9_7C_MANUFACTURING_FACTOR_REGISTER.csv")
 # Figure 1: model flow
 f,ax=fig((7.2,3.6));common(ax)
-block(ax,.04,.71,.27,.21,"Reference evidence","Population · stock\nTravel · energy", "#E8EFF5")
+block(ax,.04,.71,.27,.21,"Beijing reference","Population · stock\nTravel · energy", "#E8EFF5")
 block(ax,.365,.71,.27,.21,"Activity model","1 million residents\nVKT by mode", "#E8EFF5")
 block(ax,.69,.71,.27,.21,"Six scenarios","Propulsion allocation\nFixed mode VKT", "#E8EFF5")
 arrow(ax,.31,.815,.365,.815);arrow(ax,.635,.815,.69,.815)
@@ -75,7 +75,7 @@ block(ax,.04,.39,.27,.21,"Production + WTW","Annualized GWP\nFinal energy", "#DD
 block(ax,.365,.39,.27,.21,"Road exhaust","Five pollutant masses\nSeparate units", "#F4E4E8")
 block(ax,.69,.39,.27,.21,"Passenger service","Conditional PKM\nEqual-service test", "#E8E3F0")
 arrow(ax,.825,.71,.825,.60);arrow(ax,.825,.675,.50,.60);arrow(ax,.825,.675,.175,.60)
-block(ax,.16,.065,.68,.20,"Decision and robustness","Paired S0 comparison · transfer stress · lifetime and grid thresholds", "#EDF0F3")
+block(ax,.16,.065,.68,.20,"Decision and robustness","Paired S0 comparison · Jinhua transfer check · lifetime and grid thresholds", "#EDF0F3")
 for x in (.175,.5,.825):arrow(ax,x,.39,.5,.265)
 save(f,F,"Figure_01_Framework","Q5 manuscript model equations","Model structure; data anchor is not target geography.")
 # Figure 2: boundary
@@ -217,7 +217,7 @@ save(f,H,"Legacy_08_Battery_Factors","R9_5_BATTERY_FACTOR_SENSITIVITY.csv","Inde
 # Legacy 9 coverage matrix, map historical subtypes to one visibly distinct group
 cov=read(L,"R9_4_STAGE_COVERAGE_MATRIX.csv");v=list(dict.fromkeys(r["vehicle"] for r in cov));st=list(dict.fromkeys(r["stage"] for r in cov))
 status=lambda s: 0 if s=="MISSING" else 1 if s=="PARTIAL_PHYSICAL" else 2 if s=="SEPARATE_LCIA_ONLY" else 3 if s.startswith("NOT_APPLICABLE") else 4
-mat=np.array([[status(get(cov,vehicle=x,stage=y)["coverage_status"]) for y in st] for x in v]);colors=["#E6E8EB","#82ADD0","#C56D88","#FFFFFF","#D3A16F"];f,ax=fig((7.2,4.3));ax.imshow(mat,cmap=ListedColormap(colors),norm=BoundaryNorm(np.arange(-.5,5.5),5),aspect="auto")
+mat=np.array([[status(get(cov,vehicle=x,stage=y)["coverage_status"]) for y in st] for x in v]);colors=["#E6E8EB","#82ADD0","#C56D88","#FFFFFF","#94AA9C"];f,ax=fig((7.2,4.3));ax.imshow(mat,cmap=ListedColormap(colors),norm=BoundaryNorm(np.arange(-.5,5.5),5),aspect="auto")
 for i,j in np.ndindex(mat.shape):ax.text(j,i,["—","P","L","N/A","H"][mat[i,j]],ha="center",va="center",fontsize=7,color=DARK)
 ax.set_xticks(range(len(st)),["Materials","Parts","Distribution","Assembly","Battery","Energy","Maintenance","Dismantling","Recycling","Non-exhaust","PKM"],rotation=45,ha="right");ax.set_yticks(range(len(v)),[VLAB[x] for x in v]);ax.set_xticks(np.arange(-.5,len(st),1),minor=True);ax.set_yticks(np.arange(-.5,len(v),1),minor=True);ax.grid(which="minor",color="white",lw=1);ax.tick_params(which="minor",bottom=False,left=False)
 ax.legend(handles=[Patch(facecolor=c,edgecolor="#ADB7C2",label=l) for c,l in zip(colors,["Missing","Partial physical","Separate LCIA","Not applicable","Historical proxy"])],loc="upper center",bbox_to_anchor=(.5,-.34),ncol=3,frameon=False)

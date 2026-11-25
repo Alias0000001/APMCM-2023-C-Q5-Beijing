@@ -26,7 +26,7 @@ ICE = "#496783"
 NMC = "#C56D88"
 LFP = "#82ADD0"
 PHEV = "#9B8AB8"
-BUS = "#D3A16F"
+BUS = "#94AA9C"
 BUS_E = "#4F968D"
 STAGE_COLORS = {
     "material_production_major_materials": "#8DB6D8",
@@ -40,7 +40,7 @@ VEHICLE_COLORS = {
     "ICEV": ICE, "BEV": NMC, "PHEV": PHEV,
     "BEV_NMC": NMC, "BEV_LFP": LFP,
     "bus_diesel": BUS, "bus_assumed_BEV": BUS_E,
-    "bus_natural_gas": "#B68A56", "bus_unassigned_nonBEV": "#9AA8AE",
+    "bus_natural_gas": "#B8C5BD", "bus_unassigned_nonBEV": "#9AA8AE",
     "bus_unclassified": "#C6CDD2",
 }
 VEHICLE_LABELS = {
@@ -205,7 +205,7 @@ def figure5():
             elif r["scenario"] == "Peng2017_text_WTW":
                 fill = "#9B8AB8"
             else:
-                fill = "#D3A16F"
+                fill = "#94AA9C"
             if shape == "circle":
                 p.append(circ(x,y,7,fill,stroke=color,sw=2))
             else:
@@ -336,8 +336,8 @@ def figure9():
         "SEPARATE_LCIA_ONLY":"#9B8AB8",
         "NOT_APPLICABLE_TRACTION_BATTERY":"#E5E9ED",
         "MISSING":"#F0C5C7",
-        "HISTORICAL_GWP_PROXY_ONLY":"#D3A16F",
-        "HISTORICAL_PROXY_NOT_SEPARABLE":"#E7C89D",
+        "HISTORICAL_GWP_PROXY_ONLY":"#94AA9C",
+        "HISTORICAL_PROXY_NOT_SEPARABLE":"#D6DFDA",
         "HISTORICAL_INCLUDED_IN_MATERIALS_NOT_SEPARATE":"#B6A1C8",
         "HISTORICAL_REFERENCE_ONLY":"#A8BAC3",
     }
@@ -359,7 +359,7 @@ def figure9():
             p.append(tx(x0+j*cw+(cw-4)/2,y+27,code,12,NAVY,"middle",700))
     legend=[
         ("P","Partial physical","#5C9B8F"),("L","Separate battery LCIA","#9B8AB8"),
-        ("H","Historical GWP proxy","#D3A16F"),("H*","Combined / not separable","#E7C89D"),
+        ("H","Historical GWP proxy","#94AA9C"),("H*","Combined / not separable","#D6DFDA"),
         ("R","Historical reference only","#A8BAC3"),("NA","Missing","#F0C5C7"),("—","Not applicable","#E5E9ED")
     ]
     lx=70;ly=645
@@ -513,13 +513,13 @@ def figure14():
         x=boxes[i][1]+150
         p.append(ln(x,335,x+82,335,ICE,3))
         p.append(polygon([(x+82,335),(x+70,328),(x+70,342)],ICE))
-    p.append(rect(285,165,475,75,"#FFF3E7",stroke=BUS,sw=1.5,rx=8))
+    p.append(rect(285,165,475,75,"#F2F5F3",stroke=BUS,sw=1.5,rx=8))
     p.append(tx(522,195,"R5_CHARGE Table 4-1",16,NAVY,"middle",700))
     p.append(tx(522,220,"Monthly charging energy ÷ monthly vehicle distance",13,MUTED,"middle"))
     p.append(ln(522,240,522,275,BUS,2,"6 4"))
     p.append(tx(75,465,f"Private BEV: {float(car['reported_kWh_per_100km']):.1f} kWh/100 km",16,NMC,weight=700))
     p.append(tx(75,495,f"Bus: {float(bus['reported_kWh_per_100km']):.1f} kWh/100 km",16,BUS_E,weight=700))
-    p.append(rect(690,440,440,105,"#F8F4EE",stroke="#C29A6B",sw=1.3,rx=8))
+    p.append(rect(690,440,440,105,"#F2F5F3",stroke="#94AA9C",sw=1.3,rx=8))
     p.append(tx(910,474,"Meter point unresolved",17,NAVY,"middle",700))
     p.append(tx(910,500,"Grid input / charger output / battery discharge",12,MUTED,"middle"))
     p.append(tx(60,630,"Base case uses the reported charging-energy intensity without an extra loss multiplier.",13,MUTED))
@@ -538,7 +538,7 @@ def figure15():
     p.append(tx(105,285,f"{vkt/1e9:.3f} billion vehicle-km",22,ICE,weight=700))
     p.append(tx(105,335,f"{board/1e9:.5f} billion passenger boardings",20,NMC,weight=700))
     p.append(tx(105,385,f"{ratio:.3f} boardings per vehicle-km",15,MUTED))
-    p.append(rect(625,185,500,245,"#FBF6F3",stroke="#E7C7B9",sw=1,rx=12))
+    p.append(rect(625,185,500,245,"#F2F5F3",stroke="#CAD5CF",sw=1,rx=12))
     p.append(tx(875,225,"2023 city-bus PKM",18,NAVY,"middle",700))
     p.append(tx(875,300,str(pkm),34,NMC,"middle",700))
     p.append(tx(875,350,"No public bus-only annual total located",15,MUTED,"middle"))
